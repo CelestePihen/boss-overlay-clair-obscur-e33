@@ -1,0 +1,27 @@
+{
+  "appId": "com.celcr.boss-overlay",
+  "productName": "Boss Overlay",
+  "directories": {
+    "output": "dist"
+  },
+  "files": [
+    "dist/**/*",
+    "dist-electron/**/*",
+    "tools/**/*",
+    "package.json"
+  ],
+  "win": {
+    "target": "dir",
+    "icon": null
+  },
+  "extraResources": [
+    {
+      "from": "data",
+      "to": "data"
+    },
+    {
+      "from": "tools",
+      "to": "tools"
+    }
+  ]
+}
