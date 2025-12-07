@@ -49,9 +49,10 @@ export function BossInfoForm({ boss, onSubmit, onCancel, isEditMode = false }: B
       setTimeLeft(prev => {
         if (prev <= 1) {
           // Quand le timer arrive à 0 : TOUJOURS mettre dans Hidden
-          // (peu importe l'état de la checkbox ou de la zone)
+          // Utiliser le nom normalisé (sans hash) pour cacher tous les ennemis du même type
+          const normalizedName = normalizeEnemyName(boss.originalName)
           onSubmit({
-            originalName: boss.originalName,
+            originalName: normalizedName, // Stocker le nom normalisé, pas le hash exact
             displayName: displayName || boss.name,
             category: 'Other',
             zone: 'Hidden'
@@ -65,6 +66,19 @@ export function BossInfoForm({ boss, onSubmit, onCancel, isEditMode = false }: B
     return () => clearInterval(timer)
   }, [boss.originalName, boss.name, displayName, onSubmit, timerActive])
 
+  // Fonction pour normaliser un nom (retirer le hash)
+  const normalizeEnemyName = (name: string): string => {
+    const parts = name.split('_')
+    const lastPart = parts[parts.length - 1]
+    
+    // Si la dernière partie est un hash (32-33 caractères)
+    if (lastPart && (lastPart.length === 32 || lastPart.length === 33)) {
+      return parts.slice(0, -1).join('_')
+    }
+    
+    return name
+  }
+
   // Arrêter le timer lors d'une interaction
   const stopTimer = () => {
     setTimerActive(false)
@@ -72,11 +86,15 @@ export function BossInfoForm({ boss, onSubmit, onCancel, isEditMode = false }: B
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Si shouldDisplay est décoché, ça va dans Hidden
-    // Sinon, il faut une zone
+    // Si shouldDisplay est décoché, ça va dans Hidden avec nom normalisé
+    // Sinon, il faut une zone et on garde le nom exact
     if (displayName && (!shouldDisplay || zone)) {
+      const finalOriginalName = shouldDisplay 
+        ? boss.originalName  // Zone normale : garder le nom exact
+        : normalizeEnemyName(boss.originalName)  // Hidden : utiliser le nom normalisé
+      
       onSubmit({
-        originalName: boss.originalName,
+        originalName: finalOriginalName,
         displayName,
         category,
         zone: shouldDisplay ? zone : 'Hidden'

@@ -82,9 +82,20 @@ export function watchSaveFile(savePath: string, callback: (bossList: Boss[], new
     const newlyKilled: Boss[] = []
     if (previousBossList.length > 0) {
       for (const boss of bossList) {
-        const previousBoss = previousBossList.find(b => b.name === boss.name)
-        if (previousBoss && !previousBoss.killed && boss.killed) {
-          newlyKilled.push(boss)
+        // Utiliser originalName pour la comparaison (plus fiable)
+        const previousBoss = previousBossList.find(b => b.originalName === boss.originalName)
+        
+        if (previousBoss) {
+          // Boss existait déjà : vérifier s'il vient d'être tué
+          if (!previousBoss.killed && boss.killed) {
+            newlyKilled.push(boss)
+          }
+        } else {
+          // Boss n'existait pas dans previousBossList : c'est un nouveau boss rencontré
+          // S'il est déjà tué, c'est qu'on vient de le tuer
+          if (boss.killed) {
+            newlyKilled.push(boss)
+          }
         }
       }
     }

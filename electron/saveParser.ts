@@ -243,7 +243,26 @@ export async function parseSaveFile(savePath: string): Promise<Boss[]> {
 }
 
 /**
+ * Normalise un nom d'ennemi en retirant le hash/GUID final
+ * Ex: "ObjectID_..._C_4DFD38854045646F8DC570BDF56675B6" -> "ObjectID_..._C"
+ */
+function normalizeEnemyName(name: string): string {
+  const parts = name.split('_')
+  const lastPart = parts[parts.length - 1]
+  
+  // Si la dernière partie est un hash (32-33 caractères alphanumériques)
+  if (lastPart && (lastPart.length === 32 || lastPart.length === 33)) {
+    return parts.slice(0, -1).join('_')
+  }
+  
+  return name
+}
+
+/**
  * Extrait les boss en utilisant la base de données et les données de la sauvegarde
+ * Affiche : 
+ * - Les boss présents dans la sauvegarde (encountered: true)
+ * - Les boss ajoutés manuellement dans les zones personnalisées (encountered: false)
  */
 function extractBossesWithDatabase(saveData: SaveData): Boss[] {
   // Si la base de données n'est pas chargée, retourner les données de test
@@ -259,37 +278,103 @@ function extractBossesWithDatabase(saveData: SaveData): Boss[] {
 
   // Créer un Set des ennemis tués (nom original)
   const killedEnemiesSet = new Set<string>()
-  battledEnemies.forEach(enemy => killedEnemiesSet.add(enemy.key.Name))
-  transientEnemies.forEach(enemy => killedEnemiesSet.add(enemy.key.Name))
+  battledEnemies.forEach(enemy => {
+    if (enemy.value.Bool === true) {
+      killedEnemiesSet.add(enemy.key.Name)
+    }
+  })
+  transientEnemies.forEach(enemy => {
+    if (enemy.value.Bool === true) {
+      killedEnemiesSet.add(enemy.key.Name)
+    }
+  })
   
-  // Créer un Set des ennemis rencontrés (nom original)
-  const encounteredEnemiesSet = new Set<string>()
-  encounteredEnemies.forEach(enemy => encounteredEnemiesSet.add(enemy.key.Name))
-  battledEnemies.forEach(enemy => encounteredEnemiesSet.add(enemy.key.Name))
-  transientEnemies.forEach(enemy => encounteredEnemiesSet.add(enemy.key.Name))
+  // Collecter TOUS les ennemis présents dans la sauvegarde
+  const allSaveEnemies = new Set<string>()
+  battledEnemies.forEach(enemy => allSaveEnemies.add(enemy.key.Name))
+  encounteredEnemies.forEach(enemy => allSaveEnemies.add(enemy.key.Name))
+  transientEnemies.forEach(enemy => allSaveEnemies.add(enemy.key.Name))
 
-  // Créer la liste complète des boss depuis la base de données
-  const bossList: Boss[] = bossDatabase.map(boss => ({
-    name: boss.displayName,
-    killed: killedEnemiesSet.has(boss.originalName),
-    encountered: encounteredEnemiesSet.has(boss.originalName),
-    category: boss.category,
-    zone: boss.zone,
-    originalName: boss.originalName,
-    // Marquer comme nécessitant des infos si dans "Sans zone" ou "❓ À définir"
-    needsInfo: boss.zone === 'Sans zone' || boss.zone === '❓ À définir'
-  }))
-  
-  // Ajouter les boss inconnus (présents dans la save mais pas dans la DB)
-  const allSaveEnemies = new Set([...killedEnemiesSet, ...encounteredEnemiesSet])
+  // Créer un index pour retrouver les ennemis de la save par nom normalisé
+  const saveEnemyNormalizedMap = new Map<string, string>() // nom normalisé -> nom exact dans save
   for (const enemyName of allSaveEnemies) {
-    if (!bossMap.has(enemyName)) {
-      // Boss inconnu - ajouter avec un flag pour demander les infos
+    const normalized = normalizeEnemyName(enemyName)
+    saveEnemyNormalizedMap.set(normalized, enemyName)
+  }
+
+  // Parcourir la base de données dans l'ordre pour préserver l'ordre du JSON
+  const bossList: Boss[] = []
+  const processedSaveEnemies = new Set<string>()
+  const excludedZones = ['Sans zone', 'Hidden', '❓ À définir']
+  
+  for (const boss of bossDatabase) {
+    // Chercher si ce boss est dans la save (match exact ou normalisé)
+    let saveEnemyName: string | undefined = undefined
+    
+    // Match exact
+    if (allSaveEnemies.has(boss.originalName)) {
+      saveEnemyName = boss.originalName
+    } else {
+      // Match normalisé (sans le hash)
+      const normalized = normalizeEnemyName(boss.originalName)
+      saveEnemyName = saveEnemyNormalizedMap.get(normalized)
+      
+      if (saveEnemyName) {
+        console.log(`Matched ${saveEnemyName} to ${boss.originalName} (normalized)`)
+      }
+    }
+    
+    // Ne JAMAIS afficher les boss de "Hidden", même s'ils sont dans la save
+    if (boss.zone === 'Hidden') {
+      if (saveEnemyName) {
+        processedSaveEnemies.add(saveEnemyName)
+        console.log(`Hidden boss processed: ${boss.displayName} (will not appear)`)
+      } else {
+        console.log(`Hidden boss not in save: ${boss.displayName}`)
+      }
+      continue
+    }
+    
+    if (saveEnemyName) {
+      // Boss présent dans la sauvegarde
+      processedSaveEnemies.add(saveEnemyName)
+      
+      bossList.push({
+        name: boss.displayName,
+        killed: killedEnemiesSet.has(saveEnemyName),
+        encountered: true,
+        category: boss.category,
+        zone: boss.zone,
+        originalName: saveEnemyName,
+        needsInfo: boss.zone === 'Sans zone' || boss.zone === '❓ À définir'
+      })
+    } else {
+      // Boss manuel (pas dans la save)
+      // Ne pas afficher les zones exclues
+      const excludedZones = ['Sans zone', 'Hidden', '❓ À définir']
+      if (!excludedZones.includes(boss.zone)) {
+        bossList.push({
+          name: boss.displayName,
+          killed: false,
+          encountered: false,
+          category: boss.category,
+          zone: boss.zone,
+          originalName: boss.originalName,
+          needsInfo: false
+        })
+      }
+    }
+  }
+  
+  // Ajouter les boss inconnus (dans la save mais pas dans la DB)
+  for (const enemyName of allSaveEnemies) {
+    if (!processedSaveEnemies.has(enemyName)) {
       const prettyName = prettifyEnemyName(enemyName)
+      console.log(`Unknown boss: ${enemyName} -> ${prettyName}`)
       bossList.push({
         name: prettyName.length > 5 ? prettyName : enemyName,
         killed: killedEnemiesSet.has(enemyName),
-        encountered: encounteredEnemiesSet.has(enemyName),
+        encountered: true,
         category: 'Unknown',
         zone: '❓ À définir',
         originalName: enemyName,
@@ -298,6 +383,8 @@ function extractBossesWithDatabase(saveData: SaveData): Boss[] {
     }
   }
 
+  console.log(`Extracted ${bossList.length} bosses (${allSaveEnemies.size} from save, ${bossList.length - allSaveEnemies.size} manual)`)
+  console.log(`${killedEnemiesSet.size} killed`)
   return bossList
 }
 
