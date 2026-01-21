@@ -10,26 +10,36 @@ interface Boss {
   category?: string
   zone?: string
   originalName?: string
-  needsInfo?: boolean
 }
 
 function App() {
   const [bosses, setBosses] = useState<Boss[]>([])
   const [showSettings, setShowSettings] = useState(false)
   const [savePath, setSavePath] = useState('')
-  const [unknownBoss, setUnknownBoss] = useState<Boss | null>(null)
   const [editingBoss, setEditingBoss] = useState<Boss | null>(null)
   const [isAddingBoss, setIsAddingBoss] = useState(false)
   const [manualStates, setManualStates] = useState<Record<string, { killed: boolean; encountered: boolean }>>({})
+  const [allowManualEdit, setAllowManualEdit] = useState(false)
+  const [allowBossEditing, setAllowBossEditing] = useState(false)
 
-  // Charger les états manuels au démarrage
+  // Charger la config au démarrage
   useEffect(() => {
     if (window.electronAPI) {
-      window.electronAPI.getManualStates().then(states => {
-        setManualStates(states)
+      window.electronAPI.getConfig().then(config => {
+        setAllowManualEdit(config.allowManualEditAutoDetected ?? false)
+        setAllowBossEditing(config.allowBossEditing ?? false)
       })
     }
   }, [])
+
+  // Charger les états manuels quand le savePath change
+  useEffect(() => {
+    if (window.electronAPI && savePath) {
+      window.electronAPI.getManualStates(savePath).then(states => {
+        setManualStates(states)
+      })
+    }
+  }, [savePath])
 
   useEffect(() => {
     if (window.electronAPI) {
@@ -49,11 +59,6 @@ function App() {
         setBosses(mergedBosses)
       })
 
-      // Écouter les boss inconnus tués
-      window.electronAPI.onUnknownBossKilled((boss: Boss) => {
-        setUnknownBoss(boss)
-      })
-
       // Écouter la restauration du dernier chemin de sauvegarde
       window.electronAPI.onRestoreSavePath((path: string) => {
         setSavePath(path)
@@ -71,11 +76,19 @@ function App() {
     setShowSettings(false)
   }
 
+  const handleConfigChange = (config: { allowManualEditAutoDetected?: boolean; allowBossEditing?: boolean }) => {
+    if (config.allowManualEditAutoDetected !== undefined) {
+      setAllowManualEdit(config.allowManualEditAutoDetected)
+    }
+    if (config.allowBossEditing !== undefined) {
+      setAllowBossEditing(config.allowBossEditing)
+    }
+  }
+
   const handleSaveBossInfo = async (info: { originalName: string; displayName: string; category: string; zone: string }) => {
     if (window.electronAPI) {
       const result = await window.electronAPI.saveBossInfo(info)
       if (result.success) {
-        setUnknownBoss(null)
         setEditingBoss(null)
         setIsAddingBoss(false)
         // Afficher une notification de succès
@@ -87,7 +100,6 @@ function App() {
   }
 
   const handleCancelBossInfo = () => {
-    setUnknownBoss(null)
     setEditingBoss(null)
     setIsAddingBoss(false)
   }
@@ -101,7 +113,14 @@ function App() {
   }
 
   const handleToggleBoss = async (boss: Boss, killed: boolean) => {
-    if (!boss.originalName) return
+    if (!boss.originalName || !savePath) return
+
+    // Vérifier si c'est un boss manuel ou si l'option est activée
+    const isManualBoss = boss.originalName.startsWith('MANUAL_')
+    if (!isManualBoss && !allowManualEdit) {
+      // Empêcher la modification des boss non-manuels si l'option est désactivée
+      return
+    }
 
     const newState = {
       killed,
@@ -110,7 +129,7 @@ function App() {
 
     // Sauvegarder l'état manuel
     if (window.electronAPI) {
-      await window.electronAPI.saveManualState(boss.originalName, newState)
+      await window.electronAPI.saveManualState(savePath, boss.originalName, newState)
     }
 
     // Mettre à jour le state local
@@ -131,21 +150,6 @@ function App() {
 
   return (
     <div className="app">
-      {/* Formulaire de boss inconnu (nouveau boss tué) */}
-      {unknownBoss && unknownBoss.originalName && (
-        <BossInfoForm
-          boss={{
-            name: unknownBoss.name,
-            originalName: unknownBoss.originalName,
-            category: unknownBoss.category,
-            zone: unknownBoss.zone
-          }}
-          onSubmit={handleSaveBossInfo}
-          onCancel={handleCancelBossInfo}
-          isEditMode={false}
-        />
-      )}
-
       {/* Formulaire d'édition de boss existant */}
       {editingBoss && editingBoss.originalName && (
         <BossInfoForm
@@ -172,7 +176,7 @@ function App() {
           }}
           onSubmit={handleSaveBossInfo}
           onCancel={handleCancelBossInfo}
-          isEditMode={true}
+          isEditMode={false}
         />
       )}
 
@@ -188,13 +192,15 @@ function App() {
         <Settings 
           onSavePathChange={handleStartWatch}
           currentPath={savePath}
+          onConfigChange={handleConfigChange}
         />
       ) : (
         <BossChecklist 
           bosses={bosses}
-          onEditBoss={handleEditBoss}
+          onEditBoss={allowBossEditing ? handleEditBoss : undefined}
           onAddBoss={handleAddBoss}
           onToggleBoss={handleToggleBoss}
+          allowManualEdit={allowManualEdit}
         />
       )}
     </div>

@@ -1,5 +1,5 @@
 import { app, BrowserWindow, ipcMain, Notification } from 'electron'
-import { join, dirname } from 'path'
+import { join, dirname, basename } from 'path'
 import { fileURLToPath } from 'url'
 import { access, readFile, writeFile, mkdir } from 'fs/promises'
 import { existsSync } from 'fs'
@@ -12,18 +12,24 @@ const __dirname = dirname(__filename)
 
 // Chemin des fichiers de configuration
 const configPath = join(app.getPath('userData'), 'config.json')
-const manualStatesPath = join(app.getPath('userData'), 'manual-boss-states.json')
+const manualStatesDir = join(app.getPath('userData'), 'manual-states')
+
+// Générer le chemin du fichier d'états manuels basé sur le nom de la sauvegarde
+function getManualStatesPath(savePath: string): string {
+  const saveFileName = basename(savePath, '.sav')
+  return join(manualStatesDir, `${saveFileName}.json`)
+}
 
 interface AppConfig {
   lastSavePath?: string
-  lastZone?: string
-  lastWasHidden?: boolean
+  allowManualEditAutoDetected?: boolean  // Autoriser la modification manuelle des boss détectés automatiquement
+  allowBossEditing?: boolean  // Autoriser l'édition des informations des boss (nom, zone, catégorie)
 }
 
 interface ManualBossStates {
   [originalName: string]: {
     killed: boolean
-    encountered: boolean
+    encountered?: boolean  // Optionnel : absent pour les MANUAL_*, présent pour les autres
   }
 }
 
@@ -54,11 +60,31 @@ async function saveConfig(config: AppConfig): Promise<void> {
 }
 
 // Charger les états manuels des boss
-async function loadManualStates(): Promise<ManualBossStates> {
+async function loadManualStates(savePath: string): Promise<ManualBossStates> {
   try {
+    // Créer le dossier s'il n'existe pas
+    if (!existsSync(manualStatesDir)) {
+      await mkdir(manualStatesDir, { recursive: true })
+    }
+    
+    const manualStatesPath = getManualStatesPath(savePath)
     if (existsSync(manualStatesPath)) {
       const data = await readFile(manualStatesPath, 'utf-8')
-      return JSON.parse(data)
+      const rawStates = JSON.parse(data)
+      
+      // Ajouter automatiquement encountered: true pour les boss MANUAL_*
+      const states: ManualBossStates = {}
+      for (const [key, value] of Object.entries(rawStates)) {
+        if (key.startsWith('MANUAL_')) {
+          states[key] = {
+            killed: (value as any).killed,
+            encountered: true
+          }
+        } else {
+          states[key] = value as any
+        }
+      }
+      return states
     }
   } catch (error) {
     console.warn('Could not load manual states:', error)
@@ -67,13 +93,25 @@ async function loadManualStates(): Promise<ManualBossStates> {
 }
 
 // Sauvegarder les états manuels des boss
-async function saveManualStates(states: ManualBossStates): Promise<void> {
+async function saveManualStates(savePath: string, states: ManualBossStates): Promise<void> {
   try {
-    const userDataPath = app.getPath('userData')
-    if (!existsSync(userDataPath)) {
-      await mkdir(userDataPath, { recursive: true })
+    // Créer le dossier s'il n'existe pas
+    if (!existsSync(manualStatesDir)) {
+      await mkdir(manualStatesDir, { recursive: true })
     }
-    await writeFile(manualStatesPath, JSON.stringify(states, null, 2), 'utf-8')
+    
+    // Pour les boss MANUAL_*, on ne sauvegarde que le champ killed
+    const statesToSave: any = {}
+    for (const [key, value] of Object.entries(states)) {
+      if (key.startsWith('MANUAL_')) {
+        statesToSave[key] = { killed: value.killed }
+      } else {
+        statesToSave[key] = value
+      }
+    }
+    
+    const manualStatesPath = getManualStatesPath(savePath)
+    await writeFile(manualStatesPath, JSON.stringify(statesToSave, null, 2), 'utf-8')
   } catch (error) {
     console.error('Could not save manual states:', error)
   }
@@ -176,16 +214,11 @@ ipcMain.handle('start-watch', async (event, savePath: string) => {
   config.lastSavePath = savePath
   await saveConfig(config)
   
-  watchSaveFile(savePath, (bossList, newlyKilled, unknownBosses) => {
+  watchSaveFile(savePath, (bossList, newlyKilled) => {
     mainWindow?.webContents.send('boss-update', bossList)
     
-    // Si un boss inconnu est tué, focus sur l'app et demander les infos
-    if (unknownBosses && unknownBosses.length > 0) {
-      mainWindow?.focus()
-      mainWindow?.webContents.send('unknown-boss-killed', unknownBosses[0]) // Un seul à la fois
-    }
-    // Sinon, afficher une notification normale
-    else if (newlyKilled && newlyKilled.length > 0) {
+    // Afficher une notification pour les boss nouvellement tués
+    if (newlyKilled && newlyKilled.length > 0) {
       for (const boss of newlyKilled) {
         const notification = new Notification({
           title: '🎯 Boss vaincu !',
@@ -204,15 +237,6 @@ ipcMain.handle('save-boss-info', async (event, bossInfo: { originalName: string;
   try {
     await saveBossDatabase(bossInfo)
     
-    // Sauvegarder la dernière zone et le statut hidden
-    const config = await loadConfig()
-    const isHidden = bossInfo.zone === 'Hidden'
-    config.lastWasHidden = isHidden
-    if (!isHidden) {
-      config.lastZone = bossInfo.zone
-    }
-    await saveConfig(config)
-    
     // Forcer un refresh immédiat de la liste
     await refreshBossList()
     
@@ -223,20 +247,16 @@ ipcMain.handle('save-boss-info', async (event, bossInfo: { originalName: string;
   }
 })
 
-ipcMain.handle('get-last-zone', async () => {
-  const config = await loadConfig()
-  return config.lastZone || ''
-})
-
-ipcMain.handle('get-last-was-hidden', async () => {
-  const config = await loadConfig()
-  return config.lastWasHidden || false
-})
-
 ipcMain.handle('select-file', async () => {
   const { dialog } = await import('electron')
+  
+  // Construire le chemin par défaut vers le dossier de sauvegardes du jeu
+  const localAppData = process.env.LOCALAPPDATA || join(process.env.USERPROFILE || '', 'AppData', 'Local')
+  const defaultPath = join(localAppData, 'Sandfall', 'Saved', 'SaveGames')
+  
   const result = await dialog.showOpenDialog(mainWindow!, {
     properties: ['openFile'],
+    defaultPath: defaultPath,
     filters: [
       { name: 'Save Files', extensions: ['sav'] },
       { name: 'All Files', extensions: ['*'] }
@@ -253,18 +273,53 @@ ipcMain.handle('close-app', () => {
   app.quit()
 })
 
-ipcMain.handle('get-manual-states', async () => {
-  return await loadManualStates()
+ipcMain.handle('get-config', async () => {
+  return await loadConfig()
 })
 
-ipcMain.handle('save-manual-state', async (event, originalName: string, state: { killed: boolean; encountered: boolean }) => {
+ipcMain.handle('save-config', async (event, config: AppConfig) => {
+  await saveConfig(config)
+  return { success: true }
+})
+
+ipcMain.handle('get-manual-states', async (event, savePath: string) => {
+  if (!savePath) return {}
+  return await loadManualStates(savePath)
+})
+
+ipcMain.handle('save-manual-state', async (event, savePath: string, originalName: string, state: { killed: boolean; encountered: boolean }) => {
   try {
-    const states = await loadManualStates()
+    if (!savePath) {
+      return { success: false, error: 'No save path provided' }
+    }
+    const states = await loadManualStates(savePath)
     states[originalName] = state
-    await saveManualStates(states)
+    await saveManualStates(savePath, states)
     return { success: true }
   } catch (error) {
     console.error('Failed to save manual state:', error)
+    return { success: false, error: String(error) }
+  }
+})
+
+ipcMain.handle('clear-manual-states', async (event, savePath: string) => {
+  try {
+    if (!savePath) {
+      return { success: false, error: 'No save path provided' }
+    }
+    const manualStatesPath = getManualStatesPath(savePath)
+    if (existsSync(manualStatesPath)) {
+      const { unlink } = await import('fs/promises')
+      await unlink(manualStatesPath)
+      console.log('Manual states cleared for:', savePath)
+    }
+    
+    // Forcer un refresh immédiat de la liste
+    await refreshBossList()
+    
+    return { success: true }
+  } catch (error) {
+    console.error('Failed to clear manual states:', error)
     return { success: false, error: String(error) }
   }
 })

@@ -6,6 +6,7 @@ interface Boss {
   encountered: boolean
   category?: string
   zone?: string
+  originalName?: string
 }
 
 interface Props {
@@ -13,6 +14,7 @@ interface Props {
   onEditBoss?: (boss: Boss) => void
   onAddBoss?: () => void
   onToggleBoss?: (boss: Boss, killed: boolean) => void
+  allowManualEdit?: boolean
 }
 
 interface ZoneGroup {
@@ -23,7 +25,7 @@ interface ZoneGroup {
   total: number
 }
 
-function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss }: Props) {
+function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss, allowManualEdit = false }: Props) {
   const [searchTerm, setSearchTerm] = useState('')
   const [filterMode, setFilterMode] = useState<'all' | 'alive' | 'killed' | 'encountered'>('all')
   const [collapsedZones, setCollapsedZones] = useState<Set<string>>(new Set())
@@ -34,8 +36,8 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss }: Props) {
     
     bosses.forEach(boss => {
       const zoneName = boss.zone || 'Uncategorized'
-      // Ne pas afficher les boss de la zone "Hidden"
-      if (zoneName === 'Hidden') return
+      // Ne pas afficher les zones Hidden, Sans zone et À définir (uniquement des ennemis normaux)
+      if (zoneName === 'Hidden' || zoneName === 'Sans zone' || zoneName === '❓ À définir') return
       
       if (!groups.has(zoneName)) {
         groups.set(zoneName, [])
@@ -43,8 +45,7 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss }: Props) {
       groups.get(zoneName)!.push(boss)
     })
 
-    // Convertir en array sans tri (ordre d'insertion)
-    // "Sans zone" et "❓ À définir" en dernier
+    // Convertir en array (ordre d'insertion naturel)
     const groupArray: ZoneGroup[] = Array.from(groups.entries())
       .map(([zoneName, zoneBosses]) => ({
         zoneName,
@@ -53,16 +54,6 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss }: Props) {
         encountered: zoneBosses.filter(b => b.encountered).length,
         total: zoneBosses.length
       }))
-      .sort((a, b) => {
-        // "Sans zone" toujours en dernier
-        if (a.zoneName === 'Sans zone') return 1
-        if (b.zoneName === 'Sans zone') return -1
-        // "❓ À définir" juste avant "Sans zone"
-        if (a.zoneName === '❓ À définir') return 1
-        if (b.zoneName === '❓ À définir') return -1
-        // Sinon, garder l'ordre d'insertion (pas de tri)
-        return 0
-      })
 
     return groupArray
   }, [bosses])
@@ -97,11 +88,12 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss }: Props) {
   }, [zoneGroups, searchTerm, filterMode])
 
   const stats = useMemo(() => {
-    // Ne compter que les boss rencontrés qui ne sont pas Hidden, Other ou "❓ À définir"
+    // Ne compter que les boss rencontrés qui ne sont pas dans les zones d'ennemis (Hidden, Sans zone, À définir)
     const validBosses = bosses.filter(b => 
       b.encountered &&
       b.category !== 'Other' && 
       b.zone !== 'Hidden' && 
+      b.zone !== 'Sans zone' &&
       b.zone !== '❓ À définir'
     )
     const killed = validBosses.filter(b => b.killed).length
@@ -133,8 +125,8 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss }: Props) {
     <div className="boss-list">
       {bosses.length === 0 ? (
         <div className="empty">
-          <p>No boss data loaded</p>
-          <p>Configure save file path in settings</p>
+          <p>Aucune donnée de boss chargée</p>
+          <p>Configurez le chemin du fichier dans les paramètres</p>
         </div>
       ) : (
         <>
@@ -146,7 +138,7 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss }: Props) {
                 onClick={onAddBoss}
                 style={{
                   padding: '6px 12px',
-                  background: '#3498db',
+                  background: '#2ecc71',
                   border: 'none',
                   borderRadius: '4px',
                   color: '#fff',
@@ -155,7 +147,7 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss }: Props) {
                   fontWeight: '600'
                 }}
               >
-                ➕ Ajouter un boss
+                Ajouter un boss manuellement
               </button>
             )}
           </div>
@@ -164,7 +156,7 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss }: Props) {
           <input
             type="text"
             className="search-input"
-            placeholder="Search boss..."
+            placeholder="Rechercher un boss..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -192,7 +184,7 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss }: Props) {
             <button
               className="filter-btn"
               onClick={toggleAllZones}
-              title={collapsedZones.size === zoneGroups.length ? 'Expand all zones' : 'Collapse all zones'}
+              title={collapsedZones.size === zoneGroups.length ? 'Développer toutes les zones' : 'Réduire toutes les zones'}
             >
               {collapsedZones.size === zoneGroups.length ? '📂' : '📁'}
             </button>
@@ -202,7 +194,7 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss }: Props) {
           <div className="boss-items">
             {filteredZoneGroups.length === 0 ? (
               <div className="empty">
-                <p>No results found</p>
+                <p>Aucun résultat trouvé</p>
               </div>
             ) : (
               filteredZoneGroups.map((zone) => {
@@ -226,15 +218,44 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss }: Props) {
                             key={`${zone.zoneName}-${index}`}
                             className={`boss-item ${boss.killed ? 'killed' : ''} ${!boss.encountered ? 'not-encountered' : ''}`}
                           >
-                            <span 
-                              className="checkbox"
-                              onClick={() => onToggleBoss?.(boss, !boss.killed)}
-                              style={{ cursor: onToggleBoss ? 'pointer' : 'default' }}
-                              title={onToggleBoss ? (boss.killed ? 'Marquer comme vivant' : 'Marquer comme vaincu') : ''}
-                            >
-                              {boss.killed ? '☑' : boss.encountered ? '☐' : '⬜'}
+                            {(() => {
+                              const isManualBoss = boss.originalName?.startsWith('MANUAL_')
+                              const canToggle = isManualBoss || allowManualEdit
+                              const tooltipText = !canToggle 
+                                ? 'Boss détecté automatiquement (non modifiable)'
+                                : boss.killed 
+                                ? 'Marquer comme vivant' 
+                                : 'Marquer comme vaincu'
+                              
+                              return (
+                                <span 
+                                  className="checkbox"
+                                  onClick={() => canToggle && onToggleBoss?.(boss, !boss.killed)}
+                                  style={{ 
+                                    cursor: canToggle && onToggleBoss ? 'pointer' : 'not-allowed',
+                                    opacity: canToggle ? 1 : 0.5
+                                  }}
+                                  title={tooltipText}
+                                >
+                                  {boss.killed ? '☑' : boss.encountered ? '☐' : '⬜'}
+                                </span>
+                              )
+                            })()}
+                            <span className="name">
+                              {boss.name}
+                              {boss.originalName?.startsWith('MANUAL_') && (
+                                <span 
+                                  style={{ 
+                                    marginLeft: '6px', 
+                                    fontSize: '11px',
+                                    opacity: 0.7
+                                  }}
+                                  title="Boss ajouté manuellement"
+                                >
+                                  🔧
+                                </span>
+                              )}
                             </span>
-                            <span className="name">{boss.name}</span>
                             {onEditBoss && (
                               <button
                                 onClick={() => onEditBoss(boss)}

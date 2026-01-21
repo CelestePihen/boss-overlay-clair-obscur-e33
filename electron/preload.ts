@@ -7,17 +7,9 @@ contextBridge.exposeInMainWorld('electronAPI', {
   onBossUpdate: (callback: (bossList: any) => void) => {
     ipcRenderer.on('boss-update', (_event: any, bossList: any) => callback(bossList))
   },
-  onUnknownBossKilled: (callback: (boss: any) => void) => {
-    ipcRenderer.on('unknown-boss-killed', (_event: any, boss: any) => callback(boss))
-  },
+
   saveBossInfo: (bossInfo: { originalName: string; displayName: string; category: string; zone: string }) => {
     return ipcRenderer.invoke('save-boss-info', bossInfo)
-  },
-  getLastZone: () => {
-    return ipcRenderer.invoke('get-last-zone')
-  },
-  getLastWasHidden: () => {
-    return ipcRenderer.invoke('get-last-was-hidden')
   },
   onRestoreSavePath: (callback: (savePath: string) => void) => {
     ipcRenderer.on('restore-save-path', (_event: any, savePath: string) => callback(savePath))
@@ -28,10 +20,19 @@ contextBridge.exposeInMainWorld('electronAPI', {
   closeApp: () => {
     return ipcRenderer.invoke('close-app')
   },
-  getManualStates: () => {
-    return ipcRenderer.invoke('get-manual-states')
+  getConfig: () => {
+    return ipcRenderer.invoke('get-config')
   },
-  saveManualState: (originalName: string, state: { killed: boolean; encountered: boolean }) => {
-    return ipcRenderer.invoke('save-manual-state', originalName, state)
+  saveConfig: (config: any) => {
+    return ipcRenderer.invoke('save-config', config)
+  },
+  getManualStates: (savePath: string) => {
+    return ipcRenderer.invoke('get-manual-states', savePath)
+  },
+  saveManualState: (savePath: string, originalName: string, state: { killed: boolean; encountered: boolean }) => {
+    return ipcRenderer.invoke('save-manual-state', savePath, originalName, state)
+  },
+  clearManualStates: (savePath: string) => {
+    return ipcRenderer.invoke('clear-manual-states', savePath)
   }
 })

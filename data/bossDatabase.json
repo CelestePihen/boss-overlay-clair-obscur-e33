@@ -29,7 +29,7 @@
     },
     {
       "originalName": "LD_Battle_Eveque",
-      "displayName": "Eveque",
+      "displayName": "Évêque",
       "category": "Boss"
     }
   ],
@@ -70,9 +70,64 @@
       "category": "Mini-Boss"
     },
     {
+      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_Enemy_World_Moissonneuse_Alpha_C_D45D01CD4059267E72B5F0B23C3BB072",
+      "displayName": "Moissonneuse Chromatique",
+      "category": "Chromatic"
+    },
+    {
       "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_3CA5200B4C37FB1116282EB8876956AA",
       "displayName": "Duo Mime",
       "category": "Mime"
+    },
+    {
+      "originalName": "LD_Battle_Sprong",
+      "displayName": "Sprong",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "LD_Battle_Serpenphare",
+      "displayName": "Serpenphare",
+      "category": "Boss"
+    },
+    {
+      "originalName": "WorldMap_Main_V2_BP_EnemyWorld_Petank_Alpha",
+      "displayName": "Pétank Chromatique",
+      "category": "Petank"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_Benisseur_Alpha_C_4769697A4D25580C6A0B8DAFF4FB3D65",
+      "displayName": "Bénisseur Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_Aberration_ALPHA_C_203191A6408A64E92A201D90A807781D",
+      "displayName": "Aberration Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_Goblu_ALPHA_C_8DFDC663415404DE281005AD0C90CFDE",
+      "displayName": "Goblu Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_CultistFlying_ALPHA_C_4EAF2ACF432DA4DDD4940A9A42094361",
+      "displayName": "Cultiste Faucheur Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_BossEveque_Lightning_ALPHA_C_00F9B6B94948CE77D73843A6261A8102",
+      "displayName": "Évêque électrique",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_Demineur_ALPHA_C_2ED33D0D4AF78CD710A62480B39C964F",
+      "displayName": "Démineur Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_Portier_ALPHA_C_224C9A4843D92E594424FD81E8305356",
+      "displayName": "Portier Chromatique",
+      "category": "Chromatic"
     }
   ],
   "Grotte du Mitrien": [
@@ -205,6 +260,16 @@
       "originalName": "MANUAL_1762709805357",
       "displayName": "Sakapatate Ultime - Karatom",
       "category": "Mini-Boss"
+    },
+    {
+      "originalName": "GV_Golgra_Monoco",
+      "displayName": "Golgra VS Monoco",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "GV_Golgra",
+      "displayName": "Golgra",
+      "category": "Boss"
     }
   ],
   "Nid d'Esquie": [
@@ -220,7 +285,7 @@
     },
     {
       "originalName": "LD_Battle_Francois",
-      "displayName": "Francois",
+      "displayName": "François",
       "category": "Boss"
     }
   ],
@@ -237,7 +302,7 @@
     },
     {
       "originalName": "MANUAL_1762810128796",
-      "displayName": "Maitre des Lampes - Renoir V1",
+      "displayName": "Maître des Lampes - Renoir V1",
       "category": "Boss"
     },
     {
@@ -246,1973 +311,11 @@
       "category": "Chromatic"
     }
   ],
-  "Sans zone": [
-    {
-      "originalName": "FirstLancelierNoTuto",
-      "displayName": "FirstLancelierNoTuto",
-      "category": "Other"
-    },
-    {
-      "originalName": "LD_Battle_Tisseur",
-      "displayName": "Battle_Tisseur",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyWorld_Glissando_C_730AE39945AC31370140BDA462D515F4",
-      "displayName": "Sirene_Main_V2 Glissando",
-      "category": "Other"
-    },
-    {
-      "originalName": "LD_Battle_Sirene",
-      "displayName": "Battle_Sirene",
-      "category": "Other"
-    },
-    {
-      "originalName": "LD_Battle_Paintress",
-      "displayName": "Battle_Paintress",
-      "category": "Other"
-    },
-    {
-      "originalName": "Merchant_Lumiere",
-      "displayName": "Merchant Lumiere",
-      "category": "Merchant"
-    },
-    {
-      "originalName": "LD_Battle_Curator",
-      "displayName": "Battle_Curator",
-      "category": "Other"
-    },
-    {
-      "originalName": "LumiereAct3_MaelleFinalBattle",
-      "displayName": "LumiereAct3_MaelleFinalBattle",
-      "category": "Other"
-    },
-    {
-      "originalName": "Simon",
-      "displayName": "Simon",
-      "category": "Other"
-    },
-    {
-      "originalName": "SimonPhase2",
-      "displayName": "SimonPhase2",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Floor_1_BP_EnemyGroup_C_824F7BB14C9B4C762936E9895A99BBBD",
-      "displayName": "Monolith_Floor_1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "SimonRematchP2",
-      "displayName": "SimonRematchP2",
-      "category": "Other"
-    },
-    {
-      "originalName": "LD_Battle_Sprong",
-      "displayName": "Battle_Sprong",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_Mime_CFH_C_4FF2635649D11BD3E19C9AA91B90BD7A",
-      "displayName": "CleaFlyingHouse_Main Mime_CFH",
-      "category": "Mime"
-    },
-    {
-      "originalName": "Merchant_CleasIsland",
-      "displayName": "Merchant CleasIsland",
-      "category": "Merchant"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_Bourgeon_C_AF16DD0D4A788E31BE61CE8A8BA83242",
-      "displayName": "CleaFlyingHouse_Main Bourgeon",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_jRPG_EnemyWorld_Glaise_C_D348056342D4FC2436F449B3A0EAA4E6",
-      "displayName": "CleaFlyingHouse_Main Glaise",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_jRPG_EnemyWorld_Jar_C_97A1390A4C377C9510FB4CBE45BE84C4",
-      "displayName": "CleaFlyingHouse_Main Jar",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_Goblu_C_4048B3D14BEC01123738D4BBC64C9C87",
-      "displayName": "CleaFlyingHouse_Main Goblu",
-      "category": "Other"
-    },
-    {
-      "originalName": "GV_Golgra",
-      "displayName": "GV_Golgra",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyGroup_C_725A67E5435782B26843A4BFE8689EF0",
-      "displayName": "Sirene_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyWorld_Ballet_C_ADC577804F3B23DF43D0BD836272BC51",
-      "displayName": "Sirene_Main_V2 Ballet",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyWorld_Ballet_Melee_C_7D797EE948BE1341AF816E930CDE546B",
-      "displayName": "Sirene_Main_V2 Ballet_Melee",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyWorld_CultistHeavy_Alpha_C_63D7D34C4483ED4C5FD2DAB25D242521",
-      "displayName": "Sirene_Main_V2 CultistHeavy_Alpha",
-      "category": "Alpha"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyWorld_Ballet_C_A7BA31444FE6099484ACD08B77FC1808",
-      "displayName": "Sirene_Main_V2 Ballet",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyWorld_Ballet_C_88EDAA2A4920C16A5E0200884CBE4462",
-      "displayName": "Sirene_Main_V2 Ballet",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyGroup_C_AB7202FB4F39654ED8B75E87687E33B7",
-      "displayName": "Sirene_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyGroup_C_ABB24A4D40819D546A87F99CFABFCFCF",
-      "displayName": "Sirene_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyWorld_Benisseur_C_E44AE5FB4D738136D74CA3B21767FFA2",
-      "displayName": "Sirene_Main_V2 Benisseur",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_jRPG_Enemy_World_Chorale_C_92D52B144F4ABED6A4E43D88732D5332",
-      "displayName": "Sirene_Main_V2_BP_jRPG_Enemy_World_Chorale",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_jRPG_Enemy_World_Chorale_C_4AE9212A41D9387107D806816E25FE6A",
-      "displayName": "Sirene_Main_V2_BP_jRPG_Enemy_World_Chorale",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyGroup_C_F081633C4DCC502E888F6096E6B360D1",
-      "displayName": "Sirene_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyGroup_C_CE6659564F5071C8713B098C3EE85C1A",
-      "displayName": "Sirene_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyWorld_Mime_SI_C_B15173304A73584B5C2D409282EAB624",
-      "displayName": "Sirene_Main_V2 Mime_SI",
-      "category": "Mime"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyGroup_C_F0DBFFC947E42C449BDB6DA7C2CCA81D",
-      "displayName": "Sirene_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "QUEST_MonocoDuel",
-      "displayName": "QUEST_MonocoDuel",
-      "category": "Other"
-    },
-    {
-      "originalName": "LD_Battle_PaintressIntro",
-      "displayName": "Battle_PaintressIntro",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_051969A94155F91352FEACAAE8E35E8B",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_Portier_Monolith_C_86BFA6DB43B8C81BB2CB3B84F49AF6A7",
-      "displayName": "Monolith_Interior_Climb_Main Portier_Monolith",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_47E3930948700E1B3007F4B387204B07",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_Volester_Monolith_C_BA5FD4D34CCC119998210CBD144EF895",
-      "displayName": "Monolith_Interior_Climb_Main Volester_Monolith",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_Portier_Monolith_C_36125AEC42B37A21175ABDB3704A2623",
-      "displayName": "Monolith_Interior_Climb_Main Portier_Monolith",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_BossEveque_Monolith_C_E12908C540D6E669B94F1BB1E9CDDBD8",
-      "displayName": "Monolith_Interior_Climb_Main BossEveque_Monolith",
-      "category": "Boss"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_Cruler_Monolith_C_D0C28E5A4E13BD782BA9BCBC402C8EB4",
-      "displayName": "Monolith_Interior_Climb_Main Cruler_Monolith",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_Demineur_Monolith_C_42081285440ACE473FB9268749899AB7",
-      "displayName": "Monolith_Interior_Climb_Main Demineur_Monolith",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_Bourgeon_ALPHA_C_3976F6634D81025338FF14B695F30221",
-      "displayName": "Monolith_Interior_Climb_Main Bourgeon_ALPHA",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_AS_Potatobag_Boss_C_B651CF214B2776824E0C188E428C508B",
-      "displayName": "Monolith_Interior_Climb_Main AS_Potatobag_Boss",
-      "category": "Boss"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_60B0733B458C565E9AB880B8C861F787",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_0811CD3B48467DC4E6C6E780EF14DA14",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_Ramasseur_C_198D28E54BBC15B5F0C96ABF9C51EFE0",
-      "displayName": "Monolith_Interior_Climb_Main Ramasseur",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_4FFA5243440B92F05E602B8273710897",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_A6BB721F4D543A831B6ECD85D30E4C62",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_4642FE84478789208D1A03A738405D63",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyWorld_Aberration_C_7887C44F4653C7E0568C008D075D16B2",
-      "displayName": "Lumiere_Main_V2 Aberration",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyGroup_C_0039B2224360B4B7526ABC983F766E49",
-      "displayName": "Lumiere_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyGroup_C_2AE383634D1988942DF03483F1A1A249",
-      "displayName": "Lumiere_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_SmallLevel_Sirene_MusicHear_BP_EnemyWorld_Glissando_ALPHA_C_8DC766CA4E43937185CAA8B5C8688066",
-      "displayName": "Sirene_MusicHear Glissando_ALPHA",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_CultistFlying_ALPHA_C_4EAF2ACF432DA4DDD4940A9A42094361",
-      "displayName": "WorldMap_Main_V2 CultistFlying_ALPHA",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_SmallLevel_FA_Zone_01_BP_jRPG_EnemyWorld_Glaise_ALPHA_C_55CEFB144528A64E7F74A9BBBC1B2C5C",
-      "displayName": "FA_Zone_01 Glaise_ALPHA",
-      "category": "Other"
-    },
-    {
-      "originalName": "Canvas_ChosenPath_Challenge1",
-      "displayName": "Canvas_ChosenPath_Challenge1",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyGroup_C_004D837B48610A0D0A60B99306F5AB0F",
-      "displayName": "Reacher_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyGroup_C_BB4A33A7417CADB6A15855A03F5FFF84",
-      "displayName": "Reacher_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyGroup_C_FEAF728247675BDD2F5621ACAAB2A6FD",
-      "displayName": "Reacher_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyWorld_OrphelinNail_C_3A9C508E418BBE340821B3B36218F4E6",
-      "displayName": "Reacher_Main_V2 OrphelinNail",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyGroup_C_B9F781A44439312C2C34BABE68EDB9F7",
-      "displayName": "Reacher_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyWorld_OrphelinHammer_C_1EE26E3E40BE2F0D888A6D910E3996FB",
-      "displayName": "Reacher_Main_V2 OrphelinHammer",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyGroup_C_3AEA77FC4177968D9317A2AF39C7D7A1",
-      "displayName": "Reacher_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyGroup_C_470E7D7F4B4BDAFFF7CEDE9A3CD35D8C",
-      "displayName": "Reacher_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyWorld_OrphelinSpoon_C_054CD0F243734E03D3D97A9A9E0D5606",
-      "displayName": "Reacher_Main_V2 OrphelinSpoon",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyGroup_C_67D78D4A4AA0E2CAA9D9EDB24C1C6C29",
-      "displayName": "Reacher_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyGroup_C_62E0CA6B414549CB20ED20AF0ED3069A",
-      "displayName": "Reacher_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyWorld_Mime_RE_C_EBC00B934E8252C2534E66A018482429",
-      "displayName": "Reacher_Main_V2 Mime_RE",
-      "category": "Mime"
-    },
-    {
-      "originalName": "Reacher_Main_V2_BP_EnemyWorld_Petank_Yellow",
-      "displayName": "Reacher_Main_V2 Petank Yellow",
-      "category": "Petank"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyGroup_C_42EF2D93461A4986F3FFDC9F9B0BFED2",
-      "displayName": "Reacher_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyWorld_BlackSmith_ALPHA_C_7B5BE91648CC6403656015842A7A6FA1",
-      "displayName": "Reacher_Main_V2 BlackSmith_ALPHA",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_Enemy_World_Moissonneuse_Alpha_C_D45D01CD4059267E72B5F0B23C3BB072",
-      "displayName": "WorldMap_Main_V2 Moissonneuse_Alpha",
-      "category": "Alpha"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_BFB556D2450515830C27AB88C51E88EF",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "LD_Golgra_SacredRiver",
-      "displayName": "Golgra_SacredRiver",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_LD_Main_MonocosMountain_2_BP_EnemyWorld_Dancer_C_793949E443D33A6E8C5784B967C580A0",
-      "displayName": "LD_Main_MonocosMountain_2 Dancer",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Side_FrozenHeart_BP_EnemyWorld_Swordman_C_3630031D43438FBC8ED2F68571E7C10F",
-      "displayName": "Side_FrozenHeart Swordman",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Side_FrozenHeart_BP_EnemyWorld_Swordman_C_D298CFB14C1DC0D6D30CD8A70A4A95A3",
-      "displayName": "Side_FrozenHeart Swordman",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_LD_Main_MonocosMountain_2_BP_EnemyWorld_BlackSmith_C_842F57AA447AE3C2CC908CAAB6E089CA",
-      "displayName": "LD_Main_MonocosMountain_2 BlackSmith",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Side_FrozenHeart_BP_EnemyGroup_C_B969CAE046625B2C319876887A0B44A8",
-      "displayName": "Side_FrozenHeart EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_LD_Main_MonocosMountain_2_BP_EnemyWorld_Dancer_C_E0ACECAC40BACA994DE230866173DB96",
-      "displayName": "LD_Main_MonocosMountain_2 Dancer",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Side_FrozenHeart_BP_EnemyWorld_Golem_C_128062C1471415E0206004ABE6B79834",
-      "displayName": "Side_FrozenHeart Golem",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Side_FrozenHeart_BP_EnemyWorld_BlackSmith_C_60F7FCF74A26F50156879688FEC7DDF9",
-      "displayName": "Side_FrozenHeart BlackSmith",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Side_FrozenHeart_BP_EnemyGroup_C_1820BB6E40EA65093BB734BB6D9FE761",
-      "displayName": "Side_FrozenHeart EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_Dancer_C_4F7F432D461464675FC5959068E3C4B8",
-      "displayName": "Monolith_Interior_Climb_Main Dancer",
-      "category": "Other"
-    },
-    {
-      "originalName": "FrozenHeart_BP_EnemyWorld_Petank_Red",
-      "displayName": "FrozenHeart Petank Red",
-      "category": "Petank"
-    },
-    {
-      "originalName": "ObjectID_Enemy_LD_Main_MonocosMountain_2_BP_EnemyWorld_Golem_C_5AB9F5D94F6A961C93973C854080AF43",
-      "displayName": "LD_Main_MonocosMountain_2 Golem",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Side_FrozenHeart_BP_EnemyWorld_Mime_MM_C_8A89D1F24C03FC4437154A86F813AE0B",
-      "displayName": "Side_FrozenHeart Mime_MM",
-      "category": "Mime"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Side_FrozenHeart_BP_EnemyWorld_Golem_C_5FA1AB834FBAAA86857221B01378270B",
-      "displayName": "Side_FrozenHeart Golem",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Side_FrozenHeart_BP_EnemyWorld_BlackSmith_C_097A698C43828DB5A2C244B61258165F",
-      "displayName": "Side_FrozenHeart BlackSmith",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Side_FrozenHeart_BP_EnemyWorld_BlackSmith_C_D479618D4CCEB6B25B16629A929DC54C",
-      "displayName": "Side_FrozenHeart BlackSmith",
-      "category": "Other"
-    },
-    {
-      "originalName": "LD_Battle_Gargant",
-      "displayName": "Battle_Gargant",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_DarkShores_Main_V1_BP_EnemyGroup_C_0BEAF6504BAC3651EC34DC9377DAD65C",
-      "displayName": "DarkShores_Main_V1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_DarkShores_Main_V1_BP_EnemyGroup_C_2487852346D212BE9E8F75931E011184",
-      "displayName": "DarkShores_Main_V1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_DarkShores_Main_V1_BP_EnemyGroup_C_C6C4AF0C485BA37BB6BF158FF0979C8E",
-      "displayName": "DarkShores_Main_V1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_Aberration_ALPHA_C_203191A6408A64E92A201D90A807781D",
-      "displayName": "WorldMap_Main_V2 Aberration_ALPHA",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_RedForest_Main_BP_EnemyGroup_C_174A6E3A4882793405AD9D8BB785435A",
-      "displayName": "RedForest_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_RedForest_Main_BP_jRPG_EnemyWorld_ChevaliereC_C_9C2F5D21432EE72474EC3894B6ED6428",
-      "displayName": "RedForest_Main ChevaliereC",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_RedForest_Main_BP_EnemyGroup_C_C265A71D47A8D735DFBDA7B1BB00180A",
-      "displayName": "RedForest_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_RedForest_Main_BP_jRPG_EnemyWorld_ChevaliereC_C_544F859B4B5AC954C87E418EFFA28469",
-      "displayName": "RedForest_Main ChevaliereC",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_RedForest_Main_BP_EnemyGroup_C_5E66F3A84854B4A05C5EC99242F88D79",
-      "displayName": "RedForest_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_RedForest_Main_BP_EnemyGroup_C_46B29B1842DEFCD18AB0C1ADDF9B3A15",
-      "displayName": "RedForest_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_RedForest_Main_BP_jRPG_EnemyWorld_ChevaliereC_C_995810DA405F1323F00BBDBC67AEE6A3",
-      "displayName": "RedForest_Main ChevaliereC",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_RedForest_Main_BP_EnemyGroup_C_F891D0AF43D56510A7CD2897D2499C0B",
-      "displayName": "RedForest_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_RedForest_Main_BP_EnemyGroup_C_C1BCF017451E13E3E7CB29BDA04ED928",
-      "displayName": "RedForest_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_RedForest_Main_BP_EnemyGroup_C_52B155C34938CA682F4403B4AB1E24D4",
-      "displayName": "RedForest_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ChevaliereAlpha",
-      "displayName": "ChevaliereAlpha",
-      "category": "Alpha"
-    },
-    {
-      "originalName": "DarkGestralArena_Round1",
-      "displayName": "DarkGestralArena_Round1",
-      "category": "Other"
-    },
-    {
-      "originalName": "DarkGestralArena_Round2",
-      "displayName": "DarkGestralArena_Round2",
-      "category": "Other"
-    },
-    {
-      "originalName": "DarkGestralArena_Round3",
-      "displayName": "DarkGestralArena_Round3",
-      "category": "Other"
-    },
-    {
-      "originalName": "DarkGestralArena_Round4",
-      "displayName": "DarkGestralArena_Round4",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_SmallLevel_Cemetery_Blockout_BP_EnemyWorld_Chalier_Sword_C_0C454BC9424756033C5210B140AAEC14",
-      "displayName": "Cemetery_Blockout Chalier_Sword",
-      "category": "Other"
-    },
-    {
-      "originalName": "LD_Battle_Serpenphare",
-      "displayName": "Battle_Serpenphare",
-      "category": "Other"
-    },
-    {
-      "originalName": "ChromaZone_Mime_Verso",
-      "displayName": "ChromaZone_Mime_Verso",
-      "category": "Mime"
-    },
-    {
-      "originalName": "ChromaZone_Mime_Maelle",
-      "displayName": "ChromaZone_Mime_Maelle",
-      "category": "Mime"
-    },
-    {
-      "originalName": "ChromaZone_Mime_Lune",
-      "displayName": "ChromaZone_Mime_Lune",
-      "category": "Mime"
-    },
-    {
-      "originalName": "ChromaZone_Mime_Monoco",
-      "displayName": "ChromaZone_Mime_Monoco",
-      "category": "Mime"
-    },
-    {
-      "originalName": "ChromaZone_Mime_Sciel",
-      "displayName": "ChromaZone_Mime_Sciel",
-      "category": "Mime"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_E73EDF6040403ED4834A8E9963F5FB53",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "1_1",
-      "displayName": "1_1",
-      "category": "Other"
-    },
-    {
-      "originalName": "1_2",
-      "displayName": "1_2",
-      "category": "Other"
-    },
-    {
-      "originalName": "1_3",
-      "displayName": "1_3",
-      "category": "Other"
-    },
-    {
-      "originalName": "2_1",
-      "displayName": "2_1",
-      "category": "Other"
-    },
-    {
-      "originalName": "2_2",
-      "displayName": "2_2",
-      "category": "Other"
-    },
-    {
-      "originalName": "2_3",
-      "displayName": "2_3",
-      "category": "Other"
-    },
-    {
-      "originalName": "3_1",
-      "displayName": "3_1",
-      "category": "Other"
-    },
-    {
-      "originalName": "3_2",
-      "displayName": "3_2",
-      "category": "Other"
-    },
-    {
-      "originalName": "3_3",
-      "displayName": "3_3",
-      "category": "Other"
-    },
-    {
-      "originalName": "4_1",
-      "displayName": "4_1",
-      "category": "Other"
-    },
-    {
-      "originalName": "4_2",
-      "displayName": "4_2",
-      "category": "Other"
-    },
-    {
-      "originalName": "4_3",
-      "displayName": "4_3",
-      "category": "Other"
-    },
-    {
-      "originalName": "5_1",
-      "displayName": "5_1",
-      "category": "Other"
-    },
-    {
-      "originalName": "5_2",
-      "displayName": "5_2",
-      "category": "Other"
-    },
-    {
-      "originalName": "5_3",
-      "displayName": "5_3",
-      "category": "Other"
-    },
-    {
-      "originalName": "6_1",
-      "displayName": "6_1",
-      "category": "Other"
-    },
-    {
-      "originalName": "6_2",
-      "displayName": "6_2",
-      "category": "Other"
-    },
-    {
-      "originalName": "6_3",
-      "displayName": "6_3",
-      "category": "Other"
-    },
-    {
-      "originalName": "7_1",
-      "displayName": "7_1",
-      "category": "Other"
-    },
-    {
-      "originalName": "7_2",
-      "displayName": "7_2",
-      "category": "Other"
-    },
-    {
-      "originalName": "7_3",
-      "displayName": "7_3",
-      "category": "Other"
-    },
-    {
-      "originalName": "8_1",
-      "displayName": "8_1",
-      "category": "Other"
-    },
-    {
-      "originalName": "8_2",
-      "displayName": "8_2",
-      "category": "Other"
-    },
-    {
-      "originalName": "8_3",
-      "displayName": "8_3",
-      "category": "Other"
-    },
-    {
-      "originalName": "9_1",
-      "displayName": "9_1",
-      "category": "Other"
-    },
-    {
-      "originalName": "9_2",
-      "displayName": "9_2",
-      "category": "Other"
-    },
-    {
-      "originalName": "9_3",
-      "displayName": "9_3",
-      "category": "Other"
-    },
-    {
-      "originalName": "10_1",
-      "displayName": "10_1",
-      "category": "Other"
-    },
-    {
-      "originalName": "10_2",
-      "displayName": "10_2",
-      "category": "Other"
-    },
-    {
-      "originalName": "10_3",
-      "displayName": "10_3",
-      "category": "Other"
-    },
-    {
-      "originalName": "11_1",
-      "displayName": "11_1",
-      "category": "Other"
-    },
-    {
-      "originalName": "11_2",
-      "displayName": "11_2",
-      "category": "Other"
-    },
-    {
-      "originalName": "GV_Golgra_Monoco",
-      "displayName": "GV_Golgra_Monoco",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyWorld_Aberration_C_966418AB4867541DE184C48CD6F14135",
-      "displayName": "Lumiere_Main_V2 Aberration",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyGroup_C_29CF0BD943729B4441CD95B00E458880",
-      "displayName": "Lumiere_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyGroup_C_755A54BE46E66FC6C0A437A61D3532FB",
-      "displayName": "Lumiere_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyGroup_C_3C16826B4452B112AE1FBDBBBB2FB5C8",
-      "displayName": "Lumiere_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyWorld_LumiereCitizen_C_44456C284C53934E6EDF3C83406D1B43",
-      "displayName": "Lumiere_Main_V2 LumiereCitizen",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyWorld_LumiereCitizen_C_8C1F54BE42FEE65A03E3FA930A1A8317",
-      "displayName": "Lumiere_Main_V2 LumiereCitizen",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyWorld_Echassier_ALPHA_C_F527027C4209A7D1DC21D5849F718331",
-      "displayName": "Lumiere_Main_V2 Echassier_ALPHA",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyGroup_C_6A9659EF4132EF505E07D3BEF06B4AE2",
-      "displayName": "Lumiere_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyGroup_C_F68E03334A9165FBB53B75A073B0728F",
-      "displayName": "Lumiere_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyGroup_C_66E1A2B3467B9A33D178B58FABA7E16B",
-      "displayName": "Lumiere_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyGroup_C_18BC0C7041B43690A5C654AF5921E02E",
-      "displayName": "Lumiere_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyGroup_C_5B76D30A42FF25BB102634A20E23D6C5",
-      "displayName": "Lumiere_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyGroup_C_9D25BBC34A33B303A96D9B92AE0F2503",
-      "displayName": "Lumiere_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyGroup_C_2CFE91EF473DAAB2EEE87A9DE347C835",
-      "displayName": "Lumiere_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "11_3",
-      "displayName": "11_3",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyGroup_C_AB5E67A84CFCFC4BE6CF63B9A433F1BD",
-      "displayName": "CleaFlyingHouse_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyGroup_C_7C36E950421C1F28E5EA8AA47CE5F15E",
-      "displayName": "CleaFlyingHouse_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "CleaFlyingHouse_Main_BP_EnemyWorld_Petank_Orange",
-      "displayName": "CleaFlyingHouse_Main Petank Orange",
-      "category": "Petank"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_Cruler_C_F369B6DC480AD430843309888AE91660",
-      "displayName": "CleaFlyingHouse_Main Cruler",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyGroup_C_91D7974F4D7241E94DA514B38067E1A2",
-      "displayName": "CleaFlyingHouse_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_MM_Gargant_C_4A537E744AA4B2B83605E0B9ACD717A6",
-      "displayName": "CleaFlyingHouse_Main MM_Gargant",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_Hexga_C_D3C572004CE8E27C4B04A4831C6CE9D8",
-      "displayName": "CleaFlyingHouse_Main Hexga",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_CultistHeavy_C_0E67E093432855D752140F8F15553725",
-      "displayName": "CleaFlyingHouse_Main CultistHeavy",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_jRPG_EnemyWorld_ChevaliereC_C_CDFDF90D462F66282754E9A9DB40D24B",
-      "displayName": "CleaFlyingHouse_Main ChevaliereC",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_LampMaster_C_F25D77B144A0DD472C8E75AD2667B7AE",
-      "displayName": "CleaFlyingHouse_Main LampMaster",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_GrossTete_C_79F88B01447147E9238E3AB425E775A1",
-      "displayName": "CleaFlyingHouse_Main GrossTete",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyGroup_C_56076CCB49BF6F9D04A967B985506A86",
-      "displayName": "CleaFlyingHouse_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_Duelliste_Final_C_F7C7F43F411F38CC89929B9C4CF931C9",
-      "displayName": "CleaFlyingHouse_Main Duelliste_Final",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_Bourgeon_C_40B83DB241BDE44D888582A7C2D87661",
-      "displayName": "CleaFlyingHouse_Main Bourgeon",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_Hexga_C_B91EA2D141FCC3BED91B3999ED84D3C1",
-      "displayName": "CleaFlyingHouse_Main Hexga",
-      "category": "Other"
-    },
-    {
-      "originalName": "CFH_Boss_Clea",
-      "displayName": "CFH_Boss_Clea",
-      "category": "Boss"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Floor_1_BP_EnemyGroup_C_9868A7BD4EB2025ED6C1C3A29A270ADA",
-      "displayName": "Monolith_Floor_1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_EnemyWorld_Dancer_Alpha_C_E58795824D04165C9FCE86952776138A",
-      "displayName": "OldLumiere_Main Dancer_Alpha",
-      "category": "Alpha"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_jRPG_EnemyWorld_Chevaliere_C_39C9306C4D33F5C557210FA8A667DE87",
-      "displayName": "OldLumiere_Main Chevaliere",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_EnemyWorld_Mime_OL_C_916ADB954D5E40F89C7572AE3D152068",
-      "displayName": "OldLumiere_Main Mime_OL",
-      "category": "Mime"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_jRPG_EnemyWorld_Chevaliere_C_7EAA2A1D4C9A83FB7FD6298EA0C66B9A",
-      "displayName": "OldLumiere_Main Chevaliere",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Floor_1_BP_EnemyGroup_C_9B5B7BA948323F8EF58C2AB5DC8227CA",
-      "displayName": "Monolith_Floor_1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Floor_1_BP_EnemyGroup_C_45D1355B4A0CA3EC69B1A7B177874C62",
-      "displayName": "Monolith_Floor_1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Floor_1_BP_EnemyGroup_C_BBA39A4F4C6021D0D70923A73D08A1FE",
-      "displayName": "Monolith_Floor_1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Floor_1_BP_EnemyGroup_C_3294622248930C8AEE86B88DAAB8E3C3",
-      "displayName": "Monolith_Floor_1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Floor_1_BP_EnemyGroup_C_5187692E49133AF675C90B8D974518F9",
-      "displayName": "Monolith_Floor_1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Floor_1_BP_EnemyWorld_Creation_Alpha_C_A388578444C235248B90979A13F3C3CF",
-      "displayName": "Monolith_Floor_1 Creation_Alpha",
-      "category": "Alpha"
-    },
-    {
-      "originalName": "SmallLevel_MF_Zone_01_BP_EnemyWorld_Petank_Green",
-      "displayName": "SmallLevel_MF_Zone_01 Petank Green",
-      "category": "Petank"
-    },
-    {
-      "originalName": "ObjectID_Enemy_SmallLevel_MF_Zone_01_BP_EnemyWorld_Boucheclier_ALPHA_C_74A673B2497F899B60E0AD9E602CA667",
-      "displayName": "MF_Zone_01 Boucheclier_ALPHA",
-      "category": "Other"
-    },
+  "Caverne écrasante": [
     {
       "originalName": "ObjectID_Enemy_SmallLevel_Cavern_CrushingWalls_BP_jRPG_EnemyWorld_Sapling_Alternative_CrushingWall_C_28DA654844910687874F1CB2BD501FDA",
-      "displayName": "Cavern_CrushingWalls Sapling_Alternative_CrushingWall",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_C63990644F657D0B54B76983B45BF9DE",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_Benisseur_Alpha_C_4769697A4D25580C6A0B8DAFF4FB3D65",
-      "displayName": "WorldMap_Main_V2 Benisseur_Alpha",
-      "category": "Alpha"
-    },
-    {
-      "originalName": "WorldMap_Main_V2_BP_EnemyWorld_Petank_Alpha",
-      "displayName": "WorldMap_Main_V2 Petank Alpha",
-      "category": "Petank"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_CF31AEBF469DA27B9C5FFBBDB1F34523",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_417B99334C4106FE0FF3F383F24BCEE9",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Cave_InvisibleCave_BP_EnemyWorld_Chalier_Sword_Alpha_C_1E62E97B4F8E4D2474429CBA8A88F4A2",
-      "displayName": "Cave_InvisibleCave Chalier_Sword_Alpha",
-      "category": "Alpha"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_0E72770D44B2B40FE5D55BA3B98E15E4",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_AncientSanctuary_WP_BP_EnemyWorld_AS_Potatobag1_tank_C_FD2CAFE64E6AF6E92CB8FBA4FC909C50",
-      "displayName": "Main_AncientSanctuary_WP AS_Potatobag1_tank",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_AncientSanctuary_WP_BP_EnemyWorld_AS_Potatobag_Mage_C_98CE4A6141546E6F3F2E3F9B10F9292B",
-      "displayName": "Main_AncientSanctuary_WP AS_Potatobag_Mage",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_AncientSanctuary_WP_BP_EnemyWorld_AS_Potatobag1_tank_C_DE436D2744B68301122664A632FA9FF8",
-      "displayName": "Main_AncientSanctuary_WP AS_Potatobag1_tank",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_AncientSanctuary_WP_BP_EnemyWorld_AS_DpsPotatobag_C_D531059548874412D3A8B0B6455DDD19",
-      "displayName": "Main_AncientSanctuary_WP AS_DpsPotatobag",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_AncientSanctuary_WP_BP_EnemyWorld_AS_DpsPotatobag_C_D5779F73438A3E79B8DE4EB4EDC8CE9C",
-      "displayName": "Main_AncientSanctuary_WP AS_DpsPotatobag",
-      "category": "Other"
-    },
-    {
-      "originalName": "LD_Battle_TwilightBossPotatobag",
-      "displayName": "Battle_TwilightBossPotatobag",
-      "category": "Boss"
-    },
-    {
-      "originalName": "TwilightSanctuary_BP_EnemyWorld_Petank_Violet",
-      "displayName": "TwilightSanctuary Petank Violet",
-      "category": "Petank"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_AncientSanctuary_WP_BP_EnemyWorld_Cruler_ALPHA_C_60ED5295404EDABFFEE6698E2B88B309",
-      "displayName": "Main_AncientSanctuary_WP Cruler_ALPHA",
-      "category": "Other"
-    },
-    {
-      "originalName": "LD_Battle_CleaWorkshopLampmaster",
-      "displayName": "Battle_CleaWorkshopLampmaster",
-      "category": "Other"
-    },
-    {
-      "originalName": "Battle_JudgeOfMercy",
-      "displayName": "Battle_JudgeOfMercy",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_BossEveque_Lightning_ALPHA_C_00F9B6B94948CE77D73843A6261A8102",
-      "displayName": "WorldMap_Main_V2 BossEveque_Lightning_ALPHA",
-      "category": "Boss"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Side_FrozenHeart_BP_EnemyWorld_Dancer_C_692EBD9546DC1AFFA566C0A760340FC2",
-      "displayName": "Side_FrozenHeart Dancer",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Side_FrozenHeart_BP_EnemyGroup_C_05C50F93407A8CE220C0CD8BDED12B1B",
-      "displayName": "Side_FrozenHeart EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_Demineur_ALPHA_C_2ED33D0D4AF78CD710A62480B39C964F",
-      "displayName": "WorldMap_Main_V2 Demineur_ALPHA",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_AncientSanctuary_Main_V2_BP_EnemyWorld_AS_DpsPotatobag_C_33734BDF4BFD2C4EDB7CBCADEBFAAF7B",
-      "displayName": "AncientSanctuary_Main_V2 AS_DpsPotatobag",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_AncientSanctuary_Main_V2_BP_EnemyWorld_AS_Potatobag1_tank_C_0843D48B4553A56ADD6E88AF39FD28A4",
-      "displayName": "AncientSanctuary_Main_V2 AS_Potatobag1_tank",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_AncientSanctuary_Main_V2_BP_EnemyWorld_AS_Potatobag_Mage_C_9CBE51F146A2C932532AE39BAF0A8144",
-      "displayName": "AncientSanctuary_Main_V2 AS_Potatobag_Mage",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_AncientSanctuary_Main_V2_BP_EnemyWorld_AS_Potatobag1_tank_C_9F70138847E52E716D99F0931A6790FB",
-      "displayName": "AncientSanctuary_Main_V2 AS_Potatobag1_tank",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_AncientSanctuary_Main_V2_BP_EnemyWorld_AS_DpsPotatobag_C_A37A80384595FF77F5D75A8FCA7D8B14",
-      "displayName": "AncientSanctuary_Main_V2 AS_DpsPotatobag",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_A18A92514F54070259D993B51EB6EA02",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_ForgottenBattlefield_V2_BP_EnemyWorld_Troubadour_C_5F7AAB8D4BF8036548E49BA5E5598038",
-      "displayName": "Main_ForgottenBattlefield_V2 Troubadour",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyWorld_Ballet_Melee_C_EF4BC6B54633923C96DC57A03420D8AB",
-      "displayName": "Sirene_Main_V2 Ballet_Melee",
-      "category": "Other"
-    },
-    {
-      "originalName": "BP_EnemyWorld_Petank_Red_Sirene",
-      "displayName": "Petank Red_Sirene",
-      "category": "Petank"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_jRPG_Enemy_World_Chorale_C_8016A8024930EF96BDA81CA5521F5972",
-      "displayName": "Sirene_Main_V2_BP_jRPG_Enemy_World_Chorale",
-      "category": "Other"
-    },
-    {
-      "originalName": "BP_EnemyWorld_Petank_Blue_Sirene",
-      "displayName": "Petank Blue_Sirene",
-      "category": "Petank"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_08A503254D28097927E51EA2A58FAFDB",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_597E6896441E61D08955438BAABD487A",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_E601C8A14DDD73BD62719BBEB38F71B6",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_7E26BB35490984A355B8E69F911CED39",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_97235DDE4EDBE06028A5F7A8CC21BDBB",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_AS_Potatobag_Mage_C_6FD701464B40F1D2CFD277AEB860A143",
-      "displayName": "Monolith_Interior_Climb_Main AS_Potatobag_Mage",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_FAC48AED4AB40769F59657AEC0752129",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "Monolith_Interior_Climb_Main_BP_EnemyWorld_Petank_Green",
-      "displayName": "Monolith_Interior_Climb_Main Petank Green",
-      "category": "Petank"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_5231B6134C1898A20DF3F0A27B91B111",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_26417C1D425CF47CA588AEA7ABFEA217",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_Troubadour_C_BFBACB8E4B482CE51885739B19D1DE98",
-      "displayName": "Monolith_Interior_Climb_Main Troubadour",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_374DB0724E8AC2F98978E3B5630FA759",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_MM_Gargant_Monolith_C_C304EF774139DA7E4A0973823E04D8B2",
-      "displayName": "Monolith_Interior_Climb_Main MM_Gargant_Monolith",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_4D1424FC419968EFECA3079CD0AE5B75",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_44D5A83C4E745C23B4AAE4BD160489CC",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_DEAB5F194B6ED9B4388091925B5414FE",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_7112396E420D97E4B61D5C9F2F63DC98",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_jRPG_EnemyWorld_ChevaliereC_C_CF5CF1264C554FD98513AF9D1841E89D",
-      "displayName": "Monolith_Interior_Climb_Main ChevaliereC",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_jRPG_EnemyWorld_ChevaliereC_C_7DCA305743AECF426701C7BCE376D402",
-      "displayName": "Monolith_Interior_Climb_Main ChevaliereC",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_30B232A445F66FCD5B84509AA8CAA7A5",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_0E1A53E8440A780BD63D48838FD62904",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_380878814018A56FBBA93593ADF0DDEF",
-      "displayName": "Monolith_Interior_Climb_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Monolith_Exterior_Peak_Main_BP_EnemyWorld_ClairObscur_Alpha_C_0EE1E0614F8154984FC9A89FCDB0EF57",
-      "displayName": "Monolith_Exterior_Peak_Main ClairObscur_Alpha",
-      "category": "Alpha"
-    }
-  ],
-  "Hidden": [
-    {
-      "originalName": "None",
-      "displayName": "Punching Ball",
-      "category": "Other"
-    },
-    {
-      "originalName": "FirstLancelier",
-      "displayName": "Lancelier - Tutoriel",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SpringMeadows_Main_V2_BP_EnemyWorld_Lancelier_C_67B8270848502CF015B171872351FC15",
-      "displayName": "Lancelier - Après 1er drapeau de l'E81",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SpringMeadows_Main_V2_BP_EnemyWorld_Lancelier_C_1BB02EDA4D22A8FCCFBC68A86B077868",
-      "displayName": "Lancelier - Avant maison abandonnée 1",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SpringMeadows_Main_V2_BP_EnemyWorld_SpringMeadowTank_C_A35C5AB643A2F1D9F9AD228A206C3B17",
-      "displayName": "Portier - 2ème drapeau de l'E81",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SpringMeadows_Main_V2_BP_EnemyWorld_Lancelier_C_2005E4EC4A7DBCDEDCAFC09297B8571B",
-      "displayName": "Lancelier - 2ème drapeau de l'E81",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SpringMeadows_Main_V2_BP_EnemyWorld_SpringMeadowTank_C_A53D53A44F82BD14B039DDBD46D1DC85",
-      "displayName": "Portier / 2 Lanceliers - Arbres bleus",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SpringMeadows_Main_V2_BP_EnemyWorld_SpringMeadowElementalGrunt_C_07B618AF43508460B4E034920B9F7774",
-      "displayName": "SpringMeadows_Main_V2 SpringMeadowElementalGrunt",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SpringMeadows_Main_V2_BP_EnemyWorld_SpringMeadowElementalGrunt_C_22DED2944C307027D2E8379C82734FD7",
-      "displayName": "SpringMeadows_Main_V2 SpringMeadowElementalGrunt",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SpringMeadows_Main_V2_BP_EnemyWorld_SpringMeadowElementalGrunt_C_A60C60914B0C5E35EB8C459B9E75AB5F",
-      "displayName": "SpringMeadows_Main_V2 SpringMeadowElementalGrunt",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SpringMeadows_Main_V2_BP_EnemyWorld_SpringMeadowElementalGrunt_C_32880A0B43C9CB694FF8C5A9D44FDEC5",
-      "displayName": "SpringMeadows_Main_V2 SpringMeadowElementalGrunt",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_AB0222F4463233F376F652BE3F4C8CF7",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_E1AEC7014670FF201CD24B9A79351DBC",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyWorld_Luster_C_19CAB95C4DFE2B99A3A11199E682FE0E",
-      "displayName": "Goblu_Main_V5 Luster",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyGroup_C_9B9A472F42BA73272548A2A2C32001A9",
-      "displayName": "Goblu_Main_V5 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyWorld_Demineur_C_E0CFE6DD45BCBA2FFBF866A42AD7E68B",
-      "displayName": "Goblu_Main_V5 Demineur",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyWorld_Demineur_C_4FE628B848D59B8D110F1292619EE65C",
-      "displayName": "Goblu_Main_V5 Demineur",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyWorld_Demineur_C_7D0FB7054AB04AD9E6816EADA9261930",
-      "displayName": "Goblu_Main_V5 Demineur",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyGroup_C_8A9914524FD346923370E5995136E47A",
-      "displayName": "Goblu_Main_V5 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyWorld_Luster_C_F3EDED26480D09E9244F6DAB3C37F496",
-      "displayName": "Goblu_Main_V5 Luster",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyWorld_Bruler_C_2E17F03C4E488B4CE95128B3F2700667",
-      "displayName": "Goblu_Main_V5 Bruler",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyGroup_C_4282F51D4978FC0821DD56949F698997",
-      "displayName": "Goblu_Main_V5 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyGroup_C_E05448944A1369C84D9EE9AA64BA46BD",
-      "displayName": "Goblu_Main_V5 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyWorld_Cruler_C_8850D56F4482E868F80083B6E252A82D",
-      "displayName": "Goblu_Main_V5 Cruler",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyWorld_Luster_C_8D38BC3E49923BEF316965A1D94D6436",
-      "displayName": "Goblu_Main_V5 Luster",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyGroup_C_FACAA9D141891CAFB3D891AD578064F9",
-      "displayName": "Goblu_Main_V5 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyWorld_Bruler_C_1F5B533D4F631B6F29FEC7ABD88CBB5B",
-      "displayName": "Goblu_Main_V5 Bruler",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyGroup_C_182C658A41FDA7009FFAD8A05E087806",
-      "displayName": "Goblu_Main_V5 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyWorld_Cruler_C_E9FE5C214AB6E1D90FB8DC9E9BA0CC45",
-      "displayName": "Goblu_Main_V5 Cruler",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyWorld_Bruler_C_55093E3B4FE9A19FF01AB99E9B76BC2A",
-      "displayName": "Goblu_Main_V5 Bruler",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyWorld_Cruler_C_61AF1E2F4B33781594DF1E8F4DD4C527",
-      "displayName": "Goblu_Main_V5 Cruler",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_69C0A6654CBC7FDF5A3774BF42FF9859",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_D0A85545435D71B273CC37A0CEFE7539",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_3686D8EC4F75BA432890A08D6F85971A",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_AncientSanctuary_Main_V2_BP_EnemyWorld_AS_DpsPotatobag_C_17C615534040A714082BA692F9CAEFC4",
-      "displayName": "AncientSanctuary_Main_V2 AS_DpsPotatobag",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_AncientSanctuary_Main_V2_BP_EnemyWorld_AS_Potatobag_Mage_C_973AF43C42678AA28AE18F8406BCC815",
-      "displayName": "AncientSanctuary_Main_V2 AS_Potatobag_Mage",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_AncientSanctuary_Main_V2_BP_EnemyWorld_AS_Potatobag_Mage_C_C190900242E41ACE0353E7A5FF9E6424",
-      "displayName": "AncientSanctuary_Main_V2 AS_Potatobag_Mage",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_AncientSanctuary_Main_V2_BP_EnemyWorld_AS_DpsPotatobag_C_75364E6C41E3467BBD3945B9BA97E36A",
-      "displayName": "AncientSanctuary_Main_V2 AS_DpsPotatobag",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_AncientSanctuary_Main_V2_BP_EnemyWorld_AS_Potatobag1_tank_C_9000601E4DDDBD0F96002B963B436796",
-      "displayName": "AncientSanctuary_Main_V2 AS_Potatobag1_tank",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_YellowForest_Main_BP_EnemyGroup_C_3E2A6C97461F4B8B05B4059E39B22BA0",
-      "displayName": "YellowForest_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_YellowForest_Main_BP_jRPG_EnemyWorld_Jar_C_00F5CAF14A46F75E999F3282E108D919",
-      "displayName": "YellowForest_Main Jar",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_YellowForest_Main_BP_jRPG_EnemyWorld_Jar_C_13B82D3D46683DA90C071F89518C5619",
-      "displayName": "YellowForest_Main Jar",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyWorld_Demineur_C_E4544B834A40CF9281F2CAA5B72C9485",
-      "displayName": "Goblu_Main_V5 Demineur",
-      "category": "Unknown"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_YellowForest_Main_BP_jRPG_EnemyWorld_Gault_C_FE70CDE0486C5187E8FFB0ADE47DFAA1",
-      "displayName": "YellowForest_Main Gault",
-      "category": "Unknown"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_YellowForest_Main_BP_jRPG_EnemyWorld_Gault_C_00EA2FB344E5E3B3AD6F6580B038BD4F",
-      "displayName": "YellowForest_Main Gault",
-      "category": "Unknown"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_YellowForest_Main_BP_jRPG_EnemyWorld_GaultB_C_779D31B043A729EFF8DF3D8CBAC997DF",
-      "displayName": "YellowForest_Main GaultB",
-      "category": "Unknown"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_YellowForest_Main_BP_jRPG_EnemyWorld_Jar_C_A8A31C514C530A5FFAD791BF5A057965",
-      "displayName": "YellowForest_Main Jar",
-      "category": "Other"
-    },
-    {
-      "originalName": "ScielTutorial",
-      "displayName": "ScielTutorial",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_YellowForest_Main_BP_jRPG_EnemyWorld_Jar_C_7A3647E64B9BF8A60A4F3E8D1311E809",
-      "displayName": "YellowForest_Main Jar",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_V2_BP_EnemyWorld_Hexga_C_C9B564654CC961A76C47B18F18E1D1E9",
-      "displayName": "SeaCliff_Main_V2 Hexga",
+      "displayName": "Arbuscule Géant",
       "category": "Mini-Boss"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_WP_BP_EnemyWorld_CultistFlying_C_0AE8236642D99E99926729A5B271329E",
-      "displayName": "SeaCliff_Main_WP CultistFlying",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_V2_BP_EnemyGroup_C_A04F60754259982C990880942453D39A",
-      "displayName": "SeaCliff_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_V2_BP_EnemyGroup_C_BDDACD39456D3E5B74AF3CA6A854C89D",
-      "displayName": "SeaCliff_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_V2_BP_EnemyWorld_Rocher_C_21D4E71C4276176B1C23FB9F8127DB99",
-      "displayName": "SeaCliff_Main_V2 Rocher",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_V2_BP_EnemyGroup_C_565599C345572B13866E98BFC277D4EA",
-      "displayName": "SeaCliff_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_V2_BP_EnemyGroup_C_B5D346C8436C1E90888C079E959B1277",
-      "displayName": "SeaCliff_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_WP_BP_EnemyWorld_CultistHeavy_C_167B719C4745CEBD419E29A841A9EEF4",
-      "displayName": "SeaCliff_Main_WP CultistHeavy",
-      "category": "Unknown"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_WP_BP_EnemyWorld_CultistHeavy_C_79EE6E7145AE912396AB078851B33A65",
-      "displayName": "SeaCliff_Main_WP CultistHeavy",
-      "category": "Unknown"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_V2_BP_EnemyGroup_C_5A553E3741C90EB8E8A5F19CA15D51DC",
-      "displayName": "SeaCliff_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_V2_BP_EnemyGroup_C_79EF9652430E21644AFAC09F120A0210",
-      "displayName": "SeaCliff_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_V2_BP_EnemyGroup_C_551435D0484890AEB1DDD4BEC1D96AAD",
-      "displayName": "SeaCliff_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_V2_BP_EnemyWorld_Rocher_HexgaQuest_C_EE6A14094ABC528351818AAFBC37F521",
-      "displayName": "SeaCliff_Main_V2 Rocher_HexgaQuest",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_V2_BP_jRPG_EnemyWorld_ChevaliereC_C_7642F6BB47A4B417100F84AABE5893961",
-      "displayName": "SeaCliff_Main_V2 ChevaliereC",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_V2_BP_EnemyGroup_C_8A6878304CD3139590F291BC879E19C5",
-      "displayName": "SeaCliff_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_V2_BP_EnemyWorld_Rocher_C_AF5E37834286BD9CC1BBF285E3CDF98F",
-      "displayName": "SeaCliff_Main_V2 Rocher",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_V2_BP_EnemyWorld_CultistHeavy_C_14CCB20C4820353501EC8586D8E3D89C",
-      "displayName": "SeaCliff_Main_V2 CultistHeavy",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_V2_BP_EnemyGroup_C_AA9512B94A895BE42526B99F76656797",
-      "displayName": "SeaCliff_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_40C8DA8F40A97F69073EBCBE6803CD96",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_6FC0437C40D5F2E6EDD271842FBF2E2A",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_CCCCCE204ACCF9BED3555BA5C4786DFE",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_590AB4A342BD4A3B2A8BBAB27B33AE74",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_ForgottenBattlefield_V2_BP_EnemyGroup_C_9D441D8F49DA8638879775AFABA9C329",
-      "displayName": "Main_ForgottenBattlefield_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_ForgottenBattlefield_V2_BP_EnemyGroup_C_256E22E644567C1741FEDFA50B2BF79F",
-      "displayName": "Main_ForgottenBattlefield_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_ForgottenBattlefield_V2_Blockout_BP_EnemyWorld_Troubadour_C_B144BBB44409CE8D4BA8A69126941ADF",
-      "displayName": "Main_ForgottenBattlefield_V2_Blockout Troubadour",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_ForgottenBattlefield_V2_Blockout_BP_EnemyWorld_Ramasseur_C_EABC174941DB5D2A91578A86C6A44B16",
-      "displayName": "Main_ForgottenBattlefield_V2_Blockout Ramasseur",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_ForgottenBattlefield_V2_Blockout_BP_EnemyWorld_Chalier_Hammer_C_BAC8502A4CAF47DFD0ACE59D1BA6E6E7",
-      "displayName": "Main_ForgottenBattlefield_V2_Blockout Chalier_Hammer",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_ForgottenBattlefield_V2_BP_EnemyGroup_C_1A0995684F8BCA009AB6BEA518B85D5A",
-      "displayName": "Main_ForgottenBattlefield_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_ForgottenBattlefield_V2_Blockout_BP_EnemyWorld_Troubadour_C_475606C44F6B9F6A9A05CE89F68ED13C",
-      "displayName": "Main_ForgottenBattlefield_V2_Blockout Troubadour",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_ForgottenBattlefield_V2_BP_EnemyGroup_C_8C6874A54A5FD2E2C86700A419645EF4",
-      "displayName": "Main_ForgottenBattlefield_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_ForgottenBattlefield_V2_BP_EnemyWorld_Troubadour_C_C86DFCC145003252D09E4C8DE3B3015F",
-      "displayName": "Main_ForgottenBattlefield_V2 Troubadour",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_ForgottenBattlefield_V2_Blockout_BP_EnemyWorld_Chalier_Dagger_C_D2C5AFA646431A550A52B98D57838BC5",
-      "displayName": "Main_ForgottenBattlefield_V2_Blockout Chalier_Dagger",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_ForgottenBattlefield_V2_BP_EnemyGroup_C_04C4E9B147999198E3DC7EA7328D9F4E",
-      "displayName": "Main_ForgottenBattlefield_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_ForgottenBattlefield_V2_Blockout_BP_EnemyWorld_Troubadour_C_64670E52418BF8CDDE491D881924067E",
-      "displayName": "Main_ForgottenBattlefield_V2_Blockout Troubadour",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_ForgottenBattlefield_V2_BP_EnemyWorld_Ramasseur_C_DD3CDB1245D64242B81586B29EE6D13B",
-      "displayName": "Main_ForgottenBattlefield_V2 Ramasseur",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_ForgottenBattlefield_V2_Blockout_BP_EnemyWorld_Chalier_Sword_C_C0A63B12402B13597DD76A8EB3032B2B",
-      "displayName": "Main_ForgottenBattlefield_V2_Blockout Chalier_Sword",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Main_ForgottenBattlefield_V2_Blockout_BP_EnemyWorld_Troubadour_C_44C6F19149A63795AC22348F936E5490",
-      "displayName": "Main_ForgottenBattlefield_V2_Blockout Troubadour",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_D5F55FD345FF8039F1B2CDB53267BE93",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_3DE394D149199CD5F241568EE922C3A8",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_5FA00D0D49271815D7D206A3AB321130",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_83A9A52048ECBD4461CE6FA94C630EAF",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_EB5034FE4306B6D9A644F3BCED1EF11C",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "MonocoTutorial",
-      "displayName": "MonocoTutorial",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_8DEE1B534A552CAD31B4B194FCDD2D00",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Unknown"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_9161CDE943B23A5339F5B4B1D9136164",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_5A45AFD2472C95517111A5910C386785",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_EnemyGroup_C_AF6F278B4C342806A778D584D9898241",
-      "displayName": "OldLumiere_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_EnemyGroup_C_1A0B0C7D416C4B70495702A2F28D741D",
-      "displayName": "OldLumiere_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_jRPG_EnemyWorld_Chevaliere_C_BF41B5BB42811F72B014CC8073BA7A96",
-      "displayName": "OldLumiere_Main Chevaliere",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_jRPG_EnemyWorld_Chevaliere_C_3BBA8D7047E8242B8C3DC88E312B0872",
-      "displayName": "OldLumiere_Main Chevaliere",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_jRPG_EnemyWorld_Chevaliere_C_7CAAD1034BB5BEAC0706CC8890FF0368",
-      "displayName": "OldLumiere_Main Chevaliere",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_jRPG_EnemyWorld_Chevaliere_C_D5E6DDB846E143ECD9AD359806BAC846",
-      "displayName": "OldLumiere_Main Chevaliere",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_jRPG_EnemyWorld_Chevaliere_C_E95A53444E58AA49F52F11BE593A278F",
-      "displayName": "OldLumiere_Main Chevaliere",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_EnemyGroup_C_D056F4B240F9E3FF4CCDDAB445237B6A",
-      "displayName": "OldLumiere_Main EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_jRPG_EnemyWorld_Chevaliere_C_90ED89664F11AD185F3A1EAEF8A8A9E9",
-      "displayName": "OldLumiere_Main Chevaliere",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_EnemyGroup_C_0930A0964771FF54440CB99599C74941",
-      "displayName": "OldLumiere_Main EnemyGroup",
-      "category": "Unknown"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_jRPG_EnemyWorld_Chevaliere_C_FA74587D4D74ADF68296AB964B570869",
-      "displayName": "OldLumiere_Main Chevaliere",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_jRPG_EnemyWorld_Chevaliere_C_7270339B476372FE4473869463D0F65E",
-      "displayName": "OldLumiere_Main Chevaliere",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_jRPG_EnemyWorld_Chevaliere_C_A927DB314E069BE747FD8DACC319D39A",
-      "displayName": "OldLumiere_Main Chevaliere",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_jRPG_EnemyWorld_ChevaliereC_C_FB4F2237439D1F7C934C7D99A1E96532",
-      "displayName": "OldLumiere_Main ChevaliereC",
-      "category": "Unknown"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_D88716D943E77A0B46D99B80CC4ED9CB",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_0E53819F4D54112DE53AB2ACF1A1B270",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_1A0B8F4D4503238F9F00A696A96F5704",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OraneForest_Main_BP_jRPG_EnemyWorld_Glaise_C_445A63294BA7E9786704C3A4A30D483F",
-      "displayName": "OraneForest_Main Glaise",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OraneForest_Main_BP_jRPG_EnemyWorld_Glaise_C_95C674D845F159B3788CD1980EE7B497",
-      "displayName": "OraneForest_Main Glaise",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OraneForest_Main_BP_jRPG_EnemyWorld_Glaise_C_1771B0F842B12090B52B678F4F4C8FDB",
-      "displayName": "OraneForest_Main Glaise",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OraneForest_Main_BP_jRPG_EnemyWorld_Sapling_C_EC8BBF914B1C9D869162869A202AE8E4",
-      "displayName": "OraneForest_Main Sapling",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_OraneForest_Main_BP_jRPG_EnemyWorld_Sapling_C_D93D2F9F459E8C49CAB1158AA4A64D61",
-      "displayName": "OraneForest_Main Sapling",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_F532E6584D0E12FE8BFB538B124B288A",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_B2222B224153DC8B70AE96930A5CED91",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_2BC762D04B15B7B25FDC0FBC17270993",
-      "displayName": "WorldMap_Main_V2 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyGroup_C_874CA53A4EC449DCEDD235ACA482DDEE",
-      "displayName": "Visages_Main_V1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyWorld_Contorsionniste_C_FB82942B48278FB8C8B2AB9ABECE13E6",
-      "displayName": "Visages_Main_V1 Contorsionniste",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyGroup_C_416732784968937DF0EEFD8AF0B9AD60",
-      "displayName": "Visages_Main_V1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyGroup_C_2A6926064396FC9FEEC8AAAADA9CB3FC",
-      "displayName": "Visages_Main_V1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyWorld_Contorsionniste_C_42B6C7CC447AD250C01F5193D7B6316E",
-      "displayName": "Visages_Main_V1 Contorsionniste",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyGroup_C_05AD4E4B46AF1B8ED2107A9AF38922F5",
-      "displayName": "Visages_Main_V1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyWorld_Boucheclier_C_4069D2024328AFE6CE37EF9052D8BA62",
-      "displayName": "Visages_Main_V1 Boucheclier",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyWorld_Contorsionniste_C_267283FA44F1CE09B7BDF09E273B6D7E",
-      "displayName": "Visages_Main_V1 Contorsionniste",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyGroup_C_C484A6CB4C36F44E2DED66A66D34FC91",
-      "displayName": "Visages_Main_V1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyGroup_C_6C6869804F8B7F4E5D404598189D02FA",
-      "displayName": "Visages_Main_V1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyGroup_C_52B515F14C0E21FDB67E1A99BC944887",
-      "displayName": "Visages_Main_V1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyGroup_C_07577DA5428E320090C8E897045B1C0A",
-      "displayName": "Visages_Main_V1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyGroup_C_FD857AA04BA0C20EBBCC23812FA57A47",
-      "displayName": "Visages_Main_V1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyGroup_C_622FE96C4984C77A42B5A2A2C4CD1345",
-      "displayName": "Visages_Main_V1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyGroup_C_199DA9FB4DB64C34E4E532ABE8CF892B",
-      "displayName": "Visages_Main_V1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyWorld_Contorsionniste_C_2659415F47491FDB516FD09C4E7B1E22",
-      "displayName": "Visages_Main_V1 Contorsionniste",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyGroup_C_E350BEBE4B7519C55D6A699114DD222A",
-      "displayName": "Visages_Main_V1 EnemyGroup",
-      "category": "Other"
-    },
-    {
-      "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyGroup_C_48A283CC4EA3935544EDD9B9DD6F8461",
-      "displayName": "Visages_Main_V1 EnemyGroup",
-      "category": "Other"
     }
   ],
   "Grotte de Rochevague": [
@@ -2266,6 +369,11 @@
       "originalName": "LD_Battle_MirrorRenoir",
       "displayName": "Renoir",
       "category": "Boss"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_EnemyWorld_Dancer_Alpha_C_E58795824D04165C9FCE86952776138A",
+      "displayName": "Danseuse Chromatique",
+      "category": "Chromatic"
     }
   ],
   "Forêt Ambrée": [
@@ -2289,6 +397,13 @@
     {
       "originalName": "ObjectID_Enemy_SmallLevel_RZ_Zone_01_BP_EnemyWorld_Chapelier_Alpha_C_FA3681FF45776763CB3130BF1FD6109D",
       "displayName": "Chapelier Chromatique",
+      "category": "Chromatic"
+    }
+  ],
+  "Grotte Sinistre": [
+    {
+      "originalName": "ObjectID_Enemy_Level_Cave_InvisibleCave_BP_EnemyWorld_Chalier_Sword_Alpha_C_1E62E97B4F8E4D2474429CBA8A88F4A2",
+      "displayName": "Chalier Chromatique",
       "category": "Chromatic"
     }
   ],
@@ -2325,7 +440,627 @@
     },
     {
       "originalName": "LD_Battle_Visages",
-      "displayName": "Maître des Masques",
+      "displayName": "Visage - Maître des Masques",
+      "category": "Boss"
+    }
+  ],
+  "Sirène": [
+    {
+      "originalName": "BP_EnemyWorld_Petank_Red_Sirene",
+      "displayName": "Pétank Rouge",
+      "category": "Petank"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyWorld_CultistHeavy_Alpha_C_63D7D34C4483ED4C5FD2DAB25D242521",
+      "displayName": "Cultiste Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyWorld_Mime_SI_C_B15173304A73584B5C2D409282EAB624",
+      "displayName": "Mime",
+      "category": "Mime"
+    },
+    {
+      "originalName": "LD_Battle_Tisseur",
+      "displayName": "Tisseur",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "BP_EnemyWorld_Petank_Blue_Sirene",
+      "displayName": "Pétank Bleu",
+      "category": "Petank"
+    },
+    {
+      "originalName": "MANUAL_1765040720982",
+      "displayName": "Klaudiso",
+      "category": "Merchant"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyWorld_Glissando_C_730AE39945AC31370140BDA462D515F4",
+      "displayName": "Glissando",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "LD_Battle_Sirene",
+      "displayName": "Sirène",
+      "category": "Boss"
+    }
+  ],
+  "Camp": [
+    {
+      "originalName": "QUEST_MonocoDuel",
+      "displayName": "Monoco",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "MANUAL_1765057664326",
+      "displayName": "François",
+      "category": "Mini-Boss"
+    }
+  ],
+  "Monolithe": [
+    {
+      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_BossEveque_Monolith_C_E12908C540D6E669B94F1BB1E9CDDBD8",
+      "displayName": "Évêque",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "MANUAL_1765043180746",
+      "displayName": "Mistra",
+      "category": "Merchant"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_Bourgeon_ALPHA_C_3976F6634D81025338FF14B695F30221",
+      "displayName": "Bourgeon Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_AS_Potatobag_Boss_C_B651CF214B2776824E0C188E428C508B",
+      "displayName": "Sakapatate Ultime",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "Monolith_Interior_Climb_Main_BP_EnemyWorld_Petank_Green",
+      "displayName": "Pétank Vert",
+      "category": "Petank"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_5231B6134C1898A20DF3F0A27B91B111",
+      "displayName": "Mime",
+      "category": "Mime"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_MM_Gargant_Monolith_C_C304EF774139DA7E4A0973823E04D8B2",
+      "displayName": "Gargant",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "MANUAL_1765046248755",
+      "displayName": "Mélosh",
+      "category": "Merchant"
+    },
+    {
+      "originalName": "MANUAL_1765054052607",
+      "displayName": "Renoir",
+      "category": "Boss"
+    },
+    {
+      "originalName": "LD_Battle_Paintress",
+      "displayName": "Paintresse",
+      "category": "Boss"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_Monolith_Exterior_Peak_Main_BP_EnemyWorld_ClairObscur_Alpha_C_0EE1E0614F8154984FC9A89FCDB0EF57",
+      "displayName": "Clair Obscur Chromatique",
+      "category": "Chromatic"
+    }
+  ],
+  "Lumière": [
+    {
+      "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyWorld_Echassier_ALPHA_C_F527027C4209A7D1DC21D5849F718331",
+      "displayName": "Echassier Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "Merchant_Lumiere",
+      "displayName": "Cribappa",
+      "category": "Merchant"
+    },
+    {
+      "originalName": "LD_Battle_Curator",
+      "displayName": "Renoir",
+      "category": "Boss"
+    },
+    {
+      "originalName": "LumiereAct3_MaelleFinalBattle",
+      "displayName": "Maëlle / Verso",
+      "category": "Boss"
+    },
+    {
+      "originalName": "MANUAL_1768059140208",
+      "displayName": "Création",
+      "category": "Mini-Boss"
+    }
+  ],
+  "Arène clandestine des Gestrals": [
+    {
+      "originalName": "DarkGestralArena_Round1",
+      "displayName": "Sakapatate catapulte Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "DarkGestralArena_Round2",
+      "displayName": "Sakapatate forestier Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "DarkGestralArena_Round3",
+      "displayName": "Sakapatate robuste Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "DarkGestralArena_Round4",
+      "displayName": "Golgra",
+      "category": "Boss"
+    }
+  ],
+  "Sylve Cramoisie": [
+    {
+      "originalName": "ChevaliereAlpha",
+      "displayName": "Chevalière en or chromatique",
+      "category": "Chromatic"
+    }
+  ],
+  "Tour Éternelle": [
+    {
+      "originalName": "1_1",
+      "displayName": "Niveau 1 - Épreuve 1",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "1_2",
+      "displayName": "Niveau 1 - Épreuve 2",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "1_3",
+      "displayName": "Niveau 1 - Épreuve 3",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "2_1",
+      "displayName": "Niveau 2 - Épreuve 1",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "2_2",
+      "displayName": "Niveau 2 - Épreuve 2",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "2_3",
+      "displayName": "Niveau 2 - Épreuve 3",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "3_1",
+      "displayName": "Niveau 3 - Épreuve 1",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "3_2",
+      "displayName": "Niveau 3 - Épreuve 2",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "3_3",
+      "displayName": "Niveau 3 - Épreuve 3 (Mitrien Chromatique)",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "4_1",
+      "displayName": "Niveau 4 - Épreuve 1 (Orphelin Chromatique)",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "4_2",
+      "displayName": "Niveau 4 - Épreuve 2",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "4_3",
+      "displayName": "Niveau 4 - Épreuve 3 (Échassier Chromatique)",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "5_1",
+      "displayName": "Niveau 5 - Épreuve 1 (Veilleur Chromatique)",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "5_2",
+      "displayName": "Niveau 5 - Épreuve 2 (Cultiste Épéiste Chromatique)",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "5_3",
+      "displayName": "Niveau 5 - Épreuve 3 (Aberration et Troubadour Chromatique)",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "6_1",
+      "displayName": "Niveau 6 - Épreuve 1",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "6_2",
+      "displayName": "Niveau 6 - Épreuve 2 (Braseleur Chromatique)",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "6_3",
+      "displayName": "Niveau 6 - Épreuve 3",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "7_1",
+      "displayName": "Niveau 7 - Épreuve 1",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "7_2",
+      "displayName": "Niveau 7 - Épreuve 2 (Chevalière en or Chromatique et Bruleur Chromatique)",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "7_3",
+      "displayName": "Niveau 7 - Épreuve 3 (Lustrion Chromatique)",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "8_1",
+      "displayName": "Niveau 8 - Épreuve 1",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "8_2",
+      "displayName": "Niveau 8 - Épreuve 2 (Lancelier Chromatique et Boucheclier Chromatique)",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "8_3",
+      "displayName": "Niveau 8 - Épreuve 3 (Glaise Chromatique)",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "9_1",
+      "displayName": "Niveau 9 - Épreuve 1 (Évêque Chromatique et Ballerine Chromatique)",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "9_2",
+      "displayName": "Niveau 9 - Épreuve 2 (Démineur Chromatique)",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "9_3",
+      "displayName": "Niveau 9 - Épreuve 3 (Danseuse Chromatique)",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "10_1",
+      "displayName": "Niveau 10 - Épreuve 1 (Portier Chromatique et Démineur Chromatique)",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "10_2",
+      "displayName": "Niveau 10 - Épreuve 2 (Chevalières Chromatiques)",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "10_3",
+      "displayName": "Niveau 10 - Épreuve 3 (Chalier Chromatique et Amphorien Chromatique)",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "11_1",
+      "displayName": "Niveau 11 - Épreuve 1",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "11_2",
+      "displayName": "Niveau 11 - Épreuve 2 (Clair Obscur Chromatique)",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "11_3",
+      "displayName": "Niveau 11 - Épreuve 3",
+      "category": "Boss"
+    },
+    {
+      "originalName": "LD_Duolliste",
+      "displayName": "Duollistes",
+      "category": "Boss"
+    },
+    {
+      "originalName": "LD_LampmasterAlpha",
+      "displayName": "Maître des Lampes Chromatique",
+      "category": "Boss"
+    },
+    {
+      "originalName": "LD_CleaAlpha",
+      "displayName": "Cléa Déchainée",
+      "category": "Boss"
+    },
+    {
+      "originalName": "LD_SimonAlpha",
+      "displayName": "Simon, l'étoile divergente",
+      "category": "Boss"
+    }
+  ],
+  "Dunes de Sirène": [
+    {
+      "originalName": "ObjectID_Enemy_SmallLevel_Sirene_MusicHear_BP_EnemyWorld_Glissando_ALPHA_C_8DC766CA4E43937185CAA8B5C8688066",
+      "displayName": "Glissando Chromatique",
+      "category": "Chromatic"
+    }
+  ],
+  "L'Atelier": [
+    {
+      "originalName": "LD_Battle_CleaWorkshopLampmaster",
+      "displayName": "Maître des Lampes",
+      "category": "Boss"
+    }
+  ],
+  "Sanctuaire de la Nuit Éternelle": [
+    {
+      "originalName": "LD_Battle_TwilightBossPotatobag",
+      "displayName": "Sakapatate Ultime",
+      "category": "Boss"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_Main_AncientSanctuary_WP_BP_EnemyWorld_Cruler_ALPHA_C_60ED5295404EDABFFEE6698E2B88B309",
+      "displayName": "Cruleur Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "MANUAL_1766334186704",
+      "displayName": "Anthonypo",
+      "category": "Merchant"
+    },
+    {
+      "originalName": "TwilightSanctuary_BP_EnemyWorld_Petank_Violet",
+      "displayName": "Pétank",
+      "category": "Petank"
+    }
+  ],
+  "Falaises Obscures": [
+    {
+      "originalName": "ChromaZone_Mime_Sciel",
+      "displayName": "Mime Sciel",
+      "category": "Mime"
+    },
+    {
+      "originalName": "ChromaZone_Mime_Lune",
+      "displayName": "Mime Lune",
+      "category": "Mime"
+    },
+    {
+      "originalName": "ChromaZone_Mime_Verso",
+      "displayName": "Mime Verso",
+      "category": "Mime"
+    },
+    {
+      "originalName": "ChromaZone_Mime_Maelle",
+      "displayName": "Mime Maëlle",
+      "category": "Mime"
+    },
+    {
+      "originalName": "ChromaZone_Mime_Monoco",
+      "displayName": "Mime Monoco",
+      "category": "Mime"
+    }
+  ],
+  "Croisée des Chemins": [
+    {
+      "originalName": "Canvas_ChosenPath_Challenge1",
+      "displayName": "Glaise",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "MANUAL_1766337291687",
+      "displayName": "Bénisseur",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "MANUAL_1766337311674",
+      "displayName": "Stalact",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "MANUAL_1766337335380",
+      "displayName": "Amphorien",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "MANUAL_1766337367697",
+      "displayName": "Contorsionniste",
+      "category": "Mini-Boss"
+    }
+  ],
+  "Île Céleste": [
+    {
+      "originalName": "ObjectID_Enemy_SmallLevel_FA_Zone_01_BP_jRPG_EnemyWorld_Glaise_ALPHA_C_55CEFB144528A64E7F74A9BBBC1B2C5C",
+      "displayName": "Glaise Chromatique",
+      "category": "Chromatic"
+    }
+  ],
+  "Rivière Sacrée": [
+    {
+      "originalName": "LD_Golgra_SacredRiver",
+      "displayName": "Golgra",
+      "category": "Boss"
+    }
+  ],
+  "Glacier Ardent": [
+    {
+      "originalName": "ObjectID_Enemy_Level_Side_FrozenHeart_BP_EnemyWorld_Veilleur_Alpha_C_D489BDCF4A31987736FCCDA13DC46E91",
+      "displayName": "Veilleur Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "FrozenHeart_BP_EnemyWorld_Petank_Red",
+      "displayName": "Pétank",
+      "category": "Petank"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_Side_FrozenHeart_BP_EnemyWorld_Mime_MM_C_8A89D1F24C03FC4437154A86F813AE0B",
+      "displayName": "Mime",
+      "category": "Mime"
+    },
+    {
+      "originalName": "LD_Battle_Gargant",
+      "displayName": "Gargant",
+      "category": "Boss"
+    }
+  ],
+  "Regards Occultes": [
+    {
+      "originalName": "SmallLevel_MF_Zone_01_BP_EnemyWorld_Petank_Green",
+      "displayName": "Pétank",
+      "category": "Petank"
+    },
+    {
+      "originalName": "ObjectID_Enemy_SmallLevel_MF_Zone_01_BP_EnemyWorld_Boucheclier_ALPHA_C_74A673B2497F899B60E0AD9E602CA667",
+      "displayName": "Boucheclier Chromatique",
+      "category": "Chromatic"
+    }
+  ],
+  "L'Aspirante": [
+    {
+      "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyWorld_Mime_RE_C_EBC00B934E8252C2534E66A018482429",
+      "displayName": "Mime",
+      "category": "Mime"
+    },
+    {
+      "originalName": "Reacher_Main_V2_BP_EnemyWorld_Petank_Yellow",
+      "displayName": "Pétank",
+      "category": "Petank"
+    },
+    {
+      "originalName": "Merchant_Reacher",
+      "displayName": "Éragol",
+      "category": "Merchant"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyWorld_BlackSmith_ALPHA_C_7B5BE91648CC6403656015842A7A6FA1",
+      "displayName": "Brasseur Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "MANUAL_1766348523875",
+      "displayName": "Alicia Peinte",
+      "category": "Boss"
+    }
+  ],
+  "Manoir Suspendu": [
+    {
+      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_Mime_CFH_C_4FF2635649D11BD3E19C9AA91B90BD7A",
+      "displayName": "Mime",
+      "category": "Mime"
+    },
+    {
+      "originalName": "MANUAL_1766407196253",
+      "displayName": "Fusoka",
+      "category": "Merchant"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_Goblu_C_4048B3D14BEC01123738D4BBC64C9C87",
+      "displayName": "Goblu",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_Duelliste_Final_C_F7C7F43F411F38CC89929B9C4CF931C9",
+      "displayName": "Dualliste",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_LampMaster_C_F25D77B144A0DD472C8E75AD2667B7AE",
+      "displayName": "Maître des Lampes",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "CleaFlyingHouse_Main_BP_EnemyWorld_Petank_Orange",
+      "displayName": "Pétank",
+      "category": "Petank"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyGroup_C_91D7974F4D7241E94DA514B38067E1A2",
+      "displayName": "Évêques",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "CFH_Boss_Clea",
+      "displayName": "Cléa",
+      "category": "Boss"
+    }
+  ],
+  "Esquisses de Renoir": [
+    {
+      "originalName": "ObjectID_Enemy_Level_Monolith_Floor_1_BP_EnemyWorld_Creation_Alpha_C_A388578444C235248B90979A13F3C3CF",
+      "displayName": "Création Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "SimonPhase2",
+      "displayName": "Simon",
+      "category": "Boss"
+    },
+    {
+      "originalName": "SimonRematchP2",
+      "displayName": "Simon Rematch",
+      "category": "Boss"
+    }
+  ],
+  "Esquisses de Verso": [
+    {
+      "originalName": "ObjectID_Enemy_Level_Side_VersosDraft_BP_EnemyWorld_Mime_VD_C",
+      "displayName": "Mime",
+      "category": "Mime"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_Side_VersosDraft_BP_EnemyWorld_Machinapied_Alpha_C_DFDBE6CF49F44D25D9FBBA95E385DF6C",
+      "displayName": "Machinapied Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_Side_VersosDraft_BP_EnemyWorld_Franctale_Alpha_C_EC88B3F14085C641BA3F78A22498032A",
+      "displayName": "Franctale Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "ObjectID_Enemy_Level_Side_VersosDraft_BP_EnemyWorld_Barbasucette_Alpha_C_47A96B424AD4ED32D5F2858764A88765",
+      "displayName": "Barbasucette Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "Boss_LicorneAlpha",
+      "displayName": "Licorne Chromatique",
+      "category": "Chromatic"
+    },
+    {
+      "originalName": "MANUAL_1766422194980",
+      "displayName": "Najabla",
+      "category": "Merchant"
+    },
+    {
+      "originalName": "Boss_Licornapied",
+      "displayName": "Licornapied",
+      "category": "Mini-Boss"
+    },
+    {
+      "originalName": "LD_Battle_Osquio",
+      "displayName": "Osquio",
       "category": "Boss"
     }
   ]

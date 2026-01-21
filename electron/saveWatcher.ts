@@ -1,14 +1,14 @@
 import chokidar, { FSWatcher } from 'chokidar'
 import { parseSaveFile } from './saveParser.js'
-import { readFile } from 'fs/promises'
+import { readFile, mkdir } from 'fs/promises'
 import { existsSync } from 'fs'
-import { join } from 'path'
+import { join, basename } from 'path'
 import { app } from 'electron'
 
 let currentWatcher: FSWatcher | null = null
 let previousBossList: any[] = []
 let currentSavePath: string | null = null
-let currentCallback: ((bossList: Boss[], newlyKilled?: Boss[], unknownBosses?: Boss[]) => void) | null = null
+let currentCallback: ((bossList: Boss[], newlyKilled?: Boss[]) => void) | null = null
 
 interface Boss {
   name: string
@@ -17,23 +17,49 @@ interface Boss {
   category?: string
   zone?: string
   originalName?: string
-  needsInfo?: boolean
 }
 
 interface ManualBossStates {
   [originalName: string]: {
     killed: boolean
-    encountered: boolean
+    encountered?: boolean  // Optionnel : absent pour les MANUAL_*, présent pour les autres
   }
 }
 
+const manualStatesDir = join(app.getPath('userData'), 'manual-states')
+
+// Générer le chemin du fichier d'états manuels basé sur le nom de la sauvegarde
+function getManualStatesPath(savePath: string): string {
+  const saveFileName = basename(savePath, '.sav')
+  return join(manualStatesDir, `${saveFileName}.json`)
+}
+
 // Charger les états manuels
-async function loadManualStates(): Promise<ManualBossStates> {
+async function loadManualStates(savePath: string): Promise<ManualBossStates> {
   try {
-    const manualStatesPath = join(app.getPath('userData'), 'manual-boss-states.json')
+    // Créer le dossier s'il n'existe pas
+    if (!existsSync(manualStatesDir)) {
+      await mkdir(manualStatesDir, { recursive: true })
+    }
+    
+    const manualStatesPath = getManualStatesPath(savePath)
     if (existsSync(manualStatesPath)) {
       const data = await readFile(manualStatesPath, 'utf-8')
-      return JSON.parse(data)
+      const rawStates = JSON.parse(data)
+      
+      // Ajouter automatiquement encountered: true pour les boss MANUAL_*
+      const states: ManualBossStates = {}
+      for (const [key, value] of Object.entries(rawStates)) {
+        if (key.startsWith('MANUAL_')) {
+          states[key] = {
+            killed: (value as any).killed,
+            encountered: true
+          }
+        } else {
+          states[key] = value as any
+        }
+      }
+      return states
     }
   } catch (error) {
     console.warn('Could not load manual states in watcher:', error)
@@ -42,22 +68,23 @@ async function loadManualStates(): Promise<ManualBossStates> {
 }
 
 // Fusionner les boss de la sauvegarde avec les états manuels
-async function mergeBossesWithManualStates(bossList: Boss[]): Promise<Boss[]> {
-  const manualStates = await loadManualStates()
+async function mergeBossesWithManualStates(savePath: string, bossList: Boss[]): Promise<Boss[]> {
+  const manualStates = await loadManualStates(savePath)
   
   return bossList.map(boss => {
     if (boss.originalName && manualStates[boss.originalName]) {
+      const state = manualStates[boss.originalName]
       return {
         ...boss,
-        killed: manualStates[boss.originalName].killed,
-        encountered: manualStates[boss.originalName].encountered
+        killed: state.killed,
+        encountered: state.encountered ?? boss.encountered  // Utiliser encountered du state si présent
       }
     }
     return boss
   })
 }
 
-export function watchSaveFile(savePath: string, callback: (bossList: Boss[], newlyKilled?: Boss[], unknownBosses?: Boss[]) => void) {
+export function watchSaveFile(savePath: string, callback: (bossList: Boss[], newlyKilled?: Boss[]) => void) {
   // Sauvegarder pour le refresh manuel
   currentSavePath = savePath
   currentCallback = callback
@@ -76,7 +103,7 @@ export function watchSaveFile(savePath: string, callback: (bossList: Boss[], new
     let bossList = await parseSaveFile(path)
     
     // Fusionner avec les états manuels
-    bossList = await mergeBossesWithManualStates(bossList)
+    bossList = await mergeBossesWithManualStates(path, bossList)
     
     // Détecter les boss nouvellement tués
     const newlyKilled: Boss[] = []
@@ -100,18 +127,15 @@ export function watchSaveFile(savePath: string, callback: (bossList: Boss[], new
       }
     }
     
-    // Détecter les boss inconnus nouvellement tués (qui nécessitent des infos)
-    const unknownBosses = newlyKilled.filter(boss => boss.needsInfo === true)
-    
     previousBossList = bossList
-    callback(bossList, newlyKilled.length > 0 ? newlyKilled : undefined, unknownBosses.length > 0 ? unknownBosses : undefined)
+    callback(bossList, newlyKilled.length > 0 ? newlyKilled : undefined)
   })
 
   currentWatcher.on('add', async (path: string) => {
     let bossList = await parseSaveFile(path)
     
     // Fusionner avec les états manuels
-    bossList = await mergeBossesWithManualStates(bossList)
+    bossList = await mergeBossesWithManualStates(path, bossList)
     
     previousBossList = bossList
     callback(bossList)
@@ -133,7 +157,7 @@ export async function refreshBossList() {
     let bossList = await parseSaveFile(currentSavePath)
     
     // Fusionner avec les états manuels
-    bossList = await mergeBossesWithManualStates(bossList)
+    bossList = await mergeBossesWithManualStates(currentSavePath, bossList)
     
     // Pas de détection de nouveaux boss tués lors d'un refresh manuel
     previousBossList = bossList

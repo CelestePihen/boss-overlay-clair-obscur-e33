@@ -1,6 +1,7 @@
 {
   "appId": "com.celcr.boss-overlay",
   "productName": "Boss Overlay",
+  "npmRebuild": false,
   "directories": {
     "output": "dist"
   },

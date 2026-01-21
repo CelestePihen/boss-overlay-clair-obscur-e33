@@ -345,8 +345,7 @@ function extractBossesWithDatabase(saveData: SaveData): Boss[] {
         encountered: true,
         category: boss.category,
         zone: boss.zone,
-        originalName: saveEnemyName,
-        needsInfo: boss.zone === 'Sans zone' || boss.zone === '❓ À définir'
+        originalName: saveEnemyName
       })
     } else {
       // Boss manuel (pas dans la save)
@@ -359,27 +358,9 @@ function extractBossesWithDatabase(saveData: SaveData): Boss[] {
           encountered: false,
           category: boss.category,
           zone: boss.zone,
-          originalName: boss.originalName,
-          needsInfo: false
+          originalName: boss.originalName
         })
       }
-    }
-  }
-  
-  // Ajouter les boss inconnus (dans la save mais pas dans la DB)
-  for (const enemyName of allSaveEnemies) {
-    if (!processedSaveEnemies.has(enemyName)) {
-      const prettyName = prettifyEnemyName(enemyName)
-      console.log(`Unknown boss: ${enemyName} -> ${prettyName}`)
-      bossList.push({
-        name: prettyName.length > 5 ? prettyName : enemyName,
-        killed: killedEnemiesSet.has(enemyName),
-        encountered: true,
-        category: 'Unknown',
-        zone: '❓ À définir',
-        originalName: enemyName,
-        needsInfo: true
-      })
     }
   }
 
