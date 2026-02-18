@@ -1,19 +1,23 @@
 {
-  "appId": "com.celcr.boss-overlay",
-  "productName": "Boss Overlay",
+  "appId": "fr.cel.boss-overlay",
+  "productName": "Boss Overlay - Clair Obscur E33",
   "npmRebuild": false,
   "directories": {
-    "output": "dist"
+    "output": "release"
   },
-  "files": [
-    "dist/**/*",
-    "dist-electron/**/*",
-    "tools/**/*",
-    "package.json"
-  ],
+  "files": ["dist/**/*", "dist-electron/**/*", "package.json"],
   "win": {
-    "target": "dir",
-    "icon": null
+    "target": ["nsis", "portable"],
+    "icon": "build/icon.ico"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
+  },
+  "portable": {
+    "artifactName": "Boss-Overlay-Portable.exe"
   },
   "extraResources": [
     {

@@ -1,6 +1,7 @@
 .github/
 dist/
 dist-electron/
+release/
 
 # Logs
 logs

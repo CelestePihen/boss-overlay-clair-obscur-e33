@@ -103,7 +103,7 @@ export function BossInfoForm({ boss, onSubmit, onCancel, isEditMode = false }: B
               type="text"
               value={displayName}
               onChange={(e) => setDisplayName(e.target.value)}
-              placeholder="Ex: Mime du Bois Sacré"
+              placeholder="Ex: Mime"
               required
               style={{
                 width: '100%',

@@ -96,11 +96,20 @@ export function watchSaveFile(savePath: string, callback: (bossList: Boss[], new
 
   currentWatcher = chokidar.watch(savePath, {
     persistent: true,
-    ignoreInitial: false
+    ignoreInitial: true
+  })
+
+  // Charger une seule fois au démarrage quand le watcher est prêt
+  currentWatcher.on('ready', async () => {
+    console.log('Watcher ready, loading initial boss list')
+    let bossList = await parseSaveFile(savePath)
+    bossList = await mergeBossesWithManualStates(savePath, bossList)
+    previousBossList = bossList
+    callback(bossList)
   })
 
   currentWatcher.on('change', async (path: string) => {
-    let bossList = await parseSaveFile(path)
+    let bossList: Boss[] = await parseSaveFile(path)
     
     // Fusionner avec les états manuels
     bossList = await mergeBossesWithManualStates(path, bossList)
@@ -131,21 +140,9 @@ export function watchSaveFile(savePath: string, callback: (bossList: Boss[], new
     callback(bossList, newlyKilled.length > 0 ? newlyKilled : undefined)
   })
 
-  currentWatcher.on('add', async (path: string) => {
-    let bossList = await parseSaveFile(path)
-    
-    // Fusionner avec les états manuels
-    bossList = await mergeBossesWithManualStates(path, bossList)
-    
-    previousBossList = bossList
-    callback(bossList)
-  })
-
   currentWatcher.on('error', (error: unknown) => {
     console.error('Watcher error:', error)
   })
-
-  // Ne retourne rien pour éviter le problème de clonage
 }
 
 /**
