@@ -1,6 +1,6 @@
 {
   "name": "boss-overlay",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Cel___",
   "description": "Boss Checklist Overlay for Clair Obscur Expedition 33",
   "main": "dist-electron/main.js",
