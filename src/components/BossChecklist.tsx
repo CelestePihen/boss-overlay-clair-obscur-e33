@@ -36,8 +36,6 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss, allowManua
     
     bosses.forEach(boss => {
       const zoneName = boss.zone || 'Uncategorized'
-      // Ne pas afficher les zones Hidden, Sans zone et À définir (uniquement des ennemis normaux)
-      if (zoneName === 'Hidden' || zoneName === 'Sans zone' || zoneName === '❓ À définir') return
       
       if (!groups.has(zoneName)) {
         groups.set(zoneName, [])
@@ -88,16 +86,9 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss, allowManua
   }, [zoneGroups, searchTerm, filterMode])
 
   const stats = useMemo(() => {
-    // Ne compter que les boss rencontrés qui ne sont pas dans les zones d'ennemis (Hidden, Sans zone, À définir)
-    const validBosses = bosses.filter(b => 
-      b.encountered &&
-      b.category !== 'Other' && 
-      b.zone !== 'Hidden' && 
-      b.zone !== 'Sans zone' &&
-      b.zone !== '❓ À définir'
-    )
-    const killed = validBosses.filter(b => b.killed).length
-    const total = validBosses.length
+    // Compter uniquement les boss rencontrés et vaincus pour le killed
+    const killed = bosses.filter(b => b.encountered && b.killed).length
+    const total = bosses.length
     return { killed, total }
   }, [bosses])
 
@@ -167,7 +158,7 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss, allowManua
               className={`filter-btn ${filterMode === 'all' ? 'active' : ''}`}
               onClick={() => setFilterMode('all')}
             >
-              Tous ({bosses.filter(b => b.encountered && b.category !== 'Other' && b.zone !== 'Hidden' && b.zone !== '❓ À définir').length})
+              Tous ({bosses.filter(b => b.encountered).length})
             </button>
             <button
               className={`filter-btn ${filterMode === 'killed' ? 'active' : ''}`}

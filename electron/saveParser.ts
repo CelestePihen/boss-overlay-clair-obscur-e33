@@ -81,15 +81,6 @@ export async function saveBossDatabase(newBoss: { originalName: string; displayN
     const dbContent = await readFile(dbPath, 'utf-8')
     const parsedData = JSON.parse(dbContent) as BossDatabaseByZone
     
-    // Chercher et retirer le boss de "Sans zone" s'il y est
-    if (parsedData['Sans zone']) {
-      const sansZoneIndex = parsedData['Sans zone'].findIndex(b => b.originalName === newBoss.originalName)
-      if (sansZoneIndex >= 0) {
-        parsedData['Sans zone'].splice(sansZoneIndex, 1)
-        console.log(`Removed boss from "Sans zone": ${newBoss.originalName}`)
-      }
-    }
-    
     // Ajouter le boss dans sa nouvelle zone
     if (!parsedData[newBoss.zone]) {
       parsedData[newBoss.zone] = []

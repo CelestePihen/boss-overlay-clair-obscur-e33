@@ -172,7 +172,6 @@ export function BossInfoForm({ boss, onSubmit, onCancel, isEditMode = false }: B
               <option value="Mime">Mime</option>
               <option value="Petank">Petank</option>
               <option value="Merchant">Merchant</option>
-              <option value="Other">Other</option>
             </select>
           </div>
 
