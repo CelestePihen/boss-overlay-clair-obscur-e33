@@ -2,6 +2,7 @@ name: Translation Contribution
 description: Submit a translation for Boss Overlay
 title: '[Translation] Replace with the Language Name'
 labels: ['translation', 'enhancement']
+assignees: CelestePihen
 body:
   - type: markdown
     attributes:
@@ -37,7 +38,7 @@ body:
     id: native-speaker
     attributes:
       label: Language Proficiency
-      description: This helps us ensure translation quality
+      description: This helps me ensure translation quality
       options:
         - label: I am a native speaker
         - label: I am fluent in this language
@@ -76,7 +77,7 @@ body:
             "title": "Boss Overlay - Clair Obscur E33"
           },
           "settings": {
-            "title": "Einstellungen",
+            "title": "Settings",
             ...
           }
         }
@@ -107,7 +108,7 @@ body:
           required: true
         - label: I translated text naturally (not word-for-word)
           required: true
-        - label: I tested the translation (if possible)
+        - label: I tested the translation (not obligatory, I will test it myself)
           required: false
 
   - type: markdown
