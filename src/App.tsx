@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
+
 import BossChecklist from './components/BossChecklist'
-import Settings from './components/Settings'
 import { BossInfoForm } from './components/BossInfoForm'
+import Settings from './components/Settings'
 
 interface Boss {
   name: string
@@ -18,14 +19,16 @@ function App() {
   const [savePath, setSavePath] = useState('')
   const [editingBoss, setEditingBoss] = useState<Boss | null>(null)
   const [isAddingBoss, setIsAddingBoss] = useState(false)
-  const [manualStates, setManualStates] = useState<Record<string, { killed: boolean; encountered: boolean }>>({})
+  const [manualStates, setManualStates] = useState<
+    Record<string, { killed: boolean; encountered: boolean }>
+  >({})
   const [allowManualEdit, setAllowManualEdit] = useState(false)
   const [allowBossEditing, setAllowBossEditing] = useState(false)
 
   // Charger la config au démarrage
   useEffect(() => {
     if (window.electronAPI) {
-      window.electronAPI.getConfig().then(config => {
+      window.electronAPI.getConfig().then((config) => {
         setAllowManualEdit(config.allowManualEditAutoDetected ?? false)
         setAllowBossEditing(config.allowBossEditing ?? false)
       })
@@ -35,7 +38,7 @@ function App() {
   // Charger les états manuels quand le savePath change
   useEffect(() => {
     if (window.electronAPI && savePath) {
-      window.electronAPI.getManualStates(savePath).then(states => {
+      window.electronAPI.getManualStates(savePath).then((states) => {
         setManualStates(states)
       })
     }
@@ -46,12 +49,12 @@ function App() {
       // Écouter les mises à jour des boss
       window.electronAPI.onBossUpdate((bossList: Boss[]) => {
         // Fusionner avec les états manuels
-        const mergedBosses = bossList.map(boss => {
+        const mergedBosses = bossList.map((boss) => {
           if (boss.originalName && manualStates[boss.originalName]) {
             return {
               ...boss,
               killed: manualStates[boss.originalName].killed,
-              encountered: manualStates[boss.originalName].encountered
+              encountered: manualStates[boss.originalName].encountered,
             }
           }
           return boss
@@ -76,7 +79,10 @@ function App() {
     setShowSettings(false)
   }
 
-  const handleConfigChange = (config: { allowManualEditAutoDetected?: boolean; allowBossEditing?: boolean }) => {
+  const handleConfigChange = (config: {
+    allowManualEditAutoDetected?: boolean
+    allowBossEditing?: boolean
+  }) => {
     if (config.allowManualEditAutoDetected !== undefined) {
       setAllowManualEdit(config.allowManualEditAutoDetected)
     }
@@ -85,7 +91,12 @@ function App() {
     }
   }
 
-  const handleSaveBossInfo = async (info: { originalName: string; displayName: string; category: string; zone: string }) => {
+  const handleSaveBossInfo = async (info: {
+    originalName: string
+    displayName: string
+    category: string
+    zone: string
+  }) => {
     if (window.electronAPI) {
       const result = await window.electronAPI.saveBossInfo(info)
       if (result.success) {
@@ -124,27 +135,29 @@ function App() {
 
     const newState = {
       killed,
-      encountered: true // Si on clique, c'est qu'on l'a rencontré
+      encountered: true, // Si on clique, c'est qu'on l'a rencontré
     }
 
     // Sauvegarder l'état manuel
     if (window.electronAPI) {
-      await window.electronAPI.saveManualState(savePath, boss.originalName, newState)
+      await window.electronAPI.saveManualState(
+        savePath,
+        boss.originalName,
+        newState,
+      )
     }
 
     // Mettre à jour le state local
-    setManualStates(prev => ({
+    setManualStates((prev) => ({
       ...prev,
-      [boss.originalName!]: newState
+      [boss.originalName!]: newState,
     }))
 
     // Mettre à jour la liste des boss immédiatement
-    setBosses(prevBosses => 
-      prevBosses.map(b => 
-        b.originalName === boss.originalName 
-          ? { ...b, ...newState }
-          : b
-      )
+    setBosses((prevBosses) =>
+      prevBosses.map((b) =>
+        b.originalName === boss.originalName ? { ...b, ...newState } : b,
+      ),
     )
   }
 
@@ -157,7 +170,7 @@ function App() {
             name: editingBoss.name,
             originalName: editingBoss.originalName,
             category: editingBoss.category,
-            zone: editingBoss.zone
+            zone: editingBoss.zone,
           }}
           onSubmit={handleSaveBossInfo}
           onCancel={handleCancelBossInfo}
@@ -172,7 +185,7 @@ function App() {
             name: '',
             originalName: `MANUAL_${Date.now()}`, // ID unique pour les boss manuels
             category: 'Boss',
-            zone: ''
+            zone: '',
           }}
           onSubmit={handleSaveBossInfo}
           onCancel={handleCancelBossInfo}
@@ -189,13 +202,13 @@ function App() {
       </div>
 
       {showSettings ? (
-        <Settings 
+        <Settings
           onSavePathChange={handleStartWatch}
           currentPath={savePath}
           onConfigChange={handleConfigChange}
         />
       ) : (
-        <BossChecklist 
+        <BossChecklist
           bosses={bosses}
           onEditBoss={allowBossEditing ? handleEditBoss : undefined}
           onAddBoss={handleAddBoss}

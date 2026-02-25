@@ -9,12 +9,22 @@ interface BossInfoFormProps {
     killed?: boolean
     encountered?: boolean
   }
-  onSubmit: (info: { originalName: string; displayName: string; category: string; zone: string }) => void
+  onSubmit: (info: {
+    originalName: string
+    displayName: string
+    category: string
+    zone: string
+  }) => void
   onCancel: () => void
   isEditMode?: boolean
 }
 
-export function BossInfoForm({ boss, onSubmit, onCancel, isEditMode = false }: BossInfoFormProps) {
+export function BossInfoForm({
+  boss,
+  onSubmit,
+  onCancel,
+  isEditMode = false,
+}: BossInfoFormProps) {
   const [displayName, setDisplayName] = useState(boss.name)
   const [zone, setZone] = useState(boss.zone || '')
   const [category, setCategory] = useState(boss.category || 'Boss')
@@ -26,51 +36,61 @@ export function BossInfoForm({ boss, onSubmit, onCancel, isEditMode = false }: B
         originalName: boss.originalName,
         displayName,
         category,
-        zone
+        zone,
       })
     }
   }
 
   return (
-    <div style={{
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0,
-      backgroundColor: 'rgba(0, 0, 0, 0.9)',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      zIndex: 1000,
-      padding: '20px'
-    }}>
-      <div style={{
-        backgroundColor: '#1a1a1a',
-        borderRadius: '12px',
-        padding: '30px',
-        maxWidth: '500px',
-        width: '100%',
-        border: '2px solid #3498db',
-        position: 'relative'
-      }}>
-        <h2 style={{ 
-          color: '#3498db', 
-          marginBottom: '20px',
-          fontSize: '24px',
-          textAlign: 'center'
-        }}>
-          {isEditMode ? '✏️ Modifier le boss' : '➕ Ajouter un boss manuellement'}
+    <div
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        backgroundColor: 'rgba(0, 0, 0, 0.9)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        zIndex: 1000,
+        padding: '20px',
+      }}
+    >
+      <div
+        style={{
+          backgroundColor: '#1a1a1a',
+          borderRadius: '12px',
+          padding: '30px',
+          maxWidth: '500px',
+          width: '100%',
+          border: '2px solid #3498db',
+          position: 'relative',
+        }}
+      >
+        <h2
+          style={{
+            color: '#3498db',
+            marginBottom: '20px',
+            fontSize: '24px',
+            textAlign: 'center',
+          }}
+        >
+          {isEditMode
+            ? '✏️ Modifier le boss'
+            : '➕ Ajouter un boss manuellement'}
         </h2>
 
         <form onSubmit={handleSubmit}>
           <div style={{ marginBottom: '20px' }}>
-            <label style={{ 
-              display: 'block', 
-              color: '#ccc', 
-              marginBottom: '8px',
-              fontSize: '14px'
-            }}>
+            <label
+              style={{
+                display: 'block',
+                color: '#ccc',
+                marginBottom: '8px',
+                fontSize: '14px',
+              }}
+            >
               Nom technique :
             </label>
             <input
@@ -85,18 +105,20 @@ export function BossInfoForm({ boss, onSubmit, onCancel, isEditMode = false }: B
                 borderRadius: '6px',
                 color: '#888',
                 fontSize: '12px',
-                fontFamily: 'monospace'
+                fontFamily: 'monospace',
               }}
             />
           </div>
 
           <div style={{ marginBottom: '20px' }}>
-            <label style={{ 
-              display: 'block', 
-              color: '#ccc', 
-              marginBottom: '8px',
-              fontSize: '14px'
-            }}>
+            <label
+              style={{
+                display: 'block',
+                color: '#ccc',
+                marginBottom: '8px',
+                fontSize: '14px',
+              }}
+            >
               Nom à afficher :
             </label>
             <input
@@ -112,18 +134,20 @@ export function BossInfoForm({ boss, onSubmit, onCancel, isEditMode = false }: B
                 border: '2px solid #3498db',
                 borderRadius: '6px',
                 color: '#fff',
-                fontSize: '16px'
+                fontSize: '16px',
               }}
             />
           </div>
 
           <div style={{ marginBottom: '20px' }}>
-            <label style={{ 
-              display: 'block', 
-              color: '#ccc', 
-              marginBottom: '8px',
-              fontSize: '14px'
-            }}>
+            <label
+              style={{
+                display: 'block',
+                color: '#ccc',
+                marginBottom: '8px',
+                fontSize: '14px',
+              }}
+            >
               Zone :
             </label>
             <input
@@ -139,18 +163,20 @@ export function BossInfoForm({ boss, onSubmit, onCancel, isEditMode = false }: B
                 border: '2px solid #3498db',
                 borderRadius: '6px',
                 color: '#fff',
-                fontSize: '16px'
+                fontSize: '16px',
               }}
             />
           </div>
 
           <div style={{ marginBottom: '20px' }}>
-            <label style={{ 
-              display: 'block', 
-              color: '#ccc', 
-              marginBottom: '8px',
-              fontSize: '14px'
-            }}>
+            <label
+              style={{
+                display: 'block',
+                color: '#ccc',
+                marginBottom: '8px',
+                fontSize: '14px',
+              }}
+            >
               Catégorie :
             </label>
             <select
@@ -163,7 +189,7 @@ export function BossInfoForm({ boss, onSubmit, onCancel, isEditMode = false }: B
                 border: '1px solid #444',
                 borderRadius: '6px',
                 color: '#fff',
-                fontSize: '16px'
+                fontSize: '16px',
               }}
             >
               <option value="Boss">Boss</option>
@@ -175,11 +201,13 @@ export function BossInfoForm({ boss, onSubmit, onCancel, isEditMode = false }: B
             </select>
           </div>
 
-          <div style={{ 
-            display: 'flex', 
-            gap: '10px', 
-            marginTop: '30px' 
-          }}>
+          <div
+            style={{
+              display: 'flex',
+              gap: '10px',
+              marginTop: '30px',
+            }}
+          >
             <button
               type="button"
               onClick={onCancel}
@@ -192,10 +220,14 @@ export function BossInfoForm({ boss, onSubmit, onCancel, isEditMode = false }: B
                 borderRadius: '6px',
                 fontSize: '16px',
                 cursor: 'pointer',
-                transition: 'background-color 0.2s'
+                transition: 'background-color 0.2s',
               }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#444'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#333'}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.backgroundColor = '#444')
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.backgroundColor = '#333')
+              }
             >
               Annuler
             </button>
@@ -211,10 +243,14 @@ export function BossInfoForm({ boss, onSubmit, onCancel, isEditMode = false }: B
                 fontSize: '16px',
                 fontWeight: 'bold',
                 cursor: 'pointer',
-                transition: 'background-color 0.2s'
+                transition: 'background-color 0.2s',
               }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5dade2'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#3498db'}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.backgroundColor = '#5dade2')
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.backgroundColor = '#3498db')
+              }
             >
               ✅ Enregistrer
             </button>

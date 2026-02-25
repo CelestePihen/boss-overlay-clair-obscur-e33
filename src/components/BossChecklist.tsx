@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useMemo, useState } from 'react'
 
 interface Boss {
   name: string
@@ -25,18 +25,26 @@ interface ZoneGroup {
   total: number
 }
 
-function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss, allowManualEdit = false }: Props) {
+function BossChecklist({
+  bosses,
+  onEditBoss,
+  onAddBoss,
+  onToggleBoss,
+  allowManualEdit = false,
+}: Props) {
   const [searchTerm, setSearchTerm] = useState('')
-  const [filterMode, setFilterMode] = useState<'all' | 'alive' | 'killed' | 'encountered'>('all')
+  const [filterMode, setFilterMode] = useState<
+    'all' | 'alive' | 'killed' | 'encountered'
+  >('all')
   const [collapsedZones, setCollapsedZones] = useState<Set<string>>(new Set())
 
   // Grouper les boss par zone
   const zoneGroups = useMemo(() => {
     const groups = new Map<string, Boss[]>()
-    
-    bosses.forEach(boss => {
+
+    bosses.forEach((boss) => {
       const zoneName = boss.zone || 'Uncategorized'
-      
+
       if (!groups.has(zoneName)) {
         groups.set(zoneName, [])
       }
@@ -44,56 +52,59 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss, allowManua
     })
 
     // Convertir en array (ordre d'insertion naturel)
-    const groupArray: ZoneGroup[] = Array.from(groups.entries())
-      .map(([zoneName, zoneBosses]) => ({
+    const groupArray: ZoneGroup[] = Array.from(groups.entries()).map(
+      ([zoneName, zoneBosses]) => ({
         zoneName,
         bosses: zoneBosses,
-        killed: zoneBosses.filter(b => b.killed).length,
-        encountered: zoneBosses.filter(b => b.encountered).length,
-        total: zoneBosses.length
-      }))
+        killed: zoneBosses.filter((b) => b.killed).length,
+        encountered: zoneBosses.filter((b) => b.encountered).length,
+        total: zoneBosses.length,
+      }),
+    )
 
     return groupArray
   }, [bosses])
 
   // Filtrer les boss selon le terme de recherche et le mode
   const filteredZoneGroups = useMemo(() => {
-    return zoneGroups.map(zone => {
-      let filtered = zone.bosses
+    return zoneGroups
+      .map((zone) => {
+        let filtered = zone.bosses
 
-      // Filtre par statut
-      if (filterMode === 'alive') {
-        filtered = filtered.filter(boss => !boss.killed)
-      } else if (filterMode === 'killed') {
-        filtered = filtered.filter(boss => boss.killed)
-      } else if (filterMode === 'encountered') {
-        filtered = filtered.filter(boss => boss.encountered)
-      }
+        // Filtre par statut
+        if (filterMode === 'alive') {
+          filtered = filtered.filter((boss) => !boss.killed)
+        } else if (filterMode === 'killed') {
+          filtered = filtered.filter((boss) => boss.killed)
+        } else if (filterMode === 'encountered') {
+          filtered = filtered.filter((boss) => boss.encountered)
+        }
 
-      // Filtre par recherche
-      if (searchTerm.trim()) {
-        filtered = filtered.filter(boss =>
-          boss.name.toLowerCase().includes(searchTerm.toLowerCase())
-        )
-      }
+        // Filtre par recherche
+        if (searchTerm.trim()) {
+          filtered = filtered.filter((boss) =>
+            boss.name.toLowerCase().includes(searchTerm.toLowerCase()),
+          )
+        }
 
-      return {
-        ...zone,
-        bosses: filtered,
-        visibleTotal: filtered.length
-      }
-    }).filter(zone => zone.bosses.length > 0) // Retirer les zones vides après filtrage
+        return {
+          ...zone,
+          bosses: filtered,
+          visibleTotal: filtered.length,
+        }
+      })
+      .filter((zone) => zone.bosses.length > 0) // Retirer les zones vides après filtrage
   }, [zoneGroups, searchTerm, filterMode])
 
   const stats = useMemo(() => {
     // Compter uniquement les boss rencontrés et vaincus pour le killed
-    const killed = bosses.filter(b => b.encountered && b.killed).length
+    const killed = bosses.filter((b) => b.encountered && b.killed).length
     const total = bosses.length
     return { killed, total }
   }, [bosses])
 
   const toggleZone = (zoneName: string) => {
-    setCollapsedZones(prev => {
+    setCollapsedZones((prev) => {
       const newSet = new Set(prev)
       if (newSet.has(zoneName)) {
         newSet.delete(zoneName)
@@ -108,7 +119,7 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss, allowManua
     if (collapsedZones.size === zoneGroups.length) {
       setCollapsedZones(new Set())
     } else {
-      setCollapsedZones(new Set(zoneGroups.map(z => z.zoneName)))
+      setCollapsedZones(new Set(zoneGroups.map((z) => z.zoneName)))
     }
   }
 
@@ -123,9 +134,11 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss, allowManua
         <>
           {/* Stats */}
           <div className="stats">
-            <span className="stat-item killed">🏆 {stats.killed} / {stats.total} boss vaincus</span>
+            <span className="stat-item killed">
+              🏆 {stats.killed} / {stats.total} boss vaincus
+            </span>
             {onAddBoss && (
-              <button 
+              <button
                 onClick={onAddBoss}
                 style={{
                   padding: '6px 12px',
@@ -135,7 +148,7 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss, allowManua
                   color: '#fff',
                   fontSize: '12px',
                   cursor: 'pointer',
-                  fontWeight: '600'
+                  fontWeight: '600',
                 }}
               >
                 Ajouter un boss manuellement
@@ -158,7 +171,7 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss, allowManua
               className={`filter-btn ${filterMode === 'all' ? 'active' : ''}`}
               onClick={() => setFilterMode('all')}
             >
-              Tous ({bosses.filter(b => b.encountered).length})
+              Tous ({bosses.filter((b) => b.encountered).length})
             </button>
             <button
               className={`filter-btn ${filterMode === 'killed' ? 'active' : ''}`}
@@ -175,7 +188,11 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss, allowManua
             <button
               className="filter-btn"
               onClick={toggleAllZones}
-              title={collapsedZones.size === zoneGroups.length ? 'Développer toutes les zones' : 'Réduire toutes les zones'}
+              title={
+                collapsedZones.size === zoneGroups.length
+                  ? 'Développer toutes les zones'
+                  : 'Réduire toutes les zones'
+              }
             >
               {collapsedZones.size === zoneGroups.length ? '📂' : '📁'}
             </button>
@@ -192,11 +209,13 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss, allowManua
                 const isCollapsed = collapsedZones.has(zone.zoneName)
                 return (
                   <div key={zone.zoneName} className="zone-group">
-                    <div 
+                    <div
                       className="zone-header"
                       onClick={() => toggleZone(zone.zoneName)}
                     >
-                      <span className="zone-toggle">{isCollapsed ? '▶' : '▼'}</span>
+                      <span className="zone-toggle">
+                        {isCollapsed ? '▶' : '▼'}
+                      </span>
                       <span className="zone-name">{zone.zoneName}</span>
                       <span className="zone-stats">
                         ({zone.killed}/{zone.total})
@@ -205,41 +224,52 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss, allowManua
                     {!isCollapsed && (
                       <div className="zone-bosses">
                         {zone.bosses.map((boss, index) => (
-                          <div 
+                          <div
                             key={`${zone.zoneName}-${index}`}
                             className={`boss-item ${boss.killed ? 'killed' : ''} ${!boss.encountered ? 'not-encountered' : ''}`}
                           >
                             {(() => {
-                              const isManualBoss = boss.originalName?.startsWith('MANUAL_')
+                              const isManualBoss =
+                                boss.originalName?.startsWith('MANUAL_')
                               const canToggle = isManualBoss || allowManualEdit
-                              const tooltipText = !canToggle 
+                              const tooltipText = !canToggle
                                 ? 'Boss détecté automatiquement (non modifiable)'
-                                : boss.killed 
-                                ? 'Marquer comme vivant' 
-                                : 'Marquer comme vaincu'
-                              
+                                : boss.killed
+                                  ? 'Marquer comme vivant'
+                                  : 'Marquer comme vaincu'
+
                               return (
-                                <span 
+                                <span
                                   className="checkbox"
-                                  onClick={() => canToggle && onToggleBoss?.(boss, !boss.killed)}
-                                  style={{ 
-                                    cursor: canToggle && onToggleBoss ? 'pointer' : 'not-allowed',
-                                    opacity: canToggle ? 1 : 0.5
+                                  onClick={() =>
+                                    canToggle &&
+                                    onToggleBoss?.(boss, !boss.killed)
+                                  }
+                                  style={{
+                                    cursor:
+                                      canToggle && onToggleBoss
+                                        ? 'pointer'
+                                        : 'not-allowed',
+                                    opacity: canToggle ? 1 : 0.5,
                                   }}
                                   title={tooltipText}
                                 >
-                                  {boss.killed ? '☑' : boss.encountered ? '☐' : '⬜'}
+                                  {boss.killed
+                                    ? '☑'
+                                    : boss.encountered
+                                      ? '☐'
+                                      : '⬜'}
                                 </span>
                               )
                             })()}
                             <span className="name">
                               {boss.name}
                               {boss.originalName?.startsWith('MANUAL_') && (
-                                <span 
-                                  style={{ 
-                                    marginLeft: '6px', 
+                                <span
+                                  style={{
+                                    marginLeft: '6px',
                                     fontSize: '11px',
-                                    opacity: 0.7
+                                    opacity: 0.7,
                                   }}
                                   title="Boss ajouté manuellement"
                                 >
@@ -258,7 +288,7 @@ function BossChecklist({ bosses, onEditBoss, onAddBoss, onToggleBoss, allowManua
                                   borderRadius: '4px',
                                   color: '#fff',
                                   fontSize: '11px',
-                                  cursor: 'pointer'
+                                  cursor: 'pointer',
                                 }}
                                 title="Modifier ce boss"
                               >

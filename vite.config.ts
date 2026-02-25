@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite'
 import electron from 'vite-plugin-electron'
 import renderer from 'vite-plugin-electron-renderer'
 
@@ -16,10 +16,10 @@ export default defineConfig({
           build: {
             outDir: 'dist-electron',
             rollupOptions: {
-              external: ['electron', 'chokidar']
-            }
-          }
-        }
+              external: ['electron', 'chokidar'],
+            },
+          },
+        },
       },
       {
         entry: 'electron/preload.ts',
@@ -32,17 +32,17 @@ export default defineConfig({
             rollupOptions: {
               external: ['electron'],
               output: {
-                format: 'cjs'
-              }
-            }
-          }
-        }
-      }
+                format: 'cjs',
+              },
+            },
+          },
+        },
+      },
     ]),
-    renderer()
+    renderer(),
   ],
   base: './',
   server: {
-    port: 5173
-  }
+    port: 5173,
+  },
 })
