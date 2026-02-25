@@ -4,8 +4,8 @@ contextBridge.exposeInMainWorld('electronAPI', {
   startWatch: (savePath: string) => {
     return ipcRenderer.invoke('start-watch', savePath)
   },
-  onBossUpdate: (callback: (bossList: any[]) => void) => {
-    ipcRenderer.on('boss-update', (_event: IpcRendererEvent, bossList: any[]) =>
+  onBossUpdate: (callback: (bossList: unknown[]) => void) => {
+    ipcRenderer.on('boss-update', (_event: IpcRendererEvent, bossList: unknown[]) =>
       callback(bossList),
     )
   },
@@ -33,7 +33,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
   getConfig: () => {
     return ipcRenderer.invoke('get-config')
   },
-  saveConfig: (config: any) => {
+  saveConfig: (config: unknown) => {
     return ipcRenderer.invoke('save-config', config)
   },
   getManualStates: (savePath: string) => {
