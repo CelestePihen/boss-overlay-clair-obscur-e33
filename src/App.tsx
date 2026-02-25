@@ -96,8 +96,6 @@ function App() {
       if (result.success) {
         setEditingBoss(null)
         setIsAddingBoss(false)
-        // Afficher une notification de succès
-        console.log('Boss info saved successfully!')
       } else {
         alert(
           t('bossForm.saveError', { error: result.error || 'Unknown error' }),

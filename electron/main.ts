@@ -1,4 +1,4 @@
-import { app, BrowserWindow, ipcMain, Notification } from 'electron'
+import { app, BrowserWindow, ipcMain } from 'electron'
 import { existsSync } from 'fs'
 import { access, mkdir, readFile, writeFile } from 'fs/promises'
 import { basename, dirname, join } from 'path'
@@ -235,20 +235,8 @@ ipcMain.handle('start-watch', async (event, savePath: string) => {
   config.lastSavePath = savePath
   await saveConfig(config)
 
-  watchSaveFile(savePath, (bossList, newlyKilled) => {
+  watchSaveFile(savePath, (bossList) => {
     mainWindow?.webContents.send('boss-update', bossList)
-
-    // Afficher une notification pour les boss nouvellement tués
-    if (newlyKilled && newlyKilled.length > 0) {
-      for (const boss of newlyKilled) {
-        const notification = new Notification({
-          title: '🎯 Boss vaincu !',
-          body: `${boss.name}${boss.zone ? ` (${boss.zone})` : ''}`,
-          silent: false,
-        })
-        notification.show()
-      }
-    }
   })
   // Retourner une valeur simple au lieu d'une fonction
   return { success: true, message: 'Watching started' }
