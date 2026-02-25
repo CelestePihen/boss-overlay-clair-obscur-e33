@@ -1,0 +1,127 @@
+name: Translation Contribution
+description: Submit a translation for Boss Overlay
+title: '[Translation] Replace with the Language Name'
+labels: ['translation', 'enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thank you for contributing a translation! 🙏
+        Please fill out the form below to submit your translation.
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      description: Which language are you translating to?
+      options:
+        - German (Deutsch)
+        - Spanish (Español)
+        - Italian (Italiano)
+        - Portuguese (Português)
+        - Russian (Русский)
+        - Japanese (日本語)
+        - Chinese (中文)
+        - Other (specify below)
+    validations:
+      required: true
+
+  - type: input
+    id: language-other
+    attributes:
+      label: Other Language (if not listed above)
+      description: If you selected "Other", please specify the language name
+      placeholder: 'e.g., Polish, Dutch, Korean...'
+
+  - type: checkboxes
+    id: native-speaker
+    attributes:
+      label: Language Proficiency
+      description: This helps us ensure translation quality
+      options:
+        - label: I am a native speaker
+        - label: I am fluent in this language
+        - label: I used translation tools (please verify quality)
+
+  - type: dropdown
+    id: translation-scope
+    attributes:
+      label: What did you translate?
+      description: Select all that apply
+      multiple: true
+      options:
+        - Interface texts (settings, bossList, bossForm)
+        - Zone names (41 zones)
+        - Categories (6 categories)
+        - Boss names (165+ names)
+        - Everything
+    validations:
+      required: true
+
+  - type: textarea
+    id: translation-file
+    attributes:
+      label: Translation File Content
+      description: |
+        Paste the complete content of your translated JSON file here.
+
+        **Important:**
+        - Keep the JSON structure intact
+        - Don't modify keys (left side)
+        - Keep emojis and placeholders like {{killed}}, {{total}}
+        - Validate your JSON before submitting: https://jsonlint.com/
+      placeholder: |
+        {
+          "app": {
+            "title": "Boss Overlay - Clair Obscur E33"
+          },
+          "settings": {
+            "title": "Einstellungen",
+            ...
+          }
+        }
+      render: json
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes (Optional)
+      description: |
+        - Any translation choices you want to explain?
+        - Terms you're unsure about?
+        - Suggestions for improvement?
+      placeholder: |
+        e.g., "I kept boss names in French because they are the same in my language, but..."
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Please confirm before submitting
+      options:
+        - label: My JSON is valid (checked with a JSON validator)
+          required: true
+        - label: I kept all emojis and placeholders unchanged
+          required: true
+        - label: I translated text naturally (not word-for-word)
+          required: true
+        - label: I tested the translation (if possible)
+          required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        ## What happens next?
+        1. ✅ I'll review your translation
+
+        2. 💬 I may ask questions or suggest improvements
+
+        3. ✨ Once approved, I'll add it to the project
+
+        4. 🎉 You'll be credited as a contributor!
+
+        **Thank you for helping make Boss Overlay accessible to more players!** 🌍
