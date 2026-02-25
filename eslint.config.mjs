@@ -43,4 +43,11 @@ export default tseslint.config(
       'tools',
     ],
   },
+  {
+    files: ['**/*.cjs'],
+    languageOptions: {
+      sourceType: 'commonjs',
+      globals: globals.node,
+    },
+  },
 )
