@@ -31,6 +31,11 @@
   "portable": {
     "artifactName": "Boss-Overlay-Portable.exe"
   },
+  "linux": {
+    "target": ["AppImage", "deb"],
+    "icon": "build/icon.png",
+    "category": "Game"
+  },
   "extraResources": [
     {
       "from": "data",
