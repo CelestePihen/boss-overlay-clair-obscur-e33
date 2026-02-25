@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && cp electron/preload.cjs dist-electron/preload.js && electron-builder",
+    "build": "tsc && vite build && electron-builder",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
