@@ -7,22 +7,37 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && electron-builder"
+    "build": "tsc && vite build && cp electron/preload.cjs dist-electron/preload.js && electron-builder",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "ts:check": "tsc --noEmit",
+    "prepare": "husky"
   },
-  "license": "ISC",
+  "license": "CC-BY-NC-SA-4.0",
   "dependencies": {
     "chokidar": "5.0.0",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "20.4.2",
+    "@commitlint/config-conventional": "20.4.2",
+    "@eslint/js": "10.0.1",
     "@types/node": "25.2.3",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "5.1.4",
     "electron": "40.4.1",
     "electron-builder": "26.8.1",
+    "eslint": "10.0.2",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-prettier": "5.5.5",
+    "eslint-plugin-simple-import-sort": "12.1.1",
+    "husky": "9.1.7",
+    "prettier": "3.8.1",
     "typescript": "5.9.3",
+    "typescript-eslint": "8.56.1",
     "vite": "7.3.1",
     "vite-plugin-electron": "0.29.0",
     "vite-plugin-electron-renderer": "0.14.6"
