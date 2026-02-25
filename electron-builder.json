@@ -5,7 +5,19 @@
   "directories": {
     "output": "release"
   },
-  "files": ["dist/**/*", "dist-electron/**/*", "package.json"],
+  "files": [
+    {
+      "from": "dist",
+      "to": "dist",
+      "filter": ["**/*"]
+    },
+    {
+      "from": "dist-electron",
+      "to": "dist-electron",
+      "filter": ["**/*"]
+    },
+    "package.json"
+  ],
   "win": {
     "target": ["nsis", "portable"],
     "icon": "build/icon.ico"
