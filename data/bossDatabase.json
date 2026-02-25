@@ -28,7 +28,7 @@
       "category": "Boss"
     }
   ],
-  "Map monde": [
+  "Le Continent": [
     {
       "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_Bruler_ALPHA_C_FCA887D24893D6208A446AB67A049337",
       "displayName": "Bruleur Chromatique",
@@ -167,7 +167,7 @@
   "Moisson dorée": [
     {
       "originalName": "Merchant_YellowForest",
-      "displayName": "Marchant Gestral",
+      "displayName": "Pinabby",
       "category": "Merchant"
     },
     {
@@ -228,7 +228,7 @@
   "Village Gestral": [
     {
       "originalName": "Merchant_GestralVillage1",
-      "displayName": "Jujubrie - Marchand Gestral",
+      "displayName": "Jujubrie",
       "category": "Merchant"
     },
     {
@@ -275,7 +275,7 @@
     },
     {
       "originalName": "EsquieNest_BP_EnemyWorld_Petank_Yellow",
-      "displayName": "Petank",
+      "displayName": "Pétank",
       "category": "Petank"
     },
     {
@@ -292,7 +292,7 @@
     },
     {
       "originalName": "SeaCliff_Main_V2_BP_EnemyWorld_Petank_Orange",
-      "displayName": "Petank",
+      "displayName": "Pétank",
       "category": "Petank"
     },
     {
@@ -323,7 +323,7 @@
   "Terres oubliées": [
     {
       "originalName": "ForgottenBattlefield_V2_BP_EnemyWorld_Petank_Violet",
-      "displayName": "Petank",
+      "displayName": "Pétank",
       "category": "Petank"
     },
     {
@@ -410,7 +410,7 @@
     },
     {
       "originalName": "LD_Battle_MaskJoy",
-      "displayName": "Masque de la Joie",
+      "displayName": "Moissonneuse Joviale",
       "category": "Mini-Boss"
     },
     {
@@ -425,17 +425,17 @@
     },
     {
       "originalName": "LD_Battle_MaskSadness",
-      "displayName": "Masque de la Tristesse",
+      "displayName": "Chapelier Attristé",
       "category": "Mini-Boss"
     },
     {
       "originalName": "LD_Battle_MaskAnger",
-      "displayName": "Masque de la Colère",
+      "displayName": "Boucheclier Bouillonnant",
       "category": "Mini-Boss"
     },
     {
       "originalName": "LD_Battle_Visages",
-      "displayName": "Visage - Maître des Masques",
+      "displayName": "Visages - Maître des Masques",
       "category": "Boss"
     }
   ],
@@ -493,7 +493,7 @@
       "category": "Mini-Boss"
     }
   ],
-  "Monolithe": [
+  "Le Monolithe": [
     {
       "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_BossEveque_Monolith_C_E12908C540D6E669B94F1BB1E9CDDBD8",
       "displayName": "Évêque",
@@ -516,7 +516,7 @@
     },
     {
       "originalName": "Monolith_Interior_Climb_Main_BP_EnemyWorld_Petank_Green",
-      "displayName": "Pétank Vert",
+      "displayName": "Pétank",
       "category": "Petank"
     },
     {
@@ -759,7 +759,7 @@
     },
     {
       "originalName": "11_1",
-      "displayName": "Niveau 11 - Épreuve 1",
+      "displayName": "Niveau 11 - Épreuve 1 (Moissonneuse Chromatique)",
       "category": "Mini-Boss"
     },
     {
@@ -949,7 +949,7 @@
     },
     {
       "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyWorld_BlackSmith_ALPHA_C_7B5BE91648CC6403656015842A7A6FA1",
-      "displayName": "Brasseur Chromatique",
+      "displayName": "Braseleur Chromatique",
       "category": "Chromatic"
     },
     {
@@ -1050,7 +1050,7 @@
     },
     {
       "originalName": "Boss_Licornapied",
-      "displayName": "Licornapied",
+      "displayName": "Licornapieds",
       "category": "Mini-Boss"
     },
     {

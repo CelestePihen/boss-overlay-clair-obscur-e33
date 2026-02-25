@@ -3,9 +3,11 @@ import { useEffect, useState } from 'react'
 import BossChecklist from './components/BossChecklist'
 import { BossInfoForm } from './components/BossInfoForm'
 import Settings from './components/Settings'
+import { useI18n } from './i18n'
 import { Boss } from './types/Boss'
 
 function App() {
+  const { t } = useI18n()
   const [bosses, setBosses] = useState<Boss[]>([])
   const [showSettings, setShowSettings] = useState(false)
   const [savePath, setSavePath] = useState('')
@@ -97,7 +99,9 @@ function App() {
         // Afficher une notification de succès
         console.log('Boss info saved successfully!')
       } else {
-        alert(`Erreur lors de la sauvegarde: ${result.error}`)
+        alert(
+          t('bossForm.saveError', { error: result.error || 'Unknown error' }),
+        )
       }
     }
   }

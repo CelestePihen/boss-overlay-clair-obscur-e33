@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import { useI18n } from '../i18n'
+
 interface BossInfoFormProps {
   boss: {
     name: string
@@ -25,6 +27,7 @@ export function BossInfoForm({
   onCancel,
   isEditMode = false,
 }: BossInfoFormProps) {
+  const { t, translateCategory } = useI18n()
   const [displayName, setDisplayName] = useState(boss.name)
   const [zone, setZone] = useState(boss.zone || '')
   const [category, setCategory] = useState(boss.category || 'Boss')
@@ -76,9 +79,7 @@ export function BossInfoForm({
             textAlign: 'center',
           }}
         >
-          {isEditMode
-            ? '✏️ Modifier le boss'
-            : '➕ Ajouter un boss manuellement'}
+          {isEditMode ? t('bossForm.editTitle') : t('bossForm.addTitle')}
         </h2>
 
         <form onSubmit={handleSubmit}>
@@ -91,7 +92,7 @@ export function BossInfoForm({
                 fontSize: '14px',
               }}
             >
-              Nom technique :
+              {t('bossForm.technicalName')}
             </label>
             <input
               type="text"
@@ -119,13 +120,13 @@ export function BossInfoForm({
                 fontSize: '14px',
               }}
             >
-              Nom à afficher :
+              {t('bossForm.displayName')}
             </label>
             <input
               type="text"
               value={displayName}
               onChange={(e) => setDisplayName(e.target.value)}
-              placeholder="Ex: Mime"
+              placeholder={t('bossForm.displayNamePlaceholder')}
               required
               style={{
                 width: '100%',
@@ -148,13 +149,13 @@ export function BossInfoForm({
                 fontSize: '14px',
               }}
             >
-              Zone :
+              {t('bossForm.zone')}
             </label>
             <input
               type="text"
               value={zone}
               onChange={(e) => setZone(e.target.value)}
-              placeholder="Ex: Lumiere - Prologue"
+              placeholder={t('bossForm.zonePlaceholder')}
               required
               style={{
                 width: '100%',
@@ -177,7 +178,7 @@ export function BossInfoForm({
                 fontSize: '14px',
               }}
             >
-              Catégorie :
+              {t('bossForm.category')}
             </label>
             <select
               value={category}
@@ -192,12 +193,16 @@ export function BossInfoForm({
                 fontSize: '16px',
               }}
             >
-              <option value="Boss">Boss</option>
-              <option value="Mini-Boss">Mini-Boss</option>
-              <option value="Chromatic">Chromatic</option>
-              <option value="Mime">Mime</option>
-              <option value="Petank">Petank</option>
-              <option value="Merchant">Merchant</option>
+              <option value="Boss">{translateCategory('Boss')}</option>
+              <option value="Mini-Boss">
+                {translateCategory('Mini-Boss')}
+              </option>
+              <option value="Chromatic">
+                {translateCategory('Chromatic')}
+              </option>
+              <option value="Mime">{translateCategory('Mime')}</option>
+              <option value="Petank">{translateCategory('Petank')}</option>
+              <option value="Merchant">{translateCategory('Merchant')}</option>
             </select>
           </div>
 
@@ -229,7 +234,7 @@ export function BossInfoForm({
                 (e.currentTarget.style.backgroundColor = '#333')
               }
             >
-              Annuler
+              {t('bossForm.cancelButton')}
             </button>
             <button
               type="submit"
@@ -252,7 +257,7 @@ export function BossInfoForm({
                 (e.currentTarget.style.backgroundColor = '#3498db')
               }
             >
-              ✅ Enregistrer
+              {t('bossForm.saveButton')}
             </button>
           </div>
         </form>

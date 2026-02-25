@@ -25,6 +25,7 @@ interface AppConfig {
   lastSavePath?: string
   allowManualEditAutoDetected?: boolean
   allowBossEditing?: boolean
+  language?: string
 }
 
 interface ManualBossStates {
@@ -158,8 +159,8 @@ function createWindow() {
   console.log('__dirname:', __dirname)
 
   mainWindow = new BrowserWindow({
-    width: 600,
-    height: 700,
+    width: 700,
+    height: 800,
     transparent: true,
     frame: false,
     alwaysOnTop: false,
@@ -178,14 +179,8 @@ function createWindow() {
     mainWindow.loadURL('http://localhost:5173')
     mainWindow.webContents.openDevTools()
   } else {
-    // Dans l'app packagée, __dirname = resources/app.asar/dist-electron
-    // Le index.html est dans resources/app.asar/dist/index.html
-    // Donc on remonte d'un niveau puis on va dans dist/
     const htmlPath = join(__dirname, '..', 'dist', 'index.html')
-    console.log('Loading in PROD mode from:', htmlPath)
-    console.log('__dirname:', __dirname)
     mainWindow.loadFile(htmlPath)
-    // Ne pas ouvrir devtools en production
   }
 
   // Log des erreurs de chargement
