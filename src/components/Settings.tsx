@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 
+import { Language, useI18n } from '../i18n'
+
 interface Props {
   onSavePathChange: (path: string) => void
   currentPath: string
@@ -10,6 +12,7 @@ interface Props {
 }
 
 function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
+  const { language, setLanguage, t } = useI18n()
   const [path, setPath] = useState(currentPath)
   const [isClearing, setIsClearing] = useState(false)
   const [allowManualEdit, setAllowManualEdit] = useState(false)
@@ -72,17 +75,11 @@ function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
 
   const handleClearManualStates = async () => {
     if (!currentPath) {
-      alert('Aucun fichier de sauvegarde sélectionné')
+      alert(t('settings.noSaveSelected'))
       return
     }
 
-    const confirmed = confirm(
-      'Voulez-vous vraiment réinitialiser les modifications manuelles de cette sauvegarde ?\n\n' +
-        'Cela réinitialisera :\n' +
-        '- Les modifications de statut que vous avez faites manuellement\n\n' +
-        'Les boss ajoutés via le formulaire resteront dans la base de données.\n' +
-        'Cette action est irréversible.',
-    )
+    const confirmed = confirm(t('settings.confirmClear'))
 
     if (!confirmed) return
 
@@ -91,15 +88,19 @@ function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
       if (window.electronAPI) {
         const result = await window.electronAPI.clearManualStates(currentPath)
         if (result.success) {
-          alert('✅ Modifications manuelles réinitialisées avec succès!')
+          alert(t('settings.clearSuccess'))
           // Recharger la page pour rafraîchir l'état
           window.location.reload()
         } else {
-          alert(`❌ Erreur: ${result.error}`)
+          alert(
+            t('settings.clearError', {
+              error: result.error || 'Unknown error',
+            }),
+          )
         }
       }
     } catch (error) {
-      alert(`❌ Erreur: ${error}`)
+      alert(t('settings.clearError', { error: String(error) }))
     } finally {
       setIsClearing(false)
     }
@@ -107,26 +108,56 @@ function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
 
   return (
     <div className="settings">
-      <h3>Paramètres</h3>
+      <h3>{t('settings.title')}</h3>
 
       <div className="setting-group">
-        <label>Chemin du fichier de sauvegarde :</label>
+        <label>{t('settings.saveFilePath')}</label>
         <div style={{ display: 'flex', gap: '8px' }}>
           <input
             type="text"
             value={path}
             onChange={(e) => setPath(e.target.value)}
-            placeholder="C:\Users\...\AppData\Local\Sandfall\Saved\SaveGames\...\Expedition_x.sav"
+            placeholder={t('settings.saveFilePathPlaceholder')}
             style={{ flex: 1 }}
           />
           <button
             onClick={handleBrowse}
             style={{ width: 'auto', height: '36px' }}
           >
-            📁 Parcourir
+            {t('settings.browse')}
           </button>
         </div>
-        <button onClick={handleSubmit}>Démarrer la surveillance</button>
+        <button onClick={handleSubmit}>{t('settings.startWatching')}</button>
+      </div>
+
+      {/* Sélecteur de langue */}
+      <div
+        className="setting-group"
+        style={{
+          marginTop: '20px',
+          borderTop: '1px solid rgba(255,255,255,0.1)',
+          paddingTop: '20px',
+        }}
+      >
+        <label>{t('settings.language')}</label>
+        <select
+          value={language}
+          onChange={(e) => setLanguage(e.target.value as Language)}
+          style={{
+            width: '100%',
+            padding: '10px',
+            backgroundColor: '#2a2a2a',
+            border: '2px solid #3498db',
+            borderRadius: '6px',
+            color: '#fff',
+            fontSize: '16px',
+            cursor: 'pointer',
+          }}
+        >
+          <option value="fr">{t('languages.fr')}</option>
+          <option value="en">{t('languages.en')}</option>
+          <option value="de">{t('languages.de')}</option>
+        </select>
       </div>
 
       <div
@@ -151,9 +182,7 @@ function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
             onChange={(e) => handleToggleManualEdit(e.target.checked)}
             style={{ cursor: 'pointer', width: '18px', height: '18px' }}
           />
-          <span>
-            Autoriser la modification manuelle des boss détectés automatiquement
-          </span>
+          <span>{t('settings.allowManualEdit')}</span>
         </label>
         <p
           style={{
@@ -163,9 +192,7 @@ function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
             marginLeft: '28px',
           }}
         >
-          Par défaut, seuls les boss ajoutés manuellement peuvent être modifiés.
-          Activez cette option pour pouvoir corriger les boss détectés
-          automatiquement depuis la sauvegarde.
+          {t('settings.allowManualEditDesc')}
         </p>
 
         <label
@@ -183,7 +210,7 @@ function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
             onChange={(e) => handleToggleBossEditing(e.target.checked)}
             style={{ cursor: 'pointer', width: '18px', height: '18px' }}
           />
-          <span>Autoriser l'édition des informations des boss</span>
+          <span>{t('settings.allowBossEditing')}</span>
         </label>
         <p
           style={{
@@ -193,8 +220,7 @@ function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
             marginLeft: '28px',
           }}
         >
-          Affiche le bouton ✏️ pour modifier le nom, la zone et la catégorie des
-          boss.
+          {t('settings.allowBossEditingDesc')}
         </p>
       </div>
 
@@ -207,7 +233,7 @@ function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
             paddingTop: '20px',
           }}
         >
-          <label style={{ color: '#e74c3c' }}>⚠️ Zone dangereuse :</label>
+          <label style={{ color: '#e74c3c' }}>{t('settings.dangerZone')}</label>
           <button
             onClick={handleClearManualStates}
             disabled={isClearing}
@@ -219,20 +245,18 @@ function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
             }}
           >
             {isClearing
-              ? '⏳ Suppression...'
-              : '🗑️ Réinitialiser les modifications manuelles'}
+              ? t('settings.clearing')
+              : t('settings.clearManualStates')}
           </button>
           <p style={{ fontSize: '12px', color: '#95a5a6', marginTop: '8px' }}>
-            Supprime uniquement les changements de statut effectués manuellement
+            {t('settings.clearManualStatesDesc')}
           </p>
         </div>
       )}
 
       <div className="info">
-        <p>Entrez le chemin complet vers votre fichier de sauvegarde (.sav)</p>
-        <p>
-          L'overlay se mettra à jour automatiquement quand vous tuez un boss
-        </p>
+        <p>{t('settings.info1')}</p>
+        <p>{t('settings.info2')}</p>
       </div>
     </div>
   )

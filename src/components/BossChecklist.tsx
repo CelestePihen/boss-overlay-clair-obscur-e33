@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 
+import { useI18n } from '../i18n'
 import { Boss } from '../types/Boss'
 
 interface Props {
@@ -25,6 +26,7 @@ function BossChecklist({
   onToggleBoss,
   allowManualEdit = false,
 }: Props) {
+  const { t, translateZone, translateBossName } = useI18n()
   const [searchTerm, setSearchTerm] = useState('')
   const [filterMode, setFilterMode] = useState<
     'all' | 'alive' | 'killed' | 'encountered'
@@ -120,15 +122,18 @@ function BossChecklist({
     <div className="boss-list">
       {bosses.length === 0 ? (
         <div className="empty">
-          <p>Aucune donnée de boss chargée</p>
-          <p>Configurez le chemin du fichier dans les paramètres</p>
+          <p>{t('bossList.noData')}</p>
+          <p>{t('bossList.configurePathInSettings')}</p>
         </div>
       ) : (
         <>
           {/* Stats */}
           <div className="stats">
             <span className="stat-item killed">
-              🏆 {stats.killed} / {stats.total} boss vaincus
+              {t('bossList.bossesKilled', {
+                killed: stats.killed.toString(),
+                total: stats.total.toString(),
+              })}
             </span>
             {onAddBoss && (
               <button
@@ -144,7 +149,7 @@ function BossChecklist({
                   fontWeight: '600',
                 }}
               >
-                Ajouter un boss manuellement
+                {t('bossList.addBossManually')}
               </button>
             )}
           </div>
@@ -153,7 +158,7 @@ function BossChecklist({
           <input
             type="text"
             className="search-input"
-            placeholder="Rechercher un boss..."
+            placeholder={t('bossList.searchPlaceholder')}
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -164,27 +169,33 @@ function BossChecklist({
               className={`filter-btn ${filterMode === 'all' ? 'active' : ''}`}
               onClick={() => setFilterMode('all')}
             >
-              Tous ({bosses.filter((b) => b.encountered).length})
+              {t('bossList.filterAll', {
+                count: bosses.filter((b) => b.encountered).length.toString(),
+              })}
             </button>
             <button
               className={`filter-btn ${filterMode === 'killed' ? 'active' : ''}`}
               onClick={() => setFilterMode('killed')}
             >
-              Vaincus ({stats.killed})
+              {t('bossList.filterKilled', {
+                count: stats.killed.toString(),
+              })}
             </button>
             <button
               className={`filter-btn ${filterMode === 'alive' ? 'active' : ''}`}
               onClick={() => setFilterMode('alive')}
             >
-              Restants ({stats.total - stats.killed})
+              {t('bossList.filterAlive', {
+                count: (stats.total - stats.killed).toString(),
+              })}
             </button>
             <button
               className="filter-btn"
               onClick={toggleAllZones}
               title={
                 collapsedZones.size === zoneGroups.length
-                  ? 'Développer toutes les zones'
-                  : 'Réduire toutes les zones'
+                  ? t('bossList.expandAll')
+                  : t('bossList.collapseAll')
               }
             >
               {collapsedZones.size === zoneGroups.length ? '📂' : '📁'}
@@ -195,7 +206,7 @@ function BossChecklist({
           <div className="boss-items">
             {filteredZoneGroups.length === 0 ? (
               <div className="empty">
-                <p>Aucun résultat trouvé</p>
+                <p>{t('bossList.noResults')}</p>
               </div>
             ) : (
               filteredZoneGroups.map((zone) => {
@@ -209,7 +220,9 @@ function BossChecklist({
                       <span className="zone-toggle">
                         {isCollapsed ? '▶' : '▼'}
                       </span>
-                      <span className="zone-name">{zone.zoneName}</span>
+                      <span className="zone-name">
+                        {translateZone(zone.zoneName)}
+                      </span>
                       <span className="zone-stats">
                         ({zone.killed}/{zone.total})
                       </span>
@@ -226,10 +239,10 @@ function BossChecklist({
                                 boss.originalName?.startsWith('MANUAL_')
                               const canToggle = isManualBoss || allowManualEdit
                               const tooltipText = !canToggle
-                                ? 'Boss détecté automatiquement (non modifiable)'
+                                ? t('bossList.autoDetected')
                                 : boss.killed
-                                  ? 'Marquer comme vivant'
-                                  : 'Marquer comme vaincu'
+                                  ? t('bossList.markAsAlive')
+                                  : t('bossList.markAsKilled')
 
                               return (
                                 <span
@@ -256,7 +269,7 @@ function BossChecklist({
                               )
                             })()}
                             <span className="name">
-                              {boss.name}
+                              {translateBossName(boss.name)}
                               {boss.originalName?.startsWith('MANUAL_') && (
                                 <span
                                   style={{
@@ -264,7 +277,7 @@ function BossChecklist({
                                     fontSize: '11px',
                                     opacity: 0.7,
                                   }}
-                                  title="Boss ajouté manuellement"
+                                  title={t('bossList.manuallyAdded')}
                                 >
                                   🔧
                                 </span>
@@ -283,7 +296,7 @@ function BossChecklist({
                                   fontSize: '11px',
                                   cursor: 'pointer',
                                 }}
-                                title="Modifier ce boss"
+                                title={t('bossList.editBoss')}
                               >
                                 ✏️
                               </button>

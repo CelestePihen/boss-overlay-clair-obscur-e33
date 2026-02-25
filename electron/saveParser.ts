@@ -146,7 +146,6 @@ interface Boss {
   category?: string
   zone?: string
   originalName?: string
-  needsInfo?: boolean
 }
 
 interface SaveData {

@@ -1,13 +1,16 @@
 {
   "name": "boss-overlay",
   "version": "1.0.1",
-  "author": "Cel___",
+  "author": {
+    "name": "Cel___",
+    "email": "pihenceleste@gmail.com"
+  },
   "description": "Boss Checklist Overlay for Clair Obscur Expedition 33",
   "main": "dist-electron/main.js",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && cp electron/preload.cjs dist-electron/preload.js && electron-builder",
+    "build": "tsc && vite build && electron-builder",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
