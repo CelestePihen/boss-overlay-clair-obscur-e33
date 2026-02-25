@@ -7,7 +7,7 @@ import { basename, join } from 'path'
 import { parseSaveFile } from './saveParser.js'
 
 let currentWatcher: FSWatcher | null = null
-let previousBossList: unknown[] = []
+let previousBossList: Boss[] = []
 let currentSavePath: string | null = null
 let currentCallback: ((bossList: Boss[], newlyKilled?: Boss[]) => void) | null =
   null
@@ -24,7 +24,7 @@ interface Boss {
 interface ManualBossStates {
   [originalName: string]: {
     killed: boolean
-    encountered?: boolean // Optionnel : absent pour les MANUAL_*, présent pour les autres
+    encountered?: boolean
   }
 }
 
@@ -54,11 +54,11 @@ async function loadManualStates(savePath: string): Promise<ManualBossStates> {
       for (const [key, value] of Object.entries(rawStates)) {
         if (key.startsWith('MANUAL_')) {
           states[key] = {
-            killed: (value as unknown).killed,
+            killed: (value as { killed: boolean }).killed,
             encountered: true,
           }
         } else {
-          states[key] = value as unknown
+          states[key] = value as { killed: boolean; encountered?: boolean }
         }
       }
       return states
@@ -150,7 +150,8 @@ export function watchSaveFile(
     callback(bossList, newlyKilled.length > 0 ? newlyKilled : undefined)
   })
 
-  currentWatcher.on('error', (error: unknown) => {
+  currentWatcher.on('error', (err) => {
+    const error = err instanceof Error ? err : new Error(String(err))
     console.error('Watcher error:', error)
   })
 }

@@ -145,8 +145,8 @@ interface Boss {
   encountered: boolean
   category?: string
   zone?: string
-  originalName?: string // Pour identifier les boss inconnus
-  needsInfo?: boolean // Flag pour indiquer qu'il faut remplir les infos
+  originalName?: string
+  needsInfo?: boolean
 }
 
 interface SaveData {

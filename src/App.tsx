@@ -3,15 +3,7 @@ import { useEffect, useState } from 'react'
 import BossChecklist from './components/BossChecklist'
 import { BossInfoForm } from './components/BossInfoForm'
 import Settings from './components/Settings'
-
-interface Boss {
-  name: string
-  killed: boolean
-  encountered: boolean
-  category?: string
-  zone?: string
-  originalName?: string
-}
+import { Boss } from './types/Boss'
 
 function App() {
   const [bosses, setBosses] = useState<Boss[]>([])

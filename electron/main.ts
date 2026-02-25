@@ -23,14 +23,14 @@ function getManualStatesPath(savePath: string): string {
 
 interface AppConfig {
   lastSavePath?: string
-  allowManualEditAutoDetected?: boolean // Autoriser la modification manuelle des boss détectés automatiquement
-  allowBossEditing?: boolean // Autoriser l'édition des informations des boss (nom, zone, catégorie)
+  allowManualEditAutoDetected?: boolean
+  allowBossEditing?: boolean
 }
 
 interface ManualBossStates {
   [originalName: string]: {
     killed: boolean
-    encountered?: boolean // Optionnel : absent pour les MANUAL_*, présent pour les autres
+    encountered?: boolean
   }
 }
 
@@ -78,11 +78,11 @@ async function loadManualStates(savePath: string): Promise<ManualBossStates> {
       for (const [key, value] of Object.entries(rawStates)) {
         if (key.startsWith('MANUAL_')) {
           states[key] = {
-            killed: (value as unknown).killed,
+            killed: (value as { killed: boolean }).killed,
             encountered: true,
           }
         } else {
-          states[key] = value as unknown
+          states[key] = value as { killed: boolean; encountered?: boolean }
         }
       }
       return states
@@ -105,7 +105,10 @@ async function saveManualStates(
     }
 
     // Pour les boss MANUAL_*, on ne sauvegarde que le champ killed
-    const statesToSave: unknown = {}
+    const statesToSave: Record<
+      string,
+      { killed: boolean; encountered?: boolean }
+    > = {}
     for (const [key, value] of Object.entries(states)) {
       if (key.startsWith('MANUAL_')) {
         statesToSave[key] = { killed: value.killed }
@@ -145,6 +148,15 @@ async function validateUesave(): Promise<boolean> {
 }
 
 function createWindow() {
+  const isDev =
+    process.env.NODE_ENV === 'development' || process.argv.includes('--dev')
+
+  // En dev et prod, __dirname pointe vers dist-electron/ (compilé par Vite)
+  const preloadPath = join(__dirname, 'preload.js')
+
+  console.log('Preload path:', preloadPath)
+  console.log('__dirname:', __dirname)
+
   mainWindow = new BrowserWindow({
     width: 600,
     height: 700,
@@ -153,7 +165,7 @@ function createWindow() {
     alwaysOnTop: false,
     resizable: true,
     webPreferences: {
-      preload: join(__dirname, 'preload.js'),
+      preload: preloadPath,
       nodeIntegration: false,
       contextIsolation: true,
     },
@@ -161,9 +173,6 @@ function createWindow() {
 
   // En production, charger les fichiers buildés
   // En dev, charger depuis le serveur Vite
-  const isDev =
-    process.env.NODE_ENV === 'development' || process.argv.includes('--dev')
-
   if (isDev) {
     console.log('Loading in DEV mode from localhost:5173')
     mainWindow.loadURL('http://localhost:5173')

@@ -31,10 +31,14 @@ export default defineConfig({
             outDir: 'dist-electron',
             rollupOptions: {
               external: ['electron'],
-              output: {
-                format: 'cjs',
-              },
             },
+            // Forcer la compilation en CommonJS avec esbuild
+            minify: false,
+            emptyOutDir: false,
+          },
+          esbuild: {
+            format: 'cjs',
+            platform: 'node',
           },
         },
       },

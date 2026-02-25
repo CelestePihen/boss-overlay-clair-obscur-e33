@@ -2,6 +2,8 @@
 dist/
 dist-electron/
 release/
+README_NEXUS.readme
+RELEASE_NOTES.md
 
 # Logs
 logs

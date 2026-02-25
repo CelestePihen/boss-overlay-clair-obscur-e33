@@ -1,11 +1,11 @@
-import { contextBridge, ipcRenderer } from 'electron'
+import { contextBridge, ipcRenderer, IpcRendererEvent } from 'electron'
 
 contextBridge.exposeInMainWorld('electronAPI', {
   startWatch: (savePath: string) => {
     return ipcRenderer.invoke('start-watch', savePath)
   },
-  onBossUpdate: (callback: (bossList: unknown) => void) => {
-    ipcRenderer.on('boss-update', (_event: unknown, bossList: unknown) =>
+  onBossUpdate: (callback: (bossList: any[]) => void) => {
+    ipcRenderer.on('boss-update', (_event: IpcRendererEvent, bossList: any[]) =>
       callback(bossList),
     )
   },
@@ -19,8 +19,9 @@ contextBridge.exposeInMainWorld('electronAPI', {
     return ipcRenderer.invoke('save-boss-info', bossInfo)
   },
   onRestoreSavePath: (callback: (savePath: string) => void) => {
-    ipcRenderer.on('restore-save-path', (_event: unknown, savePath: string) =>
-      callback(savePath),
+    ipcRenderer.on(
+      'restore-save-path',
+      (_event: IpcRendererEvent, savePath: string) => callback(savePath),
     )
   },
   selectFile: () => {
@@ -32,7 +33,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
   getConfig: () => {
     return ipcRenderer.invoke('get-config')
   },
-  saveConfig: (config: unknown) => {
+  saveConfig: (config: any) => {
     return ipcRenderer.invoke('save-config', config)
   },
   getManualStates: (savePath: string) => {

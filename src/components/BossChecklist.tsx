@@ -1,13 +1,6 @@
 import { useMemo, useState } from 'react'
 
-interface Boss {
-  name: string
-  killed: boolean
-  encountered: boolean
-  category?: string
-  zone?: string
-  originalName?: string
-}
+import { Boss } from '../types/Boss'
 
 interface Props {
   bosses: Boss[]
