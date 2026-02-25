@@ -1,7 +1,10 @@
 {
   "name": "boss-overlay",
   "version": "1.0.1",
-  "author": "Cel___",
+  "author": {
+    "name": "Cel___",
+    "email": "pihenceleste@gmail.com"
+  },
   "description": "Boss Checklist Overlay for Clair Obscur Expedition 33",
   "main": "dist-electron/main.js",
   "type": "module",
