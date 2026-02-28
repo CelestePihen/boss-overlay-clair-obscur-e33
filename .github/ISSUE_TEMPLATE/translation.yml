@@ -1,6 +1,6 @@
 name: Translation Contribution
 description: Submit a translation for Boss Overlay
-title: '[Translation] Replace with the Language Name'
+title: '[Translation] "⚠️ REPLACE WITH LANGUAGE"'
 labels: ['translation', 'enhancement']
 assignees: CelestePihen
 body:
@@ -22,7 +22,10 @@ body:
         - Portuguese (Português)
         - Russian (Русский)
         - Japanese (日本語)
-        - Chinese (中文)
+        - Korean (한국어)
+        - Polish (Polski)
+        - Chinese Simplified (简体中文)
+        - Chinese Traditional (繁體中文)
         - Other (specify below)
     validations:
       required: true
