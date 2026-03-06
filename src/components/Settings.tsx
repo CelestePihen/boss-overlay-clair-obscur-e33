@@ -154,9 +154,9 @@ function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
             cursor: 'pointer',
           }}
         >
-          <option value="fr">{t('languages.fr')}</option>
-          <option value="en">{t('languages.en')}</option>
-          <option value="ru">{t('languages.ru')}</option>
+          <option value="fr">Français</option>
+          <option value="en">English</option>
+          <option value="ru">Русский</option>
         </select>
       </div>
 
