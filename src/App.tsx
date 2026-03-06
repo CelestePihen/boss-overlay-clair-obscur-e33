@@ -87,7 +87,7 @@ function App() {
 
   const handleSaveBossInfo = async (info: {
     originalName: string
-    displayName: string
+    id: string
     category: string
     zone: string
   }) => {

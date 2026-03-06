@@ -14,19 +14,19 @@ const __dirname = dirname(__filename)
 // Charger la base de données de boss (format organisé par zone uniquement)
 let bossDatabase: Array<{
   originalName: string
-  displayName: string
+  id: string
   category: string
   zone: string
 }> = []
 let bossMap: Map<
   string,
-  { displayName: string; category: string; zone: string }
+  { id: string; category: string; zone: string }
 > | null = null
 
 // Type pour le format organisé par zone
 type BossDatabaseByZone = Record<
   string,
-  Array<{ originalName: string; displayName: string; category: string }>
+  Array<{ originalName: string; id: string; category: string }>
 >
 
 // Cache pour éviter les reconversions inutiles
@@ -66,7 +66,7 @@ async function loadBossDatabase() {
       bossMap = new Map()
       for (const boss of bossDatabase) {
         bossMap.set(boss.originalName, {
-          displayName: boss.displayName,
+          id: boss.id,
           category: boss.category,
           zone: boss.zone,
         })
@@ -84,7 +84,7 @@ async function loadBossDatabase() {
  */
 export async function saveBossDatabase(newBoss: {
   originalName: string
-  displayName: string
+  id: string
   category: string
   zone: string
 }) {
@@ -112,21 +112,21 @@ export async function saveBossDatabase(newBoss: {
       // Mettre à jour le boss existant
       parsedData[newBoss.zone][existingIndex] = {
         originalName: newBoss.originalName,
-        displayName: newBoss.displayName,
+        id: newBoss.id,
         category: newBoss.category,
       }
     } else {
       // Ajouter le nouveau boss
       parsedData[newBoss.zone].push({
         originalName: newBoss.originalName,
-        displayName: newBoss.displayName,
+        id: newBoss.id,
         category: newBoss.category,
       })
     }
 
     // Sauvegarder le fichier
     await writeFile(dbPath, JSON.stringify(parsedData, null, 2), 'utf-8')
-    console.log(`Boss added/updated: ${newBoss.displayName} in ${newBoss.zone}`)
+    console.log(`Boss added/updated: ${newBoss.id} in ${newBoss.zone}`)
 
     // Recharger la base de données en mémoire ET invalider le cache de save
     bossDatabase = []
@@ -351,11 +351,9 @@ function extractBossesWithDatabase(saveData: SaveData): Boss[] {
     if (boss.zone === 'Hidden') {
       if (saveEnemyName) {
         processedSaveEnemies.add(saveEnemyName)
-        console.log(
-          `Hidden boss processed: ${boss.displayName} (will not appear)`,
-        )
+        console.log(`Hidden boss processed: ${boss.id} (will not appear)`)
       } else {
-        console.log(`Hidden boss not in save: ${boss.displayName}`)
+        console.log(`Hidden boss not in save: ${boss.id}`)
       }
       continue
     }
@@ -365,7 +363,7 @@ function extractBossesWithDatabase(saveData: SaveData): Boss[] {
       processedSaveEnemies.add(saveEnemyName)
 
       bossList.push({
-        name: boss.displayName,
+        name: boss.id,
         killed: killedEnemiesSet.has(saveEnemyName),
         encountered: true,
         category: boss.category,
@@ -378,7 +376,7 @@ function extractBossesWithDatabase(saveData: SaveData): Boss[] {
       const excludedZones = ['Sans zone', 'Hidden', '❓ À définir']
       if (!excludedZones.includes(boss.zone)) {
         bossList.push({
-          name: boss.displayName,
+          name: boss.id,
           killed: false,
           encountered: false,
           category: boss.category,

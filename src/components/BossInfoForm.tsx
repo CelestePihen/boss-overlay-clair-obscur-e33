@@ -13,7 +13,7 @@ interface BossInfoFormProps {
   }
   onSubmit: (info: {
     originalName: string
-    displayName: string
+    id: string
     category: string
     zone: string
   }) => void
@@ -37,7 +37,7 @@ export function BossInfoForm({
     if (displayName && zone) {
       onSubmit({
         originalName: boss.originalName,
-        displayName,
+        id: displayName,
         category,
         zone,
       })

@@ -6,19 +6,17 @@ import {
   useState,
 } from 'react'
 
-import de from './locales/de.json'
 import en from './locales/en.json'
 import fr from './locales/fr.json'
 import ru from './locales/ru.json'
 
-export type Language = 'fr' | 'en' | 'de' | 'ru'
+export type Language = 'fr' | 'en' | 'ru'
 
 type TranslationObject = typeof en
 
 const translations: Record<Language, TranslationObject> = {
   fr,
   en,
-  de,
   ru,
 }
 
@@ -37,7 +35,6 @@ const I18nContext = createContext<I18nContextType | undefined>(undefined)
 const detectSystemLanguage = (): Language => {
   const systemLang = navigator.language.toLowerCase()
   if (systemLang.startsWith('fr')) return 'fr'
-  if (systemLang.startsWith('de')) return 'de'
   if (systemLang.startsWith('ru')) return 'ru'
   return 'en' // Par défaut
 }
@@ -117,9 +114,17 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   }
 
   const translateBossName = (bossName: string): string => {
-    return t(`bossNames.${bossName}`) !== `bossNames.${bossName}`
-      ? t(`bossNames.${bossName}`)
-      : bossName
+    const key = `bossNames.${bossName}`
+    const translated = t(key)
+    if (translated !== key) return translated
+    // Fallback: if the name looks like a snake_case id, convert to readable form
+    if (/^[a-z0-9_]+$/.test(bossName)) {
+      return bossName
+        .replace(/_/g, ' ')
+        .replace(/\b\w/g, (c) => c.toUpperCase())
+    }
+    // Otherwise it's already a display name (e.g. manual boss), return as-is
+    return bossName
   }
 
   return (

@@ -77,8 +77,11 @@ function BossChecklist({
 
         // Filtre par recherche
         if (searchTerm.trim()) {
-          filtered = filtered.filter((boss) =>
-            boss.name.toLowerCase().includes(searchTerm.toLowerCase()),
+          const term = searchTerm.toLowerCase()
+          filtered = filtered.filter(
+            (boss) =>
+              boss.name.toLowerCase().includes(term) ||
+              translateBossName(boss.name).toLowerCase().includes(term),
           )
         }
 

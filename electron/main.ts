@@ -248,7 +248,7 @@ ipcMain.handle(
     event,
     bossInfo: {
       originalName: string
-      displayName: string
+      id: string
       category: string
       zone: string
     },

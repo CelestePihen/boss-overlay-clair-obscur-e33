@@ -2,1060 +2,1060 @@
   "Lumière - Prologue": [
     {
       "originalName": "MANUAL_1762709739706",
-      "displayName": "Mime",
+      "id": "mime",
       "category": "Mime"
     },
     {
       "originalName": "LumiereAct1_MaelleTutorial_NoTutorial",
-      "displayName": "Maelle (Non-Tutoriel ou Port)",
+      "id": "maelle_non_tutorial_or_port",
       "category": "Mini-Boss"
     }
   ],
   "Vallons fleuris": [
     {
       "originalName": "ObjectID_Enemy_Level_SpringMeadows_Main_V2_BP_EnemyWorld_Mime_C_BC4B1E354E6674FFAD9BF08D31FEF49C",
-      "displayName": "Mime",
+      "id": "mime",
       "category": "Mime"
     },
     {
       "originalName": "ObjectID_Enemy_Level_SpringMeadows_Main_V2_BP_EnemyWorld_Lancelier_Unique_C_2C7374B74397B946AE816A9382429A28",
-      "displayName": "Lancelier Chromatique",
+      "id": "chromatic_lancelier",
       "category": "Chromatic"
     },
     {
       "originalName": "LD_Battle_Eveque",
-      "displayName": "Évêque",
+      "id": "eveque",
       "category": "Boss"
     }
   ],
   "Le Continent": [
     {
       "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_Bruler_ALPHA_C_FCA887D24893D6208A446AB67A049337",
-      "displayName": "Bruleur Chromatique",
+      "id": "chromatic_bruler",
       "category": "Chromatic"
     },
     {
       "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_65F5D41140EE5FB9497A638D5285A975",
-      "displayName": "Bourgeon - Falaises de Rochevague",
+      "id": "bourgeon_stone_wave_cliffs",
       "category": "Mini-Boss"
     },
     {
       "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_93C65E97491D84E9A35C1EA755B41202",
-      "displayName": "Bourgeon - Clairière",
+      "id": "bourgeon_the_meadows",
       "category": "Mini-Boss"
     },
     {
       "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_jRPG_EnemyWorld_Jar_ALPHA_C_B9C2A9B3459942135B1960836A697F79",
-      "displayName": "Amphibien Chromatique",
+      "id": "chromatic_jar",
       "category": "Chromatic"
     },
     {
       "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_GrossTete_C_1FB8E4034AA8647F79DECFA97D5D8CA5",
-      "displayName": "Grosse Tête",
+      "id": "grosse_tete",
       "category": "Boss"
     },
     {
       "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_BossEveque_Ice_ALPHA_C_DBF0781041211F523C93919F28052E0E",
-      "displayName": "Eveque Glaciale",
+      "id": "frost_eveque",
       "category": "Boss"
     },
     {
       "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_E5D8CDF34731764D3C8372A1262E5E6F",
-      "displayName": "Bourgeon - Proche de Vieille Lumière",
+      "id": "bourgeon_near_old_lumiere",
       "category": "Mini-Boss"
     },
     {
       "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_Enemy_World_Moissonneuse_Alpha_C_D45D01CD4059267E72B5F0B23C3BB072",
-      "displayName": "Moissonneuse Chromatique",
+      "id": "chromatic_moissonneuse",
       "category": "Chromatic"
     },
     {
       "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyGroup_C_3CA5200B4C37FB1116282EB8876956AA",
-      "displayName": "Duo Mime",
+      "id": "duo_mime",
       "category": "Mime"
     },
     {
       "originalName": "LD_Battle_Sprong",
-      "displayName": "Sprong",
+      "id": "sprong",
       "category": "Mini-Boss"
     },
     {
       "originalName": "LD_Battle_Serpenphare",
-      "displayName": "Serpenphare",
+      "id": "serpenphare",
       "category": "Boss"
     },
     {
       "originalName": "WorldMap_Main_V2_BP_EnemyWorld_Petank_Alpha",
-      "displayName": "Pétank Chromatique",
+      "id": "chromatic_petank",
       "category": "Petank"
     },
     {
       "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_Benisseur_Alpha_C_4769697A4D25580C6A0B8DAFF4FB3D65",
-      "displayName": "Bénisseur Chromatique",
+      "id": "chromatic_benisseur",
       "category": "Chromatic"
     },
     {
       "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_Aberration_ALPHA_C_203191A6408A64E92A201D90A807781D",
-      "displayName": "Aberration Chromatique",
+      "id": "chromatic_aberration",
       "category": "Chromatic"
     },
     {
       "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_Goblu_ALPHA_C_8DFDC663415404DE281005AD0C90CFDE",
-      "displayName": "Goblu Chromatique",
+      "id": "chromatic_goblu",
       "category": "Chromatic"
     },
     {
       "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_CultistFlying_ALPHA_C_4EAF2ACF432DA4DDD4940A9A42094361",
-      "displayName": "Cultiste Faucheur Chromatique",
+      "id": "chromatic_reaper_cultist",
       "category": "Chromatic"
     },
     {
       "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_BossEveque_Lightning_ALPHA_C_00F9B6B94948CE77D73843A6261A8102",
-      "displayName": "Évêque électrique",
+      "id": "thunder_eveque",
       "category": "Mini-Boss"
     },
     {
       "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_Demineur_ALPHA_C_2ED33D0D4AF78CD710A62480B39C964F",
-      "displayName": "Démineur Chromatique",
+      "id": "chromatic_demineur",
       "category": "Chromatic"
     },
     {
       "originalName": "ObjectID_Enemy_Level_WorldMap_Main_V2_BP_EnemyWorld_Portier_ALPHA_C_224C9A4843D92E594424FD81E8305356",
-      "displayName": "Portier Chromatique",
+      "id": "chromatic_portier",
       "category": "Chromatic"
     }
   ],
   "Grotte du Mitrien": [
     {
       "originalName": "ObjectID_Enemy_Level_Cave_AbbestAlpha_BP_EnemyWorld_SM_Abbest_Alpha_C_F285F86D440B52348DA4E09B7324C577",
-      "displayName": "Mitrien",
+      "id": "chromatic_abbest",
       "category": "Boss"
     }
   ],
   "Océan suspendu": [
     {
       "originalName": "Manor_CuratorTraining",
-      "displayName": "Conservateur",
+      "id": "the_curator",
       "category": "Mini-Boss"
     },
     {
       "originalName": "MANUAL_1762709766393",
-      "displayName": "Noco",
+      "id": "noco",
       "category": "Merchant"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyWorld_Mime_GO_C_C954B2A24B8F8BA9652BE19BF95B404C",
-      "displayName": "Mime",
+      "id": "mime",
       "category": "Mime"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyWorld_Bourgeon_C_0AAFACDD43A206519DFC7CBAC8A76BB6",
-      "displayName": "Bourgeon",
+      "id": "bourgeon",
       "category": "Mini-Boss"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Goblu_Main_V5_BP_EnemyWorld_TroubadourAlpha_C_1DD149DC467B9BF918B6689BC1DB719F",
-      "displayName": "Troubadour Chromatique",
+      "id": "chromatic_troubadour",
       "category": "Chromatic"
     },
     {
       "originalName": "LD_Battle_Goblu",
-      "displayName": "Goblu",
+      "id": "goblu",
       "category": "Boss"
     }
   ],
   "Moisson dorée": [
     {
       "originalName": "Merchant_YellowForest",
-      "displayName": "Pinabby",
+      "id": "pinabby",
       "category": "Merchant"
     },
     {
       "originalName": "ObjectID_Enemy_Level_YellowForest_Main_BP_EnemyWorld_Mime_YF_C_B9A0958648CE1F5C8149DE920B13D681",
-      "displayName": "Mime",
+      "id": "mime",
       "category": "Mime"
     },
     {
       "originalName": "LD_Battle_YF_Glaise",
-      "displayName": "Glaise",
+      "id": "glaise",
       "category": "Boss"
     },
     {
       "originalName": "ObjectID_Enemy_Level_YellowForest_Main_BP_EnemyGroup_C_15798D1C458FF5A8CE7341B84E46E7F7",
-      "displayName": "Orphelin Chromatique",
+      "id": "chromatic_orphelin",
       "category": "Chromatic"
     }
   ],
   "Arène secrète des Gestrals": [
     {
       "originalName": "MANUAL_1762710081272",
-      "displayName": "Bertrand les Grosses Mains",
+      "id": "bertrand_big_hands",
       "category": "Mini-Boss"
     },
     {
       "originalName": "MANUAL_1762710134224",
-      "displayName": "Dominique aux Grands Pieds",
+      "id": "dominique_giant_feet",
       "category": "Mini-Boss"
     },
     {
       "originalName": "MANUAL_1762710148380",
-      "displayName": "Matthieu le Colosse",
+      "id": "matthieu_the_colossus",
       "category": "Mini-Boss"
     },
     {
       "originalName": "MANUAL_1762710172244",
-      "displayName": "Julien Petite-Tête",
+      "id": "julien_tiny_head",
       "category": "Mini-Boss"
     }
   ],
   "Sanctuaire Ancien": [
     {
       "originalName": "AncientSanctuary_Main_V2_BP_EnemyWorld_Petank_Blue",
-      "displayName": "Pétank",
+      "id": "petank",
       "category": "Petank"
     },
     {
       "originalName": "ObjectID_Enemy_Level_AncientSanctuary_Main_V2_BP_EnemyWorld_Mime_AS_C_B3771B464E0D8853B19F32AB1FFE4790",
-      "displayName": "Mime",
+      "id": "mime",
       "category": "Mime"
     },
     {
       "originalName": "LD_Battle_UltimateSakapate",
-      "displayName": "Sakapatate Ultime",
+      "id": "ultimate_sakapatate",
       "category": "Boss"
     }
   ],
   "Village Gestral": [
     {
       "originalName": "Merchant_GestralVillage1",
-      "displayName": "Jujubrie",
+      "id": "jujubrie",
       "category": "Merchant"
     },
     {
       "originalName": "GV_Arena_Gestral_1",
-      "displayName": "Bertrand les Grosses Mains",
+      "id": "bertrand_big_hands",
       "category": "Mini-Boss"
     },
     {
       "originalName": "GV_Arena_Gestral_2",
-      "displayName": "Dominique aux Grands Pieds",
+      "id": "dominique_giant_feet",
       "category": "Mini-Boss"
     },
     {
       "originalName": "GV_Arena_Gestral_3",
-      "displayName": "Matthieu le Colosse",
+      "id": "matthieu_the_colossus",
       "category": "Mini-Boss"
     },
     {
       "originalName": "GV_Sciel_Arena",
-      "displayName": "Sciel",
+      "id": "sciel",
       "category": "Boss"
     },
     {
       "originalName": "MANUAL_1762709805357",
-      "displayName": "Sakapatate Ultime - Karatom",
+      "id": "ultimate_sakapatate_karatom",
       "category": "Mini-Boss"
     },
     {
       "originalName": "GV_Golgra_Monoco",
-      "displayName": "Golgra VS Monoco",
+      "id": "golgra_vs_monoco",
       "category": "Mini-Boss"
     },
     {
       "originalName": "GV_Golgra",
-      "displayName": "Golgra",
+      "id": "golgra",
       "category": "Boss"
     }
   ],
   "Nid d'Esquie": [
     {
       "originalName": "ObjectID_Enemy_LevelMain_EsquieNest_BP_EnemyWorld_Mime_EN_C_B9610AEB444B51BF5450A5895BD7A298",
-      "displayName": "Mime",
+      "id": "mime",
       "category": "Mime"
     },
     {
       "originalName": "EsquieNest_BP_EnemyWorld_Petank_Yellow",
-      "displayName": "Pétank",
+      "id": "petank",
       "category": "Petank"
     },
     {
       "originalName": "LD_Battle_Francois",
-      "displayName": "François",
+      "id": "francois",
       "category": "Boss"
     }
   ],
   "Falaises de Rochevague": [
     {
       "originalName": "MANUAL_1762808314443",
-      "displayName": "Jerijeri",
+      "id": "jerijeri",
       "category": "Merchant"
     },
     {
       "originalName": "SeaCliff_Main_V2_BP_EnemyWorld_Petank_Orange",
-      "displayName": "Pétank",
+      "id": "petank",
       "category": "Petank"
     },
     {
       "originalName": "MANUAL_1762810128796",
-      "displayName": "Maître des Lampes - Renoir V1",
+      "id": "lampmaster_renoir_v1",
       "category": "Boss"
     },
     {
       "originalName": "ObjectID_Enemy_Level_SeaCliff_Main_V2_BP_jRPG_EnemyWorld_GaultB_Unique_C_FDA6EAD94EA73E1B9E49698608E499D3",
-      "displayName": "Gault Chromatique",
+      "id": "chromatic_gault",
       "category": "Chromatic"
     }
   ],
   "Caverne écrasante": [
     {
       "originalName": "ObjectID_Enemy_SmallLevel_Cavern_CrushingWalls_BP_jRPG_EnemyWorld_Sapling_Alternative_CrushingWall_C_28DA654844910687874F1CB2BD501FDA",
-      "displayName": "Arbuscule Géant",
+      "id": "giant_sappling",
       "category": "Mini-Boss"
     }
   ],
   "Grotte de Rochevague": [
     {
       "originalName": "ObjectID_Enemy_ConceptLevel_SeaCliff_V1_BP_EnemyWorld_Hexga_Alpha_C_22C37C8242A4974A8E8587845AFE4873",
-      "displayName": "Hexga Chromatique",
+      "id": "chromatic_hexga",
       "category": "Chromatic"
     }
   ],
   "Terres oubliées": [
     {
       "originalName": "ForgottenBattlefield_V2_BP_EnemyWorld_Petank_Violet",
-      "displayName": "Pétank",
+      "id": "petank",
       "category": "Petank"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Main_ForgottenBattlefield_V2_Blockout_BP_EnemyWorld_UniqueLusterAlpha_C_81B32691474646269A6FA98E0EB58972",
-      "displayName": "Lustrion Chromatique",
+      "id": "chromatic_luster",
       "category": "Chromatic"
     },
     {
       "originalName": "MANUAL_1762815592814",
-      "displayName": "Kasumi",
+      "id": "kasumi",
       "category": "Merchant"
     },
     {
       "originalName": "LD_Battle_Duallist",
-      "displayName": "Dualliste",
+      "id": "dualliste",
       "category": "Boss"
     }
   ],
   "Gare de Monoco": [
     {
       "originalName": "LD_Battle_Monoco",
-      "displayName": "Monoco",
+      "id": "monoco",
       "category": "Boss"
     },
     {
       "originalName": "LD_Battle_Stalact",
-      "displayName": "Stalact",
+      "id": "stalact",
       "category": "Mini-Boss"
     }
   ],
   "Vieille Lumière": [
     {
       "originalName": "MANUAL_1762879587104",
-      "displayName": "Mandelgo",
+      "id": "mandelgo",
       "category": "Merchant"
     },
     {
       "originalName": "LD_Battle_MirrorRenoir",
-      "displayName": "Renoir",
+      "id": "renoir",
       "category": "Boss"
     },
     {
       "originalName": "ObjectID_Enemy_Level_OldLumiere_Main_BP_EnemyWorld_Dancer_Alpha_C_E58795824D04165C9FCE86952776138A",
-      "displayName": "Danseuse Chromatique",
+      "id": "chromatic_danseuse",
       "category": "Chromatic"
     }
   ],
   "Forêt Ambrée": [
     {
       "originalName": "ObjectID_Enemy_Level_OraneForest_Main_BP_EnemyGroup_C_6E9D1F1E494DA7251F83638FCC5A5420",
-      "displayName": "Ballerine Chromatique",
+      "id": "chromatic_ballet",
       "category": "Chromatic"
     },
     {
       "originalName": "Merchant_OrangeForest",
-      "displayName": "Persik",
+      "id": "persik",
       "category": "Merchant"
     },
     {
       "originalName": "LD_Battle_Orange_Scavenger",
-      "displayName": "Le Charognard",
+      "id": "scavenger",
       "category": "Boss"
     }
   ],
   "Les Corbeaux": [
     {
       "originalName": "ObjectID_Enemy_SmallLevel_RZ_Zone_01_BP_EnemyWorld_Chapelier_Alpha_C_FA3681FF45776763CB3130BF1FD6109D",
-      "displayName": "Chapelier Chromatique",
+      "id": "chromatic_chapelier",
       "category": "Chromatic"
     }
   ],
   "Grotte Sinistre": [
     {
       "originalName": "ObjectID_Enemy_Level_Cave_InvisibleCave_BP_EnemyWorld_Chalier_Sword_Alpha_C_1E62E97B4F8E4D2474429CBA8A88F4A2",
-      "displayName": "Chalier Chromatique",
+      "id": "chromatic_chalier",
       "category": "Chromatic"
     }
   ],
   "Visages": [
     {
       "originalName": "MANUAL_1765034160116",
-      "displayName": "Blouraga",
+      "id": "blouraga",
       "category": "Merchant"
     },
     {
       "originalName": "LD_Battle_MaskJoy",
-      "displayName": "Moissonneuse Joviale",
+      "id": "jovial_moissonneuse",
       "category": "Mini-Boss"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyWorld_Mime_MF_C_360135C444452C61017789BDB593E8A7",
-      "displayName": "Mime",
+      "id": "mime",
       "category": "Mime"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Visages_Main_V1_BP_EnemyWorld_Ramasseur_ALPHA_C_4DFD38854045646F8DC570BDF56675B6",
-      "displayName": "Ramasseur Chromatique",
+      "id": "chromatic_ramasseur",
       "category": "Chromatic"
     },
     {
       "originalName": "LD_Battle_MaskSadness",
-      "displayName": "Chapelier Attristé",
+      "id": "sorrowful_chapelier",
       "category": "Mini-Boss"
     },
     {
       "originalName": "LD_Battle_MaskAnger",
-      "displayName": "Boucheclier Bouillonnant",
+      "id": "seething_boucheclier",
       "category": "Mini-Boss"
     },
     {
       "originalName": "LD_Battle_Visages",
-      "displayName": "Visages - Maître des Masques",
+      "id": "visages_maitre_des_masques",
       "category": "Boss"
     }
   ],
   "Sirène": [
     {
       "originalName": "BP_EnemyWorld_Petank_Red_Sirene",
-      "displayName": "Pétank Rouge",
+      "id": "red_petank",
       "category": "Petank"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyWorld_CultistHeavy_Alpha_C_63D7D34C4483ED4C5FD2DAB25D242521",
-      "displayName": "Cultiste Chromatique",
+      "id": "chromatic_greatsword_cultist",
       "category": "Chromatic"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyWorld_Mime_SI_C_B15173304A73584B5C2D409282EAB624",
-      "displayName": "Mime",
+      "id": "mime",
       "category": "Mime"
     },
     {
       "originalName": "LD_Battle_Tisseur",
-      "displayName": "Tisseur",
+      "id": "tisseur",
       "category": "Mini-Boss"
     },
     {
       "originalName": "BP_EnemyWorld_Petank_Blue_Sirene",
-      "displayName": "Pétank Bleu",
+      "id": "blue_petank",
       "category": "Petank"
     },
     {
       "originalName": "MANUAL_1765040720982",
-      "displayName": "Klaudiso",
+      "id": "klaudiso",
       "category": "Merchant"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Sirene_Main_V2_BP_EnemyWorld_Glissando_C_730AE39945AC31370140BDA462D515F4",
-      "displayName": "Glissando",
+      "id": "glissando",
       "category": "Mini-Boss"
     },
     {
       "originalName": "LD_Battle_Sirene",
-      "displayName": "Sirène",
+      "id": "sirene",
       "category": "Boss"
     }
   ],
   "Camp": [
     {
       "originalName": "QUEST_MonocoDuel",
-      "displayName": "Monoco",
+      "id": "monoco",
       "category": "Mini-Boss"
     },
     {
       "originalName": "MANUAL_1765057664326",
-      "displayName": "François",
+      "id": "francois",
       "category": "Mini-Boss"
     }
   ],
   "Le Monolithe": [
     {
       "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_BossEveque_Monolith_C_E12908C540D6E669B94F1BB1E9CDDBD8",
-      "displayName": "Évêque",
+      "id": "eveque",
       "category": "Mini-Boss"
     },
     {
       "originalName": "MANUAL_1765043180746",
-      "displayName": "Mistra",
+      "id": "mistra",
       "category": "Merchant"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_Bourgeon_ALPHA_C_3976F6634D81025338FF14B695F30221",
-      "displayName": "Bourgeon Chromatique",
+      "id": "chromatic_bourgeon",
       "category": "Chromatic"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_AS_Potatobag_Boss_C_B651CF214B2776824E0C188E428C508B",
-      "displayName": "Sakapatate Ultime",
+      "id": "ultimate_sakapatate",
       "category": "Mini-Boss"
     },
     {
       "originalName": "Monolith_Interior_Climb_Main_BP_EnemyWorld_Petank_Green",
-      "displayName": "Pétank",
+      "id": "petank",
       "category": "Petank"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyGroup_C_5231B6134C1898A20DF3F0A27B91B111",
-      "displayName": "Mime",
+      "id": "mime",
       "category": "Mime"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Monolith_Interior_Climb_Main_BP_EnemyWorld_MM_Gargant_Monolith_C_C304EF774139DA7E4A0973823E04D8B2",
-      "displayName": "Gargant",
+      "id": "gargant",
       "category": "Mini-Boss"
     },
     {
       "originalName": "MANUAL_1765046248755",
-      "displayName": "Mélosh",
+      "id": "melosh",
       "category": "Merchant"
     },
     {
       "originalName": "MANUAL_1765054052607",
-      "displayName": "Renoir",
+      "id": "renoir",
       "category": "Boss"
     },
     {
       "originalName": "LD_Battle_Paintress",
-      "displayName": "Paintresse",
+      "id": "the_paintress",
       "category": "Boss"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Monolith_Exterior_Peak_Main_BP_EnemyWorld_ClairObscur_Alpha_C_0EE1E0614F8154984FC9A89FCDB0EF57",
-      "displayName": "Clair Obscur Chromatique",
+      "id": "chromatic_clair_obscur",
       "category": "Chromatic"
     }
   ],
   "Lumière": [
     {
       "originalName": "ObjectID_Enemy_Level_Lumiere_Main_V2_BP_EnemyWorld_Echassier_ALPHA_C_F527027C4209A7D1DC21D5849F718331",
-      "displayName": "Echassier Chromatique",
+      "id": "chromatic_echassier",
       "category": "Chromatic"
     },
     {
       "originalName": "Merchant_Lumiere",
-      "displayName": "Cribappa",
+      "id": "cribappa",
       "category": "Merchant"
     },
     {
       "originalName": "LD_Battle_Curator",
-      "displayName": "Renoir",
+      "id": "renoir",
       "category": "Boss"
     },
     {
       "originalName": "LumiereAct3_MaelleFinalBattle",
-      "displayName": "Maëlle / Verso",
+      "id": "maelle_verso",
       "category": "Boss"
     },
     {
       "originalName": "MANUAL_1768059140208",
-      "displayName": "Création",
+      "id": "creation",
       "category": "Mini-Boss"
     }
   ],
   "Arène clandestine des Gestrals": [
     {
       "originalName": "DarkGestralArena_Round1",
-      "displayName": "Sakapatate catapulte Chromatique",
+      "id": "chromatic_catapult_sakapatate",
       "category": "Chromatic"
     },
     {
       "originalName": "DarkGestralArena_Round2",
-      "displayName": "Sakapatate forestier Chromatique",
+      "id": "chromatic_ranger_sakapatate",
       "category": "Chromatic"
     },
     {
       "originalName": "DarkGestralArena_Round3",
-      "displayName": "Sakapatate robuste Chromatique",
+      "id": "chromatic_robust_sakapatate",
       "category": "Chromatic"
     },
     {
       "originalName": "DarkGestralArena_Round4",
-      "displayName": "Golgra",
+      "id": "golgra",
       "category": "Boss"
     }
   ],
   "Sylve Cramoisie": [
     {
       "originalName": "ChevaliereAlpha",
-      "displayName": "Chevalière en or chromatique",
+      "id": "chromatic_gold_chevaliere",
       "category": "Chromatic"
     }
   ],
   "Tour Éternelle": [
     {
       "originalName": "1_1",
-      "displayName": "Niveau 1 - Épreuve 1",
+      "id": "stage_1_trial_1",
       "category": "Mini-Boss"
     },
     {
       "originalName": "1_2",
-      "displayName": "Niveau 1 - Épreuve 2",
+      "id": "stage_1_trial_2",
       "category": "Mini-Boss"
     },
     {
       "originalName": "1_3",
-      "displayName": "Niveau 1 - Épreuve 3",
+      "id": "stage_1_trial_3",
       "category": "Mini-Boss"
     },
     {
       "originalName": "2_1",
-      "displayName": "Niveau 2 - Épreuve 1",
+      "id": "stage_2_trial_1",
       "category": "Mini-Boss"
     },
     {
       "originalName": "2_2",
-      "displayName": "Niveau 2 - Épreuve 2",
+      "id": "stage_2_trial_2",
       "category": "Mini-Boss"
     },
     {
       "originalName": "2_3",
-      "displayName": "Niveau 2 - Épreuve 3",
+      "id": "stage_2_trial_3",
       "category": "Mini-Boss"
     },
     {
       "originalName": "3_1",
-      "displayName": "Niveau 3 - Épreuve 1",
+      "id": "stage_3_trial_1",
       "category": "Mini-Boss"
     },
     {
       "originalName": "3_2",
-      "displayName": "Niveau 3 - Épreuve 2",
+      "id": "stage_3_trial_2",
       "category": "Mini-Boss"
     },
     {
       "originalName": "3_3",
-      "displayName": "Niveau 3 - Épreuve 3 (Mitrien Chromatique)",
+      "id": "stage_3_trial_3_chromatic_abbest",
       "category": "Chromatic"
     },
     {
       "originalName": "4_1",
-      "displayName": "Niveau 4 - Épreuve 1 (Orphelin Chromatique)",
+      "id": "stage_4_trial_1_chromatic_orphelin",
       "category": "Chromatic"
     },
     {
       "originalName": "4_2",
-      "displayName": "Niveau 4 - Épreuve 2",
+      "id": "stage_4_trial_2",
       "category": "Mini-Boss"
     },
     {
       "originalName": "4_3",
-      "displayName": "Niveau 4 - Épreuve 3 (Échassier Chromatique)",
+      "id": "stage_4_trial_3_chromatic_echassier",
       "category": "Chromatic"
     },
     {
       "originalName": "5_1",
-      "displayName": "Niveau 5 - Épreuve 1 (Veilleur Chromatique)",
+      "id": "stage_5_trial_1_chromatic_veilleur",
       "category": "Chromatic"
     },
     {
       "originalName": "5_2",
-      "displayName": "Niveau 5 - Épreuve 2 (Cultiste Épéiste Chromatique)",
+      "id": "stage_5_trial_2_chromatic_greatsword_cultist",
       "category": "Chromatic"
     },
     {
       "originalName": "5_3",
-      "displayName": "Niveau 5 - Épreuve 3 (Aberration et Troubadour Chromatique)",
+      "id": "stage_5_trial_3_chromatic_troubadour_chromatic_aberration",
       "category": "Chromatic"
     },
     {
       "originalName": "6_1",
-      "displayName": "Niveau 6 - Épreuve 1",
+      "id": "stage_6_trial_1",
       "category": "Mini-Boss"
     },
     {
       "originalName": "6_2",
-      "displayName": "Niveau 6 - Épreuve 2 (Braseleur Chromatique)",
+      "id": "stage_6_trial_2_chromatic_braseleur",
       "category": "Chromatic"
     },
     {
       "originalName": "6_3",
-      "displayName": "Niveau 6 - Épreuve 3",
+      "id": "stage_6_trial_3",
       "category": "Mini-Boss"
     },
     {
       "originalName": "7_1",
-      "displayName": "Niveau 7 - Épreuve 1",
+      "id": "stage_7_trial_1",
       "category": "Mini-Boss"
     },
     {
       "originalName": "7_2",
-      "displayName": "Niveau 7 - Épreuve 2 (Chevalière en or Chromatique et Bruleur Chromatique)",
+      "id": "stage_7_trial_2_chromatic_chevaliere_chromatic_bruler",
       "category": "Chromatic"
     },
     {
       "originalName": "7_3",
-      "displayName": "Niveau 7 - Épreuve 3 (Lustrion Chromatique)",
+      "id": "stage_7_trial_3_chromatic_lustrion",
       "category": "Chromatic"
     },
     {
       "originalName": "8_1",
-      "displayName": "Niveau 8 - Épreuve 1",
+      "id": "stage_8_trial_1",
       "category": "Mini-Boss"
     },
     {
       "originalName": "8_2",
-      "displayName": "Niveau 8 - Épreuve 2 (Lancelier Chromatique et Boucheclier Chromatique)",
+      "id": "stage_8_trial_2_chromatic_lancelier_chromatic_bouchelier",
       "category": "Chromatic"
     },
     {
       "originalName": "8_3",
-      "displayName": "Niveau 8 - Épreuve 3 (Glaise Chromatique)",
+      "id": "stage_8_trial_3_chromatic_glaise",
       "category": "Chromatic"
     },
     {
       "originalName": "9_1",
-      "displayName": "Niveau 9 - Épreuve 1 (Évêque Chromatique et Ballerine Chromatique)",
+      "id": "stage_9_trial_1_chromatic_eveque_chromatic_ballet",
       "category": "Chromatic"
     },
     {
       "originalName": "9_2",
-      "displayName": "Niveau 9 - Épreuve 2 (Démineur Chromatique)",
+      "id": "stage_9_trial_2_chromatic_demineur",
       "category": "Chromatic"
     },
     {
       "originalName": "9_3",
-      "displayName": "Niveau 9 - Épreuve 3 (Danseuse Chromatique)",
+      "id": "stage_9_trial_3_chromatic_danseuse",
       "category": "Chromatic"
     },
     {
       "originalName": "10_1",
-      "displayName": "Niveau 10 - Épreuve 1 (Portier Chromatique et Démineur Chromatique)",
+      "id": "stage_10_trial_1_chromatic_portier_chromatic_demineur",
       "category": "Chromatic"
     },
     {
       "originalName": "10_2",
-      "displayName": "Niveau 10 - Épreuve 2 (Chevalières Chromatiques)",
+      "id": "stage_10_trial_2_chromatic_chevalieres",
       "category": "Chromatic"
     },
     {
       "originalName": "10_3",
-      "displayName": "Niveau 10 - Épreuve 3 (Chalier Chromatique et Amphorien Chromatique)",
+      "id": "stage_10_trial_3_chromatic_chalier_chromatic_jar",
       "category": "Chromatic"
     },
     {
       "originalName": "11_1",
-      "displayName": "Niveau 11 - Épreuve 1 (Moissonneuse Chromatique)",
+      "id": "stage_11_trial_1_chromatic_moissonneuse",
       "category": "Mini-Boss"
     },
     {
       "originalName": "11_2",
-      "displayName": "Niveau 11 - Épreuve 2 (Clair Obscur Chromatique)",
+      "id": "stage_11_trial_2_chromatic_clair_obscur",
       "category": "Mini-Boss"
     },
     {
       "originalName": "11_3",
-      "displayName": "Niveau 11 - Épreuve 3",
+      "id": "stage_11_trial_3",
       "category": "Boss"
     },
     {
       "originalName": "LD_Duolliste",
-      "displayName": "Duollistes",
+      "id": "duollistes",
       "category": "Boss"
     },
     {
       "originalName": "LD_LampmasterAlpha",
-      "displayName": "Maître des Lampes Chromatique",
+      "id": "chromatic_lampmaster",
       "category": "Boss"
     },
     {
       "originalName": "LD_CleaAlpha",
-      "displayName": "Cléa Déchainée",
+      "id": "clea_unleashed",
       "category": "Boss"
     },
     {
       "originalName": "LD_SimonAlpha",
-      "displayName": "Simon, l'étoile divergente",
+      "id": "simon_the_divergent_star",
       "category": "Boss"
     }
   ],
   "Dunes de Sirène": [
     {
       "originalName": "ObjectID_Enemy_SmallLevel_Sirene_MusicHear_BP_EnemyWorld_Glissando_ALPHA_C_8DC766CA4E43937185CAA8B5C8688066",
-      "displayName": "Glissando Chromatique",
+      "id": "chromatic_glissando",
       "category": "Chromatic"
     }
   ],
   "L'Atelier": [
     {
       "originalName": "LD_Battle_CleaWorkshopLampmaster",
-      "displayName": "Maître des Lampes",
+      "id": "lampmaster",
       "category": "Boss"
     }
   ],
   "Sanctuaire de la Nuit Éternelle": [
     {
       "originalName": "LD_Battle_TwilightBossPotatobag",
-      "displayName": "Sakapatate Ultime",
+      "id": "ultimate_sakapatate",
       "category": "Boss"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Main_AncientSanctuary_WP_BP_EnemyWorld_Cruler_ALPHA_C_60ED5295404EDABFFEE6698E2B88B309",
-      "displayName": "Cruleur Chromatique",
+      "id": "chromatic_cruler",
       "category": "Chromatic"
     },
     {
       "originalName": "MANUAL_1766334186704",
-      "displayName": "Anthonypo",
+      "id": "anthonypo",
       "category": "Merchant"
     },
     {
       "originalName": "TwilightSanctuary_BP_EnemyWorld_Petank_Violet",
-      "displayName": "Pétank",
+      "id": "petank",
       "category": "Petank"
     }
   ],
   "Falaises Obscures": [
     {
       "originalName": "ChromaZone_Mime_Sciel",
-      "displayName": "Mime Sciel",
+      "id": "mime_sciel",
       "category": "Mime"
     },
     {
       "originalName": "ChromaZone_Mime_Lune",
-      "displayName": "Mime Lune",
+      "id": "mime_lune",
       "category": "Mime"
     },
     {
       "originalName": "ChromaZone_Mime_Verso",
-      "displayName": "Mime Verso",
+      "id": "mime_verso",
       "category": "Mime"
     },
     {
       "originalName": "ChromaZone_Mime_Maelle",
-      "displayName": "Mime Maëlle",
+      "id": "mime_maelle",
       "category": "Mime"
     },
     {
       "originalName": "ChromaZone_Mime_Monoco",
-      "displayName": "Mime Monoco",
+      "id": "mime_monoco",
       "category": "Mime"
     }
   ],
   "Croisée des Chemins": [
     {
       "originalName": "Canvas_ChosenPath_Challenge1",
-      "displayName": "Glaise",
+      "id": "glaise",
       "category": "Mini-Boss"
     },
     {
       "originalName": "MANUAL_1766337291687",
-      "displayName": "Bénisseur",
+      "id": "benisseur",
       "category": "Mini-Boss"
     },
     {
       "originalName": "MANUAL_1766337311674",
-      "displayName": "Stalact",
+      "id": "stalact",
       "category": "Mini-Boss"
     },
     {
       "originalName": "MANUAL_1766337335380",
-      "displayName": "Amphorien",
+      "id": "jar",
       "category": "Mini-Boss"
     },
     {
       "originalName": "MANUAL_1766337367697",
-      "displayName": "Contorsionniste",
+      "id": "contorsionniste",
       "category": "Mini-Boss"
     }
   ],
   "Île Céleste": [
     {
       "originalName": "ObjectID_Enemy_SmallLevel_FA_Zone_01_BP_jRPG_EnemyWorld_Glaise_ALPHA_C_55CEFB144528A64E7F74A9BBBC1B2C5C",
-      "displayName": "Glaise Chromatique",
+      "id": "chromatic_glaise",
       "category": "Chromatic"
     }
   ],
   "Rivière Sacrée": [
     {
       "originalName": "LD_Golgra_SacredRiver",
-      "displayName": "Golgra",
+      "id": "golgra",
       "category": "Boss"
     }
   ],
   "Glacier Ardent": [
     {
       "originalName": "ObjectID_Enemy_Level_Side_FrozenHeart_BP_EnemyWorld_Veilleur_Alpha_C_D489BDCF4A31987736FCCDA13DC46E91",
-      "displayName": "Veilleur Chromatique",
+      "id": "chromatic_veilleur",
       "category": "Chromatic"
     },
     {
       "originalName": "FrozenHeart_BP_EnemyWorld_Petank_Red",
-      "displayName": "Pétank",
+      "id": "petank",
       "category": "Petank"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Side_FrozenHeart_BP_EnemyWorld_Mime_MM_C_8A89D1F24C03FC4437154A86F813AE0B",
-      "displayName": "Mime",
+      "id": "mime",
       "category": "Mime"
     },
     {
       "originalName": "LD_Battle_Gargant",
-      "displayName": "Gargant",
+      "id": "gargant",
       "category": "Boss"
     }
   ],
   "Regards Occultes": [
     {
       "originalName": "SmallLevel_MF_Zone_01_BP_EnemyWorld_Petank_Green",
-      "displayName": "Pétank",
+      "id": "petank",
       "category": "Petank"
     },
     {
       "originalName": "ObjectID_Enemy_SmallLevel_MF_Zone_01_BP_EnemyWorld_Boucheclier_ALPHA_C_74A673B2497F899B60E0AD9E602CA667",
-      "displayName": "Boucheclier Chromatique",
+      "id": "chromatic_boucheclier",
       "category": "Chromatic"
     }
   ],
   "L'Aspirante": [
     {
       "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyWorld_Mime_RE_C_EBC00B934E8252C2534E66A018482429",
-      "displayName": "Mime",
+      "id": "mime",
       "category": "Mime"
     },
     {
       "originalName": "Reacher_Main_V2_BP_EnemyWorld_Petank_Yellow",
-      "displayName": "Pétank",
+      "id": "petank",
       "category": "Petank"
     },
     {
       "originalName": "Merchant_Reacher",
-      "displayName": "Éragol",
+      "id": "eragol",
       "category": "Merchant"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Reacher_Main_V2_BP_EnemyWorld_BlackSmith_ALPHA_C_7B5BE91648CC6403656015842A7A6FA1",
-      "displayName": "Braseleur Chromatique",
+      "id": "chromatic_braseleur",
       "category": "Chromatic"
     },
     {
       "originalName": "MANUAL_1766348523875",
-      "displayName": "Alicia Peinte",
+      "id": "painted_alicia",
       "category": "Boss"
     }
   ],
   "Manoir Suspendu": [
     {
       "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_Mime_CFH_C_4FF2635649D11BD3E19C9AA91B90BD7A",
-      "displayName": "Mime",
+      "id": "mime",
       "category": "Mime"
     },
     {
       "originalName": "MANUAL_1766407196253",
-      "displayName": "Fusoka",
+      "id": "fusoka",
       "category": "Merchant"
     },
     {
       "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_Goblu_C_4048B3D14BEC01123738D4BBC64C9C87",
-      "displayName": "Goblu",
+      "id": "goblu",
       "category": "Mini-Boss"
     },
     {
       "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_Duelliste_Final_C_F7C7F43F411F38CC89929B9C4CF931C9",
-      "displayName": "Dualliste",
+      "id": "dualliste",
       "category": "Mini-Boss"
     },
     {
       "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyWorld_LampMaster_C_F25D77B144A0DD472C8E75AD2667B7AE",
-      "displayName": "Maître des Lampes",
+      "id": "lampmaster",
       "category": "Mini-Boss"
     },
     {
       "originalName": "CleaFlyingHouse_Main_BP_EnemyWorld_Petank_Orange",
-      "displayName": "Pétank",
+      "id": "petank",
       "category": "Petank"
     },
     {
       "originalName": "ObjectID_Enemy_Level_CleaFlyingHouse_Main_BP_EnemyGroup_C_91D7974F4D7241E94DA514B38067E1A2",
-      "displayName": "Évêques",
+      "id": "eveques",
       "category": "Mini-Boss"
     },
     {
       "originalName": "CFH_Boss_Clea",
-      "displayName": "Cléa",
+      "id": "clea",
       "category": "Boss"
     }
   ],
   "Esquisses de Renoir": [
     {
       "originalName": "ObjectID_Enemy_Level_Monolith_Floor_1_BP_EnemyWorld_Creation_Alpha_C_A388578444C235248B90979A13F3C3CF",
-      "displayName": "Création Chromatique",
+      "id": "chromatic_creation",
       "category": "Chromatic"
     },
     {
       "originalName": "SimonPhase2",
-      "displayName": "Simon",
+      "id": "simon",
       "category": "Boss"
     },
     {
       "originalName": "SimonRematchP2",
-      "displayName": "Simon Rematch",
+      "id": "simon_rematch",
       "category": "Boss"
     }
   ],
   "Esquisses de Verso": [
     {
       "originalName": "ObjectID_Enemy_Level_Side_VersosDraft_BP_EnemyWorld_Mime_VD_C",
-      "displayName": "Mime",
+      "id": "mime",
       "category": "Mime"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Side_VersosDraft_BP_EnemyWorld_Machinapied_Alpha_C_DFDBE6CF49F44D25D9FBBA95E385DF6C",
-      "displayName": "Machinapied Chromatique",
+      "id": "chromatic_machinapied",
       "category": "Chromatic"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Side_VersosDraft_BP_EnemyWorld_Franctale_Alpha_C_EC88B3F14085C641BA3F78A22498032A",
-      "displayName": "Franctale Chromatique",
+      "id": "chromatic_franctale",
       "category": "Chromatic"
     },
     {
       "originalName": "ObjectID_Enemy_Level_Side_VersosDraft_BP_EnemyWorld_Barbasucette_Alpha_C_47A96B424AD4ED32D5F2858764A88765",
-      "displayName": "Barbasucette Chromatique",
+      "id": "chromatic_barbasucette",
       "category": "Chromatic"
     },
     {
       "originalName": "Boss_LicorneAlpha",
-      "displayName": "Licorne Chromatique",
+      "id": "chromatic_unicorn",
       "category": "Chromatic"
     },
     {
       "originalName": "MANUAL_1766422194980",
-      "displayName": "Najabla",
+      "id": "najabla",
       "category": "Merchant"
     },
     {
       "originalName": "Boss_Licornapied",
-      "displayName": "Licornapieds",
+      "id": "licornapieds",
       "category": "Mini-Boss"
     },
     {
       "originalName": "LD_Battle_Osquio",
-      "displayName": "Osquio",
+      "id": "osquio",
       "category": "Boss"
     }
   ]
