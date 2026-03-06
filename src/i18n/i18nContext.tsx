@@ -74,20 +74,25 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 
   const t = (key: string, params?: Record<string, string | number>): string => {
     const keys = key.split('.')
-    let value: unknown = translations[language]
 
-    for (const k of keys) {
-      if (typeof value === 'object' && value !== null) {
-        value = (value as Record<string, unknown>)[k]
+    const resolve = (source: unknown): string | undefined => {
+      let value: unknown = source
+      for (const k of keys) {
+        if (typeof value === 'object' && value !== null) {
+          value = (value as Record<string, unknown>)[k]
+        } else {
+          return undefined
+        }
       }
-      if (value === undefined) {
-        console.warn(`Translation key not found: ${key}`)
-        return key
-      }
+      return typeof value === 'string' ? value : undefined
     }
 
-    if (typeof value !== 'string') {
-      console.warn(`Translation value is not a string: ${key}`)
+    const value =
+      resolve(translations[language]) ??
+      (language !== 'en' ? resolve(translations['en']) : undefined)
+
+    if (value === undefined) {
+      console.warn(`Translation key not found: ${key}`)
       return key
     }
 
