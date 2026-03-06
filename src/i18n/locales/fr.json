@@ -8,9 +8,6 @@
     "language": "Langue :",
     "allowManualEdit": "Autoriser la modification manuelle des boss détectés automatiquement",
     "allowManualEditDesc": "Par défaut, seuls les boss ajoutés manuellement peuvent être modifiés. Activez cette option pour pouvoir corriger les boss détectés automatiquement depuis la sauvegarde.",
-    "allowBossEditing": "Autoriser l'édition des informations des boss",
-    "allowBossEditingDesc": "Affiche le bouton ✏️ pour modifier le nom, la zone et la catégorie des boss.",
-    "dangerZone": "⚠️ Zone dangereuse :",
     "clearManualStates": "🗑️ Réinitialiser les modifications manuelles",
     "clearManualStatesDesc": "Supprime uniquement les changements de statut effectués manuellement",
     "clearing": "⏳ Suppression...",
@@ -36,8 +33,7 @@
     "autoDetected": "Boss détecté automatiquement (non modifiable)",
     "markAsAlive": "Marquer comme vivant",
     "markAsKilled": "Marquer comme vaincu",
-    "manuallyAdded": "Boss ajouté manuellement",
-    "editBoss": "Modifier ce boss"
+    "manuallyAdded": "Boss ajouté manuellement"
   },
   "bossForm": {
     "editTitle": "✏️ Modifier le boss",

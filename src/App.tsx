@@ -11,20 +11,17 @@ function App() {
   const [bosses, setBosses] = useState<Boss[]>([])
   const [showSettings, setShowSettings] = useState(false)
   const [savePath, setSavePath] = useState('')
-  const [editingBoss, setEditingBoss] = useState<Boss | null>(null)
   const [isAddingBoss, setIsAddingBoss] = useState(false)
   const [manualStates, setManualStates] = useState<
     Record<string, { killed: boolean; encountered: boolean }>
   >({})
   const [allowManualEdit, setAllowManualEdit] = useState(false)
-  const [allowBossEditing, setAllowBossEditing] = useState(false)
 
   // Charger la config au démarrage
   useEffect(() => {
     if (window.electronAPI) {
       window.electronAPI.getConfig().then((config) => {
         setAllowManualEdit(config.allowManualEditAutoDetected ?? false)
-        setAllowBossEditing(config.allowBossEditing ?? false)
       })
     }
   }, [])
@@ -75,13 +72,9 @@ function App() {
 
   const handleConfigChange = (config: {
     allowManualEditAutoDetected?: boolean
-    allowBossEditing?: boolean
   }) => {
     if (config.allowManualEditAutoDetected !== undefined) {
       setAllowManualEdit(config.allowManualEditAutoDetected)
-    }
-    if (config.allowBossEditing !== undefined) {
-      setAllowBossEditing(config.allowBossEditing)
     }
   }
 
@@ -94,7 +87,6 @@ function App() {
     if (window.electronAPI) {
       const result = await window.electronAPI.saveBossInfo(info)
       if (result.success) {
-        setEditingBoss(null)
         setIsAddingBoss(false)
       } else {
         alert(
@@ -105,12 +97,7 @@ function App() {
   }
 
   const handleCancelBossInfo = () => {
-    setEditingBoss(null)
     setIsAddingBoss(false)
-  }
-
-  const handleEditBoss = (boss: Boss) => {
-    setEditingBoss(boss)
   }
 
   const handleAddBoss = () => {
@@ -157,21 +144,6 @@ function App() {
 
   return (
     <div className="app">
-      {/* Formulaire d'édition de boss existant */}
-      {editingBoss && editingBoss.originalName && (
-        <BossInfoForm
-          boss={{
-            name: editingBoss.name,
-            originalName: editingBoss.originalName,
-            category: editingBoss.category,
-            zone: editingBoss.zone,
-          }}
-          onSubmit={handleSaveBossInfo}
-          onCancel={handleCancelBossInfo}
-          isEditMode={true}
-        />
-      )}
-
       {/* Formulaire d'ajout manuel de boss */}
       {isAddingBoss && (
         <BossInfoForm
@@ -204,7 +176,6 @@ function App() {
       ) : (
         <BossChecklist
           bosses={bosses}
-          onEditBoss={allowBossEditing ? handleEditBoss : undefined}
           onAddBoss={handleAddBoss}
           onToggleBoss={handleToggleBoss}
           allowManualEdit={allowManualEdit}

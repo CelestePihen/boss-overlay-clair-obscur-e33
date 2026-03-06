@@ -24,7 +24,6 @@ function getManualStatesPath(savePath: string): string {
 interface AppConfig {
   lastSavePath?: string
   allowManualEditAutoDetected?: boolean
-  allowBossEditing?: boolean
   language?: string
 }
 

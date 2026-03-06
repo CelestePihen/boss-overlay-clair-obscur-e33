@@ -9,7 +9,7 @@ declare global {
       onBossUpdate: (callback: (bossList: Boss[]) => void) => void
       saveBossInfo: (bossInfo: {
         originalName: string
-        displayName: string
+        id: string
         category: string
         zone: string
       }) => Promise<{ success: boolean; error?: string }>
@@ -19,13 +19,11 @@ declare global {
       getConfig: () => Promise<{
         lastSavePath?: string
         allowManualEditAutoDetected?: boolean
-        allowBossEditing?: boolean
         language?: string
       }>
       saveConfig: (config: {
         lastSavePath?: string
         allowManualEditAutoDetected?: boolean
-        allowBossEditing?: boolean
         language?: string
       }) => Promise<{ success: boolean }>
       getManualStates: (

@@ -8,9 +8,6 @@
     "language": "Language:",
     "allowManualEdit": "Allow manual editing of automatically detected bosses",
     "allowManualEditDesc": "By default, only manually added bosses can be edited. Enable this option to correct automatically detected bosses from the save file.",
-    "allowBossEditing": "Allow editing boss information",
-    "allowBossEditingDesc": "Displays the ✏️ button to edit the name, zone, and category of bosses.",
-    "dangerZone": "⚠️ Danger Zone:",
     "clearManualStates": "🗑️ Reset manual modifications",
     "clearManualStatesDesc": "Only removes manually made status changes",
     "clearing": "⏳ Clearing...",
@@ -36,8 +33,7 @@
     "autoDetected": "Automatically detected boss (not editable)",
     "markAsAlive": "Mark as alive",
     "markAsKilled": "Mark as defeated",
-    "manuallyAdded": "Manually added boss",
-    "editBoss": "Edit this boss"
+    "manuallyAdded": "Manually added boss"
   },
   "bossForm": {
     "editTitle": "✏️ Edit boss",

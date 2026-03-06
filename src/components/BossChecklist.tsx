@@ -5,7 +5,6 @@ import { Boss } from '../types/Boss'
 
 interface Props {
   bosses: Boss[]
-  onEditBoss?: (boss: Boss) => void
   onAddBoss?: () => void
   onToggleBoss?: (boss: Boss, killed: boolean) => void
   allowManualEdit?: boolean
@@ -21,7 +20,6 @@ interface ZoneGroup {
 
 function BossChecklist({
   bosses,
-  onEditBoss,
   onAddBoss,
   onToggleBoss,
   allowManualEdit = false,
@@ -286,24 +284,6 @@ function BossChecklist({
                                 </span>
                               )}
                             </span>
-                            {onEditBoss && (
-                              <button
-                                onClick={() => onEditBoss(boss)}
-                                style={{
-                                  marginLeft: 'auto',
-                                  padding: '4px 8px',
-                                  background: 'rgba(255, 255, 255, 0.1)',
-                                  border: '1px solid rgba(255, 255, 255, 0.2)',
-                                  borderRadius: '4px',
-                                  color: '#fff',
-                                  fontSize: '11px',
-                                  cursor: 'pointer',
-                                }}
-                                title={t('bossList.editBoss')}
-                              >
-                                ✏️
-                              </button>
-                            )}
                           </div>
                         ))}
                       </div>
