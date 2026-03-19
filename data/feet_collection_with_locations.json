@@ -1,0 +1,534 @@
+[
+  {
+    "skill_name": "Abbest Wind",
+    "monster_name": "Abbest",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Abbest",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Abbest",
+    "locations": [
+      "Spring Meadows",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "AbbestMelee"
+  },
+  {
+    "skill_name": "Aberration Light",
+    "monster_name": "Aberration",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Aberration",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Aberration",
+    "locations": [
+      "Lumiere"
+    ],
+    "location_error": null,
+    "skill_name_save": "AberrationBurningLight"
+  },
+  {
+    "skill_name": "Ballet Charm",
+    "monster_name": "Ballet",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Ballet",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Ballet",
+    "locations": [
+      "Sirene"
+    ],
+    "location_error": null,
+    "skill_name_save": "BalletCharm"
+  },
+  {
+    "skill_name": "Boucheclier Fortify",
+    "monster_name": "Boucheclier",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Boucheclier",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Boucheclier",
+    "locations": [
+      "Visages"
+    ],
+    "location_error": null,
+    "skill_name_save": "BoucheclierShield"
+  },
+  {
+    "skill_name": "Braseleur Smash",
+    "monster_name": "Braseleur",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Braseleur",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Braseleur",
+    "locations": [
+      "Frozen Hearts"
+    ],
+    "location_error": null,
+    "skill_name_save": "HammerSmash"
+  },
+  {
+    "skill_name": "Bruler Bash",
+    "monster_name": "Bruler",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Bruler",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Bruler",
+    "locations": [
+      "Flying Waters",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "BrulerAnchorSmash"
+  },
+  {
+    "skill_name": "Bénisseur Mortar",
+    "monster_name": "Bénisseur",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/B%C3%A9nisseur",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/B%C3%A9nisseur",
+    "locations": [
+      "Sirene",
+      "Red Woods"
+    ],
+    "location_error": null,
+    "skill_name_save": "BenisseurMortar"
+  },
+  {
+    "skill_name": "Chalier Combo",
+    "monster_name": "Chalier",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Chalier",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Chalier",
+    "locations": [
+      "Forgotten Battlefield",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "ChalierRelentlessSword"
+  },
+  {
+    "skill_name": "Chapelier Slash",
+    "monster_name": "Chapelier",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Chapelier",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Chapelier",
+    "locations": [
+      "Visages"
+    ],
+    "location_error": null,
+    "skill_name_save": "ChapelierAxeSlash"
+  },
+  {
+    "skill_name": "Chevalière Ice",
+    "monster_name": "Gold Chevalière",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Gold_Chevali%C3%A8re",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Gold+Chevali%C3%A8re",
+    "locations": [
+      "Stone Wave Cliffs",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "ChevaliereCAOECombo"
+  },
+  {
+    "skill_name": "Chevalière Piercing",
+    "monster_name": "Ceramic Chevalière",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Ceramic_Chevali%C3%A8re",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Ceramic+Chevali%C3%A8re",
+    "locations": [
+      "Old Lumiere",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "ChevaliereCAC"
+  },
+  {
+    "skill_name": "Chevalière Thrusts",
+    "monster_name": "Steel Chevalière",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Steel_Chevali%C3%A8re",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Steel+Chevali%C3%A8re",
+    "locations": [
+      "Old Lumiere"
+    ],
+    "location_error": null,
+    "skill_name_save": "ChevaliereBAoECombo"
+  },
+  {
+    "skill_name": "Clair Enfeeble",
+    "monster_name": "Clair",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Clair",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Clair",
+    "locations": [
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "ClairEnfeeble"
+  },
+  {
+    "skill_name": "Contorsionniste Blast",
+    "monster_name": "Contorsionniste",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Contorsionniste",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Contorsionniste",
+    "locations": [
+      "Visages",
+      "Lumiere"
+    ],
+    "location_error": null,
+    "skill_name_save": "ContorsionnisteAngryBlast"
+  },
+  {
+    "skill_name": "Cruler Barrier",
+    "monster_name": "Cruler",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Cruler",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Cruler",
+    "locations": [
+      "Flying Waters",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "CrulerShield"
+  },
+  {
+    "skill_name": "Création Void",
+    "monster_name": "Création",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Cr%C3%A9ation",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Cr%C3%A9ation",
+    "locations": [
+      "Lumiere",
+      "Endless Tower",
+      "Renoir's Drafts"
+    ],
+    "location_error": null,
+    "skill_name_save": "CreationFromTheVoid"
+  },
+  {
+    "skill_name": "Cultist Blood",
+    "monster_name": "Greatsword Cultist",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Greatsword_Cultist",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Greatsword+Cultist",
+    "locations": [
+      "Stone Wave Cliffs",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "HeavyCultistBloodSword"
+  },
+  {
+    "skill_name": "Cultist Slashes",
+    "monster_name": "Reaper Cultist",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Reaper_Cultist",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Reaper+Cultist",
+    "locations": [
+      "Stone Wave Cliffs",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "FlyingSlashes"
+  },
+  {
+    "skill_name": "Danseuse Waltz",
+    "monster_name": "Danseuse",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Danseuse",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Danseuses",
+    "locations": [
+      "Frozen Hearts",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "DanseuseWingDance"
+  },
+  {
+    "skill_name": "Duallist Storm",
+    "monster_name": "Dualliste",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Dualliste",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Dualliste",
+    "locations": [
+      "Forgotten Battlefield"
+    ],
+    "location_error": null,
+    "skill_name_save": "StormBlood"
+  },
+  {
+    "skill_name": "Démineur Thunder",
+    "monster_name": "Démineur",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/D%C3%A9mineur",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/D%C3%A9mineur",
+    "locations": [
+      "Flying Waters",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "DemineurThunderStrike"
+  },
+  {
+    "skill_name": "Gault Fury",
+    "monster_name": "Gault",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Gault",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Gault",
+    "locations": [
+      "Yellow Harvest",
+      "Falling Leaves"
+    ],
+    "location_error": null,
+    "skill_name_save": "GaultCombo"
+  },
+  {
+    "skill_name": "Glaise Earthquakes",
+    "monster_name": "Glaise",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Glaise",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Glaise",
+    "locations": [
+      "Yellow Harvest"
+    ],
+    "location_error": null,
+    "skill_name_save": "GlaiseEarthquakes"
+  },
+  {
+    "skill_name": "Grosse Tête Whack",
+    "monster_name": "Grosse Tête",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Grosse_T%C3%AAte",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Grosse+T%C3%AAte",
+    "locations": [
+      "The Continent"
+    ],
+    "location_error": null,
+    "skill_name_save": "GrosseTeteWrecking"
+  },
+  {
+    "skill_name": "Hexga Crush",
+    "monster_name": "Hexga",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Hexga",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Hexga",
+    "locations": [
+      "Stone Wave Cliffs"
+    ],
+    "location_error": null,
+    "skill_name_save": "HexgaCombo"
+  },
+  {
+    "skill_name": "Jar Lampstorm",
+    "monster_name": "Jar",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Jar",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Jar",
+    "locations": [
+      "Spring Meadows",
+      "Yellow Harvest"
+    ],
+    "location_error": null,
+    "skill_name_save": "JarCombo"
+  },
+  {
+    "skill_name": "Lampmaster Light",
+    "monster_name": "Lampmaster",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Lampmaster",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Lampmaster",
+    "locations": [
+      "Stone Wave Cliffs"
+    ],
+    "location_error": null,
+    "skill_name_save": "LampmasterSwordOfLight"
+  },
+  {
+    "skill_name": "Lancelier Impale",
+    "monster_name": "Lancelier",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Lancelier",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Lancelier",
+    "locations": [
+      "Spring Meadows",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "LancelierEstoc"
+  },
+  {
+    "skill_name": "Luster Slices",
+    "monster_name": "Luster",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Luster",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Luster",
+    "locations": [
+      "Flying Waters"
+    ],
+    "location_error": null,
+    "skill_name_save": "LusterCombo"
+  },
+  {
+    "skill_name": "Moissonneuse Vendange",
+    "monster_name": "Moissonneuse",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Moissonneuse",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Moissonneuse",
+    "locations": [
+      "Visages",
+      "Lumiere"
+    ],
+    "location_error": null,
+    "skill_name_save": "MoissonneuseVendange"
+  },
+  {
+    "skill_name": "Obscur Sword",
+    "monster_name": "Obscur",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Obscur",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Obscur",
+    "locations": [
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "ObscurCombo"
+  },
+  {
+    "skill_name": "Orphelin Cheers",
+    "monster_name": "Orphelin",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Orphelin",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Orphelin",
+    "locations": [
+      "Lumiere"
+    ],
+    "location_error": null,
+    "skill_name_save": "OrphelinBuff"
+  },
+  {
+    "skill_name": "Portier Crash",
+    "monster_name": "Portier",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Portier",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Portier",
+    "locations": [
+      "Spring Meadows",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "PortierCrashingDown"
+  },
+  {
+    "skill_name": "Potier Energy",
+    "monster_name": "Potier",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Potier",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Potier",
+    "locations": [
+      "The Continent"
+    ],
+    "location_error": null,
+    "skill_name_save": "PotierBuff"
+  },
+  {
+    "skill_name": "Pèlerin Heal",
+    "monster_name": "Pèlerin",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/P%C3%A8lerin",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/P%C3%A8lerin",
+    "locations": [
+      "The Continent"
+    ],
+    "location_error": null,
+    "skill_name_save": "PelerinFreshAir"
+  },
+  {
+    "skill_name": "Ramasseur Bonk",
+    "monster_name": "Ramasseur",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Ramasseur",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Ramasseur",
+    "locations": [
+      "Forgotten Battlefield",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "RamasseurBonk"
+  },
+  {
+    "skill_name": "Rocher Hammering",
+    "monster_name": "Rocher",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Rocher",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Rocher",
+    "locations": [
+      "Stone Wave Cliffs"
+    ],
+    "location_error": null,
+    "skill_name_save": "RocherHammering"
+  },
+  {
+    "skill_name": "Sakapatate Estoc",
+    "monster_name": "Ranger Sakapatate",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Ranger_Sakapatate",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Ranger+Sakapatate",
+    "locations": [
+      "Ancient Sanctuary",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "ThunderEstoc"
+  },
+  {
+    "skill_name": "Sakapatate Explosion",
+    "monster_name": "Catapult Sakapatate",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Catapult_Sakapatate",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Catapult+Sakapatate",
+    "locations": [
+      "Ancient Sanctuary",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "ThunderThrows"
+  },
+  {
+    "skill_name": "Sakapatate Fire",
+    "monster_name": "Ultimate Sakapatate",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Ultimate_Sakapatate",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Ultimate+Sakapatate",
+    "locations": [
+      "Ancient Sanctuary",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "PotatobagBossFireShots"
+  },
+  {
+    "skill_name": "Sakapatate Slam",
+    "monster_name": "Robust Sakapatate",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Robust_Sakapatate",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Robust+Sakapatate",
+    "locations": [
+      "Ancient Sanctuary",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "PotatobagSlam"
+  },
+  {
+    "skill_name": "Sapling Absorption",
+    "monster_name": "Sapling",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Sapling",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Sapling",
+    "locations": [
+      "Falling Leaves"
+    ],
+    "location_error": null,
+    "skill_name_save": "SaplingAbsorption"
+  },
+  {
+    "skill_name": "Stalact Punches",
+    "monster_name": "Stalact",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Stalact",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Stalact",
+    "locations": [
+      "Monoco's Station"
+    ],
+    "location_error": null,
+    "skill_name_save": "StalactCombo"
+  },
+  {
+    "skill_name": "Troubadour Trumpet",
+    "monster_name": "Troubadour",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/Troubadour",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Troubadour",
+    "locations": [
+      "Forgotten Battlefield",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "Trumpet"
+  },
+  {
+    "skill_name": "Échassier Stabs",
+    "monster_name": "Échassier",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/%C3%89chassier",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/%C3%89chassier",
+    "locations": [
+      "The Reacher"
+    ],
+    "location_error": null,
+    "skill_name_save": "EchassierCombo"
+  },
+  {
+    "skill_name": "Évêque Spear",
+    "monster_name": "Évêque",
+    "monster_url": "https://clair-obscur.fandom.com/wiki/%C3%89v%C3%AAque",
+    "fextra_url": "https://expedition33.wiki.fextralife.com/Eveque",
+    "locations": [
+      "Spring Meadows",
+      "The Monolith"
+    ],
+    "location_error": null,
+    "skill_name_save": "EvequeSpear"
+  }
+]

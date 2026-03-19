@@ -1,0 +1,67 @@
+{
+  "LostGestrals": {
+    "FindLostGestral_1": {
+      "id": "FindLostGestral_1",
+      "name": "Lost Gestral 1",
+      "zoneName": "the_continent",
+      "sourceZoneName": "Continent Map",
+      "summary": "Right outside the Esquie's Nest portal."
+    },
+    "FindLostGestral_2": {
+      "id": "FindLostGestral_2",
+      "name": "Lost Gestral 2",
+      "zoneName": "the_continent",
+      "sourceZoneName": "Continent Map",
+      "summary": "Just east of the ramp leading to the Stone Wave Cliffs portal."
+    },
+    "FindLostGestral_3": {
+      "id": "FindLostGestral_3",
+      "name": "Lost Gestral 3",
+      "zoneName": "the_continent",
+      "sourceZoneName": "Continent Map",
+      "summary": "Southwest of the White Tree portal."
+    },
+    "FindLostGestral_4": {
+      "id": "FindLostGestral_4",
+      "name": "Lost Gestral 4",
+      "zoneName": "the_continent",
+      "sourceZoneName": "Continent Map",
+      "summary": "In front of two green-leafed trees between the Forgotten Battlefield and Monoco's Station."
+    },
+    "FindLostGestral_5": {
+      "id": "FindLostGestral_5",
+      "name": "Lost Gestral 5",
+      "zoneName": "the_continent",
+      "sourceZoneName": "Continent Map",
+      "summary": "On the orange-colored island east of the area between Monoco's Station and the Forgotten Battlefield, near Coastal Cave."
+    },
+    "FindLostGestral_6": {
+      "id": "FindLostGestral_6",
+      "name": "Lost Gestral 6",
+      "zoneName": "the_continent",
+      "sourceZoneName": "Continent Map",
+      "summary": "On the red-tree-covered island just northwest of the beach with Old Lumiere's northern portal."
+    },
+    "FindLostGestral_7": {
+      "id": "FindLostGestral_7",
+      "name": "Lost Gestral 7",
+      "zoneName": "the_continent",
+      "sourceZoneName": "Continent Map",
+      "summary": "In the isolated grassy patch of land just northeast of The Reacher's portal."
+    },
+    "FindLostGestral_8": {
+      "id": "FindLostGestral_8",
+      "name": "Lost Gestral 8",
+      "zoneName": "the_continent",
+      "sourceZoneName": "Continent Map",
+      "summary": "On the high-floating island just south of the Endless Tower."
+    },
+    "FindLostGestral_9": {
+      "id": "FindLostGestral_9",
+      "name": "Lost Gestral 9",
+      "zoneName": "the_continent",
+      "sourceZoneName": "Continent Map",
+      "summary": "Near the Endless Night Sanctuary portal in the red-tree-covered area on the far eastern side of the Continent."
+    }
+  }
+}

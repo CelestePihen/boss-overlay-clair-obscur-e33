@@ -1,0 +1,84 @@
+{
+  "FriendlyNevrons": {
+    "Nevron_JarNeedLight": {
+      "questId": "Nevron_JarNeedLight",
+      "objectiveId": "KilledJar",
+      "name": "Jar's Light",
+      "zoneName": "spring_meadows",
+      "sourceZoneName": "Spring Meadows",
+      "summary": "Inside the cave between Grand Meadow and Indigo Tree. Jar asks you to bring him light."
+    },
+    "Nevron_DemineurMissingMine": {
+      "questId": "Nevron_DemineurMissingMine",
+      "objectiveId": "KillDemineur",
+      "name": "Demineur Missing Mine",
+      "zoneName": "flying_waters",
+      "sourceZoneName": "Flying Waters",
+      "summary": "At the northern shipwreck area. The pale Demineur asks for an intact mine."
+    },
+    "Nevron_SmallBourgeon": {
+      "questId": "Nevron_SmallBourgeon",
+      "objectiveId": "KillCompletedBourgeon",
+      "name": "Small Bourgeon",
+      "zoneName": "the_small_bourgeon",
+      "sourceZoneName": "Small Bourgeon",
+      "summary": "In the overworld cave between Flying Waters and Red Woods. Bring it a Bourgeon Skin so it can grow."
+    },
+    "Nevron_PortierDoorMaze": {
+      "questId": "Nevron_PortierDoorMaze",
+      "objectiveId": "KillCompletedPortier",
+      "name": "Portier Spirit",
+      "zoneName": "esoteric_ruins_continent",
+      "sourceZoneName": "Esoteric Ruins",
+      "summary": "Beyond the maze in Esoteric Ruins. Help the spirit find the item it is looking for."
+    },
+    "Nevron_WeaponlessChalier": {
+      "questId": "Nevron_WeaponlessChalier",
+      "objectiveId": "KillChalier",
+      "name": "Chalier Help",
+      "zoneName": "floating_cemetery",
+      "sourceZoneName": "Floating Cemetery",
+      "summary": "Inside the Floating Cemetery. Chalier asks which weapon it should wield."
+    },
+    "Nevron_Benisseur": {
+      "questId": "Nevron_Benisseur",
+      "objectiveId": "KillCompletedBenisseur",
+      "name": "Benisseur Fountain",
+      "zoneName": "red_woods",
+      "sourceZoneName": "Red Woods",
+      "summary": "At the fountain in Red Woods. It asks for Chroma."
+    },
+    "Nevron_Hexga": {
+      "questId": "Nevron_Hexga",
+      "objectiveId": "KillCompletedHexga",
+      "name": "Hexga Crystals",
+      "zoneName": "stone_wave_cliffs",
+      "sourceZoneName": "Stone Wave Cliffs",
+      "summary": "On the main-story path through Stone Wave Cliffs. Hexga asks for lustrous rock crystals."
+    },
+    "Nevron_Troubadour": {
+      "questId": "Nevron_Troubadour",
+      "objectiveId": "KillCompletedTroubadour",
+      "name": "Troubadour Help",
+      "zoneName": "stone_quarry",
+      "sourceZoneName": "Stone Quarry",
+      "summary": "In Stone Quarry on the way to Monoco's Station. Let the green notes hit you and dodge the red ones."
+    },
+    "Nevron_DanseuseDanceClass": {
+      "questId": "Nevron_DanseuseDanceClass",
+      "objectiveId": "KillDanseuseDanceTeacher",
+      "name": "Danseuse Teacher",
+      "zoneName": "frozen_hearts",
+      "sourceZoneName": "Frozen Hearts",
+      "summary": "Deep in Frozen Hearts past Glacial Falls. Follow the tracks and jump down to find the Nevron."
+    },
+    "Nevron_JudgeOfMercy": {
+      "questId": "Nevron_JudgeOfMercy",
+      "objectiveId": "KillJudgeOfMercy",
+      "name": "Judge of Mercy",
+      "zoneName": "the_fountain",
+      "sourceZoneName": "The Fountain",
+      "summary": "Speak to Blanche in The Fountain. Her judgment depends on how you handled the other Nevrons."
+    }
+  }
+}

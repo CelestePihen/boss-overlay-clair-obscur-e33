@@ -1,32 +1,67 @@
-import { useEffect, useState } from 'react'
+import { CSSProperties, useEffect, useMemo, useState } from 'react'
 
 import BossChecklist from './components/BossChecklist'
-import { BossInfoForm } from './components/BossInfoForm'
+import type { ChecklistFilterMode } from './components/checklistModel'
+import {
+  type ChecklistFeatureKey,
+  type ChecklistFeatureVisibility,
+  DEFAULT_CHECKLIST_FEATURE_VISIBILITY,
+} from './components/checklistVisibility'
 import Settings from './components/Settings'
-import { useI18n } from './i18n'
 import { Boss } from './types/Boss'
+import { CurrentLocation } from './types/CurrentLocation'
+import { JournalEntry } from './types/JournalEntry'
+import { LostGestralEntry } from './types/LostGestralEntry'
+import { MonocoFoot } from './types/MonocoFoot'
+import { MusicRecordEntry } from './types/MusicRecordEntry'
+import { Picto } from './types/Picto'
+import { SaveSnapshot } from './types/SaveSnapshot'
+import { WeaponEntry } from './types/WeaponEntry'
+import {
+  DEFAULT_BACKGROUND_OPACITY,
+  getOverlayTheme,
+  normalizeBackgroundOpacity,
+} from './utils/backgroundOpacity'
+
+const SETTINGS_ICON = '\u2699\uFE0F'
+const CLOSE_ICON = '\u2715'
 
 function App() {
-  const { t } = useI18n()
   const [bosses, setBosses] = useState<Boss[]>([])
+  const [pictos, setPictos] = useState<Picto[]>([])
+  const [monocoFeet, setMonocoFeet] = useState<MonocoFoot[]>([])
+  const [journals, setJournals] = useState<JournalEntry[]>([])
+  const [lostGestrals, setLostGestrals] = useState<LostGestralEntry[]>([])
+  const [friendlyNevrons, setFriendlyNevrons] = useState<SaveSnapshot['friendlyNevrons']>([])
+  const [weapons, setWeapons] = useState<WeaponEntry[]>([])
+  const [musicRecords, setMusicRecords] = useState<MusicRecordEntry[]>([])
+  const [location, setLocation] = useState<CurrentLocation | null>(null)
   const [showSettings, setShowSettings] = useState(false)
   const [savePath, setSavePath] = useState('')
-  const [isAddingBoss, setIsAddingBoss] = useState(false)
   const [manualStates, setManualStates] = useState<
     Record<string, { killed: boolean; encountered: boolean }>
   >({})
   const [allowManualEdit, setAllowManualEdit] = useState(false)
+  const [backgroundOpacity, setBackgroundOpacity] = useState(
+    DEFAULT_BACKGROUND_OPACITY,
+  )
+  const [checklistFilterMode, setChecklistFilterMode] =
+    useState<ChecklistFilterMode>('all')
+  const [featureVisibility, setFeatureVisibility] = useState<ChecklistFeatureVisibility>(
+    DEFAULT_CHECKLIST_FEATURE_VISIBILITY,
+  )
 
-  // Charger la config au démarrage
   useEffect(() => {
     if (window.electronAPI) {
       window.electronAPI.getConfig().then((config) => {
         setAllowManualEdit(config.allowManualEditAutoDetected ?? false)
+        setBackgroundOpacity(
+          normalizeBackgroundOpacity(config.backgroundOpacity),
+        )
       })
     }
   }, [])
 
-  // Charger les états manuels quand le savePath change
   useEffect(() => {
     if (window.electronAPI && savePath) {
       window.electronAPI.getManualStates(savePath).then((states) => {
@@ -37,10 +72,8 @@ function App() {
 
   useEffect(() => {
     if (window.electronAPI) {
-      // Écouter les mises à jour des boss
-      window.electronAPI.onBossUpdate((bossList: Boss[]) => {
-        // Fusionner avec les états manuels
-        const mergedBosses = bossList.map((boss) => {
+      window.electronAPI.onBossUpdate((snapshot: SaveSnapshot) => {
+        const mergedBosses = snapshot.bosses.map((boss) => {
           if (boss.originalName && manualStates[boss.originalName]) {
             return {
               ...boss,
@@ -50,10 +83,18 @@ function App() {
           }
           return boss
         })
+
         setBosses(mergedBosses)
+        setPictos(snapshot.pictos)
+        setMonocoFeet(snapshot.monocoFeet)
+        setJournals(snapshot.journals)
+        setLostGestrals(snapshot.lostGestrals)
+        setFriendlyNevrons(snapshot.friendlyNevrons)
+        setWeapons(snapshot.weapons)
+        setMusicRecords(snapshot.musicRecords)
+        setLocation(snapshot.location)
       })
 
-      // Écouter la restauration du dernier chemin de sauvegarde
       window.electronAPI.onRestoreSavePath((path: string) => {
         setSavePath(path)
         window.electronAPI.startWatch(path)
@@ -72,54 +113,29 @@ function App() {
 
   const handleConfigChange = (config: {
     allowManualEditAutoDetected?: boolean
+    backgroundOpacity?: number
   }) => {
     if (config.allowManualEditAutoDetected !== undefined) {
       setAllowManualEdit(config.allowManualEditAutoDetected)
     }
-  }
-
-  const handleSaveBossInfo = async (info: {
-    originalName: string
-    id: string
-    category: string
-    zone: string
-  }) => {
-    if (window.electronAPI) {
-      const result = await window.electronAPI.saveBossInfo(info)
-      if (result.success) {
-        setIsAddingBoss(false)
-      } else {
-        alert(
-          t('bossForm.saveError', { error: result.error || 'Unknown error' }),
-        )
-      }
+    if (config.backgroundOpacity !== undefined) {
+      setBackgroundOpacity(normalizeBackgroundOpacity(config.backgroundOpacity))
     }
-  }
-
-  const handleCancelBossInfo = () => {
-    setIsAddingBoss(false)
-  }
-
-  const handleAddBoss = () => {
-    setIsAddingBoss(true)
   }
 
   const handleToggleBoss = async (boss: Boss, killed: boolean) => {
     if (!boss.originalName || !savePath) return
 
-    // Vérifier si c'est un boss manuel ou si l'option est activée
     const isManualBoss = boss.originalName.startsWith('MANUAL_')
     if (!isManualBoss && !allowManualEdit) {
-      // Empêcher la modification des boss non-manuels si l'option est désactivée
       return
     }
 
     const newState = {
       killed,
-      encountered: true, // Si on clique, c'est qu'on l'a rencontré
+      encountered: true,
     }
 
-    // Sauvegarder l'état manuel
     if (window.electronAPI) {
       await window.electronAPI.saveManualState(
         savePath,
@@ -128,42 +144,49 @@ function App() {
       )
     }
 
-    // Mettre à jour le state local
     setManualStates((prev) => ({
       ...prev,
       [boss.originalName!]: newState,
     }))
 
-    // Mettre à jour la liste des boss immédiatement
     setBosses((prevBosses) =>
-      prevBosses.map((b) =>
-        b.originalName === boss.originalName ? { ...b, ...newState } : b,
+      prevBosses.map((candidate) =>
+        candidate.originalName === boss.originalName
+          ? { ...candidate, ...newState }
+          : candidate,
       ),
     )
   }
 
-  return (
-    <div className="app">
-      {/* Formulaire d'ajout manuel de boss */}
-      {isAddingBoss && (
-        <BossInfoForm
-          boss={{
-            name: '',
-            originalName: `MANUAL_${Date.now()}`, // ID unique pour les boss manuels
-            category: 'Boss',
-            zone: '',
-          }}
-          onSubmit={handleSaveBossInfo}
-          onCancel={handleCancelBossInfo}
-          isEditMode={false}
-        />
-      )}
 
+  const handleToggleFeatureVisibility = (feature: ChecklistFeatureKey) => {
+    setFeatureVisibility((prev) => ({
+      ...prev,
+      [feature]: !prev[feature],
+    }))
+  }
+
+  const overlayTheme = useMemo(
+    () => getOverlayTheme(backgroundOpacity),
+    [backgroundOpacity],
+  )
+
+  const appStyle = useMemo(
+    () =>
+      ({
+        background: overlayTheme.backgroundColor,
+        ...overlayTheme.cssVariables,
+      }) as CSSProperties,
+    [overlayTheme],
+  )
+
+  return (
+    <div className="app" style={appStyle}>
       <div className="title-bar">
         <span>Boss Overlay</span>
         <div className="controls">
-          <button onClick={() => setShowSettings(!showSettings)}>⚙️</button>
-          <button onClick={() => window.electronAPI?.closeApp()}>✕</button>
+          <button onClick={() => setShowSettings(!showSettings)}>{SETTINGS_ICON}</button>
+          <button onClick={() => window.electronAPI?.closeApp()}>{CLOSE_ICON}</button>
         </div>
       </div>
 
@@ -176,7 +199,18 @@ function App() {
       ) : (
         <BossChecklist
           bosses={bosses}
-          onAddBoss={handleAddBoss}
+          pictos={pictos}
+          monocoFeet={monocoFeet}
+          journals={journals}
+          lostGestrals={lostGestrals}
+          friendlyNevrons={friendlyNevrons}
+          weapons={weapons}
+          musicRecords={musicRecords}
+          currentLocation={location}
+          filterMode={checklistFilterMode}
+          onFilterModeChange={setChecklistFilterMode}
+          featureVisibility={featureVisibility}
+          onToggleFeatureVisibility={handleToggleFeatureVisibility}
           onToggleBoss={handleToggleBoss}
           allowManualEdit={allowManualEdit}
         />

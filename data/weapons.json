@@ -1,0 +1,1048 @@
+{
+  "Weapons": {
+    "Abysseram": {
+      "id": "Abysseram",
+      "name": "Abysseram",
+      "owner": "Gustave",
+      "zoneName": "flying_waters",
+      "sourceZoneName": "Flying Waters",
+      "locationUrl": "https://game-checklists.com/expedition33/flying-waters-checklist.html",
+      "summary": "Coral Cave Flag - Find Burgeon past a handhold wall"
+    },
+    "Blodam": {
+      "id": "Blodam",
+      "name": "Blodam",
+      "owner": "Gustave",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Defeat Chromatic Reaper Cultist on an island past Serpenphare"
+    },
+    "Chevalam": {
+      "id": "Chevalam",
+      "name": "Chevalam",
+      "owner": "Gustave",
+      "zoneName": "crimson_forest",
+      "sourceZoneName": "Crimson Forest",
+      "locationUrl": "https://game-checklists.com/expedition33/crimson-forest-checklist.html",
+      "summary": "The Three Blades Flag - Defeat the final boss of the area"
+    },
+    "Cruleram": {
+      "id": "Cruleram",
+      "name": "Cruleram",
+      "owner": "Gustave",
+      "zoneName": "flying_waters",
+      "sourceZoneName": "Flying Waters",
+      "locationUrl": "https://game-checklists.com/expedition33/flying-waters-checklist.html",
+      "summary": "Noco's Hut Flag - defeat an enemy near the huge anchor"
+    },
+    "Cultam": {
+      "id": "Cultam",
+      "name": "Cultam",
+      "owner": "Gustave",
+      "zoneName": "monoco_station",
+      "sourceZoneName": "Monoco's Station",
+      "locationUrl": "https://game-checklists.com/expedition33/monocos-station-checklist.html",
+      "summary": "Sold by merchant 47500 Chroma required, deliver Eternal Ice from Frozen Hearts to a merchant"
+    },
+    "Delaram": {
+      "id": "Delaram",
+      "name": "Delaram",
+      "owner": "Gustave",
+      "zoneName": "stone_wave_cliffs",
+      "sourceZoneName": "Stone Wave Cliffs",
+      "locationUrl": "https://game-checklists.com/expedition33/stone-wave-cliffs-checklist.html",
+      "summary": "Complete Paint Cage 4"
+    },
+    "Demonam": {
+      "id": "Demonam",
+      "name": "Demonam",
+      "owner": "Gustave",
+      "zoneName": "gestral_village",
+      "sourceZoneName": "Gestral Village",
+      "locationUrl": "https://game-checklists.com/expedition33/gestral-village-checklist.html",
+      "summary": "Sold by merchant in Gestral Bazaar 4002 Chroma required, fight the merchant"
+    },
+    "Gaulteram": {
+      "id": "Gaulteram",
+      "name": "Gaulteram",
+      "owner": "Gustave",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Defeat the Burgeon in front of the Stone Wave Cliffs portal Or in Lumiere Act III , sold by merchant in Lumiere's Gardens for 30704 Chroma"
+    },
+    "Gesam": {
+      "id": "Gesam",
+      "name": "Gesam",
+      "owner": "Gustave",
+      "zoneName": "flying_manor",
+      "sourceZoneName": "Flying Manor",
+      "locationUrl": "https://game-checklists.com/expedition33/flying-manor-checklist.html",
+      "summary": "Central Plaza Flag - take the elevator and go left Or sold by merchant in Flying Manor for 81500 Chroma"
+    },
+    "Lanceram": {
+      "id": "Lanceram",
+      "name": "Lanceram",
+      "owner": "Gustave",
+      "zoneName": "spring_meadows",
+      "sourceZoneName": "Spring Meadows",
+      "locationUrl": "https://game-checklists.com/expedition33/spring-meadows-checklist.html",
+      "summary": "Progress up to First Strike tutorial"
+    },
+    "Noahram": {
+      "id": "Noahram",
+      "name": "Noahram",
+      "owner": "Gustave",
+      "zoneName": "lumiere_prologue",
+      "sourceZoneName": "Lumiere Act I",
+      "locationUrl": "https://game-checklists.com/expedition33/lumiere-act1-checklist.html",
+      "summary": "Gustave's starting weapon"
+    },
+    "Nosaram": {
+      "id": "Nosaram",
+      "name": "Nosaram",
+      "owner": "Gustave",
+      "zoneName": "renoir_drafts",
+      "sourceZoneName": "Renoir's Drafts",
+      "locationUrl": "https://game-checklists.com/expedition33/renoirs-drafts-and-the-abyss-checklist.html",
+      "summary": "Entrance Flag - Sold by merchant past a grapple point 107475 Chroma required"
+    },
+    "Sakaram": {
+      "id": "Sakaram",
+      "name": "Sakaram",
+      "owner": "Gustave",
+      "zoneName": "ancient_sanctuary",
+      "sourceZoneName": "Ancient Sanctuary",
+      "locationUrl": "https://game-checklists.com/expedition33/ancient-sanctuary-checklist.html",
+      "summary": "Entrance Flag - Defeat Robust Sakapatate"
+    },
+    "Seeram": {
+      "id": "Seeram",
+      "name": "Seeram",
+      "owner": "Gustave",
+      "zoneName": "coastal_cave",
+      "sourceZoneName": "Coastal Cave",
+      "locationUrl": "https://game-checklists.com/expedition33/all-quest-locations-checklist.html",
+      "summary": "Sold by merchant Cruler near a fireplace 21275 Chroma required, fight the merchant"
+    },
+    "Angerim": {
+      "id": "Angerim",
+      "name": "Angerim",
+      "owner": "Lune",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Defeat Chromatic Demineur north of Forgotten Battlefield"
+    },
+    "Benisim": {
+      "id": "Benisim",
+      "name": "Benisim",
+      "owner": "Lune",
+      "zoneName": "forgotten_battlefield",
+      "sourceZoneName": "Forgotten Battlefield",
+      "locationUrl": "https://game-checklists.com/expedition33/forgotten-battlefield-checklist.html",
+      "summary": "Sold by merchant past the main battlefield area 7990 Chroma required"
+    },
+    "Betelim": {
+      "id": "Betelim",
+      "name": "Betelim",
+      "owner": "Lune",
+      "zoneName": "gestral_village",
+      "sourceZoneName": "Gestral Village",
+      "locationUrl": "https://game-checklists.com/expedition33/gestral-village-checklist.html",
+      "summary": "Use Paint Spike to break a rock on right side of the village"
+    },
+    "VD_Lune_1": {
+      "id": "VD_Lune_1",
+      "name": "Bonbim",
+      "owner": "Lune",
+      "zoneName": "verso_drafts",
+      "sourceZoneName": "Verso's Drafts",
+      "locationUrl": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+      "summary": "Reverie Path Flag - Sold by merchant 102424 Chroma required, fight the merchant"
+    },
+    "Braselim": {
+      "id": "Braselim",
+      "name": "Braselim",
+      "owner": "Lune",
+      "zoneName": "the_monolith",
+      "sourceZoneName": "The Monolith",
+      "locationUrl": "https://game-checklists.com/expedition33/the-monolith-checklist.html",
+      "summary": "Tainted Hearts level - defeat enemy group on a main path"
+    },
+    "Chapelim": {
+      "id": "Chapelim",
+      "name": "Chapelim",
+      "owner": "Lune",
+      "zoneName": "visages",
+      "sourceZoneName": "Visages",
+      "locationUrl": "https://game-checklists.com/expedition33/visages-checklist.html",
+      "summary": "Joy Vale - defeat the final boss of the area"
+    },
+    "Sirenim_1": {
+      "id": "Sirenim_1",
+      "name": "Choralim",
+      "owner": "Lune",
+      "zoneName": "sirene_dress",
+      "sourceZoneName": "Sirene's Dress",
+      "locationUrl": "https://game-checklists.com/expedition33/sirenes-dress-checklist.html",
+      "summary": "Defeat Chromatic Glissando"
+    },
+    "Simonim": {
+      "id": "Simonim",
+      "name": "Cleim",
+      "owner": "Lune",
+      "zoneName": "endless_tower",
+      "sourceZoneName": "Endless Tower",
+      "locationUrl": "https://game-checklists.com/expedition33/endless-tower-checklist.html",
+      "summary": "Defeat Clea Unleashed"
+    },
+    "Sirenim_2": {
+      "id": "Sirenim_2",
+      "name": "Colim",
+      "owner": "Lune",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Kill any Chorale enemy"
+    },
+    "Coralim": {
+      "id": "Coralim",
+      "name": "Coralim",
+      "owner": "Lune",
+      "zoneName": "stone_wave_cliffs",
+      "sourceZoneName": "Stone Wave Cliffs",
+      "locationUrl": "https://game-checklists.com/expedition33/stone-wave-cliffs-checklist.html",
+      "summary": "Flooded Building Flag - Use handholds past a rope climb"
+    },
+    "Deminerim": {
+      "id": "Deminerim",
+      "name": "Deminerim",
+      "owner": "Lune",
+      "zoneName": "flying_waters",
+      "sourceZoneName": "Flying Waters",
+      "locationUrl": "https://game-checklists.com/expedition33/flying-waters-checklist.html",
+      "summary": "Complete Demineur's side quest See All Side Quests checklist"
+    },
+    "Elerim": {
+      "id": "Elerim",
+      "name": "Elerim",
+      "owner": "Lune",
+      "zoneName": "sinister_cave",
+      "sourceZoneName": "Sinister Cave",
+      "locationUrl": "https://game-checklists.com/expedition33/sinister-cave-checklist.html",
+      "summary": "Under a statue Or sold by merchant in Flying Manor for 89650 Chroma"
+    },
+    "VD_Lune_2": {
+      "id": "VD_Lune_2",
+      "name": "Esquim",
+      "owner": "Lune",
+      "zoneName": "verso_drafts",
+      "sourceZoneName": "Verso's Drafts",
+      "locationUrl": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+      "summary": "Complete Paint Cage 22 See All Paint Cages checklist"
+    },
+    "Reacherim_1": {
+      "id": "Reacherim_1",
+      "name": "Kralim",
+      "owner": "Lune",
+      "zoneName": "the_reacher",
+      "sourceZoneName": "The Reacher",
+      "locationUrl": "https://game-checklists.com/expedition33/the-reacher-checklist.html",
+      "summary": "Foggy Area Flag - defeat the nearest enemy Or alternatively, defeat the Chromatic Orphelin in Yellow Harvest"
+    },
+    "Lighterim": {
+      "id": "Lighterim",
+      "name": "Lighterim",
+      "owner": "Lune",
+      "zoneName": "spring_meadows",
+      "sourceZoneName": "Spring Meadows",
+      "locationUrl": "https://game-checklists.com/expedition33/spring-meadows-checklist.html",
+      "summary": "Drops from enemy group Or later sold by merchant in Coastal Cave for 15725 Chroma"
+    },
+    "Reacherim_2": {
+      "id": "Reacherim_2",
+      "name": "Lithelim",
+      "owner": "Lune",
+      "zoneName": "the_monolith",
+      "sourceZoneName": "The Monolith",
+      "locationUrl": "https://game-checklists.com/expedition33/the-monolith-checklist.html",
+      "summary": "Tainted Lumiere level - defeat enemies past a grapple point"
+    },
+    "Lunerim": {
+      "id": "Lunerim",
+      "name": "Lunerim",
+      "owner": "Lune",
+      "zoneName": "lumiere_prologue",
+      "sourceZoneName": "Lumiere Act I",
+      "locationUrl": "https://game-checklists.com/expedition33/lumiere-act1-checklist.html",
+      "summary": "Lune's starting weapon"
+    },
+    "Painerim": {
+      "id": "Painerim",
+      "name": "Painerim",
+      "owner": "Lune",
+      "zoneName": "renoir_drafts",
+      "sourceZoneName": "Renoir's Drafts",
+      "locationUrl": "https://game-checklists.com/expedition33/renoirs-drafts-and-the-abyss-checklist.html",
+      "summary": "Entrance Flag - Sold by merchant past a grapple point 93045 Chroma required"
+    },
+    "Potierim": {
+      "id": "Potierim",
+      "name": "Potierim",
+      "owner": "Lune",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Defeat enemy group near Yellow Harvest north portal Or in Lumiere Act III , sold by merchant for 27360 Chroma"
+    },
+    "Redalim": {
+      "id": "Redalim",
+      "name": "Redalim",
+      "owner": "Lune",
+      "zoneName": "old_lumiere",
+      "sourceZoneName": "Old Lumiere",
+      "locationUrl": "https://game-checklists.com/expedition33/old-lumiere-checklist.html",
+      "summary": "Manor Gardens Flag - Complete Paint Cage 14"
+    },
+    "Saperim": {
+      "id": "Saperim",
+      "name": "Saperim",
+      "owner": "Lune",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Enemy group on a far beach east of Sirene"
+    },
+    "Scaverim": {
+      "id": "Scaverim",
+      "name": "Scaverim",
+      "owner": "Lune",
+      "zoneName": "falling_leaves",
+      "sourceZoneName": "Falling Leaves",
+      "locationUrl": "https://game-checklists.com/expedition33/falling-leaves-checklist.html",
+      "summary": "Resinveil Grove Flag - defeat a boss behind a locked gate"
+    },
+    "Snowim": {
+      "id": "Snowim",
+      "name": "Snowim",
+      "owner": "Lune",
+      "zoneName": "frozen_hearts",
+      "sourceZoneName": "Frozen Hearts",
+      "locationUrl": "https://game-checklists.com/expedition33/frozen-hearts-checklist.html",
+      "summary": "Defeat the Gargant at the end of Frozen Hearts Or later, defeat a Gargant in Flying Manor"
+    },
+    "Trebuchim": {
+      "id": "Trebuchim",
+      "name": "Trebuchim",
+      "owner": "Lune",
+      "zoneName": "ancient_sanctuary",
+      "sourceZoneName": "Ancient Sanctuary",
+      "locationUrl": "https://game-checklists.com/expedition33/ancient-sanctuary-checklist.html",
+      "summary": "Sanctuary Maze Flag - defeat catapult enemy"
+    },
+    "Dualim": {
+      "id": "Dualim",
+      "name": "Troubadim",
+      "owner": "Lune",
+      "zoneName": "flying_waters",
+      "sourceZoneName": "Flying Waters",
+      "locationUrl": "https://game-checklists.com/expedition33/flying-waters-checklist.html",
+      "summary": "Lumieran Street - defeat a boss after climbing a wall"
+    },
+    "Chainebum": {
+      "id": "Chainebum",
+      "name": "Barrier Breaker",
+      "owner": "Maelle",
+      "zoneName": "camp",
+      "sourceZoneName": "Camp",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Beat the second Axon, talk to the Curator"
+    },
+    "Battlum": {
+      "id": "Battlum",
+      "name": "Battlum",
+      "owner": "Maelle",
+      "zoneName": "old_lumiere",
+      "sourceZoneName": "Old Lumiere",
+      "locationUrl": "https://game-checklists.com/expedition33/old-lumiere-checklist.html",
+      "summary": "Right Street Flag - defeat the enemy group on main path"
+    },
+    "Brulerum": {
+      "id": "Brulerum",
+      "name": "Brulerum",
+      "owner": "Maelle",
+      "zoneName": "flying_waters",
+      "sourceZoneName": "Flying Waters",
+      "locationUrl": "https://game-checklists.com/expedition33/flying-waters-checklist.html",
+      "summary": "Noco's Hut Flag - defeat enemy group near the huge anchor"
+    },
+    "Troubadum": {
+      "id": "Troubadum",
+      "name": "Chalium",
+      "owner": "Maelle",
+      "zoneName": "sinister_cave",
+      "sourceZoneName": "Sinister Cave",
+      "locationUrl": "https://game-checklists.com/expedition33/sinister-cave-checklist.html",
+      "summary": "Defeat the final boss of the area"
+    },
+    "Sirenum_2": {
+      "id": "Sirenum_2",
+      "name": "Chantenum",
+      "owner": "Maelle",
+      "zoneName": "sirene",
+      "sourceZoneName": "Sirene",
+      "locationUrl": "https://game-checklists.com/expedition33/sirene-checklist.html",
+      "summary": "Crumbling Path Flag - Sold by merchant past handholds 18645 Chroma required, fight the merchant"
+    },
+    "Clierum": {
+      "id": "Clierum",
+      "name": "Clierum",
+      "owner": "Maelle",
+      "zoneName": "visages",
+      "sourceZoneName": "Visages",
+      "locationUrl": "https://game-checklists.com/expedition33/visages-checklist.html",
+      "summary": "Anger Vale - defeat the final boss of the area"
+    },
+    "Coldum": {
+      "id": "Coldum",
+      "name": "Coldum",
+      "owner": "Maelle",
+      "zoneName": "monoco_station",
+      "sourceZoneName": "Monoco's Station",
+      "locationUrl": "https://game-checklists.com/expedition33/monocos-station-checklist.html",
+      "summary": "Sold by merchant 39200 Chroma required, deliver Eternal Ice from Frozen Hearts to a merchant"
+    },
+    "Duenum": {
+      "id": "Duenum",
+      "name": "Duenum",
+      "owner": "Maelle",
+      "zoneName": "stone_wave_cliffs",
+      "sourceZoneName": "Stone Wave Cliffs",
+      "locationUrl": "https://game-checklists.com/expedition33/stone-wave-cliffs-checklist.html",
+      "summary": "Old Farm Flag - Complete Paint Cage 5"
+    },
+    "VD_Maelle_2": {
+      "id": "VD_Maelle_2",
+      "name": "Esqium",
+      "owner": "Maelle",
+      "zoneName": "verso_drafts",
+      "sourceZoneName": "Verso's Drafts",
+      "locationUrl": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+      "summary": "Gestral Carousel - Defeath the Chromatic Franctale"
+    },
+    "Facesum": {
+      "id": "Facesum",
+      "name": "Facesum",
+      "owner": "Maelle",
+      "zoneName": "isle_of_eyes",
+      "sourceZoneName": "Isle of the Eyes",
+      "locationUrl": "",
+      "summary": "Defeat the final boss of the area"
+    },
+    "Glaisum": {
+      "id": "Glaisum",
+      "name": "Glaisum",
+      "owner": "Maelle",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Defeat enemy group north of Endless Night Sanctuary Or alternatively, dropped from the first enemy group in Falling Leaves"
+    },
+    "Jarum": {
+      "id": "Jarum",
+      "name": "Jarum",
+      "owner": "Maelle",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Defeat a boss on island south of White Tree"
+    },
+    "VD_Maelle_1": {
+      "id": "VD_Maelle_1",
+      "name": "Licorum",
+      "owner": "Maelle",
+      "zoneName": "verso_drafts",
+      "sourceZoneName": "Verso's Drafts",
+      "locationUrl": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+      "summary": "Reverie Path Flag - Defeat Chromatic Licorne"
+    },
+    "Reachum_1": {
+      "id": "Reachum_1",
+      "name": "Lithum",
+      "owner": "Maelle",
+      "zoneName": "the_reacher",
+      "sourceZoneName": "The Reacher",
+      "locationUrl": "https://game-checklists.com/expedition33/the-reacher-checklist.html",
+      "summary": "Defeat Alicia"
+    },
+    "Maellum": {
+      "id": "Maellum",
+      "name": "Maellum",
+      "owner": "Maelle",
+      "zoneName": "lumiere_prologue",
+      "sourceZoneName": "Lumiere Act I",
+      "locationUrl": "https://game-checklists.com/expedition33/lumiere-act1-checklist.html",
+      "summary": "Maelle's starting weapon"
+    },
+    "Medalum": {
+      "id": "Medalum",
+      "name": "Medalum",
+      "owner": "Maelle",
+      "zoneName": "gestral_village",
+      "sourceZoneName": "Gestral Village",
+      "locationUrl": "https://game-checklists.com/expedition33/gestral-village-checklist.html",
+      "summary": "Beat the Gestral Arena as Maelle"
+    },
+    "Melarum": {
+      "id": "Melarum",
+      "name": "Melarum",
+      "owner": "Maelle",
+      "zoneName": "old_lumiere",
+      "sourceZoneName": "Old Lumiere",
+      "locationUrl": "https://game-checklists.com/expedition33/old-lumiere-checklist.html",
+      "summary": "Defeat Renoir in Manor Gardens"
+    },
+    "Reachum_2": {
+      "id": "Reachum_2",
+      "name": "Plenum",
+      "owner": "Maelle",
+      "zoneName": "yellow_harvest",
+      "sourceZoneName": "Yellow Harvest",
+      "locationUrl": "https://game-checklists.com/expedition33/yellow-harvest-checklist.html",
+      "summary": "Yellow Spire Wrecks Flag - Defeat Glaise"
+    },
+    "Seashelum": {
+      "id": "Seashelum",
+      "name": "Seashelum",
+      "owner": "Maelle",
+      "zoneName": "flying_manor",
+      "sourceZoneName": "Flying Manor",
+      "locationUrl": "https://game-checklists.com/expedition33/flying-manor-checklist.html",
+      "summary": "Central Plaza Flag - Sold by merchant after taking the elevator 75795 Chroma required"
+    },
+    "Sekarum": {
+      "id": "Sekarum",
+      "name": "Sekarum",
+      "owner": "Maelle",
+      "zoneName": "gestral_village",
+      "sourceZoneName": "Gestral Village",
+      "locationUrl": "https://game-checklists.com/expedition33/gestral-village-checklist.html",
+      "summary": "Sold by black market merchant in Gestral Bazaar 4380 Chroma required, fight the merchant"
+    },
+    "Stalum": {
+      "id": "Stalum",
+      "name": "Stalum",
+      "owner": "Maelle",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Defeat a Stalact on a beach west of Forgotten Battlefield north portal"
+    },
+    "Sirenum_1": {
+      "id": "Sirenum_1",
+      "name": "Tissenum",
+      "owner": "Maelle",
+      "zoneName": "sirene",
+      "sourceZoneName": "Sirene",
+      "locationUrl": "https://game-checklists.com/expedition33/sirene-checklist.html",
+      "summary": "Defeat the Tisseur"
+    },
+    "Veremum": {
+      "id": "Veremum",
+      "name": "Veremum",
+      "owner": "Maelle",
+      "zoneName": "the_monolith",
+      "sourceZoneName": "The Monolith",
+      "locationUrl": "https://game-checklists.com/expedition33/the-monolith-checklist.html",
+      "summary": "Tainted Meadows level - Sold by merchant after second cutscene 27744 Chroma required"
+    },
+    "Volesterum": {
+      "id": "Volesterum",
+      "name": "Volesterum",
+      "owner": "Maelle",
+      "zoneName": "lumiere",
+      "sourceZoneName": "Lumiere ACT III",
+      "locationUrl": "https://game-checklists.com/expedition33/lumiere-act3-checklist.html",
+      "summary": "Sold by merchant near Lumiere's Gardens 31008 Chroma required"
+    },
+    "Yeverum": {
+      "id": "Yeverum",
+      "name": "Yeverum",
+      "owner": "Maelle",
+      "zoneName": "renoir_drafts",
+      "sourceZoneName": "Renoir's Drafts",
+      "locationUrl": "https://game-checklists.com/expedition33/renoirs-drafts-and-the-abyss-checklist.html",
+      "summary": "Entrance Flag - Sold by merchant past a grapple point 101608 Chroma required"
+    },
+    "Baguettaro": {
+      "id": "Baguettaro",
+      "name": "Baguettaro",
+      "owner": "Monoco",
+      "zoneName": "verso_drafts",
+      "sourceZoneName": "Verso's Drafts",
+      "locationUrl": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+      "summary": "Candy Land Flag - Defeat the Mime"
+    },
+    "Sirenaro_1": {
+      "id": "Sirenaro_1",
+      "name": "Ballaro",
+      "owner": "Monoco",
+      "zoneName": "sirene_dress",
+      "sourceZoneName": "Sirene's Dress",
+      "locationUrl": "https://game-checklists.com/expedition33/sirenes-dress-checklist.html",
+      "summary": "Defeat the Chromatic Glissando. Or in Lumiere Act III , sold by merchant for 28880 Chroma after fighting him."
+    },
+    "Boucharo": {
+      "id": "Boucharo",
+      "name": "Boucharo",
+      "owner": "Monoco",
+      "zoneName": "visages",
+      "sourceZoneName": "Visages",
+      "locationUrl": "https://game-checklists.com/expedition33/visages-checklist.html",
+      "summary": "Sadness Vale - Defeat the final boss of the area"
+    },
+    "Brumaro": {
+      "id": "Brumaro",
+      "name": "Brumaro",
+      "owner": "Monoco",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Defeat Chromatic Aberration on a flying island south of The Fountain"
+    },
+    "VD_Monoco_1": {
+      "id": "VD_Monoco_1",
+      "name": "Cannaro",
+      "owner": "Monoco",
+      "zoneName": "verso_drafts",
+      "sourceZoneName": "Verso's Drafts",
+      "locationUrl": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+      "summary": "Defeat the Chromatic Machinapieds"
+    },
+    "Chromaro": {
+      "id": "Chromaro",
+      "name": "Chromaro",
+      "owner": "Monoco",
+      "zoneName": "renoir_drafts",
+      "sourceZoneName": "Renoir's Drafts",
+      "locationUrl": "https://game-checklists.com/expedition33/renoirs-drafts-and-the-abyss-checklist.html",
+      "summary": "Entrance Flag - Sold by merchant past a grapple point 102585 Chroma required"
+    },
+    "VD_Monoco_2": {
+      "id": "VD_Monoco_2",
+      "name": "Esquiaro",
+      "owner": "Monoco",
+      "zoneName": "verso_drafts",
+      "sourceZoneName": "Verso's Drafts",
+      "locationUrl": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+      "summary": "Gestral Baths Flag - Attack the Gestral blocking the diving board"
+    },
+    "Reacharo_2": {
+      "id": "Reacharo_2",
+      "name": "Fragaro",
+      "owner": "Monoco",
+      "zoneName": "the_monolith",
+      "sourceZoneName": "The Monolith",
+      "locationUrl": "https://game-checklists.com/expedition33/the-monolith-checklist.html",
+      "summary": "Tainted Meadows level - Sold by merchant after second cutscene 35360 Chroma required"
+    },
+    "Grandaro": {
+      "id": "Grandaro",
+      "name": "Grandaro",
+      "owner": "Monoco",
+      "zoneName": "monoco_station",
+      "sourceZoneName": "Monoco's Station",
+      "locationUrl": "https://game-checklists.com/expedition33/monocos-station-checklist.html",
+      "summary": "Sold by merchant 53901 Chroma required, deliver Eternal Ice from Frozen Hearts to a merchant"
+    },
+    "Joyaro": {
+      "id": "Joyaro",
+      "name": "Joyaro",
+      "owner": "Monoco",
+      "zoneName": "endless_night_sanctuary",
+      "sourceZoneName": "Endless Night Sanctuary",
+      "locationUrl": "https://game-checklists.com/expedition33/endless-night-sanctuary-checklist.html",
+      "summary": "Defeat Ultimate Sakapatate Or later, in Flying Manor, defeat Lampmaster down the staircase and ropes from Central Plaza Flag"
+    },
+    "Monocaro": {
+      "id": "Monocaro",
+      "name": "Monocaro",
+      "owner": "Monoco",
+      "zoneName": "lumiere_prologue",
+      "sourceZoneName": "Lumiere Act I",
+      "locationUrl": "https://game-checklists.com/expedition33/lumiere-act1-checklist.html",
+      "summary": "Monoco's starting weapon"
+    },
+    "Reacharo_1": {
+      "id": "Reacharo_1",
+      "name": "Nusaro",
+      "owner": "Monoco",
+      "zoneName": "old_lumiere",
+      "sourceZoneName": "Old Lumiere",
+      "locationUrl": "https://game-checklists.com/expedition33/old-lumiere-checklist.html",
+      "summary": "Right Street Flag - find at the end of left path"
+    },
+    "Sidaro": {
+      "id": "Sidaro",
+      "name": "Sidaro",
+      "owner": "Monoco",
+      "zoneName": "flying_manor",
+      "sourceZoneName": "Flying Manor",
+      "locationUrl": "https://game-checklists.com/expedition33/flying-manor-checklist.html",
+      "summary": "Central Plaza Flag - Sold by merchant after taking the elevator 76610 Chroma required"
+    },
+    "Sirenaro_2": {
+      "id": "Sirenaro_2",
+      "name": "Urnaro",
+      "owner": "Monoco",
+      "zoneName": "sky_island",
+      "sourceZoneName": "Sky Island",
+      "locationUrl": "https://game-checklists.com/expedition33/sky-island-checklist.html",
+      "summary": "Defeat the Chromatic Glaisse"
+    },
+    "Algueron": {
+      "id": "Algueron",
+      "name": "Algueron",
+      "owner": "Sciel",
+      "zoneName": "old_lumiere",
+      "sourceZoneName": "Old Lumiere",
+      "locationUrl": "https://game-checklists.com/expedition33/old-lumiere-checklist.html",
+      "summary": "Entrance Flag - Sold by merchant 13600 Chroma required, fight the merchant"
+    },
+    "Blizzon": {
+      "id": "Blizzon",
+      "name": "Blizzon",
+      "owner": "Sciel",
+      "zoneName": "falling_leaves",
+      "sourceZoneName": "Falling Leaves",
+      "locationUrl": "https://game-checklists.com/expedition33/falling-leaves-checklist.html",
+      "summary": "Resinveil Grove Flag - Defeat Chromatic Ballet"
+    },
+    "Bourgelon": {
+      "id": "Bourgelon",
+      "name": "Bourgelon",
+      "owner": "Sciel",
+      "zoneName": "the_monolith",
+      "sourceZoneName": "The Monolith",
+      "locationUrl": "https://game-checklists.com/expedition33/the-monolith-checklist.html",
+      "summary": "Tainted Waters level - Defeat Chromatic Bourgeon Or later sold by merchant Cruler in Coastal Cave for 17760 Chroma"
+    },
+    "Charnon": {
+      "id": "Charnon",
+      "name": "Charnon",
+      "owner": "Sciel",
+      "zoneName": "renoir_drafts",
+      "sourceZoneName": "Renoir's Drafts",
+      "locationUrl": "https://game-checklists.com/expedition33/renoirs-drafts-and-the-abyss-checklist.html",
+      "summary": "Entrance Flag - Sold by merchant past a grapple point 89884 Chroma required"
+    },
+    "Chation": {
+      "id": "Chation",
+      "name": "Chation",
+      "owner": "Sciel",
+      "zoneName": "stone_wave_cliffs",
+      "sourceZoneName": "Stone Wave Cliffs",
+      "locationUrl": "https://game-checklists.com/expedition33/stone-wave-cliffs-checklist.html",
+      "summary": "Defeat the enemy group after the first Hexga"
+    },
+    "Corderon": {
+      "id": "Corderon",
+      "name": "Corderon",
+      "owner": "Sciel",
+      "zoneName": "sinister_cave",
+      "sourceZoneName": "Sinister Cave",
+      "locationUrl": "https://game-checklists.com/expedition33/sinister-cave-checklist.html",
+      "summary": "Go around the level to reach a dead merchant in the center"
+    },
+    "Direton": {
+      "id": "Direton",
+      "name": "Direton",
+      "owner": "Sciel",
+      "zoneName": "falling_leaves",
+      "sourceZoneName": "Falling Leaves",
+      "locationUrl": "https://game-checklists.com/expedition33/falling-leaves-checklist.html",
+      "summary": "Resinveil Grove Flag - Sold by merchant past a grapple point 30125 Chroma required, fight the merchant"
+    },
+    "Duollison": {
+      "id": "Duollison",
+      "name": "Duollison",
+      "owner": "Sciel",
+      "zoneName": "endless_tower",
+      "sourceZoneName": "Endless Tower",
+      "locationUrl": "https://game-checklists.com/expedition33/endless-tower-checklist.html",
+      "summary": "Defeat Duollistes"
+    },
+    "VD_Sciel_2": {
+      "id": "VD_Sciel_2",
+      "name": "Esquion",
+      "owner": "Sciel",
+      "zoneName": "verso_drafts",
+      "sourceZoneName": "Verso's Drafts",
+      "locationUrl": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+      "summary": "Candy Land Flag - Go towards the Mime, but find a sidepath halfway across the handhold part"
+    },
+    "Garganon": {
+      "id": "Garganon",
+      "name": "Garganon",
+      "owner": "Sciel",
+      "zoneName": "the_monolith",
+      "sourceZoneName": "The Monolith",
+      "locationUrl": "https://game-checklists.com/expedition33/the-monolith-checklist.html",
+      "summary": "Tainted Hearts level - Sold by merchant after handholds 26384 Chroma required, fight the merchant"
+    },
+    "Gobluson": {
+      "id": "Gobluson",
+      "name": "Gobluson",
+      "owner": "Sciel",
+      "zoneName": "coastal_cave",
+      "sourceZoneName": "Coastal Cave",
+      "locationUrl": "https://game-checklists.com/expedition33/all-quest-locations-checklist.html",
+      "summary": "Sold by merchant Cruler near a fireplace 19240 Chroma required"
+    },
+    "Reacheron_1": {
+      "id": "Reacheron_1",
+      "name": "Guleson",
+      "owner": "Sciel",
+      "zoneName": "endless_night_sanctuary",
+      "sourceZoneName": "Endless Night Sanctuary",
+      "locationUrl": "https://game-checklists.com/expedition33/endless-night-sanctuary-checklist.html",
+      "summary": "Sold by merchant near Night Totem Flag 80040 Chroma required"
+    },
+    "Hevason": {
+      "id": "Hevason",
+      "name": "Hevason",
+      "owner": "Sciel",
+      "zoneName": "gestral_village",
+      "sourceZoneName": "Gestral Village",
+      "locationUrl": "https://game-checklists.com/expedition33/gestral-village-checklist.html",
+      "summary": "Challenge Golgra to a fight and defeat her 4 times"
+    },
+    "Reacheron_2": {
+      "id": "Reacheron_2",
+      "name": "Litheson",
+      "owner": "Sciel",
+      "zoneName": "lumiere",
+      "sourceZoneName": "Lumiere Act III",
+      "locationUrl": "https://game-checklists.com/expedition33/lumiere-act3-checklist.html",
+      "summary": "Central Plaza Flag - Fight the enemy group in the plaza"
+    },
+    "Lusteson": {
+      "id": "Lusteson",
+      "name": "Lusteson",
+      "owner": "Sciel",
+      "zoneName": "forgotten_battlefield",
+      "sourceZoneName": "Forgotten Battlefield",
+      "locationUrl": "https://game-checklists.com/expedition33/forgotten-battlefield-checklist.html",
+      "summary": "Battlefield Flag - Defeat Chromatic Luster past a Faded Woman NPC"
+    },
+    "Sirenon_2": {
+      "id": "Sirenon_2",
+      "name": "Martenon",
+      "owner": "Sciel",
+      "zoneName": "flying_manor",
+      "sourceZoneName": "Flying Manor",
+      "locationUrl": "https://game-checklists.com/expedition33/flying-manor-checklist.html",
+      "summary": "Central Plaza Flag - Sold by merchant after taking the elevator 97800 Chroma required"
+    },
+    "Minason": {
+      "id": "Minason",
+      "name": "Minason",
+      "owner": "Sciel",
+      "zoneName": "the_crows",
+      "sourceZoneName": "The Crows",
+      "locationUrl": "https://game-checklists.com/expedition33/the-crows-checklist.html",
+      "summary": "Defeat Chromatic Chapelier"
+    },
+    "Contorson": {
+      "id": "Contorson",
+      "name": "Moisson",
+      "owner": "Sciel",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Defeat Chromatic Moissoneuse on the edge of the red island southwest of Visages"
+    },
+    "Ramasson": {
+      "id": "Ramasson",
+      "name": "Ramasson",
+      "owner": "Sciel",
+      "zoneName": "forgotten_battlefield",
+      "sourceZoneName": "Forgotten Battlefield",
+      "locationUrl": "https://game-checklists.com/expedition33/forgotten-battlefield-checklist.html",
+      "summary": "Defeat the first enemy after the giant gate"
+    },
+    "Rangeson": {
+      "id": "Rangeson",
+      "name": "Rangeson",
+      "owner": "Sciel",
+      "zoneName": "stone_wave_cliffs",
+      "sourceZoneName": "Stone Wave Cliffs",
+      "locationUrl": "https://game-checklists.com/expedition33/stone-wave-cliffs-checklist.html",
+      "summary": "Sold by merchant through a gap near the south portal 7372 Chroma required"
+    },
+    "Sadon": {
+      "id": "Sadon",
+      "name": "Sadon",
+      "owner": "Sciel",
+      "zoneName": "visages",
+      "sourceZoneName": "Visages",
+      "locationUrl": "https://game-checklists.com/expedition33/visages-checklist.html",
+      "summary": "Plazza Flag - Sold by merchant 12400 Chroma required, fight the merchant - Or in Lumiere Act III , sold by merchant for 24320 Chroma"
+    },
+    "Scieleson": {
+      "id": "Scieleson",
+      "name": "Scieleson",
+      "owner": "Sciel",
+      "zoneName": "lumiere_prologue",
+      "sourceZoneName": "Lumiere Act I",
+      "locationUrl": "https://game-checklists.com/expedition33/lumiere-act1-checklist.html",
+      "summary": "Sciel's starting weapon"
+    },
+    "VD_Sciel_1": {
+      "id": "VD_Sciel_1",
+      "name": "Sucetton",
+      "owner": "Sciel",
+      "zoneName": "verso_drafts",
+      "sourceZoneName": "Verso's Drafts",
+      "locationUrl": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+      "summary": "Reverie Path Flag - Defeat the Chromatic Barbasucette"
+    },
+    "Sirenon_1": {
+      "id": "Sirenon_1",
+      "name": "Tisseron",
+      "owner": "Sciel",
+      "zoneName": "sirene",
+      "sourceZoneName": "Sirene",
+      "locationUrl": "https://game-checklists.com/expedition33/sirene-checklist.html",
+      "summary": "Defeat Sirene"
+    },
+    "Confuso": {
+      "id": "Confuso",
+      "name": "Confuso",
+      "owner": "Verso",
+      "zoneName": "visages",
+      "sourceZoneName": "Visages",
+      "locationUrl": "https://game-checklists.com/expedition33/visages-checklist.html",
+      "summary": "Joy Vale - after activating the mouth, defeat a monster guarding the weapon"
+    },
+    "Moissoso": {
+      "id": "Moissoso",
+      "name": "Contorso",
+      "owner": "Verso",
+      "zoneName": "visages",
+      "sourceZoneName": "Visages",
+      "locationUrl": "https://game-checklists.com/expedition33/visages-checklist.html",
+      "summary": "Anger Vale - After activating the mouth, turn right and defeat the enemy"
+    },
+    "Corpeso": {
+      "id": "Corpeso",
+      "name": "Corpeso",
+      "owner": "Verso",
+      "zoneName": "dark_shores_bloodied_beach",
+      "sourceZoneName": "Dark Shores",
+      "locationUrl": "https://game-checklists.com/expedition33/dark-shores-checklist.html",
+      "summary": "Bloodied Beach Flag - Enemies near a crashed ship"
+    },
+    "Danseso": {
+      "id": "Danseso",
+      "name": "Danseso",
+      "owner": "Verso",
+      "zoneName": "old_lumiere",
+      "sourceZoneName": "Old Lumiere",
+      "locationUrl": "https://game-checklists.com/expedition33/old-lumiere-checklist.html",
+      "summary": "Defeat Chromatic Danseuse after descending a rope"
+    },
+    "Sireso_2": {
+      "id": "Sireso_2",
+      "name": "Dreameso",
+      "owner": "Verso",
+      "zoneName": "the_monolith",
+      "sourceZoneName": "The Monolith",
+      "locationUrl": "https://game-checklists.com/expedition33/the-monolith-checklist.html",
+      "summary": "Tainted Lumiere level - grapple near the big tree"
+    },
+    "Chaliso": {
+      "id": "Chaliso",
+      "name": "Dualiso",
+      "owner": "Verso",
+      "zoneName": "forgotten_battlefield",
+      "sourceZoneName": "Forgotten Battlefield",
+      "locationUrl": "https://game-checklists.com/expedition33/forgotten-battlefield-checklist.html",
+      "summary": "Ancient Bridge Flag - Defeat the boss"
+    },
+    "VD_Verso_3": {
+      "id": "VD_Verso_3",
+      "name": "Esquiso",
+      "owner": "Verso",
+      "zoneName": "verso_drafts",
+      "sourceZoneName": "Verso's Drafts",
+      "locationUrl": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+      "summary": "Root of All Evil - Defeat Osquio"
+    },
+    "Glaceso": {
+      "id": "Glaceso",
+      "name": "Glaceso",
+      "owner": "Verso",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Defeat enemy group northwest of Monoco's Station"
+    },
+    "Reacheso_2": {
+      "id": "Reacheso_2",
+      "name": "Liteso",
+      "owner": "Verso",
+      "zoneName": "lumiere",
+      "sourceZoneName": "Lumiere Act III",
+      "locationUrl": "https://game-checklists.com/expedition33/lumiere-act3-checklist.html",
+      "summary": "Central Plaza flag - defeat enemy group in the center"
+    },
+    "Simoso": {
+      "id": "Simoso",
+      "name": "Simoso",
+      "owner": "Verso",
+      "zoneName": "renoir_drafts",
+      "sourceZoneName": "Renoir's Drafts",
+      "locationUrl": "https://game-checklists.com/expedition33/renoirs-drafts-and-the-abyss-checklist.html",
+      "summary": "Defeat Simon"
+    },
+    "Sireso_1": {
+      "id": "Sireso_1",
+      "name": "Sireso",
+      "owner": "Verso",
+      "zoneName": "sirene",
+      "sourceZoneName": "Sirene",
+      "locationUrl": "https://game-checklists.com/expedition33/sirene-checklist.html",
+      "summary": "Dancing Classes Flag - Take the elevator past a paint cage"
+    },
+    "VD_Verso_1": {
+      "id": "VD_Verso_1",
+      "name": "Sucreso",
+      "owner": "Verso",
+      "zoneName": "verso_drafts",
+      "sourceZoneName": "Verso's Drafts",
+      "locationUrl": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+      "summary": "In a treehouse above the Gingerbread door"
+    },
+    "Reacheso_1": {
+      "id": "Reacheso_1",
+      "name": "Tireso",
+      "owner": "Verso",
+      "zoneName": "the_reacher",
+      "sourceZoneName": "The Reacher",
+      "locationUrl": "https://game-checklists.com/expedition33/the-reacher-checklist.html",
+      "summary": "Sold by merchant near hot air balloon past Foggy Area Flag 51635 Chroma required, fight the merchant"
+    },
+    "Verleso": {
+      "id": "Verleso",
+      "name": "Verleso",
+      "owner": "Verso",
+      "zoneName": "lumiere_prologue",
+      "sourceZoneName": "Lumiere Act I",
+      "locationUrl": "https://game-checklists.com/expedition33/lumiere-act1-checklist.html",
+      "summary": "Verso's starting weapon"
+    }
+  }
+}

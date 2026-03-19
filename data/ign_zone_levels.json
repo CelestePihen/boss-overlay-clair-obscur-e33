@@ -1,0 +1,270 @@
+{
+  "sourceUrl": "https://www.ign.com/wikis/clair-obscur-expedition-33/Side_Areas",
+  "zones": {
+    "Hidden Gestral Arena": {
+      "recommendedMinLevel": 15,
+      "recommendedMaxLevel": 20,
+      "anchorId": "Hidden_Gestral_Arena"
+    },
+    "Abbest Cave": {
+      "recommendedMinLevel": 20,
+      "recommendedMaxLevel": 20,
+      "anchorId": "Abbest_Cave"
+    },
+    "Yellow Harvest": {
+      "recommendedMinLevel": 20,
+      "recommendedMaxLevel": 20,
+      "anchorId": "Yellow_Harvest"
+    },
+    "Red Woods": {
+      "recommendedMinLevel": 0,
+      "recommendedMaxLevel": 0,
+      "anchorId": "Red_Woods"
+    },
+    "Lost Woods": {
+      "recommendedMinLevel": 0,
+      "recommendedMaxLevel": 0,
+      "anchorId": "Lost_Woods"
+    },
+    "Twilight Quarry": {
+      "recommendedMinLevel": 0,
+      "recommendedMaxLevel": 0,
+      "anchorId": "Twilight_Quarry"
+    },
+    "Stone Wave Cliffs Cave": {
+      "recommendedMinLevel": 20,
+      "recommendedMaxLevel": 25,
+      "anchorId": "Stone_Wave_Cliffs_Cave"
+    },
+    "Falling Leaves": {
+      "recommendedMinLevel": 35,
+      "recommendedMaxLevel": 40,
+      "anchorId": "Falling_Leaves"
+    },
+    "Frozen Hearts": {
+      "recommendedMinLevel": 50,
+      "recommendedMaxLevel": 50,
+      "anchorId": "Frozen_Hearts"
+    },
+    "Esoteric Ruins": {
+      "recommendedMinLevel": 0,
+      "recommendedMaxLevel": 0,
+      "anchorId": "Esoteric_Ruins"
+    },
+    "Blades' Graveyard": {
+      "recommendedMinLevel": 0,
+      "recommendedMaxLevel": 0,
+      "anchorId": "Blades'_Graveyard"
+    },
+    "Boat Graveyard": {
+      "recommendedMinLevel": 0,
+      "recommendedMaxLevel": 0,
+      "anchorId": "Boat_Graveyard"
+    },
+    "The Meadows": {
+      "recommendedMinLevel": 0,
+      "recommendedMaxLevel": 0,
+      "anchorId": "The_Meadows"
+    },
+    "The Carousel": {
+      "recommendedMinLevel": 0,
+      "recommendedMaxLevel": 0,
+      "anchorId": "The_Carousel"
+    },
+    "White Tree": {
+      "recommendedMinLevel": 0,
+      "recommendedMaxLevel": 0,
+      "anchorId": "White_Tree"
+    },
+    "Coastal Cave": {
+      "recommendedMinLevel": 25,
+      "recommendedMaxLevel": 30,
+      "anchorId": "Coastal_Cave"
+    },
+    "Dark Shores": {
+      "recommendedMinLevel": 60,
+      "recommendedMaxLevel": 60,
+      "anchorId": "Dark_Shores"
+    },
+    "The Canvas": {
+      "recommendedMinLevel": 0,
+      "recommendedMaxLevel": 0,
+      "anchorId": "The_Canvas"
+    },
+    "White Sands": {
+      "recommendedMinLevel": 0,
+      "recommendedMaxLevel": 0,
+      "anchorId": "White_Sands"
+    },
+    "Flying Casino": {
+      "recommendedMinLevel": 0,
+      "recommendedMaxLevel": 0,
+      "anchorId": "Flying_Casino"
+    },
+    "Sacred River": {
+      "recommendedMinLevel": 70,
+      "recommendedMaxLevel": 70,
+      "anchorId": "Sacred_River"
+    },
+    "Sky Island": {
+      "recommendedMinLevel": 65,
+      "recommendedMaxLevel": 70,
+      "anchorId": "Sky_Island"
+    },
+    "Sirene's Dress": {
+      "recommendedMinLevel": 65,
+      "recommendedMaxLevel": 65,
+      "anchorId": "Sirene's_Dress"
+    },
+    "The Reacher": {
+      "recommendedMinLevel": 90,
+      "recommendedMaxLevel": 99,
+      "anchorId": "The_Reacher"
+    },
+    "Painting Workshop": {
+      "recommendedMinLevel": 65,
+      "recommendedMaxLevel": 65,
+      "anchorId": "Painting_Workshop"
+    },
+    "Crimson Forest": {
+      "recommendedMinLevel": 65,
+      "recommendedMaxLevel": 70,
+      "anchorId": "Crimson_Forest"
+    },
+    "The Crows": {
+      "recommendedMinLevel": 50,
+      "recommendedMaxLevel": 50,
+      "anchorId": "The_Crows"
+    },
+    "The Fountain": {
+      "recommendedMinLevel": 75,
+      "recommendedMaxLevel": 80,
+      "anchorId": "The_Fountain"
+    },
+    "Endless Tower": {
+      "recommendedMinLevel": 80,
+      "recommendedMaxLevel": 80,
+      "anchorId": "Endless_Tower"
+    },
+    "Sunless Cliffs": {
+      "recommendedMinLevel": 75,
+      "recommendedMaxLevel": 75,
+      "anchorId": "Sunless_Cliffs"
+    },
+    "Isle of the Eyes": {
+      "recommendedMinLevel": 50,
+      "recommendedMaxLevel": 50,
+      "anchorId": "Isle_of_the_Eyes"
+    },
+    "Dark Gestral Arena": {
+      "recommendedMinLevel": 65,
+      "recommendedMaxLevel": 70,
+      "anchorId": "Dark_Gestral_Arena"
+    },
+    "Endless Night Sanctuary": {
+      "recommendedMinLevel": 60,
+      "recommendedMaxLevel": 70,
+      "anchorId": "Endless_Night_Sanctuary"
+    },
+    "Flying Manor": {
+      "recommendedMinLevel": 90,
+      "recommendedMaxLevel": 90,
+      "anchorId": "Flying_Manor"
+    },
+    "Renoir's Drafts": {
+      "recommendedMinLevel": 90,
+      "recommendedMaxLevel": 90,
+      "anchorId": "Renoir's_Drafts"
+    },
+    "Verso's Drafts": {
+      "recommendedMinLevel": 80,
+      "recommendedMaxLevel": 80,
+      "anchorId": "Verso's_Drafts"
+    },
+    "Crushing Cavern": {
+      "recommendedMinLevel": 30,
+      "recommendedMaxLevel": 32,
+      "anchorId": "crushing_cavern_manual"
+    },
+    "Ancient Sanctuary": {
+      "recommendedMinLevel": 15,
+      "recommendedMaxLevel": 15,
+      "anchorId": "ancient_sanctuary_manual"
+    },
+    "Esquie's Nest": {
+      "recommendedMinLevel": 15,
+      "recommendedMaxLevel": 20,
+      "anchorId": "esquie_nest_manual"
+    },
+    "Floating Cemetery": {
+      "recommendedMinLevel": 60,
+      "recommendedMaxLevel": 70,
+      "anchorId": "floating_cemetery_manual"
+    },
+    "Flying Waters": {
+      "recommendedMinLevel": 10,
+      "recommendedMaxLevel": 10,
+      "anchorId": "flying_waters_manual"
+    },
+    "Forgotten Battlefield": {
+      "recommendedMinLevel": 20,
+      "recommendedMaxLevel": 23,
+      "anchorId": "forgotten_battlefield_manual"
+    },
+    "Gestral Village": {
+      "recommendedMinLevel": 15,
+      "recommendedMaxLevel": 20,
+      "anchorId": "gestral_village_manual"
+    },
+    "Lumiere": {
+      "recommendedMinLevel": 70,
+      "recommendedMaxLevel": 70,
+      "anchorId": "lumiere_manual"
+    },
+    "Monoco's Station": {
+      "recommendedMinLevel": 23,
+      "recommendedMaxLevel": 25,
+      "anchorId": "monoco_station_manual"
+    },
+    "Old Lumiere": {
+      "recommendedMinLevel": 28,
+      "recommendedMaxLevel": 30,
+      "anchorId": "old_lumiere_manual"
+    },
+    "Sinister Cave": {
+      "recommendedMinLevel": 55,
+      "recommendedMaxLevel": 65,
+      "anchorId": "sinister_cave_manual"
+    },
+    "Sirene": {
+      "recommendedMinLevel": 37,
+      "recommendedMaxLevel": 45,
+      "anchorId": "sirene_manual"
+    },
+    "Stone Wave Cliffs": {
+      "recommendedMinLevel": 30,
+      "recommendedMaxLevel": 30,
+      "anchorId": "stone_wave_cliffs_manual"
+    },
+    "The Chosen Path": {
+      "recommendedMinLevel": 60,
+      "recommendedMaxLevel": 80,
+      "anchorId": "the_chosen_path_manual"
+    },
+    "The Monolith": {
+      "recommendedMinLevel": 40,
+      "recommendedMaxLevel": 43,
+      "anchorId": "the_monolith_manual"
+    },
+    "Visages": {
+      "recommendedMinLevel": 32,
+      "recommendedMaxLevel": 37,
+      "anchorId": "visages_manual"
+    },
+    "Lumiere - Prologue": {
+      "recommendedMinLevel": 0,
+      "recommendedMaxLevel": 0,
+      "anchorId": "lumiere_prologue_manual"
+    }
+  }
+}

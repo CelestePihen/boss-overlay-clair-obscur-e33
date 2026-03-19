@@ -1,0 +1,60 @@
+name: Release Build
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-windows-release:
+    runs-on: windows-latest
+    env:
+      HUSKY: "0"
+      CSC_IDENTITY_AUTO_DISCOVERY: "false"
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run focused tests
+        run: npm run test:ci
+
+      - name: Run TypeScript type check
+        run: npm run ts:check
+
+      - name: Lint project
+        run: npm run lint
+
+      - name: Build Windows release files
+        run: npm run build:ci
+
+      - name: Upload release artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: boss-overlay-windows-release
+          path: |
+            release/*.exe
+            release/*.blockmap
+          if-no-files-found: error
+
+      - name: Create GitHub release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: |
+            release/*.exe
+            release/*.blockmap

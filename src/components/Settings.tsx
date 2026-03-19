@@ -1,11 +1,18 @@
 import { useEffect, useState } from 'react'
 
 import { Language, useI18n } from '../i18n'
+import {
+  DEFAULT_BACKGROUND_OPACITY,
+  normalizeBackgroundOpacity,
+} from '../utils/backgroundOpacity'
 
 interface Props {
   onSavePathChange: (path: string) => void
   currentPath: string
-  onConfigChange?: (config: { allowManualEditAutoDetected?: boolean }) => void
+  onConfigChange?: (config: {
+    allowManualEditAutoDetected?: boolean
+    backgroundOpacity?: number
+  }) => void
 }
 
 function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
@@ -13,12 +20,17 @@ function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
   const [path, setPath] = useState(currentPath)
   const [isClearing, setIsClearing] = useState(false)
   const [allowManualEdit, setAllowManualEdit] = useState(false)
+  const [backgroundOpacity, setBackgroundOpacity] = useState(
+    DEFAULT_BACKGROUND_OPACITY,
+  )
 
-  // Charger la config au montage
   useEffect(() => {
     if (window.electronAPI) {
       window.electronAPI.getConfig().then((config) => {
         setAllowManualEdit(config.allowManualEditAutoDetected ?? false)
+        setBackgroundOpacity(
+          normalizeBackgroundOpacity(config.backgroundOpacity),
+        )
       })
     }
   }, [])
@@ -47,8 +59,20 @@ function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
         allowManualEditAutoDetected: checked,
       }
       await window.electronAPI.saveConfig(newConfig)
+      onConfigChange?.(newConfig)
+    }
+  }
 
-      // Notifier App.tsx du changement immédiatement
+  const handleBackgroundOpacityChange = async (value: number) => {
+    const normalized = normalizeBackgroundOpacity(value)
+    setBackgroundOpacity(normalized)
+    if (window.electronAPI) {
+      const config = await window.electronAPI.getConfig()
+      const newConfig = {
+        ...config,
+        backgroundOpacity: normalized,
+      }
+      await window.electronAPI.saveConfig(newConfig)
       onConfigChange?.(newConfig)
     }
   }
@@ -69,7 +93,6 @@ function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
         const result = await window.electronAPI.clearManualStates(currentPath)
         if (result.success) {
           alert(t('settings.clearSuccess'))
-          // Recharger la page pour rafraîchir l'état
           window.location.reload()
         } else {
           alert(
@@ -110,7 +133,33 @@ function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
         <button onClick={handleSubmit}>{t('settings.startWatching')}</button>
       </div>
 
-      {/* Sélecteur de langue */}
+      <div
+        className="setting-group"
+        style={{
+          marginTop: '20px',
+          borderTop: '1px solid rgba(255,255,255,0.1)',
+          paddingTop: '20px',
+        }}
+      >
+        <label>{t('settings.backgroundOpacity')}</label>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          step="1"
+          value={backgroundOpacity}
+          onChange={(e) =>
+            handleBackgroundOpacityChange(Number.parseInt(e.target.value, 10))
+          }
+          style={{ width: '100%', marginBottom: '8px' }}
+        />
+        <p style={{ fontSize: '12px', color: '#95a5a6' }}>
+          {t('settings.backgroundOpacityValue', {
+            value: backgroundOpacity.toString(),
+          })}
+        </p>
+      </div>
+
       <div
         className="setting-group"
         style={{

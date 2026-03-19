@@ -13,9 +13,9 @@ export default tseslint.config(
     rules: {
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
-      // Vos règles personnalisées
-      eqeqeq: ['error', 'always'], // Test les égalités strictes
-      'prefer-const': ['error', { destructuring: 'all' }], // Préfère const pour les variables qui ne sont pas réassignées
+      // Vos r�gles personnalis�es
+      eqeqeq: ['error', 'always'],
+      'prefer-const': ['error', { destructuring: 'all' }],
       'no-console': 'off',
       'no-debugger': 'error',
       'no-unused-expressions': 'error',
@@ -40,6 +40,7 @@ export default tseslint.config(
       'dist',
       'build',
       'dist-electron',
+      'release',
       'data',
       'tools',
     ],

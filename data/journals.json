@@ -1,0 +1,200 @@
+{
+  "Journals": {
+    "Journal_Exp100A": {
+      "id": "Journal_Exp100A",
+      "name": "Journal - Simon"
+    },
+    "Journal_Exp100B": {
+      "id": "Journal_Exp100B",
+      "name": "Journal - Julie Search and Rescue"
+    },
+    "Journal_Exp84": {
+      "id": "Journal_Exp84",
+      "name": "Journal - Expedition 84"
+    },
+    "Journal_Exp81": {
+      "id": "Journal_Exp81",
+      "name": "Journal - Expedition 81"
+    },
+    "Journal_Exp78": {
+      "id": "Journal_Exp78",
+      "name": "Journal - Expedition 78"
+    },
+    "Journal_Exp70": {
+      "id": "Journal_Exp70",
+      "name": "Journal - Expedition 70"
+    },
+    "Journal_Exp69": {
+      "id": "Journal_Exp69",
+      "name": "Journal - Expedition 69"
+    },
+    "Journal_Exp68": {
+      "id": "Journal_Exp68",
+      "name": "Journal - Expedition 68"
+    },
+    "Journal_Exp67": {
+      "id": "Journal_Exp67",
+      "name": "Journal - Expedition 67"
+    },
+    "Journal_Exp66": {
+      "id": "Journal_Exp66",
+      "name": "Journal - Expedition 66"
+    },
+    "Journal_Exp65": {
+      "id": "Journal_Exp65",
+      "name": "Journal - Expedition 65"
+    },
+    "Journal_Exp64": {
+      "id": "Journal_Exp64",
+      "name": "Journal - Expedition 64"
+    },
+    "Journal_Exp63": {
+      "id": "Journal_Exp63",
+      "name": "Journal - Expedition 63"
+    },
+    "Journal_Exp62": {
+      "id": "Journal_Exp62",
+      "name": "Journal - Expedition 62"
+    },
+    "Journal_Exp61": {
+      "id": "Journal_Exp61",
+      "name": "Journal - Expedition 61"
+    },
+    "Journal_Exp60": {
+      "id": "Journal_Exp60",
+      "name": "Journal - Expedition 60"
+    },
+    "Journal_Exp59": {
+      "id": "Journal_Exp59",
+      "name": "Journal - Expedition 59"
+    },
+    "Journal_Exp58": {
+      "id": "Journal_Exp58",
+      "name": "Journal - Expedition 58"
+    },
+    "Journal_Exp57": {
+      "id": "Journal_Exp57",
+      "name": "Journal - Expedition 57"
+    },
+    "Journal_Exp56": {
+      "id": "Journal_Exp56",
+      "name": "Journal - Expedition 56"
+    },
+    "Journal_Exp55": {
+      "id": "Journal_Exp55",
+      "name": "Journal - Expedition 55"
+    },
+    "Journal_Exp54": {
+      "id": "Journal_Exp54",
+      "name": "Journal - Expedition 54"
+    },
+    "Journal_Exp53": {
+      "id": "Journal_Exp53",
+      "name": "Journal - Expedition 53"
+    },
+    "Journal_Exp52": {
+      "id": "Journal_Exp52",
+      "name": "Journal - Expedition 52"
+    },
+    "Journal_Exp51": {
+      "id": "Journal_Exp51",
+      "name": "Journal - Expedition 51"
+    },
+    "Journal_Exp50": {
+      "id": "Journal_Exp50",
+      "name": "Journal - Expedition 50"
+    },
+    "Journal_Exp49": {
+      "id": "Journal_Exp49",
+      "name": "Journal - Expedition 49"
+    },
+    "Journal_Exp48": {
+      "id": "Journal_Exp48",
+      "name": "Journal - Expedition 48"
+    },
+    "Journal_Exp47": {
+      "id": "Journal_Exp47",
+      "name": "Journal - Expedition 47"
+    },
+    "Journal_Exp46": {
+      "id": "Journal_Exp46",
+      "name": "Journal - Expedition 46"
+    },
+    "Journal_Exp45": {
+      "id": "Journal_Exp45",
+      "name": "Journal - Expedition 45"
+    },
+    "Journal_Exp44": {
+      "id": "Journal_Exp44",
+      "name": "Journal - Expedition 44"
+    },
+    "Journal_Exp43": {
+      "id": "Journal_Exp43",
+      "name": "Journal - Expedition 43"
+    },
+    "Journal_Exp42": {
+      "id": "Journal_Exp42",
+      "name": "Journal - Expedition 42"
+    },
+    "Journal_Exp41": {
+      "id": "Journal_Exp41",
+      "name": "Journal - Expedition 41"
+    },
+    "Journal_Exp40": {
+      "id": "Journal_Exp40",
+      "name": "Journal - Expedition 40"
+    },
+    "Journal_Exp39": {
+      "id": "Journal_Exp39",
+      "name": "Journal - Expedition 39"
+    },
+    "Journal_Exp38": {
+      "id": "Journal_Exp38",
+      "name": "Journal - Expedition 38"
+    },
+    "Journal_Exp37": {
+      "id": "Journal_Exp37",
+      "name": "Journal - Expedition 37"
+    },
+    "Journal_Exp36": {
+      "id": "Journal_Exp36",
+      "name": "Journal - Expedition 36"
+    },
+    "Journal_Exp35": {
+      "id": "Journal_Exp35",
+      "name": "Journal - Expedition 35"
+    },
+    "Journal_Exp34": {
+      "id": "Journal_Exp34",
+      "name": "Journal - Expedition 34"
+    },
+    "Journal_OldLumiere": {
+      "id": "Journal_OldLumiere",
+      "name": "Journal - Fracture Survivor"
+    },
+    "Journal_RenoirSirene": {
+      "id": "Journal_RenoirSirene",
+      "name": "Journal - Unknown"
+    },
+    "Journal_RenoirVisages": {
+      "id": "Journal_RenoirVisages",
+      "name": "Journal - Unknown"
+    },
+    "Journal_RenoirReacher": {
+      "id": "Journal_RenoirReacher",
+      "name": "Journal - Unknown"
+    },
+    "Journal_RenoirManor": {
+      "id": "Journal_RenoirManor",
+      "name": "Journal - Renoir"
+    },
+    "Journal_Aline": {
+      "id": "Journal_Aline",
+      "name": "Journal - Aline"
+    },
+    "Journal_Verso": {
+      "id": "Journal_Verso",
+      "name": "Journal - Verso"
+    }
+  }
+}

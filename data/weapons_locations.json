@@ -1,0 +1,1162 @@
+[
+  {
+    "table_id": "verso-dlc-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Bonbim",
+    "location": "Verso's Drafts",
+    "location_url": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+    "description": "Reverie Path Flag - Sold by merchant 102424 Chroma required, fight the merchant",
+    "data_key": "dlc_weapon_1",
+    "data_db_key": "e33-weapons-dlc-1"
+  },
+  {
+    "table_id": "verso-dlc-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Cleim",
+    "location": "Endless Tower",
+    "location_url": "https://game-checklists.com/expedition33/endless-tower-checklist.html",
+    "description": "Defeat Clea Unleashed",
+    "data_key": "dlc_weapon_11",
+    "data_db_key": "e33-weapons-dlc-11"
+  },
+  {
+    "table_id": "verso-dlc-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Esquim",
+    "location": "Verso's Drafts",
+    "location_url": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+    "description": "Complete Paint Cage 22 See All Paint Cages checklist",
+    "data_key": "dlc_weapon_2",
+    "data_db_key": "e33-weapons-dlc-2"
+  },
+  {
+    "table_id": "verso-dlc-weapons-table",
+    "character": "Monoco",
+    "weapon_name": "Baguettaro",
+    "location": "Verso's Drafts",
+    "location_url": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+    "description": "Candy Land Flag - Defeat the Mime",
+    "data_key": "dlc_weapon_3",
+    "data_db_key": "e33-weapons-dlc-3"
+  },
+  {
+    "table_id": "verso-dlc-weapons-table",
+    "character": "Monoco",
+    "weapon_name": "Esquiaro",
+    "location": "Verso's Drafts",
+    "location_url": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+    "description": "Gestral Baths Flag - Attack the Gestral blocking the diving board",
+    "data_key": "dlc_weapon_4",
+    "data_db_key": "e33-weapons-dlc-4"
+  },
+  {
+    "table_id": "verso-dlc-weapons-table",
+    "character": "Monoco",
+    "weapon_name": "Cannaro",
+    "location": "Verso's Drafts",
+    "location_url": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+    "description": "Defeat the Chromatic Machinapieds",
+    "data_key": "dlc_weapon_13",
+    "data_db_key": "e33-weapons-dlc-13"
+  },
+  {
+    "table_id": "verso-dlc-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Esqium",
+    "location": "Verso's Drafts",
+    "location_url": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+    "description": "Gestral Carousel - Defeath the Chromatic Franctale",
+    "data_key": "dlc_weapon_5",
+    "data_db_key": "e33-weapons-dlc-5"
+  },
+  {
+    "table_id": "verso-dlc-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Licorum",
+    "location": "Verso's Drafts",
+    "location_url": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+    "description": "Reverie Path Flag - Defeat Chromatic Licorne",
+    "data_key": "dlc_weapon_6",
+    "data_db_key": "e33-weapons-dlc-6"
+  },
+  {
+    "table_id": "verso-dlc-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Duollison",
+    "location": "Endless Tower",
+    "location_url": "https://game-checklists.com/expedition33/endless-tower-checklist.html",
+    "description": "Defeat Duollistes",
+    "data_key": "dlc_weapon_12",
+    "data_db_key": "e33-weapons-dlc-12"
+  },
+  {
+    "table_id": "verso-dlc-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Esquion",
+    "location": "Verso's Drafts",
+    "location_url": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+    "description": "Candy Land Flag - Go towards the Mime, but find a sidepath halfway across the handhold part",
+    "data_key": "dlc_weapon_7",
+    "data_db_key": "e33-weapons-dlc-7"
+  },
+  {
+    "table_id": "verso-dlc-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Sucetton",
+    "location": "Verso's Drafts",
+    "location_url": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+    "description": "Reverie Path Flag - Defeat the Chromatic Barbasucette",
+    "data_key": "dlc_weapon_8",
+    "data_db_key": "e33-weapons-dlc-8"
+  },
+  {
+    "table_id": "verso-dlc-weapons-table",
+    "character": "Verso",
+    "weapon_name": "Esquiso",
+    "location": "Verso's Drafts",
+    "location_url": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+    "description": "Root of All Evil - Defeat Osquio",
+    "data_key": "dlc_weapon_9",
+    "data_db_key": "e33-weapons-dlc-9"
+  },
+  {
+    "table_id": "verso-dlc-weapons-table",
+    "character": "Verso",
+    "weapon_name": "Sucreso",
+    "location": "Verso's Drafts",
+    "location_url": "https://game-checklists.com/expedition33/verso-drafts-dlc-checklist.html",
+    "description": "In a treehouse above the Gingerbread door",
+    "data_key": "dlc_weapon_10",
+    "data_db_key": "e33-weapons-dlc-10"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Abysseram",
+    "location": "Flying Waters",
+    "location_url": "https://game-checklists.com/expedition33/flying-waters-checklist.html",
+    "description": "Coral Cave Flag - Find Burgeon past a handhold wall",
+    "data_key": "exp33_weapon_gustave_verso_1",
+    "data_db_key": "e33-weapons-gustave-verso-1"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Blodam",
+    "location": "The Continent",
+    "location_url": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+    "description": "Defeat Chromatic Reaper Cultist on an island past Serpenphare",
+    "data_key": "exp33_weapon_gustave_verso_2",
+    "data_db_key": "e33-weapons-gustave-verso-2"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Chevalam",
+    "location": "Crimson Forest",
+    "location_url": "https://game-checklists.com/expedition33/crimson-forest-checklist.html",
+    "description": "The Three Blades Flag - Defeat the final boss of the area",
+    "data_key": "exp33_weapon_gustave_verso_3",
+    "data_db_key": "e33-weapons-gustave-verso-3"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Confuso",
+    "location": "Visages",
+    "location_url": "https://game-checklists.com/expedition33/visages-checklist.html",
+    "description": "Joy Vale - after activating the mouth, defeat a monster guarding the weapon",
+    "data_key": "exp33_weapon_gustave_verso_4",
+    "data_db_key": "e33-weapons-gustave-verso-4"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Contorso",
+    "location": "Visages",
+    "location_url": "https://game-checklists.com/expedition33/visages-checklist.html",
+    "description": "Anger Vale - After activating the mouth, turn right and defeat the enemy",
+    "data_key": "exp33_weapon_gustave_verso_5",
+    "data_db_key": "e33-weapons-gustave-verso-5"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Corpeso",
+    "location": "Dark Shores",
+    "location_url": "https://game-checklists.com/expedition33/dark-shores-checklist.html",
+    "description": "Bloodied Beach Flag - Enemies near a crashed ship",
+    "data_key": "exp33_weapon_gustave_verso_6",
+    "data_db_key": "e33-weapons-gustave-verso-6"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Cruleram",
+    "location": "Flying Waters",
+    "location_url": "https://game-checklists.com/expedition33/flying-waters-checklist.html",
+    "description": "Noco's Hut Flag - defeat an enemy near the huge anchor",
+    "data_key": "exp33_weapon_gustave_verso_7",
+    "data_db_key": "e33-weapons-gustave-verso-7"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Cultam",
+    "location": "Monoco's Station",
+    "location_url": "https://game-checklists.com/expedition33/monocos-station-checklist.html",
+    "description": "Sold by merchant 47500 Chroma required, deliver Eternal Ice from Frozen Hearts to a merchant",
+    "data_key": "exp33_weapon_gustave_verso_8",
+    "data_db_key": "e33-weapons-gustave-verso-8"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Danseso",
+    "location": "Old Lumiere",
+    "location_url": "https://game-checklists.com/expedition33/old-lumiere-checklist.html",
+    "description": "Defeat Chromatic Danseuse after descending a rope",
+    "data_key": "exp33_weapon_gustave_verso_9",
+    "data_db_key": "e33-weapons-gustave-verso-9"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Delaram",
+    "location": "Stone Wave Cliffs",
+    "location_url": "https://game-checklists.com/expedition33/stone-wave-cliffs-checklist.html",
+    "description": "Complete Paint Cage 4",
+    "data_key": "exp33_weapon_gustave_verso_10",
+    "data_db_key": "e33-weapons-gustave-verso-10"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Demonam",
+    "location": "Gestral Village",
+    "location_url": "https://game-checklists.com/expedition33/gestral-village-checklist.html",
+    "description": "Sold by merchant in Gestral Bazaar 4002 Chroma required, fight the merchant",
+    "data_key": "exp33_weapon_gustave_verso_11",
+    "data_db_key": "e33-weapons-gustave-verso-11"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Dreameso",
+    "location": "The Monolith",
+    "location_url": "https://game-checklists.com/expedition33/the-monolith-checklist.html",
+    "description": "Tainted Lumiere level - grapple near the big tree",
+    "data_key": "exp33_weapon_gustave_verso_12",
+    "data_db_key": "e33-weapons-gustave-verso-12"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Dualiso",
+    "location": "Forgotten Battlefield",
+    "location_url": "https://game-checklists.com/expedition33/forgotten-battlefield-checklist.html",
+    "description": "Ancient Bridge Flag - Defeat the boss",
+    "data_key": "exp33_weapon_gustave_verso_13",
+    "data_db_key": "e33-weapons-gustave-verso-13"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Gaulteram",
+    "location": "The Continent",
+    "location_url": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+    "description": "Defeat the Burgeon in front of the Stone Wave Cliffs portal Or in Lumiere Act III , sold by merchant in Lumiere's Gardens for 30704 Chroma",
+    "data_key": "exp33_weapon_gustave_verso_14",
+    "data_db_key": "e33-weapons-gustave-verso-14"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Gesam",
+    "location": "Flying Manor",
+    "location_url": "https://game-checklists.com/expedition33/flying-manor-checklist.html",
+    "description": "Central Plaza Flag - take the elevator and go left Or sold by merchant in Flying Manor for 81500 Chroma",
+    "data_key": "exp33_weapon_gustave_verso_15",
+    "data_db_key": "e33-weapons-gustave-verso-15"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Glaceso",
+    "location": "The Continent",
+    "location_url": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+    "description": "Defeat enemy group northwest of Monoco's Station",
+    "data_key": "exp33_weapon_gustave_verso_16",
+    "data_db_key": "e33-weapons-gustave-verso-16"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Lanceram",
+    "location": "Spring Meadows",
+    "location_url": "https://game-checklists.com/expedition33/spring-meadows-checklist.html",
+    "description": "Progress up to First Strike tutorial",
+    "data_key": "exp33_weapon_gustave_verso_17",
+    "data_db_key": "e33-weapons-gustave-verso-17"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Liteso",
+    "location": "Lumiere Act III",
+    "location_url": "https://game-checklists.com/expedition33/lumiere-act3-checklist.html",
+    "description": "Central Plaza flag - defeat enemy group in the center",
+    "data_key": "exp33_weapon_gustave_verso_18",
+    "data_db_key": "e33-weapons-gustave-verso-18"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Noahram",
+    "location": "Lumiere Act I",
+    "location_url": "https://game-checklists.com/expedition33/lumiere-act1-checklist.html",
+    "description": "Gustave's starting weapon",
+    "data_key": "exp33_weapon_gustave_verso_19",
+    "data_db_key": "e33-weapons-gustave-verso-19"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Nosaram",
+    "location": "Renoir's Drafts",
+    "location_url": "https://game-checklists.com/expedition33/renoirs-drafts-and-the-abyss-checklist.html",
+    "description": "Entrance Flag - Sold by merchant past a grapple point 107475 Chroma required",
+    "data_key": "exp33_weapon_gustave_verso_20",
+    "data_db_key": "e33-weapons-gustave-verso-20"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Sakaram",
+    "location": "Ancient Sanctuary",
+    "location_url": "https://game-checklists.com/expedition33/ancient-sanctuary-checklist.html",
+    "description": "Entrance Flag - Defeat Robust Sakapatate",
+    "data_key": "exp33_weapon_gustave_verso_21",
+    "data_db_key": "e33-weapons-gustave-verso-21"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Seeram",
+    "location": "Coastal Cave",
+    "location_url": "https://game-checklists.com/expedition33/all-quest-locations-checklist.html",
+    "description": "Sold by merchant Cruler near a fireplace 21275 Chroma required, fight the merchant",
+    "data_key": "exp33_weapon_gustave_verso_22",
+    "data_db_key": "e33-weapons-gustave-verso-22"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Simoso",
+    "location": "Renoir's Drafts",
+    "location_url": "https://game-checklists.com/expedition33/renoirs-drafts-and-the-abyss-checklist.html",
+    "description": "Defeat Simon",
+    "data_key": "exp33_weapon_gustave_verso_23",
+    "data_db_key": "e33-weapons-gustave-verso-23"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Sireso",
+    "location": "Sirene",
+    "location_url": "https://game-checklists.com/expedition33/sirene-checklist.html",
+    "description": "Dancing Classes Flag - Take the elevator past a paint cage",
+    "data_key": "exp33_weapon_gustave_verso_24",
+    "data_db_key": "e33-weapons-gustave-verso-24"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Tireso",
+    "location": "The Reacher",
+    "location_url": "https://game-checklists.com/expedition33/the-reacher-checklist.html",
+    "description": "Sold by merchant near hot air balloon past Foggy Area Flag 51635 Chroma required, fight the merchant",
+    "data_key": "exp33_weapon_gustave_verso_25",
+    "data_db_key": "e33-weapons-gustave-verso-25"
+  },
+  {
+    "table_id": "gustave-verso-weapons-table",
+    "character": "Gustave",
+    "weapon_name": "Verleso",
+    "location": "Lumiere Act I",
+    "location_url": "https://game-checklists.com/expedition33/lumiere-act1-checklist.html",
+    "description": "Verso's starting weapon",
+    "data_key": "exp33_weapon_gustave_verso_26",
+    "data_db_key": "e33-weapons-gustave-verso-26"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Angerim",
+    "location": "The Continent",
+    "location_url": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+    "description": "Defeat Chromatic Demineur north of Forgotten Battlefield",
+    "data_key": "exp33_weapon_lune_1",
+    "data_db_key": "e33-weapons-lune-1"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Benisim",
+    "location": "Forgotten Battlefield",
+    "location_url": "https://game-checklists.com/expedition33/forgotten-battlefield-checklist.html",
+    "description": "Sold by merchant past the main battlefield area 7990 Chroma required",
+    "data_key": "exp33_weapon_lune_2",
+    "data_db_key": "e33-weapons-lune-2"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Betelim",
+    "location": "Gestral Village",
+    "location_url": "https://game-checklists.com/expedition33/gestral-village-checklist.html",
+    "description": "Use Paint Spike to break a rock on right side of the village",
+    "data_key": "exp33_weapon_lune_3",
+    "data_db_key": "e33-weapons-lune-3"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Braselim",
+    "location": "The Monolith",
+    "location_url": "https://game-checklists.com/expedition33/the-monolith-checklist.html",
+    "description": "Tainted Hearts level - defeat enemy group on a main path",
+    "data_key": "exp33_weapon_lune_4",
+    "data_db_key": "e33-weapons-lune-4"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Chapelim",
+    "location": "Visages",
+    "location_url": "https://game-checklists.com/expedition33/visages-checklist.html",
+    "description": "Joy Vale - defeat the final boss of the area",
+    "data_key": "exp33_weapon_lune_5",
+    "data_db_key": "e33-weapons-lune-5"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Choralim",
+    "location": "Sirene's Dress",
+    "location_url": "https://game-checklists.com/expedition33/sirenes-dress-checklist.html",
+    "description": "Defeat Chromatic Glissando",
+    "data_key": "exp33_weapon_lune_6",
+    "data_db_key": "e33-weapons-lune-6"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Colim",
+    "location": "The Continent",
+    "location_url": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+    "description": "Kill any Chorale enemy",
+    "data_key": "exp33_weapon_lune_7",
+    "data_db_key": "e33-weapons-lune-7"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Coralim",
+    "location": "Stone Wave Cliffs",
+    "location_url": "https://game-checklists.com/expedition33/stone-wave-cliffs-checklist.html",
+    "description": "Flooded Building Flag - Use handholds past a rope climb",
+    "data_key": "exp33_weapon_lune_8",
+    "data_db_key": "e33-weapons-lune-8"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Deminerim",
+    "location": "Flying Waters",
+    "location_url": "https://game-checklists.com/expedition33/flying-waters-checklist.html",
+    "description": "Complete Demineur's side quest See All Side Quests checklist",
+    "data_key": "exp33_weapon_lune_9",
+    "data_db_key": "e33-weapons-lune-9"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Elerim",
+    "location": "Sinister Cave",
+    "location_url": "https://game-checklists.com/expedition33/sinister-cave-checklist.html",
+    "description": "Under a statue Or sold by merchant in Flying Manor for 89650 Chroma",
+    "data_key": "exp33_weapon_lune_10",
+    "data_db_key": "e33-weapons-lune-10"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Kralim",
+    "location": "The Reacher",
+    "location_url": "https://game-checklists.com/expedition33/the-reacher-checklist.html",
+    "description": "Foggy Area Flag - defeat the nearest enemy Or alternatively, defeat the Chromatic Orphelin in Yellow Harvest",
+    "data_key": "exp33_weapon_lune_11",
+    "data_db_key": "e33-weapons-lune-11"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Lighterim",
+    "location": "Spring Meadows",
+    "location_url": "https://game-checklists.com/expedition33/spring-meadows-checklist.html",
+    "description": "Drops from enemy group Or later sold by merchant in Coastal Cave for 15725 Chroma",
+    "data_key": "exp33_weapon_lune_12",
+    "data_db_key": "e33-weapons-lune-12"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Lithelim",
+    "location": "The Monolith",
+    "location_url": "https://game-checklists.com/expedition33/the-monolith-checklist.html",
+    "description": "Tainted Lumiere level - defeat enemies past a grapple point",
+    "data_key": "exp33_weapon_lune_13",
+    "data_db_key": "e33-weapons-lune-13"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Lunerim",
+    "location": "Lumiere Act I",
+    "location_url": "https://game-checklists.com/expedition33/lumiere-act1-checklist.html",
+    "description": "Lune's starting weapon",
+    "data_key": "exp33_weapon_lune_14",
+    "data_db_key": "e33-weapons-lune-14"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Painerim",
+    "location": "Renoir's Drafts",
+    "location_url": "https://game-checklists.com/expedition33/renoirs-drafts-and-the-abyss-checklist.html",
+    "description": "Entrance Flag - Sold by merchant past a grapple point 93045 Chroma required",
+    "data_key": "exp33_weapon_lune_15",
+    "data_db_key": "e33-weapons-lune-15"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Potierim",
+    "location": "The Continent",
+    "location_url": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+    "description": "Defeat enemy group near Yellow Harvest north portal Or in Lumiere Act III , sold by merchant for 27360 Chroma",
+    "data_key": "exp33_weapon_lune_16",
+    "data_db_key": "e33-weapons-lune-16"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Redalim",
+    "location": "Old Lumiere",
+    "location_url": "https://game-checklists.com/expedition33/old-lumiere-checklist.html",
+    "description": "Manor Gardens Flag - Complete Paint Cage 14",
+    "data_key": "exp33_weapon_lune_17",
+    "data_db_key": "e33-weapons-lune-17"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Saperim",
+    "location": "The Continent",
+    "location_url": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+    "description": "Enemy group on a far beach east of Sirene",
+    "data_key": "exp33_weapon_lune_18",
+    "data_db_key": "e33-weapons-lune-18"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Scaverim",
+    "location": "Falling Leaves",
+    "location_url": "https://game-checklists.com/expedition33/falling-leaves-checklist.html",
+    "description": "Resinveil Grove Flag - defeat a boss behind a locked gate",
+    "data_key": "exp33_weapon_lune_19",
+    "data_db_key": "e33-weapons-lune-19"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Snowim",
+    "location": "Frozen Hearts",
+    "location_url": "https://game-checklists.com/expedition33/frozen-hearts-checklist.html",
+    "description": "Defeat the Gargant at the end of Frozen Hearts Or later, defeat a Gargant in Flying Manor",
+    "data_key": "exp33_weapon_lune_20",
+    "data_db_key": "e33-weapons-lune-20"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Trebuchim",
+    "location": "Ancient Sanctuary",
+    "location_url": "https://game-checklists.com/expedition33/ancient-sanctuary-checklist.html",
+    "description": "Sanctuary Maze Flag - defeat catapult enemy",
+    "data_key": "exp33_weapon_lune_21",
+    "data_db_key": "e33-weapons-lune-21"
+  },
+  {
+    "table_id": "lune-weapons-table",
+    "character": "Lune",
+    "weapon_name": "Troubadim",
+    "location": "Flying Waters",
+    "location_url": "https://game-checklists.com/expedition33/flying-waters-checklist.html",
+    "description": "Lumieran Street - defeat a boss after climbing a wall",
+    "data_key": "exp33_weapon_lune_22",
+    "data_db_key": "e33-weapons-lune-22"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Barrier Breaker",
+    "location": "Camp",
+    "location_url": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+    "description": "Beat the second Axon, talk to the Curator",
+    "data_key": "exp33_weapon_maelle_1",
+    "data_db_key": "e33-weapons-maelle-1"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Battlum",
+    "location": "Old Lumiere",
+    "location_url": "https://game-checklists.com/expedition33/old-lumiere-checklist.html",
+    "description": "Right Street Flag - defeat the enemy group on main path",
+    "data_key": "exp33_weapon_maelle_2",
+    "data_db_key": "e33-weapons-maelle-2"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Brulerum",
+    "location": "Flying Waters",
+    "location_url": "https://game-checklists.com/expedition33/flying-waters-checklist.html",
+    "description": "Noco's Hut Flag - defeat enemy group near the huge anchor",
+    "data_key": "exp33_weapon_maelle_3",
+    "data_db_key": "e33-weapons-maelle-3"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Chalium",
+    "location": "Sinister Cave",
+    "location_url": "https://game-checklists.com/expedition33/sinister-cave-checklist.html",
+    "description": "Defeat the final boss of the area",
+    "data_key": "exp33_weapon_maelle_4",
+    "data_db_key": "e33-weapons-maelle-4"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Chantenum",
+    "location": "Sirene",
+    "location_url": "https://game-checklists.com/expedition33/sirene-checklist.html",
+    "description": "Crumbling Path Flag - Sold by merchant past handholds 18645 Chroma required, fight the merchant",
+    "data_key": "exp33_weapon_maelle_5",
+    "data_db_key": "e33-weapons-maelle-5"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Clierum",
+    "location": "Visages",
+    "location_url": "https://game-checklists.com/expedition33/visages-checklist.html",
+    "description": "Anger Vale - defeat the final boss of the area",
+    "data_key": "exp33_weapon_maelle_6",
+    "data_db_key": "e33-weapons-maelle-6"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Coldum",
+    "location": "Monoco's Station",
+    "location_url": "https://game-checklists.com/expedition33/monocos-station-checklist.html",
+    "description": "Sold by merchant 39200 Chroma required, deliver Eternal Ice from Frozen Hearts to a merchant",
+    "data_key": "exp33_weapon_maelle_7",
+    "data_db_key": "e33-weapons-maelle-7"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Duenum",
+    "location": "Stone Wave Cliffs",
+    "location_url": "https://game-checklists.com/expedition33/stone-wave-cliffs-checklist.html",
+    "description": "Old Farm Flag - Complete Paint Cage 5",
+    "data_key": "exp33_weapon_maelle_8",
+    "data_db_key": "e33-weapons-maelle-8"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Facesum",
+    "location": "Isle of the Eyes",
+    "location_url": null,
+    "description": "Defeat the final boss of the area",
+    "data_key": "exp33_weapon_maelle_9",
+    "data_db_key": "e33-weapons-maelle-9"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Glaisum",
+    "location": "The Continent",
+    "location_url": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+    "description": "Defeat enemy group north of Endless Night Sanctuary Or alternatively, dropped from the first enemy group in Falling Leaves",
+    "data_key": "exp33_weapon_maelle_10",
+    "data_db_key": "e33-weapons-maelle-10"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Jarum",
+    "location": "The Continent",
+    "location_url": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+    "description": "Defeat a boss on island south of White Tree",
+    "data_key": "exp33_weapon_maelle_11",
+    "data_db_key": "e33-weapons-maelle-11"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Lithum",
+    "location": "The Reacher",
+    "location_url": "https://game-checklists.com/expedition33/the-reacher-checklist.html",
+    "description": "Defeat Alicia",
+    "data_key": "exp33_weapon_maelle_12",
+    "data_db_key": "e33-weapons-maelle-12"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Maellum",
+    "location": "Lumiere Act I",
+    "location_url": "https://game-checklists.com/expedition33/lumiere-act1-checklist.html",
+    "description": "Maelle's starting weapon",
+    "data_key": "exp33_weapon_maelle_13",
+    "data_db_key": "e33-weapons-maelle-13"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Medalum",
+    "location": "Gestral Village",
+    "location_url": "https://game-checklists.com/expedition33/gestral-village-checklist.html",
+    "description": "Beat the Gestral Arena as Maelle",
+    "data_key": "exp33_weapon_maelle_14",
+    "data_db_key": "e33-weapons-maelle-14"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Melarum",
+    "location": "Old Lumiere",
+    "location_url": "https://game-checklists.com/expedition33/old-lumiere-checklist.html",
+    "description": "Defeat Renoir in Manor Gardens",
+    "data_key": "exp33_weapon_maelle_15",
+    "data_db_key": "e33-weapons-maelle-15"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Plenum",
+    "location": "Yellow Harvest",
+    "location_url": "https://game-checklists.com/expedition33/yellow-harvest-checklist.html",
+    "description": "Yellow Spire Wrecks Flag - Defeat Glaise",
+    "data_key": "exp33_weapon_maelle_16",
+    "data_db_key": "e33-weapons-maelle-16"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Seashellum",
+    "location": "Flying Manor",
+    "location_url": "https://game-checklists.com/expedition33/flying-manor-checklist.html",
+    "description": "Central Plaza Flag - Sold by merchant after taking the elevator 75795 Chroma required",
+    "data_key": "exp33_weapon_maelle_17",
+    "data_db_key": "e33-weapons-maelle-17"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Sekarum",
+    "location": "Gestral Village",
+    "location_url": "https://game-checklists.com/expedition33/gestral-village-checklist.html",
+    "description": "Sold by black market merchant in Gestral Bazaar 4380 Chroma required, fight the merchant",
+    "data_key": "exp33_weapon_maelle_18",
+    "data_db_key": "e33-weapons-maelle-18"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Stalum",
+    "location": "The Continent",
+    "location_url": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+    "description": "Defeat a Stalact on a beach west of Forgotten Battlefield north portal",
+    "data_key": "exp33_weapon_maelle_19",
+    "data_db_key": "e33-weapons-maelle-19"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Tissenum",
+    "location": "Sirene",
+    "location_url": "https://game-checklists.com/expedition33/sirene-checklist.html",
+    "description": "Defeat the Tisseur",
+    "data_key": "exp33_weapon_maelle_TEMP_20",
+    "data_db_key": "e33-weapons-weapon-maelle-TEMP-20"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Veremum",
+    "location": "The Monolith",
+    "location_url": "https://game-checklists.com/expedition33/the-monolith-checklist.html",
+    "description": "Tainted Meadows level - Sold by merchant after second cutscene 27744 Chroma required",
+    "data_key": "exp33_weapon_maelle_TEMP_21",
+    "data_db_key": "e33-weapons-weapon-maelle-TEMP-21"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Volesterum",
+    "location": "Lumiere ACT III",
+    "location_url": "https://game-checklists.com/expedition33/lumiere-act3-checklist.html",
+    "description": "Sold by merchant near Lumiere's Gardens 31008 Chroma required",
+    "data_key": "exp33_weapon_maelle_TEMP_22",
+    "data_db_key": "e33-weapons-weapon-maelle-TEMP-22"
+  },
+  {
+    "table_id": "maelle-weapons-table",
+    "character": "Maelle",
+    "weapon_name": "Yeverum",
+    "location": "Renoir's Drafts",
+    "location_url": "https://game-checklists.com/expedition33/renoirs-drafts-and-the-abyss-checklist.html",
+    "description": "Entrance Flag - Sold by merchant past a grapple point 101608 Chroma required",
+    "data_key": "exp33_weapon_maelle_TEMP_23",
+    "data_db_key": "e33-weapons-weapon-maelle-TEMP-23"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Algueron",
+    "location": "Old Lumiere",
+    "location_url": "https://game-checklists.com/expedition33/old-lumiere-checklist.html",
+    "description": "Entrance Flag - Sold by merchant 13600 Chroma required, fight the merchant",
+    "data_key": "exp33_weapon_sciel_1",
+    "data_db_key": "e33-weapons-sciel-1"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Blizzon",
+    "location": "Falling Leaves",
+    "location_url": "https://game-checklists.com/expedition33/falling-leaves-checklist.html",
+    "description": "Resinveil Grove Flag - Defeat Chromatic Ballet",
+    "data_key": "exp33_weapon_sciel_2",
+    "data_db_key": "e33-weapons-sciel-2"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Bourgelon",
+    "location": "The Monolith",
+    "location_url": "https://game-checklists.com/expedition33/the-monolith-checklist.html",
+    "description": "Tainted Waters level - Defeat Chromatic Bourgeon Or later sold by merchant Cruler in Coastal Cave for 17760 Chroma",
+    "data_key": "exp33_weapon_sciel_3",
+    "data_db_key": "e33-weapons-sciel-3"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Charnon",
+    "location": "Renoir's Drafts",
+    "location_url": "https://game-checklists.com/expedition33/renoirs-drafts-and-the-abyss-checklist.html",
+    "description": "Entrance Flag - Sold by merchant past a grapple point 89884 Chroma required",
+    "data_key": "exp33_weapon_sciel_4",
+    "data_db_key": "e33-weapons-sciel-4"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Chation",
+    "location": "Stone Wave Cliffs",
+    "location_url": "https://game-checklists.com/expedition33/stone-wave-cliffs-checklist.html",
+    "description": "Defeat the enemy group after the first Hexga",
+    "data_key": "exp33_weapon_sciel_5",
+    "data_db_key": "e33-weapons-sciel-5"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Corderon",
+    "location": "Sinister Cave",
+    "location_url": "https://game-checklists.com/expedition33/sinister-cave-checklist.html",
+    "description": "Go around the level to reach a dead merchant in the center",
+    "data_key": "exp33_weapon_sciel_6",
+    "data_db_key": "e33-weapons-sciel-6"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Direton",
+    "location": "Falling Leaves",
+    "location_url": "https://game-checklists.com/expedition33/falling-leaves-checklist.html",
+    "description": "Resinveil Grove Flag - Sold by merchant past a grapple point 30125 Chroma required, fight the merchant",
+    "data_key": "exp33_weapon_sciel_7",
+    "data_db_key": "e33-weapons-sciel-7"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Garganon",
+    "location": "The Monolith",
+    "location_url": "https://game-checklists.com/expedition33/the-monolith-checklist.html",
+    "description": "Tainted Hearts level - Sold by merchant after handholds 26384 Chroma required, fight the merchant",
+    "data_key": "exp33_weapon_sciel_8",
+    "data_db_key": "e33-weapons-sciel-8"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Gobluson",
+    "location": "Coastal Cave",
+    "location_url": "https://game-checklists.com/expedition33/all-quest-locations-checklist.html",
+    "description": "Sold by merchant Cruler near a fireplace 19240 Chroma required",
+    "data_key": "exp33_weapon_sciel_9",
+    "data_db_key": "e33-weapons-sciel-9"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Guleson",
+    "location": "Endless Night Sanctuary",
+    "location_url": "https://game-checklists.com/expedition33/endless-night-sanctuary-checklist.html",
+    "description": "Sold by merchant near Night Totem Flag 80040 Chroma required",
+    "data_key": "exp33_weapon_sciel_10",
+    "data_db_key": "e33-weapons-sciel-10"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Hevason",
+    "location": "Gestral Village",
+    "location_url": "https://game-checklists.com/expedition33/gestral-village-checklist.html",
+    "description": "Challenge Golgra to a fight and defeat her 4 times",
+    "data_key": "exp33_weapon_sciel_11",
+    "data_db_key": "e33-weapons-sciel-11"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Litheson",
+    "location": "Lumiere Act III",
+    "location_url": "https://game-checklists.com/expedition33/lumiere-act3-checklist.html",
+    "description": "Central Plaza Flag - Fight the enemy group in the plaza",
+    "data_key": "exp33_weapon_sciel_12",
+    "data_db_key": "e33-weapons-sciel-12"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Lusteson",
+    "location": "Forgotten Battlefield",
+    "location_url": "https://game-checklists.com/expedition33/forgotten-battlefield-checklist.html",
+    "description": "Battlefield Flag - Defeat Chromatic Luster past a Faded Woman NPC",
+    "data_key": "exp33_weapon_sciel_13",
+    "data_db_key": "e33-weapons-sciel-13"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Martenon",
+    "location": "Flying Manor",
+    "location_url": "https://game-checklists.com/expedition33/flying-manor-checklist.html",
+    "description": "Central Plaza Flag - Sold by merchant after taking the elevator 97800 Chroma required",
+    "data_key": "exp33_weapon_sciel_14",
+    "data_db_key": "e33-weapons-sciel-14"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Minason",
+    "location": "The Crows",
+    "location_url": "https://game-checklists.com/expedition33/the-crows-checklist.html",
+    "description": "Defeat Chromatic Chapelier",
+    "data_key": "exp33_weapon_sciel_15",
+    "data_db_key": "e33-weapons-sciel-15"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Moisson",
+    "location": "The Continent",
+    "location_url": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+    "description": "Defeat Chromatic Moissoneuse on the edge of the red island southwest of Visages",
+    "data_key": "exp33_weapon_sciel_16",
+    "data_db_key": "e33-weapons-sciel-16"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Ramasson",
+    "location": "Forgotten Battlefield",
+    "location_url": "https://game-checklists.com/expedition33/forgotten-battlefield-checklist.html",
+    "description": "Defeat the first enemy after the giant gate",
+    "data_key": "exp33_weapon_sciel_17",
+    "data_db_key": "e33-weapons-sciel-17"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Rangeson",
+    "location": "Stone Wave Cliffs",
+    "location_url": "https://game-checklists.com/expedition33/stone-wave-cliffs-checklist.html",
+    "description": "Sold by merchant through a gap near the south portal 7372 Chroma required",
+    "data_key": "exp33_weapon_sciel_18",
+    "data_db_key": "e33-weapons-sciel-18"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Sadon",
+    "location": "Visages",
+    "location_url": "https://game-checklists.com/expedition33/visages-checklist.html",
+    "description": "Plazza Flag - Sold by merchant 12400 Chroma required, fight the merchant - Or in Lumiere Act III , sold by merchant for 24320 Chroma",
+    "data_key": "exp33_weapon_sciel_19",
+    "data_db_key": "e33-weapons-sciel-19"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Scieleson",
+    "location": "Lumiere Act I",
+    "location_url": "https://game-checklists.com/expedition33/lumiere-act1-checklist.html",
+    "description": "Sciel's starting weapon",
+    "data_key": "exp33_weapon_sciel_20",
+    "data_db_key": "e33-weapons-sciel-20"
+  },
+  {
+    "table_id": "sciel-weapons-table",
+    "character": "Sciel",
+    "weapon_name": "Tisseron",
+    "location": "Sirene",
+    "location_url": "https://game-checklists.com/expedition33/sirene-checklist.html",
+    "description": "Defeat Sirene",
+    "data_key": "exp33_weapon_sciel_21",
+    "data_db_key": "e33-weapons-sciel-21"
+  },
+  {
+    "table_id": "monoco-weapons-table",
+    "character": "Monoco",
+    "weapon_name": "Ballaro",
+    "location": "Sirene's Dress",
+    "location_url": "https://game-checklists.com/expedition33/sirenes-dress-checklist.html",
+    "description": "Defeat the Chromatic Glissando. Or in Lumiere Act III , sold by merchant for 28880 Chroma after fighting him.",
+    "data_key": "exp33_weapon_monoco_1",
+    "data_db_key": "e33-weapons-monoco-1"
+  },
+  {
+    "table_id": "monoco-weapons-table",
+    "character": "Monoco",
+    "weapon_name": "Boucharo",
+    "location": "Visages",
+    "location_url": "https://game-checklists.com/expedition33/visages-checklist.html",
+    "description": "Sadness Vale - Defeat the final boss of the area",
+    "data_key": "exp33_weapon_monoco_2",
+    "data_db_key": "e33-weapons-monoco-2"
+  },
+  {
+    "table_id": "monoco-weapons-table",
+    "character": "Monoco",
+    "weapon_name": "Brumaro",
+    "location": "The Continent",
+    "location_url": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+    "description": "Defeat Chromatic Aberration on a flying island south of The Fountain",
+    "data_key": "exp33_weapon_monoco_3",
+    "data_db_key": "e33-weapons-monoco-3"
+  },
+  {
+    "table_id": "monoco-weapons-table",
+    "character": "Monoco",
+    "weapon_name": "Chromaro",
+    "location": "Renoir's Drafts",
+    "location_url": "https://game-checklists.com/expedition33/renoirs-drafts-and-the-abyss-checklist.html",
+    "description": "Entrance Flag - Sold by merchant past a grapple point 102585 Chroma required",
+    "data_key": "exp33_weapon_monoco_4",
+    "data_db_key": "e33-weapons-monoco-4"
+  },
+  {
+    "table_id": "monoco-weapons-table",
+    "character": "Monoco",
+    "weapon_name": "Fragaro",
+    "location": "The Monolith",
+    "location_url": "https://game-checklists.com/expedition33/the-monolith-checklist.html",
+    "description": "Tainted Meadows level - Sold by merchant after second cutscene 35360 Chroma required",
+    "data_key": "exp33_weapon_monoco_5",
+    "data_db_key": "e33-weapons-monoco-5"
+  },
+  {
+    "table_id": "monoco-weapons-table",
+    "character": "Monoco",
+    "weapon_name": "Grandaro",
+    "location": "Monoco's Station",
+    "location_url": "https://game-checklists.com/expedition33/monocos-station-checklist.html",
+    "description": "Sold by merchant 53901 Chroma required, deliver Eternal Ice from Frozen Hearts to a merchant",
+    "data_key": "exp33_weapon_monoco_6",
+    "data_db_key": "e33-weapons-monoco-6"
+  },
+  {
+    "table_id": "monoco-weapons-table",
+    "character": "Monoco",
+    "weapon_name": "Joyaro",
+    "location": "Endless Night Sanctuary",
+    "location_url": "https://game-checklists.com/expedition33/endless-night-sanctuary-checklist.html",
+    "description": "Defeat Ultimate Sakapatate Or later, in Flying Manor, defeat Lampmaster down the staircase and ropes from Central Plaza Flag",
+    "data_key": "exp33_weapon_monoco_7",
+    "data_db_key": "e33-weapons-monoco-7"
+  },
+  {
+    "table_id": "monoco-weapons-table",
+    "character": "Monoco",
+    "weapon_name": "Monocaro",
+    "location": "Lumiere Act I",
+    "location_url": "https://game-checklists.com/expedition33/lumiere-act1-checklist.html",
+    "description": "Monoco's starting weapon",
+    "data_key": "exp33_weapon_monoco_8",
+    "data_db_key": "e33-weapons-monoco-8"
+  },
+  {
+    "table_id": "monoco-weapons-table",
+    "character": "Monoco",
+    "weapon_name": "Nusaro",
+    "location": "Old Lumiere",
+    "location_url": "https://game-checklists.com/expedition33/old-lumiere-checklist.html",
+    "description": "Right Street Flag - find at the end of left path",
+    "data_key": "exp33_weapon_monoco_9",
+    "data_db_key": "e33-weapons-monoco-9"
+  },
+  {
+    "table_id": "monoco-weapons-table",
+    "character": "Monoco",
+    "weapon_name": "Sidaro",
+    "location": "Flying Manor",
+    "location_url": "https://game-checklists.com/expedition33/flying-manor-checklist.html",
+    "description": "Central Plaza Flag - Sold by merchant after taking the elevator 76610 Chroma required",
+    "data_key": "exp33_weapon_monoco_10",
+    "data_db_key": "e33-weapons-monoco-10"
+  },
+  {
+    "table_id": "monoco-weapons-table",
+    "character": "Monoco",
+    "weapon_name": "Urnaro",
+    "location": "Sky Island",
+    "location_url": "https://game-checklists.com/expedition33/sky-island-checklist.html",
+    "description": "Defeat the Chromatic Glaisse",
+    "data_key": "exp33_weapon_monoco_11",
+    "data_db_key": "e33-weapons-monoco-11"
+  }
+]

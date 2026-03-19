@@ -1,12 +1,14 @@
 /// <reference types="vite/client" />
 
-import type { Boss } from './types/Boss'
+import type { SaveSnapshot } from './types/SaveSnapshot'
 
 declare global {
   interface Window {
     electronAPI: {
-      startWatch: (savePath: string) => Promise<void>
-      onBossUpdate: (callback: (bossList: Boss[]) => void) => void
+      startWatch: (
+        savePath: string,
+      ) => Promise<{ success: boolean; message: string }>
+      onBossUpdate: (callback: (snapshot: SaveSnapshot) => void) => void
       saveBossInfo: (bossInfo: {
         originalName: string
         id: string
@@ -20,11 +22,13 @@ declare global {
         lastSavePath?: string
         allowManualEditAutoDetected?: boolean
         language?: string
+        backgroundOpacity?: number
       }>
       saveConfig: (config: {
         lastSavePath?: string
         allowManualEditAutoDetected?: boolean
         language?: string
+        backgroundOpacity?: number
       }) => Promise<{ success: boolean }>
       getManualStates: (
         savePath: string,

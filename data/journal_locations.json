@@ -1,0 +1,298 @@
+{
+  "Journals": {
+    "Journal_Exp81": {
+      "journalName": "Journal - Expedition 81",
+      "zoneName": "spring_meadows",
+      "sourceZoneName": "Spring Meadows",
+      "summary": "Main story cutscene in Spring Meadows; unmissable."
+    },
+    "Journal_Exp68": {
+      "journalName": "Journal - Expedition 68",
+      "zoneName": "flying_waters",
+      "sourceZoneName": "Flying Waters",
+      "summary": "On the illuminated path near the second Paint Cage; check for the crystal."
+    },
+    "Journal_Exp53": {
+      "journalName": "Journal - Expedition 53",
+      "zoneName": "the_small_bourgeon",
+      "sourceZoneName": "The Small Bourgeon",
+      "summary": "After speaking to the Small Bourgeon, go west deeper into the cave; the journal is at the end."
+    },
+    "Journal_Exp63": {
+      "journalName": "Journal - Expedition 63",
+      "zoneName": "ancient_sanctuary",
+      "sourceZoneName": "Ancient Sanctuary",
+      "summary": "From the Sanctuary Maze flag, take the west path downhill; the journal is near some corpses."
+    },
+    "Journal_Exp52": {
+      "journalName": "Journal - Expedition 52",
+      "zoneName": "gestral_village",
+      "sourceZoneName": "Gestral Village",
+      "summary": "On the way to the arena, look left of the arena sign for a short side passage to the journal."
+    },
+    "Journal_Exp66": {
+      "journalName": "Journal - Expedition 66",
+      "zoneName": "esquie_nest",
+      "sourceZoneName": "Esquie’s Nest",
+      "summary": "Late in the main quest, after Esquie knocks over a pillar, grapple across to the nearby abandoned camp."
+    },
+    "Journal_Exp62": {
+      "journalName": "Journal - Expedition 62",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent/World Map",
+      "summary": "On the world map directly north of Gestral Village; clear the rocks after completing Esquie’s Nest."
+    },
+    "Journal_Exp38": {
+      "journalName": "Journal - Expedition 38",
+      "zoneName": "yellow_harvest",
+      "sourceZoneName": "Yellow Harvest",
+      "summary": "At Harvester's Hollow, head east and go up the slope; the journal is in the area surrounded by blue lamps."
+    },
+    "Journal_Exp44": {
+      "journalName": "Journal - Expedition 44",
+      "zoneName": "yellow_harvest",
+      "sourceZoneName": "Yellow Harvest",
+      "summary": "From the slope leading to Expedition 38's journal, continue straight north to blue-lit Nevron corpses."
+    },
+    "Journal_Exp59": {
+      "journalName": "Journal - Expedition 59",
+      "zoneName": "yellow_harvest",
+      "sourceZoneName": "Yellow Harvest",
+      "summary": "Near the Yellow Spire Wrecks checkpoint, head directly west; the journal is by a large hardened mass."
+    },
+    "Journal_Exp78": {
+      "journalName": "Journal - Expedition 78",
+      "zoneName": "stone_wave_cliffs",
+      "sourceZoneName": "Stone Wave Cliffs",
+      "summary": "At the entrance, before fighting the Hexga, go the opposite way and climb the hidden rope to the upper area."
+    },
+    "Journal_Exp56": {
+      "journalName": "Journal - Expedition 56",
+      "zoneName": "stone_wave_cliffs",
+      "sourceZoneName": "Stone Wave Cliffs",
+      "summary": "After the first cultists, follow the path ahead; the journal is at the base of a streetlight."
+    },
+    "Journal_Exp50": {
+      "journalName": "Journal - Expedition 50",
+      "zoneName": "stone_wave_cliffs",
+      "sourceZoneName": "Stone Wave Cliffs",
+      "summary": "From the Paintress Shrine checkpoint, go north past the nearby Rocher; the journal is by discarded lamps."
+    },
+    "Journal_Exp45": {
+      "journalName": "Journal - Expedition 45",
+      "zoneName": "crushing_cavern",
+      "sourceZoneName": "Crushing Cavern",
+      "summary": "After defeating the Giant Sapling, climb the rope behind it and take the side path on your left to the journal."
+    },
+    "Journal_Exp64": {
+      "journalName": "Journal - Expedition 64",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent/World Map",
+      "summary": "After unlocking Esquie’s swim ability in Act 2, swim south near The Meadows; the journal is by the canvas campground."
+    },
+    "Journal_Exp54": {
+      "journalName": "Journal - Expedition 54",
+      "zoneName": "stone_wave_cliffs_cave",
+      "sourceZoneName": "Stone Wave Cliffs Cave",
+      "summary": "Behind the Chromatic Hexga boss; either defeat it or sprint behind it to grab the journal."
+    },
+    "Journal_Exp41": {
+      "journalName": "Journal - Expedition 41",
+      "zoneName": "forgotten_battlefield",
+      "sourceZoneName": "Forgotten Battlefield",
+      "summary": "From Vanguard Point, climb down the cannon, go north to the Fading Woman, then take the east path into the trenches."
+    },
+    "Journal_Exp57": {
+      "journalName": "Journal - Expedition 57",
+      "zoneName": "forgotten_battlefield",
+      "sourceZoneName": "Forgotten Battlefield",
+      "summary": "From Vanguard Point, go north past the Fading Woman, past the Paint Cage, then east; it's near the expeditioner with a trumpet head."
+    },
+    "Journal_Exp48": {
+      "journalName": "Journal - Expedition 48",
+      "zoneName": "stone_quarry",
+      "sourceZoneName": "Stone Quarry",
+      "summary": "Head east on the world map from the Forgotten Battlefield to reach Stone Quarry; the journal is in this small area."
+    },
+    "Journal_Exp65": {
+      "journalName": "Journal - Expedition 65",
+      "zoneName": "monoco_station",
+      "sourceZoneName": "Monoco's Station",
+      "summary": "Near the eastern exit toward the snowy mountains, face the exit and look left for the journal by former Expeditioners."
+    },
+    "Journal_Exp51": {
+      "journalName": "Journal - Expedition 51",
+      "zoneName": "frozen_hearts",
+      "sourceZoneName": "Frozen Hearts",
+      "summary": "After Monoco’s Station, enter Frozen Hearts, cross the tracks, and go behind the snow-covered train into the small cave."
+    },
+    "Journal_Exp47": {
+      "journalName": "Journal - Expedition 47",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent/World Map",
+      "summary": "Unverified: your scraper found no matching IGN description for this journal."
+    },
+    "Journal_Exp58": {
+      "journalName": "Journal - Expedition 58",
+      "zoneName": "old_lumiere",
+      "sourceZoneName": "Old Lumiere",
+      "summary": "Found during a cutscene in Old Lumiere; unmissable."
+    },
+    "Journal_OldLumiere": {
+      "journalName": "Journal - Fracture Survivor",
+      "zoneName": "old_lumiere",
+      "sourceZoneName": "Old Lumiere",
+      "summary": "On Left Street while playing as Maelle and Verso, go right onto the brick protrusion, jump into the hole, and open the door with the Old Key."
+    },
+    "Journal_Exp42": {
+      "journalName": "Journal - Expedition 42",
+      "zoneName": "old_lumiere",
+      "sourceZoneName": "Old Lumiere",
+      "summary": "From Manor Gardens, take the east path, follow the light trail uphill, slide down the rope past the Paint Cage, and check the base of the golden blade."
+    },
+    "Journal_RenoirManor": {
+      "journalName": "Journal - Renoir",
+      "zoneName": "old_lumiere",
+      "sourceZoneName": "Old Lumiere (Manor Entrance)",
+      "summary": "After reentering Old Lumiere post-story, go forward from Manor Gardens, enter the broken Manor door, then check the bedroom nightstand."
+    },
+    "Journal_Exp34": {
+      "journalName": "Journal - Expedition 34",
+      "zoneName": "the_crows",
+      "sourceZoneName": "The Crows",
+      "summary": "In the optional area on the far northwestern world map, the journal is straight ahead from the entrance."
+    },
+    "Journal_Exp35": {
+      "journalName": "Journal - Expedition 35",
+      "zoneName": "falling_leaves",
+      "sourceZoneName": "Falling Leaves",
+      "summary": "Before the bosses, right at the bridge; you can grab it without fighting them."
+    },
+    "Journal_Exp49": {
+      "journalName": "Journal - Expedition 49",
+      "zoneName": "falling_leaves",
+      "sourceZoneName": "Falling Leaves",
+      "summary": "Speak with the Fading Boy, complete the Lady in Sap side quest, return when he moves, then go through the door; it's on your left after the stairs."
+    },
+    "Journal_Exp36": {
+      "journalName": "Journal - Expedition 36",
+      "zoneName": "white_tree",
+      "sourceZoneName": "White Tree",
+      "summary": "In this one-screen area west of the Act 1 mainland; the journal is in the crystal."
+    },
+    "Journal_Exp43": {
+      "journalName": "Journal - Expedition 43",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent/World Map",
+      "summary": "Once Esquie can swim through coral, go east of the Stone Wave Cliffs Cave; the journal is in the open near a tough enemy."
+    },
+    "Journal_Exp55": {
+      "journalName": "Journal - Expedition 55",
+      "zoneName": "sirene",
+      "sourceZoneName": "Sirene",
+      "summary": "From the Dancing Classes checkpoint, go up the east stairs and look right for the glowing crystal."
+    },
+    "Journal_Exp67": {
+      "journalName": "Journal - Expedition 67",
+      "zoneName": "sirene",
+      "sourceZoneName": "Sirene",
+      "summary": "From the Crumbling Path checkpoint, defeat Glissando, take the elevator behind it, and check directly across from where it lands."
+    },
+    "Journal_RenoirVisages": {
+      "journalName": "Journal - Unknown",
+      "zoneName": "visages",
+      "sourceZoneName": "Visages",
+      "summary": "In Anger Vale, find the blue-lit cavern in the far west, go right at the fork, enter the door, then head south into the next room inside the manor."
+    },
+    "Journal_Exp39": {
+      "journalName": "Journal - Expedition 39",
+      "zoneName": "visages",
+      "sourceZoneName": "Visages",
+      "summary": "In Sadness Vale, head to the far northwest and climb to the highest point; the journal is by a former Expedition camp."
+    },
+    "Journal_Exp69": {
+      "journalName": "Journal - Expedition 69",
+      "zoneName": "visages",
+      "sourceZoneName": "Visages",
+      "summary": "In Joy Vale, head west from the flag, climb the slope, then look left for a small campground among fallen Expeditioners."
+    },
+    "Journal_Exp40": {
+      "journalName": "Journal - Expedition 40",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent/World Map",
+      "summary": "On the small island northeast of Visages while heading to the Monolith; it's near the Gestral Merchant."
+    },
+    "Journal_Aline": {
+      "journalName": "Journal - Aline",
+      "zoneName": "the_monolith",
+      "sourceZoneName": "The Monolith",
+      "summary": "In Tainted Battlefield, turn left at the grave replica among the yellow trees, enter the Manor door, and check the center of the greenhouse."
+    },
+    "Journal_Exp70": {
+      "journalName": "Journal - Expedition 70",
+      "zoneName": "the_monolith",
+      "sourceZoneName": "The Monolith",
+      "summary": "From the tree in Tainted Lumiere, head west, grapple across two gaps, defeat the enemies, and check around the destroyed building."
+    },
+    "Journal_Exp60": {
+      "journalName": "Journal - Expedition 60",
+      "zoneName": "lumiere",
+      "sourceZoneName": "Lumiere",
+      "summary": "In Act 3 outside the Opera House, go to the northwest ledge and fish the journal from the water."
+    },
+    "Journal_Exp37": {
+      "journalName": "Journal - Expedition 37",
+      "zoneName": "gestral_beach",
+      "sourceZoneName": "Gestral Beach",
+      "summary": "After gaining flight, visit the eastern Gestral Beach and go directly right on arrival."
+    },
+    "Journal_Exp46": {
+      "journalName": "Journal - Expedition 46",
+      "zoneName": "sirene_dress",
+      "sourceZoneName": "Sirene's Dress",
+      "summary": "Raise Lune relationship to 5, visit after Act 3 starts, then go straight north and defeat the Chromatic Glissando; the journal is behind it."
+    },
+    "Journal_Exp100B": {
+      "journalName": "Journal - Julie Search and Rescue",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent/World Map",
+      "summary": "Once Esquie can fly, land on the ledge west of the Forgotten Battlefield; the journal is near the tents on your left."
+    },
+    "Journal_Verso": {
+      "journalName": "Journal - Verso",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent/World Map",
+      "summary": "In the same area as Julie’s journal, go behind the tent and farther south by the destroyed building."
+    },
+    "Journal_Exp84": {
+      "journalName": "Journal - Expedition 84",
+      "zoneName": "the_fountain",
+      "sourceZoneName": "The Fountain",
+      "summary": "At the first fork in The Fountain, take the left path to the end; no combat is required."
+    },
+    "Journal_RenoirSirene": {
+      "journalName": "Journal - Unknown",
+      "zoneName": "sirene",
+      "sourceZoneName": "The Canvas",
+      "summary": "Get the Dessendre painting in The Canvas, place it on the blank canvas in The Manor, then enter the newly opened far north room."
+    },
+    "Journal_RenoirReacher": {
+      "journalName": "Journal - Unknown",
+      "zoneName": "the_reacher",
+      "sourceZoneName": "The Reacher",
+      "summary": "After the Ladder Area checkpoint, drop to the bottom, look west for the Manor door, and enter it."
+    },
+    "Journal_Exp61": {
+      "journalName": "Journal - Expedition 61",
+      "zoneName": "the_reacher",
+      "sourceZoneName": "The Reacher",
+      "summary": "As you continue climbing after the Foggy Area checkpoint, the journal is before the Peak checkpoint; use the balloon back down if needed."
+    },
+    "Journal_Exp100A": {
+      "journalName": "Journal - Simon",
+      "zoneName": "renoir_drafts",
+      "sourceZoneName": "Renoir's Drafts",
+      "summary": "Defeat Simon in Renoir’s Drafts; the journal appears in the center of the arena."
+    }
+  }
+}

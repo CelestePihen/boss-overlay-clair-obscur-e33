@@ -1,4 +1,4 @@
-import { app, BrowserWindow, ipcMain } from 'electron'
+﻿import { app, BrowserWindow, ipcMain, screen } from 'electron'
 import { existsSync } from 'fs'
 import { access, mkdir, readFile, writeFile } from 'fs/promises'
 import { basename, dirname, join } from 'path'
@@ -6,16 +6,14 @@ import { fileURLToPath } from 'url'
 
 import { saveBossDatabase } from './saveParser.js'
 import { refreshBossList, watchSaveFile } from './saveWatcher.js'
+import { getRestoredWindowPosition } from './windowState.js'
 
-// Fix pour __dirname en ES modules
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-// Chemin des fichiers de configuration
 const configPath = join(app.getPath('userData'), 'config.json')
 const manualStatesDir = join(app.getPath('userData'), 'manual-states')
 
-// Générer le chemin du fichier d'états manuels basé sur le nom de la sauvegarde
 function getManualStatesPath(savePath: string): string {
   const saveFileName = basename(savePath, '.sav')
   return join(manualStatesDir, `${saveFileName}.json`)
@@ -25,6 +23,9 @@ interface AppConfig {
   lastSavePath?: string
   allowManualEditAutoDetected?: boolean
   language?: string
+  backgroundOpacity?: number
+  windowX?: number
+  windowY?: number
 }
 
 interface ManualBossStates {
@@ -34,7 +35,6 @@ interface ManualBossStates {
   }
 }
 
-// Charger la configuration
 async function loadConfig(): Promise<AppConfig> {
   try {
     if (existsSync(configPath)) {
@@ -47,7 +47,6 @@ async function loadConfig(): Promise<AppConfig> {
   return {}
 }
 
-// Sauvegarder la configuration
 async function saveConfig(config: AppConfig): Promise<void> {
   try {
     const userDataPath = app.getPath('userData')
@@ -60,10 +59,8 @@ async function saveConfig(config: AppConfig): Promise<void> {
   }
 }
 
-// Charger les états manuels des boss
 async function loadManualStates(savePath: string): Promise<ManualBossStates> {
   try {
-    // Créer le dossier s'il n'existe pas
     if (!existsSync(manualStatesDir)) {
       await mkdir(manualStatesDir, { recursive: true })
     }
@@ -73,7 +70,6 @@ async function loadManualStates(savePath: string): Promise<ManualBossStates> {
       const data = await readFile(manualStatesPath, 'utf-8')
       const rawStates = JSON.parse(data)
 
-      // Ajouter automatiquement encountered: true pour les boss MANUAL_*
       const states: ManualBossStates = {}
       for (const [key, value] of Object.entries(rawStates)) {
         if (key.startsWith('MANUAL_')) {
@@ -93,22 +89,16 @@ async function loadManualStates(savePath: string): Promise<ManualBossStates> {
   return {}
 }
 
-// Sauvegarder les états manuels des boss
 async function saveManualStates(
   savePath: string,
   states: ManualBossStates,
 ): Promise<void> {
   try {
-    // Créer le dossier s'il n'existe pas
     if (!existsSync(manualStatesDir)) {
       await mkdir(manualStatesDir, { recursive: true })
     }
 
-    // Pour les boss MANUAL_*, on ne sauvegarde que le champ killed
-    const statesToSave: Record<
-      string,
-      { killed: boolean; encountered?: boolean }
-    > = {}
+    const statesToSave: Record<string, { killed: boolean; encountered?: boolean }> = {}
     for (const [key, value] of Object.entries(states)) {
       if (key.startsWith('MANUAL_')) {
         statesToSave[key] = { killed: value.killed }
@@ -129,6 +119,7 @@ async function saveManualStates(
 }
 
 let mainWindow: BrowserWindow | null = null
+let windowStateSaveTimeout: NodeJS.Timeout | null = null
 
 async function validateUesave(): Promise<boolean> {
   try {
@@ -147,19 +138,44 @@ async function validateUesave(): Promise<boolean> {
   }
 }
 
-function createWindow() {
+async function persistWindowPosition() {
+  if (!mainWindow || mainWindow.isDestroyed()) {
+    return
+  }
+
+  const [x, y] = mainWindow.getPosition()
+  const config = await loadConfig()
+  config.windowX = x
+  config.windowY = y
+  await saveConfig(config)
+}
+
+function queueWindowPositionSave() {
+  if (windowStateSaveTimeout) {
+    clearTimeout(windowStateSaveTimeout)
+  }
+
+  windowStateSaveTimeout = setTimeout(() => {
+    void persistWindowPosition()
+  }, 150)
+}
+
+function createWindow(config: AppConfig = {}) {
   const isDev =
     process.env.NODE_ENV === 'development' || process.argv.includes('--dev')
-
-  // En dev et prod, __dirname pointe vers dist-electron/ (compilé par Vite)
   const preloadPath = join(__dirname, 'preload.js')
+  const restoredPosition = getRestoredWindowPosition(
+    { x: config.windowX, y: config.windowY },
+    screen.getAllDisplays().map((display) => display.workArea),
+  )
 
   console.log('Preload path:', preloadPath)
   console.log('__dirname:', __dirname)
 
   mainWindow = new BrowserWindow({
-    width: 700,
-    height: 800,
+    width: 725,
+    height: 1000,
+    ...restoredPosition,
     transparent: true,
     frame: false,
     alwaysOnTop: false,
@@ -171,8 +187,26 @@ function createWindow() {
     },
   })
 
-  // En production, charger les fichiers buildés
-  // En dev, charger depuis le serveur Vite
+  mainWindow.once('ready-to-show', () => {
+    void persistWindowPosition()
+  })
+
+  mainWindow.on('move', () => {
+    queueWindowPositionSave()
+  })
+
+  mainWindow.on('close', () => {
+    if (windowStateSaveTimeout) {
+      clearTimeout(windowStateSaveTimeout)
+      windowStateSaveTimeout = null
+    }
+    void persistWindowPosition()
+  })
+
+  mainWindow.on('closed', () => {
+    mainWindow = null
+  })
+
   if (isDev) {
     console.log('Loading in DEV mode from localhost:5173')
     mainWindow.loadURL('http://localhost:5173')
@@ -182,17 +216,15 @@ function createWindow() {
     mainWindow.loadFile(htmlPath)
   }
 
-  // Log des erreurs de chargement
   mainWindow.webContents.on(
     'did-fail-load',
-    (event, errorCode, errorDescription) => {
+    (_event, errorCode, errorDescription) => {
       console.error('Failed to load:', errorCode, errorDescription)
     },
   )
 }
 
 app.whenReady().then(async () => {
-  // Valider la présence de uesave.exe au démarrage
   const uesaveExists = await validateUesave()
   if (!uesaveExists) {
     console.warn(
@@ -203,20 +235,18 @@ app.whenReady().then(async () => {
     )
   }
 
-  createWindow()
-
-  // Charger la configuration et restaurer le dernier fichier .sav
   const config = await loadConfig()
+  createWindow(config)
+
   if (config.lastSavePath && existsSync(config.lastSavePath)) {
-    // Attendre que la fenêtre soit prête
     mainWindow?.webContents.once('did-finish-load', () => {
       mainWindow?.webContents.send('restore-save-path', config.lastSavePath)
     })
   }
 
-  app.on('activate', () => {
+  app.on('activate', async () => {
     if (BrowserWindow.getAllWindows().length === 0) {
-      createWindow()
+      createWindow(await loadConfig())
     }
   })
 })
@@ -227,24 +257,21 @@ app.on('window-all-closed', () => {
   }
 })
 
-// IPC handlers
-ipcMain.handle('start-watch', async (event, savePath: string) => {
-  // Sauvegarder le chemin du fichier dans la config
+ipcMain.handle('start-watch', async (_event, savePath: string) => {
   const config = await loadConfig()
   config.lastSavePath = savePath
   await saveConfig(config)
 
-  watchSaveFile(savePath, (bossList) => {
-    mainWindow?.webContents.send('boss-update', bossList)
+  watchSaveFile(savePath, (snapshot) => {
+    mainWindow?.webContents.send('boss-update', snapshot)
   })
-  // Retourner une valeur simple au lieu d'une fonction
   return { success: true, message: 'Watching started' }
 })
 
 ipcMain.handle(
   'save-boss-info',
   async (
-    event,
+    _event,
     bossInfo: {
       originalName: string
       id: string
@@ -254,10 +281,7 @@ ipcMain.handle(
   ) => {
     try {
       await saveBossDatabase(bossInfo)
-
-      // Forcer un refresh immédiat de la liste
       await refreshBossList()
-
       return { success: true }
     } catch (error) {
       console.error('Failed to save boss info:', error)
@@ -269,7 +293,6 @@ ipcMain.handle(
 ipcMain.handle('select-file', async () => {
   const { dialog } = await import('electron')
 
-  // Construire le chemin par défaut vers le dossier de sauvegardes du jeu
   const localAppData =
     process.env.LOCALAPPDATA ||
     join(process.env.USERPROFILE || '', 'AppData', 'Local')
@@ -277,7 +300,7 @@ ipcMain.handle('select-file', async () => {
 
   const result = await dialog.showOpenDialog(mainWindow!, {
     properties: ['openFile'],
-    defaultPath: defaultPath,
+    defaultPath,
     filters: [
       { name: 'Save Files', extensions: ['sav'] },
       { name: 'All Files', extensions: ['*'] },
@@ -298,12 +321,12 @@ ipcMain.handle('get-config', async () => {
   return await loadConfig()
 })
 
-ipcMain.handle('save-config', async (event, config: AppConfig) => {
+ipcMain.handle('save-config', async (_event, config: AppConfig) => {
   await saveConfig(config)
   return { success: true }
 })
 
-ipcMain.handle('get-manual-states', async (event, savePath: string) => {
+ipcMain.handle('get-manual-states', async (_event, savePath: string) => {
   if (!savePath) return {}
   return await loadManualStates(savePath)
 })
@@ -311,7 +334,7 @@ ipcMain.handle('get-manual-states', async (event, savePath: string) => {
 ipcMain.handle(
   'save-manual-state',
   async (
-    event,
+    _event,
     savePath: string,
     originalName: string,
     state: { killed: boolean; encountered: boolean },
@@ -331,7 +354,7 @@ ipcMain.handle(
   },
 )
 
-ipcMain.handle('clear-manual-states', async (event, savePath: string) => {
+ipcMain.handle('clear-manual-states', async (_event, savePath: string) => {
   try {
     if (!savePath) {
       return { success: false, error: 'No save path provided' }
@@ -343,7 +366,6 @@ ipcMain.handle('clear-manual-states', async (event, savePath: string) => {
       console.log('Manual states cleared for:', savePath)
     }
 
-    // Forcer un refresh immédiat de la liste
     await refreshBossList()
 
     return { success: true }

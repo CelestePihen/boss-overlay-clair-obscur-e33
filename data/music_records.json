@@ -1,0 +1,268 @@
+{
+  "MusicRecords": {
+    "MusicRecord_1": {
+      "id": "MusicRecord_1",
+      "name": "Alicia",
+      "zoneName": "the_manor",
+      "sourceZoneName": "The Manor",
+      "locationUrl": "https://game-checklists.com/expedition33/all-manor-doors.html",
+      "summary": "Enter The Manor from Falling Leaves"
+    },
+    "MusicRecord_2": {
+      "id": "MusicRecord_2",
+      "name": "Lumière",
+      "zoneName": "lumiere_prologue",
+      "sourceZoneName": "Lumiere ACT I",
+      "locationUrl": "https://game-checklists.com/expedition33/lumiere-act1-checklist.html",
+      "summary": "Defeat the Mime in harbour in Act I or inside opera house in Act III Missable - must defeat Mime in Prologue before Gommage"
+    },
+    "MusicRecord_3": {
+      "id": "MusicRecord_3",
+      "name": "Gustave",
+      "zoneName": "stone_wave_cliffs",
+      "sourceZoneName": "Stone Wave Cliffs",
+      "locationUrl": "https://game-checklists.com/expedition33/stone-wave-cliffs-checklist.html",
+      "summary": "Defeat the Lampmaster and return to the Arena"
+    },
+    "MusicRecord_4": {
+      "id": "MusicRecord_4",
+      "name": "Lettre à Maelle",
+      "zoneName": "camp",
+      "sourceZoneName": "Camp",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Defeat the first Axon and play the piano cutscene in camp Missable - only on the first camp instance"
+    },
+    "MusicRecord_5": {
+      "id": "MusicRecord_5",
+      "name": "Lune",
+      "zoneName": "camp",
+      "sourceZoneName": "Camp",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Reach Relationship Level 6 with Lune Complete her side quest in Sirene's Dress - see All Side Quests checklist"
+    },
+    "MusicRecord_6": {
+      "id": "MusicRecord_6",
+      "name": "Sciel",
+      "zoneName": "camp",
+      "sourceZoneName": "Camp",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Reach Relationship Level 6 with Sciel. We recommend doing this as fast as possible after reaching Act 3"
+    },
+    "MusicRecord_7": {
+      "id": "MusicRecord_7",
+      "name": "Monoco",
+      "zoneName": "camp",
+      "sourceZoneName": "Camp",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Reach Relationship Level 6 with Monoco Complete his side quest in Sacred River - see All Side Quests checklist"
+    },
+    "MusicRecord_8": {
+      "id": "MusicRecord_8",
+      "name": "Verso",
+      "zoneName": "the_manor",
+      "sourceZoneName": "The Manor",
+      "locationUrl": "https://game-checklists.com/expedition33/all-manor-doors.html",
+      "summary": "Enter the Manor from Visages - Anger Vale"
+    },
+    "MusicRecord_9": {
+      "id": "MusicRecord_9",
+      "name": "Until Next Life",
+      "zoneName": "falling_leaves",
+      "sourceZoneName": "Falling Leaves",
+      "locationUrl": "https://game-checklists.com/expedition33/falling-leaves-checklist.html",
+      "summary": "Defeat the Scavenger behind the gate and talk to Young Boy NPC"
+    },
+    "MusicRecord_10": {
+      "id": "MusicRecord_10",
+      "name": "Rêveries dans Paris",
+      "zoneName": "flying_casino",
+      "sourceZoneName": "Flying Casino",
+      "locationUrl": "https://game-checklists.com/expedition33/all-quest-locations-checklist.html",
+      "summary": "Behind the casino"
+    },
+    "MusicRecord_11": {
+      "id": "MusicRecord_11",
+      "name": "Un 33 Décembre à Lumière",
+      "zoneName": "twilight_quarry",
+      "sourceZoneName": "Twilight Quarry",
+      "locationUrl": "https://game-checklists.com/expedition33/all-painted-locations-checklist.html",
+      "summary": "On the dark background"
+    },
+    "MusicRecord_12": {
+      "id": "MusicRecord_12",
+      "name": "Le Grand Café de Lumière",
+      "zoneName": "the_carousel",
+      "sourceZoneName": "The Carousel",
+      "locationUrl": "https://game-checklists.com/expedition33/all-quest-locations-checklist.html",
+      "summary": "Path nearby the expedition Flag."
+    },
+    "MusicRecord_13": {
+      "id": "MusicRecord_13",
+      "name": "Nocturne pour Lumière",
+      "zoneName": "sinister_cave",
+      "sourceZoneName": "Sinister Cave",
+      "locationUrl": "https://game-checklists.com/expedition33/sinister-cave-checklist.html",
+      "summary": "Find a hole in the ground at the top parts"
+    },
+    "MusicRecord_14": {
+      "id": "MusicRecord_14",
+      "name": "Linen and Cotton",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Sold by merchant on a small island near Visages 1000 Chroma required"
+    },
+    "MusicRecord_15": {
+      "id": "MusicRecord_15",
+      "name": "Goblu",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Sold by merchant near Hidden Gestral Arena 1000 Chroma required"
+    },
+    "MusicRecord_16": {
+      "id": "MusicRecord_16",
+      "name": "Lights of the Past",
+      "zoneName": "ancient_gestral_city",
+      "sourceZoneName": "Ancient Gestral City",
+      "locationUrl": "https://game-checklists.com/expedition33/all-painted-locations-checklist.html",
+      "summary": "In the center of the room"
+    },
+    "MusicRecord_17": {
+      "id": "MusicRecord_17",
+      "name": "Lost Voice",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Sold by merchant south of the snowy parts 1000 Chroma required"
+    },
+    "MusicRecord_18": {
+      "id": "MusicRecord_18",
+      "name": "Robe de Jour",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Sold by merchant on a small island south of Sirene 1000 Chroma required"
+    },
+    "MusicRecord_19": {
+      "id": "MusicRecord_19",
+      "name": "Nocturne pour un masque de tristesse",
+      "zoneName": "the_manor",
+      "sourceZoneName": "The Manor",
+      "locationUrl": "https://game-checklists.com/expedition33/all-manor-doors.html",
+      "summary": "Complete the lever puzzle in the dining room"
+    },
+    "MusicRecord_20": {
+      "id": "MusicRecord_20",
+      "name": "Our Painted Family",
+      "zoneName": "spring_meadows",
+      "sourceZoneName": "The Meadows",
+      "locationUrl": "https://game-checklists.com/expedition33/all-painted-locations-checklist.html",
+      "summary": "Near the entrance portal"
+    },
+    "MusicRecord_21": {
+      "id": "MusicRecord_21",
+      "name": "Honeymoon in Lumière",
+      "zoneName": "white_tree",
+      "sourceZoneName": "White Tree",
+      "locationUrl": "https://game-checklists.com/expedition33/all-painted-locations-checklist.html",
+      "summary": "Left of the white tree"
+    },
+    "MusicRecord_22": {
+      "id": "MusicRecord_22",
+      "name": "Clea! Don't Pull Your Sister's Hair!",
+      "zoneName": "the_manor",
+      "sourceZoneName": "The Manor",
+      "locationUrl": "https://game-checklists.com/expedition33/all-manor-doors.html",
+      "summary": "Enter The Manor from Frozen Hearts"
+    },
+    "MusicRecord_23": {
+      "id": "MusicRecord_23",
+      "name": "Aline's Glasshouse",
+      "zoneName": "lost_woods",
+      "sourceZoneName": "Lost Woods",
+      "locationUrl": "https://game-checklists.com/expedition33/all-painted-locations-checklist.html",
+      "summary": "Up the stairs"
+    },
+    "MusicRecord_24": {
+      "id": "MusicRecord_24",
+      "name": "Alicia's Birthday Party",
+      "zoneName": "boat_graveyard",
+      "sourceZoneName": "Boat Graveyard",
+      "locationUrl": "https://game-checklists.com/expedition33/all-painted-locations-checklist.html",
+      "summary": "Past a coral reefs"
+    },
+    "MusicRecord_25": {
+      "id": "MusicRecord_25",
+      "name": "Révérence",
+      "zoneName": "blades_graveyard",
+      "sourceZoneName": "Blades' Graveyard",
+      "locationUrl": "https://game-checklists.com/expedition33/all-painted-locations-checklist.html",
+      "summary": "At the center of the location"
+    },
+    "MusicRecord_26": {
+      "id": "MusicRecord_26",
+      "name": "Forlorn",
+      "zoneName": "the_manor",
+      "sourceZoneName": "The Manor",
+      "locationUrl": "https://game-checklists.com/expedition33/all-manor-doors.html",
+      "summary": "Enter The Manor from The Continent - door near southeastern lake Esquie's Fly required"
+    },
+    "MusicRecord_27": {
+      "id": "MusicRecord_27",
+      "name": "Children of Lumière",
+      "zoneName": "the_continent",
+      "sourceZoneName": "The Continent",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Sold by merchant near Sacred River portal 1000 Chroma required"
+    },
+    "MusicRecord_28": {
+      "id": "MusicRecord_28",
+      "name": "Aline",
+      "zoneName": "white_sands",
+      "sourceZoneName": "White Sands",
+      "locationUrl": "https://game-checklists.com/expedition33/all-painted-locations-checklist.html",
+      "summary": "Reach the end of the location Esquie's Fly required"
+    },
+    "MusicRecord_29": {
+      "id": "MusicRecord_29",
+      "name": "Renoir",
+      "zoneName": "the_manor",
+      "sourceZoneName": "The Manor",
+      "locationUrl": "https://game-checklists.com/expedition33/all-manor-doors.html",
+      "summary": "Enter The Manor from Old Lumiere"
+    },
+    "MusicRecord_30": {
+      "id": "MusicRecord_30",
+      "name": "Clea",
+      "zoneName": "endless_tower",
+      "sourceZoneName": "Endless Tower",
+      "locationUrl": "https://game-checklists.com/expedition33/endless-tower-checklist.html",
+      "summary": "Complete all 11 Stages Esquie's Fly required"
+    },
+    "MusicRecord_31": {
+      "id": "MusicRecord_31",
+      "name": "L'Amour d'une Mère",
+      "zoneName": "the_manor",
+      "sourceZoneName": "The Manor",
+      "locationUrl": "https://game-checklists.com/expedition33/all-manor-doors.html",
+      "summary": "Enter The Manor from The Monolith - Tainted Battlefield level"
+    },
+    "MusicRecord_32": {
+      "id": "MusicRecord_32",
+      "name": "Endless Light",
+      "zoneName": "renoir_drafts",
+      "sourceZoneName": "Renoir's Drafts",
+      "locationUrl": "https://game-checklists.com/expedition33/renoirs-drafts-and-the-abyss-checklist.html",
+      "summary": "Entrance Flag - Use the grapple down the path Esquie's Underwater Swim required"
+    },
+    "MusicRecord_33": {
+      "id": "MusicRecord_33",
+      "name": "Our Drafts Collide",
+      "zoneName": "camp",
+      "sourceZoneName": "Camp",
+      "locationUrl": "https://game-checklists.com/expedition33/the-continent-checklist.html",
+      "summary": "Finish Act III"
+    }
+  }
+}

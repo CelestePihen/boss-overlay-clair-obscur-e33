@@ -1,12 +1,15 @@
 import { contextBridge, ipcRenderer, IpcRendererEvent } from 'electron'
 
+import type { SaveSnapshot } from '../src/types/SaveSnapshot.js'
+
 contextBridge.exposeInMainWorld('electronAPI', {
   startWatch: (savePath: string) => {
     return ipcRenderer.invoke('start-watch', savePath)
   },
-  onBossUpdate: (callback: (bossList: unknown[]) => void) => {
-    ipcRenderer.on('boss-update', (_event: IpcRendererEvent, bossList: unknown[]) =>
-      callback(bossList),
+  onBossUpdate: (callback: (snapshot: SaveSnapshot) => void) => {
+    ipcRenderer.on(
+      'boss-update',
+      (_event: IpcRendererEvent, snapshot: SaveSnapshot) => callback(snapshot),
     )
   },
 

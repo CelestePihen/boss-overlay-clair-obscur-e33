@@ -1,0 +1,224 @@
+{
+  "MonocoFeet": {
+    "AbbestFoot": {
+      "skillId": "AbbestMelee",
+      "skillName": "Abbest Wind",
+      "footName": "Abbest's Foot"
+    },
+    "AberrationFoot": {
+      "skillId": "AberrationBurningLight",
+      "skillName": "Aberration Light",
+      "footName": "Aberration's Foot"
+    },
+    "BalletFoot": {
+      "skillId": "BalletCharm",
+      "skillName": "Ballet Charm",
+      "footName": "Ballet's Foot"
+    },
+    "BenisseurFoot": {
+      "skillId": "BenisseurMortar",
+      "skillName": "Bénisseur Mortar",
+      "footName": "Bénisseur's Foot"
+    },
+    "BoucheclierFoot": {
+      "skillId": "BoucheclierShield",
+      "skillName": "Boucheclier Fortify",
+      "footName": "Boucheclier's Foot"
+    },
+    "BraseleurFoot": {
+      "skillId": "HammerSmash",
+      "skillName": "Braseleur Smash",
+      "footName": "Braseleur's Foot"
+    },
+    "BrulerFoot": {
+      "skillId": "BrulerAnchorSmash",
+      "skillName": "Bruler Bash",
+      "footName": "Bruler's Foot"
+    },
+    "ChapelierFoot": {
+      "skillId": "ChapelierAxeSlash",
+      "skillName": "Chapelier Slash",
+      "footName": "Chapelier's Foot"
+    },
+    "GoldChevaliereFoot": {
+      "skillId": "ChevaliereCAOECombo",
+      "skillName": "Chevalière Ice",
+      "footName": "Gold Chevalière's Foot"
+    },
+    "CeramicChevaliereFoot": {
+      "skillId": "ChevaliereCAC",
+      "skillName": "Chevalière Piercing",
+      "footName": "Ceramic Chevalière's Foot"
+    },
+    "SteelChevaliereFoot": {
+      "skillId": "ChevaliereBAoECombo",
+      "skillName": "Chevalière Thrusts",
+      "footName": "Steel Chevalière's Foot"
+    },
+    "ClairFoot": {
+      "skillId": "ClairEnfeeble",
+      "skillName": "Clair Enfeeble",
+      "footName": "Clair's Foot"
+    },
+    "ContorsionnisteFoot": {
+      "skillId": "ContorsionnisteAngryBlast",
+      "skillName": "Contorsionniste Blast",
+      "footName": "Contorsionniste's Foot"
+    },
+    "CreationFoot": {
+      "skillId": "CreationFromTheVoid",
+      "skillName": "Création Void",
+      "footName": "Création's Foot"
+    },
+    "CrulerFoot": {
+      "skillId": "CrulerShield",
+      "skillName": "Cruler Barrier",
+      "footName": "Cruler's Foot"
+    },
+    "HeavyCultistFoot": {
+      "skillId": "HeavyCultistBloodSword",
+      "skillName": "Cultist Blood",
+      "footName": "Greatsword Cultist's Foot"
+    },
+    "FlyingCultistFoot": {
+      "skillId": "FlyingSlashes",
+      "skillName": "Cultist Slashes",
+      "footName": "Reaper Cultist's Foot"
+    },
+    "DanseuseFoot": {
+      "skillId": "DanseuseWingDance",
+      "skillName": "Danseuse Waltz",
+      "footName": "Danseuse's Foot"
+    },
+    "DemineurFoot": {
+      "skillId": "DemineurThunderStrike",
+      "skillName": "Démineur Thunder",
+      "footName": "Démineur's Foot"
+    },
+    "DuallistFoot": {
+      "skillId": "StormBlood",
+      "skillName": "Duallist Storm",
+      "footName": "Duallist's Foot"
+    },
+    "EchassierFoot": {
+      "skillId": "EchassierCombo",
+      "skillName": "Échassier Stabs",
+      "footName": "Échassier's Foot"
+    },
+    "EvequeFoot": {
+      "skillId": "EvequeSpear",
+      "skillName": "Évêque Spear",
+      "footName": "Évêque's Foot"
+    },
+    "GaultFoot": {
+      "skillId": "GaultCombo",
+      "skillName": "Gault Fury",
+      "footName": "Gault's Foot"
+    },
+    "GlaiseFoot": {
+      "skillId": "GlaiseEarthquakes",
+      "skillName": "Glaise Earthquakes",
+      "footName": "Glaise's Foot"
+    },
+    "GrosseTeteFoot": {
+      "skillId": "GrosseTeteWrecking",
+      "skillName": "Grosse Tête Whack",
+      "footName": "Grosse Tête's Foot"
+    },
+    "HexgaFoot": {
+      "skillId": "HexgaCombo",
+      "skillName": "Hexga Crush",
+      "footName": "Hexga's Foot"
+    },
+    "JarFoot": {
+      "skillId": "JarCombo",
+      "skillName": "Jar Lampstorm",
+      "footName": "Jar's Foot"
+    },
+    "LampmasterFoot": {
+      "skillId": "LampmasterSwordOfLight",
+      "skillName": "Lampmaster Light",
+      "footName": "Lampmaster's Foot"
+    },
+    "LancelierFoot": {
+      "skillId": "LancelierEstoc",
+      "skillName": "Lancelier Impale",
+      "footName": "Lancelier's Foot"
+    },
+    "LusterFoot": {
+      "skillId": "LusterCombo",
+      "skillName": "Luster Slices",
+      "footName": "Luster's Foot"
+    },
+    "MoissonneuseFoot": {
+      "skillId": "MoissonneuseVendange",
+      "skillName": "Moissonneuse Vendange",
+      "footName": "Moissonneuse's Foot"
+    },
+    "ObscurFoot": {
+      "skillId": "ObscurCombo",
+      "skillName": "Obscur Sword",
+      "footName": "Obscur's Foot"
+    },
+    "OrphelinFoot": {
+      "skillId": "OrphelinBuff",
+      "skillName": "Orphelin Cheers",
+      "footName": "Orphelin's Foot"
+    },
+    "PelerinFoot": {
+      "skillId": "PelerinFreshAir",
+      "skillName": "Pèlerin Heal",
+      "footName": "Pèlerin's Foot"
+    },
+    "PortierFoot": {
+      "skillId": "PortierCrashingDown",
+      "skillName": "Portier Crash",
+      "footName": "Portier's Foot"
+    },
+    "PotierFoot": {
+      "skillId": "PotierBuff",
+      "skillName": "Potier Energy",
+      "footName": "Potier's Foot"
+    },
+    "RamasseurFoot": {
+      "skillId": "RamasseurBonk",
+      "skillName": "Ramasseur Bonk",
+      "footName": "Ramasseur's Foot"
+    },
+    "RocherFoot": {
+      "skillId": "RocherHammering",
+      "skillName": "Rocher Hammering",
+      "footName": "Rocher's Foot"
+    },
+    "RangerSakapatateFoot": {
+      "skillId": "ThunderEstoc",
+      "skillName": "Sakapatate Estoc",
+      "footName": "Ranger Sakapatate's Foot"
+    },
+    "CatapultSakapatateFoot": {
+      "skillId": "ThunderThrows",
+      "skillName": "Sakapatate Explosion",
+      "footName": "Catapult Sakapatate's Foot"
+    },
+    "BossSakapatateFoot": {
+      "skillId": "PotatobagBossFireShots",
+      "skillName": "Sakapatate Fire",
+      "footName": "Ultimate Sakapatate's Foot"
+    },
+    "RobustSakapatateFoot": {
+      "skillId": "PotatobagSlam",
+      "skillName": "Sakapatate Slam",
+      "footName": "Robust Sakapatate's Foot"
+    },
+    "SaplingFoot": {
+      "skillId": "SaplingAbsorption",
+      "skillName": "Sapling Absorption",
+      "footName": "Sapling's Foot"
+    },
+    "TroubadourFoot": {
+      "skillId": "Trumpet",
+      "skillName": "Troubadour Trumpet",
+      "footName": "Troubadour's Foot"
+    }
+  }
+}
