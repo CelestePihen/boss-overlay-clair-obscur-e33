@@ -290,6 +290,25 @@ ipcMain.handle('select-file', async () => {
   return null
 })
 
+ipcMain.handle('select-directory', async () => {
+  const { dialog } = await import('electron')
+
+  const localAppData =
+    process.env.LOCALAPPDATA ||
+    join(process.env.USERPROFILE || '', 'AppData', 'Local')
+  const defaultPath = join(localAppData, 'Sandfall', 'Saved', 'SaveGames')
+
+  const result = await dialog.showOpenDialog(mainWindow!, {
+    properties: ['openDirectory'],
+    defaultPath,
+  })
+
+  if (!result.canceled && result.filePaths.length > 0) {
+    return result.filePaths[0]
+  }
+  return null
+})
+
 ipcMain.handle('close-app', () => {
   app.quit()
 })

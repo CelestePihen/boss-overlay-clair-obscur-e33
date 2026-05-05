@@ -107,20 +107,21 @@ export function watchSaveFile(
     ignoreInitial: true,
   })
 
-  // Charger une seule fois au démarrage quand le watcher est prêt
-  currentWatcher.on('ready', async () => {
-    console.log('Watcher ready, loading initial boss list')
-    let bossList = await parseSaveFile(savePath)
-    bossList = await mergeBossesWithManualStates(savePath, bossList)
-    previousBossList = bossList
-    callback(bossList)
-  })
+  const refreshFromCurrentPath = async (emitNewKills: boolean) => {
+    if (!currentSavePath) {
+      return
+    }
 
-  currentWatcher.on('change', async (path: string) => {
-    let bossList: Boss[] = await parseSaveFile(path)
+    let bossList: Boss[] = await parseSaveFile(currentSavePath)
 
     // Fusionner avec les états manuels
-    bossList = await mergeBossesWithManualStates(path, bossList)
+    bossList = await mergeBossesWithManualStates(currentSavePath, bossList)
+
+    if (!emitNewKills) {
+      previousBossList = bossList
+      callback(bossList)
+      return
+    }
 
     // Détecter les boss nouvellement tués
     const newlyKilled: Boss[] = []
@@ -148,6 +149,20 @@ export function watchSaveFile(
 
     previousBossList = bossList
     callback(bossList, newlyKilled.length > 0 ? newlyKilled : undefined)
+  }
+
+  // Charger une seule fois au démarrage quand le watcher est prêt
+  currentWatcher.on('ready', async () => {
+    console.log('Watcher ready, loading initial boss list')
+    await refreshFromCurrentPath(false)
+  })
+
+  currentWatcher.on('add', async () => {
+    await refreshFromCurrentPath(true)
+  })
+
+  currentWatcher.on('change', async () => {
+    await refreshFromCurrentPath(true)
   })
 
   currentWatcher.on('error', (err) => {

@@ -1,7 +1,7 @@
 import { execFile } from 'child_process'
-import { readFile, stat, unlink, writeFile } from 'fs/promises'
+import { readFile, readdir, stat, unlink, writeFile } from 'fs/promises'
 import { tmpdir } from 'os'
-import { dirname, join } from 'path'
+import { dirname, extname, join } from 'path'
 import { fileURLToPath } from 'url'
 import { promisify } from 'util'
 
@@ -32,10 +32,72 @@ type BossDatabaseByZone = Record<
 // Cache pour éviter les reconversions inutiles
 interface SaveCache {
   savePath: string
+  resolvedPath: string
   mtime: number // Timestamp de dernière modification
   bossList: Boss[]
 }
 let saveCache: SaveCache | null = null
+
+async function collectLatestCandidateFile(
+  directoryPath: string,
+): Promise<{ path: string; mtime: number } | null> {
+  const entries = await readdir(directoryPath, { withFileTypes: true })
+  let latestCandidate: { path: string; mtime: number } | null = null
+
+  for (const entry of entries) {
+    const entryPath = join(directoryPath, entry.name)
+
+    if (entry.isDirectory()) {
+      const nestedCandidate = await collectLatestCandidateFile(entryPath)
+      if (
+        nestedCandidate &&
+        (!latestCandidate || nestedCandidate.mtime > latestCandidate.mtime)
+      ) {
+        latestCandidate = nestedCandidate
+      }
+      continue
+    }
+
+    if (extname(entry.name) !== '') {
+      continue
+    }
+
+    const fileStats = await stat(entryPath)
+    if (!latestCandidate || fileStats.mtimeMs > latestCandidate.mtime) {
+      latestCandidate = {
+        path: entryPath,
+        mtime: fileStats.mtimeMs,
+      }
+    }
+  }
+
+  return latestCandidate
+}
+
+async function resolveSaveInputPath(savePath: string): Promise<{
+  path: string
+  mtime: number
+}> {
+  const stats = await stat(savePath)
+
+  if (stats.isFile()) {
+    return {
+      path: savePath,
+      mtime: stats.mtimeMs,
+    }
+  }
+
+  if (stats.isDirectory()) {
+    const latestCandidate = await collectLatestCandidateFile(savePath)
+    if (latestCandidate) {
+      return latestCandidate
+    }
+
+    throw new Error(`No save file candidate found in directory: ${savePath}`)
+  }
+
+  throw new Error(`Unsupported save path: ${savePath}`)
+}
 
 async function loadBossDatabase() {
   if (bossDatabase.length === 0) {
@@ -181,13 +243,14 @@ export async function parseSaveFile(savePath: string): Promise<Boss[]> {
   await loadBossDatabase()
 
   try {
-    // Vérifier le cache : si le fichier n'a pas changé, retourner les données en cache
-    const stats = await stat(savePath)
-    const currentMtime = stats.mtimeMs
+    const resolvedSave = await resolveSaveInputPath(savePath)
+    const resolvedPath = resolvedSave.path
+    const currentMtime = resolvedSave.mtime
 
     if (
       saveCache &&
       saveCache.savePath === savePath &&
+      saveCache.resolvedPath === resolvedPath &&
       saveCache.mtime === currentMtime
     ) {
       console.log('Using cached boss list (file unchanged)')
@@ -227,7 +290,7 @@ export async function parseSaveFile(savePath: string): Promise<Boss[]> {
       await execFileAsync(uesavePath, [
         'to-json',
         '--input',
-        savePath,
+        resolvedPath,
         '--output',
         tempJsonPath,
       ])
@@ -242,6 +305,7 @@ export async function parseSaveFile(savePath: string): Promise<Boss[]> {
       // Mettre à jour le cache
       saveCache = {
         savePath,
+        resolvedPath,
         mtime: currentMtime,
         bossList,
       }

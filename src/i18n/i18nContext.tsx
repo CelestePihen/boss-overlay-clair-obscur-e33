@@ -9,8 +9,9 @@ import {
 import en from './locales/en.json'
 import fr from './locales/fr.json'
 import ru from './locales/ru.json'
+import zh_tr from './locales/zh_tr.json'
 
-export type Language = 'fr' | 'en' | 'ru'
+export type Language = 'fr' | 'en' | 'ru' | 'zh_tr'
 
 type TranslationObject = typeof en
 
@@ -18,6 +19,7 @@ const translations: Record<Language, TranslationObject> = {
   fr,
   en,
   ru,
+  zh_tr
 }
 
 interface I18nContextType {

@@ -15,6 +15,7 @@ declare global {
       }) => Promise<{ success: boolean; error?: string }>
       onRestoreSavePath: (callback: (savePath: string) => void) => void
       selectFile: () => Promise<string | null>
+      selectDirectory: () => Promise<string | null>
       closeApp: () => void
       getConfig: () => Promise<{
         lastSavePath?: string

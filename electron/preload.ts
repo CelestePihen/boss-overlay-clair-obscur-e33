@@ -27,6 +27,9 @@ contextBridge.exposeInMainWorld('electronAPI', {
   selectFile: () => {
     return ipcRenderer.invoke('select-file')
   },
+  selectDirectory: () => {
+    return ipcRenderer.invoke('select-directory')
+  },
   closeApp: () => {
     return ipcRenderer.invoke('close-app')
   },

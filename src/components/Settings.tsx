@@ -38,6 +38,15 @@ function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
     }
   }
 
+  const handleBrowseDirectory = async () => {
+    if (window.electronAPI) {
+      const selectedPath = await window.electronAPI.selectDirectory()
+      if (selectedPath) {
+        setPath(selectedPath)
+      }
+    }
+  }
+
   const handleToggleManualEdit = async (checked: boolean) => {
     setAllowManualEdit(checked)
     if (window.electronAPI) {
@@ -106,6 +115,12 @@ function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
           >
             {t('settings.browse')}
           </button>
+          <button
+            onClick={handleBrowseDirectory}
+            style={{ width: 'auto', height: '36px' }}
+          >
+            📂 Dossier Game Pass
+          </button>
         </div>
         <button onClick={handleSubmit}>{t('settings.startWatching')}</button>
       </div>
@@ -137,6 +152,7 @@ function Settings({ onSavePathChange, currentPath, onConfigChange }: Props) {
           <option value="fr">Français</option>
           <option value="en">English</option>
           <option value="ru">Русский</option>
+          <option value="zh_tr">繁體中文</option>
         </select>
       </div>
 
