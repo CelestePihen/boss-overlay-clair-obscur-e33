@@ -16,7 +16,8 @@
     "noSaveSelected": "No save file selected",
     "confirmClear": "Do you really want to reset the manual modifications for this save?\n\nThis will reset:\n- Status changes you made manually\n\nBosses added via the form will remain in the database.\nThis action is irreversible.",
     "clearSuccess": "✅ Manual modifications successfully reset!",
-    "clearError": "❌ Error: {{error}}"
+    "clearError": "❌ Error: {{error}}",
+    "dangerZone": "Danger"
   },
   "bossList": {
     "noData": "No boss data loaded",

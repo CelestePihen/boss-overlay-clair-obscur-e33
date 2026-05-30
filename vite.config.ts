@@ -28,9 +28,17 @@ export default defineConfig({
         },
         vite: {
           build: {
+            lib: {
+              entry: 'electron/preload.ts',
+              formats: ['cjs'],
+              fileName: () => 'preload.js',
+            },
             outDir: 'dist-electron',
             rollupOptions: {
               external: ['electron'],
+              output: {
+                format: 'cjs',
+              },
             },
             // Forcer la compilation en CommonJS avec esbuild
             minify: false,

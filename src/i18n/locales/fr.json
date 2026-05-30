@@ -16,7 +16,8 @@
     "noSaveSelected": "Aucun fichier de sauvegarde sélectionné",
     "confirmClear": "Voulez-vous vraiment réinitialiser les modifications manuelles de cette sauvegarde ?\n\nCela réinitialisera :\n- Les modifications de statut que vous avez faites manuellement\n\nLes boss ajoutés via le formulaire resteront dans la base de données.\nCette action est irréversible.",
     "clearSuccess": "✅ Modifications manuelles réinitialisées avec succès!",
-    "clearError": "❌ Erreur: {{error}}"
+    "clearError": "❌ Erreur: {{error}}",
+    "dangerZone": "Danger"
   },
   "bossList": {
     "noData": "Aucune donnée de boss chargée",

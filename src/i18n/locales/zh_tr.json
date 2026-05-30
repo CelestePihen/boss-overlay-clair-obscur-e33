@@ -16,7 +16,8 @@
     "noSaveSelected": "未偵測到遊戲存檔",
     "confirmClear": "您確實要清除此存檔的手動修改嗎?\n\n這將重設以下內容:\n- 你手動進行的狀態變更\n\n透過表單新增的 Boss 將保留在資料庫中。\n這個操作是無法復原的。",
     "clearSuccess": "✅ 已清除手動修改的內容!",
-    "clearError": "❌ 錯誤: {{error}}"
+    "clearError": "❌ 錯誤: {{error}}",
+    "dangerZone": "危險操作"
   },
   "bossList": {
     "noData": "未載入Boss資料",
