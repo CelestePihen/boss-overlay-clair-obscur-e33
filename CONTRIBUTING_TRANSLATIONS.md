@@ -6,8 +6,10 @@ Thank you for your interest in translating Boss Overlay! This guide explains how
 
 **Currently supported languages:**
 
-- 🇫🇷 **French** (complete)
-- 🇬🇧 **English** (complete)
+- 🇫🇷 **French**
+- 🇬🇧 **English**
+- 🇷🇺 **Russian**
+- 🇨🇳 **Traditional Chinese**
 
 **Want to add a new language?** Great! Just follow the steps below or open an [Issue](../../issues) to discuss it first.
 
