@@ -18,30 +18,35 @@ interface ZoneGroup {
   total: number
 }
 
+type GroupMode = 'zone' | 'category'
+
 function BossChecklist({
   bosses,
   onAddBoss,
   onToggleBoss,
   allowManualEdit = false,
 }: Props) {
-  const { t, translateZone, translateBossName } = useI18n()
+  const { t, translateZone, translateCategory, translateBossName } = useI18n()
   const [searchTerm, setSearchTerm] = useState('')
   const [filterMode, setFilterMode] = useState<
     'all' | 'alive' | 'killed' | 'encountered'
   >('all')
+  const [groupMode, setGroupMode] = useState<GroupMode>('zone')
   const [collapsedZones, setCollapsedZones] = useState<Set<string>>(new Set())
 
-  // Grouper les boss par zone
+  // Grouper les boss par zone ou par catégorie
   const zoneGroups = useMemo(() => {
     const groups = new Map<string, Boss[]>()
 
     bosses.forEach((boss) => {
-      const zoneName = boss.zone || 'Uncategorized'
+      const groupName =
+        (groupMode === 'category' ? boss.category : boss.zone) ||
+        'Uncategorized'
 
-      if (!groups.has(zoneName)) {
-        groups.set(zoneName, [])
+      if (!groups.has(groupName)) {
+        groups.set(groupName, [])
       }
-      groups.get(zoneName)!.push(boss)
+      groups.get(groupName)!.push(boss)
     })
 
     // Convertir en array (ordre d'insertion naturel)
@@ -56,7 +61,7 @@ function BossChecklist({
     )
 
     return groupArray
-  }, [bosses])
+  }, [bosses, groupMode])
 
   // Filtrer les boss selon le terme de recherche et le mode
   const filteredZoneGroups = useMemo(() => {
@@ -190,16 +195,24 @@ function BossChecklist({
                 count: (stats.total - stats.killed).toString(),
               })}
             </button>
+            <button className="filter-btn" onClick={toggleAllZones}>
+              {collapsedZones.size === zoneGroups.length
+                ? groupMode === 'category'
+                  ? t('bossList.expandAllCategories')
+                  : t('bossList.expandAllZones')
+                : groupMode === 'category'
+                  ? t('bossList.collapseAllCategories')
+                  : t('bossList.collapseAllZones')}
+            </button>
             <button
               className="filter-btn"
-              onClick={toggleAllZones}
-              title={
-                collapsedZones.size === zoneGroups.length
-                  ? t('bossList.expandAll')
-                  : t('bossList.collapseAll')
+              onClick={() =>
+                setGroupMode((prev) => (prev === 'zone' ? 'category' : 'zone'))
               }
             >
-              {collapsedZones.size === zoneGroups.length ? '📂' : '📁'}
+              {groupMode === 'zone'
+                ? t('bossList.groupByCategory')
+                : t('bossList.groupByZone')}
             </button>
           </div>
 
@@ -222,7 +235,9 @@ function BossChecklist({
                         {isCollapsed ? '▶' : '▼'}
                       </span>
                       <span className="zone-name">
-                        {translateZone(zone.zoneName)}
+                        {groupMode === 'category'
+                          ? translateCategory(zone.zoneName)
+                          : translateZone(zone.zoneName)}
                       </span>
                       <span className="zone-stats">
                         ({zone.killed}/{zone.total})
