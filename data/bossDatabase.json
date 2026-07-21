@@ -1010,11 +1010,6 @@
       "originalName": "SimonPhase2",
       "id": "simon",
       "category": "boss"
-    },
-    {
-      "originalName": "SimonRematchP2",
-      "id": "simon_rematch",
-      "category": "boss"
     }
   ],
   "verso_drafts": [

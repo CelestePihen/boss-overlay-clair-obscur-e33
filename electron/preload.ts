@@ -5,8 +5,9 @@ contextBridge.exposeInMainWorld('electronAPI', {
     return ipcRenderer.invoke('start-watch', savePath)
   },
   onBossUpdate: (callback: (bossList: unknown[]) => void) => {
-    ipcRenderer.on('boss-update', (_event: IpcRendererEvent, bossList: unknown[]) =>
-      callback(bossList),
+    ipcRenderer.on(
+      'boss-update',
+      (_event: IpcRendererEvent, bossList: unknown[]) => callback(bossList),
     )
   },
 

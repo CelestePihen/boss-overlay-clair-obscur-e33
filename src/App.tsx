@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 import BossChecklist from './components/BossChecklist'
 import { BossInfoForm } from './components/BossInfoForm'
@@ -16,6 +16,8 @@ function App() {
     Record<string, { killed: boolean; encountered: boolean }>
   >({})
   const [allowManualEdit, setAllowManualEdit] = useState(false)
+  const manualStatesRef = useRef(manualStates)
+  manualStatesRef.current = manualStates
 
   // Charger la config au démarrage
   useEffect(() => {
@@ -39,13 +41,14 @@ function App() {
     if (window.electronAPI) {
       // Écouter les mises à jour des boss
       window.electronAPI.onBossUpdate((bossList: Boss[]) => {
-        // Fusionner avec les états manuels
+        // Fusionner avec les états manuels (toujours la valeur la plus récente via le ref)
+        const currentManualStates = manualStatesRef.current
         const mergedBosses = bossList.map((boss) => {
-          if (boss.originalName && manualStates[boss.originalName]) {
+          if (boss.originalName && currentManualStates[boss.originalName]) {
             return {
               ...boss,
-              killed: manualStates[boss.originalName].killed,
-              encountered: manualStates[boss.originalName].encountered,
+              killed: currentManualStates[boss.originalName].killed,
+              encountered: currentManualStates[boss.originalName].encountered,
             }
           }
           return boss
@@ -59,7 +62,9 @@ function App() {
         window.electronAPI.startWatch(path)
       })
     }
-  }, [manualStates])
+    // Enregistré une seule fois : preload.ts n'expose pas de removeListener,
+    // donc dépendre de manualStates ici empilerait un nouveau listener IPC à chaque toggle.
+  }, [])
 
   const handleStartWatch = (path: string) => {
     setSavePath(path)

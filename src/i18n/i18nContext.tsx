@@ -19,7 +19,7 @@ const translations: Record<Language, TranslationObject> = {
   fr,
   en,
   ru,
-  zh_tr
+  zh_tr,
 }
 
 interface I18nContextType {
