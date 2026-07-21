@@ -105,50 +105,76 @@ export function watchSaveFile(
   currentWatcher = chokidar.watch(savePath, {
     persistent: true,
     ignoreInitial: true,
+    awaitWriteFinish: {
+      stabilityThreshold: 300,
+      pollInterval: 100,
+    },
   })
+
+  // Empêche les refresh concurrents d'écraser previousBossList dans le désordre
+  let isRefreshing = false
+  let refreshPending = false
+  let pendingEmitNewKills = false
 
   const refreshFromCurrentPath = async (emitNewKills: boolean) => {
     if (!currentSavePath) {
       return
     }
 
-    let bossList: Boss[] = await parseSaveFile(currentSavePath)
-
-    // Fusionner avec les états manuels
-    bossList = await mergeBossesWithManualStates(currentSavePath, bossList)
-
-    if (!emitNewKills) {
-      previousBossList = bossList
-      callback(bossList)
+    if (isRefreshing) {
+      refreshPending = true
+      pendingEmitNewKills = pendingEmitNewKills || emitNewKills
       return
     }
+    isRefreshing = true
 
-    // Détecter les boss nouvellement tués
-    const newlyKilled: Boss[] = []
-    if (previousBossList.length > 0) {
-      for (const boss of bossList) {
-        // Utiliser originalName pour la comparaison (plus fiable)
-        const previousBoss = previousBossList.find(
-          (b) => b.originalName === boss.originalName,
-        )
+    try {
+      let bossList: Boss[] = await parseSaveFile(currentSavePath)
 
-        if (previousBoss) {
-          // Boss existait déjà : vérifier s'il vient d'être tué
-          if (!previousBoss.killed && boss.killed) {
-            newlyKilled.push(boss)
-          }
-        } else {
-          // Boss n'existait pas dans previousBossList : c'est un nouveau boss rencontré
-          // S'il est déjà tué, c'est qu'on vient de le tuer
-          if (boss.killed) {
-            newlyKilled.push(boss)
+      // Fusionner avec les états manuels
+      bossList = await mergeBossesWithManualStates(currentSavePath, bossList)
+
+      if (!emitNewKills) {
+        previousBossList = bossList
+        callback(bossList)
+        return
+      }
+
+      // Détecter les boss nouvellement tués
+      const newlyKilled: Boss[] = []
+      if (previousBossList.length > 0) {
+        for (const boss of bossList) {
+          // Utiliser originalName pour la comparaison (plus fiable)
+          const previousBoss = previousBossList.find(
+            (b) => b.originalName === boss.originalName,
+          )
+
+          if (previousBoss) {
+            // Boss existait déjà : vérifier s'il vient d'être tué
+            if (!previousBoss.killed && boss.killed) {
+              newlyKilled.push(boss)
+            }
+          } else {
+            // Boss n'existait pas dans previousBossList : c'est un nouveau boss rencontré
+            // S'il est déjà tué, c'est qu'on vient de le tuer
+            if (boss.killed) {
+              newlyKilled.push(boss)
+            }
           }
         }
       }
-    }
 
-    previousBossList = bossList
-    callback(bossList, newlyKilled.length > 0 ? newlyKilled : undefined)
+      previousBossList = bossList
+      callback(bossList, newlyKilled.length > 0 ? newlyKilled : undefined)
+    } finally {
+      isRefreshing = false
+      if (refreshPending) {
+        refreshPending = false
+        const emit = pendingEmitNewKills
+        pendingEmitNewKills = false
+        await refreshFromCurrentPath(emit)
+      }
+    }
   }
 
   // Charger une seule fois au démarrage quand le watcher est prêt
