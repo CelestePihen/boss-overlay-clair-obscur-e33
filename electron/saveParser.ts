@@ -1,5 +1,5 @@
 import { execFile } from 'child_process'
-import { readFile, readdir, stat, unlink, writeFile } from 'fs/promises'
+import { readdir, readFile, stat, unlink, writeFile } from 'fs/promises'
 import { tmpdir } from 'os'
 import { dirname, extname, join } from 'path'
 import { fileURLToPath } from 'url'
@@ -22,6 +22,12 @@ let bossMap: Map<
   string,
   { id: string; category: string; zone: string }
 > | null = null
+
+// Noms normalisés (sans hash) partagés par plusieurs entrées de la base de
+// données (ex: une classe d'ennemi générique réutilisée pour plusieurs
+// combats distincts). Pour ces cas, le match par nom normalisé est ambigu
+// et ne doit pas être utilisé (voir extractBossesWithDatabase).
+let normalizedNameCollisions: Set<string> = new Set()
 
 // Type pour le format organisé par zone
 type BossDatabaseByZone = Record<
@@ -133,6 +139,22 @@ async function loadBossDatabase() {
           zone: boss.zone,
         })
       }
+
+      // Détecter les noms normalisés en collision (plusieurs boss partageant
+      // la même classe générique une fois le hash retiré)
+      const normalizedCounts = new Map<string, number>()
+      for (const boss of bossDatabase) {
+        const normalized = normalizeEnemyName(boss.originalName)
+        normalizedCounts.set(
+          normalized,
+          (normalizedCounts.get(normalized) ?? 0) + 1,
+        )
+      }
+      normalizedNameCollisions = new Set(
+        [...normalizedCounts.entries()]
+          .filter(([, count]) => count > 1)
+          .map(([name]) => name),
+      )
 
       console.log(`Loaded ${bossDatabase.length} boss entries`)
     } catch (error) {
@@ -400,14 +422,18 @@ function extractBossesWithDatabase(saveData: SaveData): Boss[] {
     if (allSaveEnemies.has(boss.originalName)) {
       saveEnemyName = boss.originalName
     } else {
-      // Match normalisé (sans le hash)
+      // Match normalisé (sans le hash) : uniquement si cette classe générique
+      // n'est pas partagée par plusieurs boss de la base (sinon le match
+      // serait ambigu et pourrait cocher le mauvais boss)
       const normalized = normalizeEnemyName(boss.originalName)
-      saveEnemyName = saveEnemyNormalizedMap.get(normalized)
+      if (!normalizedNameCollisions.has(normalized)) {
+        saveEnemyName = saveEnemyNormalizedMap.get(normalized)
 
-      if (saveEnemyName) {
-        console.log(
-          `Matched ${saveEnemyName} to ${boss.originalName} (normalized)`,
-        )
+        if (saveEnemyName) {
+          console.log(
+            `Matched ${saveEnemyName} to ${boss.originalName} (normalized)`,
+          )
+        }
       }
     }
 
